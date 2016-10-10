@@ -1,0 +1,628 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.127
+[MUSIC]
+
+2
+00:00:09.127 --> 00:00:14.460
+Hi, welcome to this course where we'll try
+to improve your statistical inferences.
+
+3
+00:00:14.460 --> 00:00:17.720
+My name is Daniel Lakens,
+I'm an experimental psychologist working
+
+4
+00:00:17.720 --> 00:00:21.160
+at the Human-Technology Interaction group
+at Eindhoven University of Technology.
+
+5
+00:00:22.370 --> 00:00:26.550
+Now, some years after I completed my Ph.D,
+I realized that my understanding of
+
+6
+00:00:26.550 --> 00:00:29.980
+statistics was actually not good
+enough to design a proper study.
+
+7
+00:00:30.980 --> 00:00:33.580
+I joined the Reproducibility Project
+
+8
+00:00:33.580 --> 00:00:38.040
+which has the goal to reproduce
+100 studies in psychology.
+
+9
+00:00:38.040 --> 00:00:41.690
+And when I started to perform
+the replication study that I would do,
+
+10
+00:00:41.690 --> 00:00:44.940
+I realized that I had to
+calculate an effect size
+
+11
+00:00:44.940 --> 00:00:48.430
+to perform an a priori power analysis.
+
+12
+00:00:48.430 --> 00:00:52.264
+Now, this is a very basic first
+step when you design a new study,
+
+13
+00:00:52.264 --> 00:00:57.238
+whether it's a completely new study or
+a replication study, it doesn't matter.
+
+14
+00:00:57.238 --> 00:00:59.447
+I realized I didn't really
+know how to do this.
+
+15
+00:00:59.447 --> 00:01:02.708
+And then I wondered, well,
+if I don't know to do this very first,
+
+16
+00:01:02.708 --> 00:01:06.180
+basic thing,
+how can I ever collect informative data?
+
+17
+00:01:06.180 --> 00:01:10.590
+Since then, I've been looking into how to
+improve the way that we design studies and
+
+18
+00:01:10.590 --> 00:01:11.910
+draw inferences from data.
+
+19
+00:01:11.910 --> 00:01:15.000
+I published some papers on this, and
+
+20
+00:01:15.000 --> 00:01:19.430
+I've realized that improving the
+statistical understanding of how you do
+
+21
+00:01:19.430 --> 00:01:23.070
+research really makes you a more
+efficient and better researcher.
+
+22
+00:01:23.070 --> 00:01:26.950
+So I'll share some of the insights I had,
+and I'll try to prevent some confusion
+
+23
+00:01:26.950 --> 00:01:30.040
+that you might have about
+statistical tools that we use.
+
+24
+00:01:31.800 --> 00:01:36.460
+The goal of this is to try to
+prevent you from fooling yourself.
+
+25
+00:01:36.460 --> 00:01:41.130
+As Feynman reminds us, the first principle
+in doing science is that you must not fool
+
+26
+00:01:41.130 --> 00:01:44.850
+yourself- and
+you are the easiest person to fool.
+
+27
+00:01:44.850 --> 00:01:48.360
+So I see a better understanding
+of statistics as a very good way
+
+28
+00:01:48.360 --> 00:01:50.620
+to try to prevent you
+from fooling yourself.
+
+29
+00:01:52.640 --> 00:01:57.440
+Now, as an experimental researcher, the
+goal might not be to do statistical tests,
+
+30
+00:01:57.440 --> 00:01:58.010
+itself.
+
+31
+00:01:58.010 --> 00:02:01.830
+What you always want to do is
+to say something about a theory.
+
+32
+00:02:01.830 --> 00:02:06.190
+So the goal of data collection is to
+first draw statistical inferences and
+
+33
+00:02:06.190 --> 00:02:08.400
+then to draw theoretical inferences.
+
+34
+00:02:08.400 --> 00:02:10.220
+That's what you really want to know.
+
+35
+00:02:10.220 --> 00:02:13.690
+But, of course, you need to draw a good
+and valid statistical inferences
+
+36
+00:02:13.690 --> 00:02:16.530
+because otherwise the next
+step doesn't really work.
+
+37
+00:02:16.530 --> 00:02:18.236
+So let's try to improve this step.
+
+38
+00:02:20.028 --> 00:02:23.797
+There's a reason why psychologists,
+maybe scientists more generally,
+
+39
+00:02:23.797 --> 00:02:27.165
+are now really interested in
+improving statistical inferences.
+
+40
+00:02:27.165 --> 00:02:31.813
+And one of the first reasons for
+starting on this improvement cycle was
+
+41
+00:02:31.813 --> 00:02:35.060
+a study published by
+Daryl Bem on precognition.
+
+42
+00:02:36.090 --> 00:02:40.080
+Precognition is the idea that
+we can predict the future.
+
+43
+00:02:40.080 --> 00:02:43.080
+Now, you might believed that
+this is possible or not, but
+
+44
+00:02:43.080 --> 00:02:46.190
+as a scientist we should always keep
+an open mind and look at the evidence.
+
+45
+00:02:47.750 --> 00:02:51.710
+In this case, there was a set of nine
+published studies that all showed
+
+46
+00:02:51.710 --> 00:02:54.990
+support for the idea that people
+could predict the future.
+
+47
+00:02:54.990 --> 00:02:59.570
+There were very simple basic tasks that
+were performed that are widely used in
+
+48
+00:02:59.570 --> 00:03:04.380
+experimental psychology, but
+the tasks were always reversed.
+
+49
+00:03:04.380 --> 00:03:07.680
+So instead of first seeing a picture and
+then pressing a button to
+
+50
+00:03:07.680 --> 00:03:11.740
+categorize the picture, the task was
+presented in the reversed order.
+
+51
+00:03:11.740 --> 00:03:15.890
+People first had to press a button, and
+only then the picture would emerge.
+
+52
+00:03:15.890 --> 00:03:16.430
+So, of course,
+
+53
+00:03:16.430 --> 00:03:19.678
+you don't really know what to press
+unless you can predict the future.
+
+54
+00:03:19.678 --> 00:03:21.150
+And in this set of studies,
+
+55
+00:03:21.150 --> 00:03:25.490
+people were able to perform above guessing
+average in most of these studies.
+
+56
+00:03:26.670 --> 00:03:30.561
+So after this, maybe some people
+thought precognition must be real.
+
+57
+00:03:30.561 --> 00:03:34.629
+But other people thought, well, if this is
+going to be published in one of the top
+
+58
+00:03:34.629 --> 00:03:38.515
+journals in our field then maybe we
+are not drawing the correct statistical
+
+59
+00:03:38.515 --> 00:03:42.110
+inferences from data because it
+seemed unlikely that this was true.
+
+60
+00:03:43.540 --> 00:03:46.350
+There has been more criticism
+in the scientific literature on
+
+61
+00:03:46.350 --> 00:03:48.140
+how we draw inferences from data.
+
+62
+00:03:48.140 --> 00:03:52.090
+Now, there are some people who
+even go as far as to say that most
+
+63
+00:03:52.090 --> 00:03:55.110
+published research findings are false.
+
+64
+00:03:55.110 --> 00:03:55.650
+Is this true?
+
+65
+00:03:55.650 --> 00:03:56.720
+What do you think?
+
+66
+00:03:56.720 --> 00:03:59.460
+Do you think that most of the scientific
+literature is false or not?
+
+67
+00:04:00.670 --> 00:04:02.890
+I think the answer is
+we don't really know.
+
+68
+00:04:02.890 --> 00:04:06.740
+We can try to estimate it, but
+we don't really have an accurate number.
+
+69
+00:04:06.740 --> 00:04:11.120
+It's more important, probably, to try to
+improve the way that we do research to
+
+70
+00:04:11.120 --> 00:04:15.580
+prevent this from continuing on, so that
+in the future we know that the data that's
+
+71
+00:04:15.580 --> 00:04:19.620
+generated and the conclusions that
+are drawn are most likely to be correct.
+
+72
+00:04:19.620 --> 00:04:23.930
+There are some problems in
+the scientific literature at the moment.
+
+73
+00:04:23.930 --> 00:04:27.430
+We know that many of the sample
+sizes we collect are too small, so
+
+74
+00:04:27.430 --> 00:04:29.850
+we have underpowered studies.
+
+75
+00:04:29.850 --> 00:04:33.570
+We know that people are very
+flexible in how they analyze data.
+
+76
+00:04:33.570 --> 00:04:36.720
+So this leads to a lot of flukes,
+random findings,
+
+77
+00:04:36.720 --> 00:04:41.150
+that are actually not true, but
+people interpret as a true effect.
+
+78
+00:04:41.150 --> 00:04:44.020
+And we know that there is
+strong publication bias.
+
+79
+00:04:44.020 --> 00:04:46.510
+People share findings that show an effect,
+but
+
+80
+00:04:46.510 --> 00:04:49.640
+they don't share findings
+that do not show an effect.
+
+81
+00:04:49.640 --> 00:04:52.600
+And all these things
+make it very difficult
+
+82
+00:04:52.600 --> 00:04:57.020
+to conclude whether published
+findings are reliable or not.
+
+83
+00:04:57.020 --> 00:05:02.000
+And the goal in this course is to try to
+give you some tools to try this question
+
+84
+00:05:02.000 --> 00:05:07.035
+better, given that there's publication
+bias, flexibility in the data analysis and
+
+85
+00:05:07.035 --> 00:05:08.099
+low-powered studies.
+
+86
+00:05:10.560 --> 00:05:11.457
+So, first of all,
+
+87
+00:05:11.457 --> 00:05:15.280
+we'll try to make sure that you can
+draw better statistical inferences.
+
+88
+00:05:15.280 --> 00:05:19.450
+To achieve this we'll talk about p-values
+and how to interpret them, report and
+
+89
+00:05:19.450 --> 00:05:23.730
+calculate effect sizes and confidence
+intervals, but also discuss alternative
+
+90
+00:05:23.730 --> 00:05:27.660
+ways and frequentist statistics such
+as Bayes Factors or likelihoods.
+
+91
+00:05:29.110 --> 00:05:34.620
+The second goal is to enable you to
+design more informative experiments.
+
+92
+00:05:34.620 --> 00:05:38.270
+To achieve this, we'll talk about how you
+can control error rates when you design
+
+93
+00:05:38.270 --> 00:05:42.370
+studies, how you can efficiently
+run high-powered studies.
+
+94
+00:05:42.370 --> 00:05:45.060
+But we'll also focus a little
+bit on theory construction.
+
+95
+00:05:47.070 --> 00:05:50.200
+Another goal is to evaluate
+the evidence in the literature,
+
+96
+00:05:50.200 --> 00:05:52.350
+given that there is publication bias.
+
+97
+00:05:53.460 --> 00:05:57.510
+We'll talk about p-curve analysis,
+and we'll discuss publication bias and
+
+98
+00:05:57.510 --> 00:05:59.750
+some ways to identify this in more detail.
+
+99
+00:06:01.210 --> 00:06:05.140
+Finally, an important goal is to
+facilitate cumulative science.
+
+100
+00:06:05.140 --> 00:06:07.350
+Of course,
+we try to improve our knowledge.
+
+101
+00:06:07.350 --> 00:06:09.730
+How can we do this the best way?
+
+102
+00:06:09.730 --> 00:06:12.300
+We'll talk about how you can
+perform replication studies,
+
+103
+00:06:12.300 --> 00:06:16.890
+the importance of pre-registration and the
+benefits of using pre-registration, and
+
+104
+00:06:16.890 --> 00:06:20.839
+the importance of adhering to open
+science principles in your research.
+
+105
+00:06:22.730 --> 00:06:25.260
+Accompanying these
+lectures are assignments,
+
+106
+00:06:25.260 --> 00:06:28.590
+and these assignments are really
+hands on and in depth knowledge.
+
+107
+00:06:28.590 --> 00:06:31.938
+The goal is to learn mainly
+through simulations.
+
+108
+00:06:31.938 --> 00:06:35.780
+I'm not a big fan of teaching
+through formulas, myself.
+
+109
+00:06:35.780 --> 00:06:38.940
+If you're interested in that,
+you can easily look up the literature and
+
+110
+00:06:38.940 --> 00:06:42.255
+I'll provide references where
+these formulas are discussed.
+
+111
+00:06:42.255 --> 00:06:46.100
+But in these assignments, we'll mainly
+rely on performing simulation studies, and
+
+112
+00:06:46.100 --> 00:06:49.460
+just seeing what happens in
+the long run when you would perform
+
+113
+00:06:49.460 --> 00:06:51.720
+hundreds of thousands of studies.
+
+114
+00:06:51.720 --> 00:06:54.510
+Personally, I've found
+that really informative
+
+115
+00:06:54.510 --> 00:06:56.549
+when I tried to understand
+statistics myself.
+
+116
+00:06:58.460 --> 00:07:01.410
+We'll use R, which is free software.
+
+117
+00:07:01.410 --> 00:07:04.710
+You don't need to have a very good
+understanding of how R works.
+
+118
+00:07:04.710 --> 00:07:09.610
+We'll typically use very simple examples
+where you can just run the code,
+
+119
+00:07:09.610 --> 00:07:11.803
+maybe change one or two numbers.
+
+120
+00:07:11.803 --> 00:07:15.303
+That's really all you need
+to know about how R works.
+
+121
+00:07:16.870 --> 00:07:21.358
+Now, personally, as I started to get
+a better understanding of statistics,
+
+122
+00:07:21.358 --> 00:07:23.058
+I felt much less uncertain and
+
+123
+00:07:23.058 --> 00:07:27.410
+much more able to draw correct inferences
+from the scientific literature,
+
+124
+00:07:27.410 --> 00:07:30.956
+and to design studies that would
+yield informative results.
+
+125
+00:07:30.956 --> 00:07:34.739
+I really think that if you want to be a
+good researcher, it's important to invest
+
+126
+00:07:34.739 --> 00:07:38.530
+some time in learning how to draw
+better inferences from your data.
+
+127
+00:07:38.530 --> 00:07:41.420
+And it can be remarkable fun,
+getting this better understanding.
+
+128
+00:07:42.920 --> 00:07:44.130
+If you want to reach out to me,
+
+129
+00:07:44.130 --> 00:07:48.370
+you can contact me at Twitter with any
+questions or comments you might have.
+
+130
+00:07:48.370 --> 00:07:50.955
+For now, let's get started.
+
+131
+00:07:50.955 --> 00:07:55.639
+[MUSIC]
