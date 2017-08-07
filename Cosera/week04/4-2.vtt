@@ -1,0 +1,783 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.959
+[MUSIC]
+d類效果量
+
+2
+00:00:08.959 --> 00:00:13.580
+In the previous lecture, we distinguish between two families of effects sizes.
+前一講提到兩大類效果量
+
+3
+00:00:13.580 --> 00:00:17.480
+Going D Family on the one hand and R Family on the other side.
+一種稱為d類，另一種稱為r類
+
+4
+00:00:17.480 --> 00:00:21.370
+In this lecture we'll take a look at
+Cohen's D measures of effect sizes.
+這一講學習重點是Cohen's d為主的效果量
+
+5
+00:00:21.370 --> 00:00:23.300
+Standardized mean, differences.
+也就是標準化平均值差異
+
+6
+00:00:24.330 --> 00:00:25.980
+Let's start with a practical example.
+從這個實例開始
+
+7
+00:00:27.270 --> 00:00:30.400
+Do movie ratings differ between websites?
+各大電影評論網站的給分有差異嗎？
+
+8
+00:00:30.400 --> 00:00:32.050
+And if so, how much?
+有得話是多少？
+
+9
+00:00:32.050 --> 00:00:35.260
+Does it actually matter where you go on the internet
+這些給分會反應網路上的眾人的評價嗎？
+
+10
+00:00:35.260 --> 00:00:37.100
+to see how popular a movie is?
+這些給分會反應網路上的眾人的評價嗎？
+
+11
+00:00:39.070 --> 00:00:41.875
+Now this is my favorite movie of all time, Fight Club.
+拿我最愛的電影「鬥陣俱樂部」來研究吧
+
+12
+00:00:41.875 --> 00:00:45.471
+I would definitely rate it a ten, myself, but I can understand that taste
+我私心的分數是滿分十分，
+但是每個人口味不同，想必有不同的評價
+
+13
+00:00:45.471 --> 00:00:48.440
+differs between people, so there might be some variation.
+我私心的分數是滿分十分，
+但是每個人口味不同，想必有不同的評價
+
+14
+00:00:48.440 --> 00:00:51.570
+And there might be a slightly lower average score than ten.
+總平均應該會低於十分
+
+15
+00:00:52.580 --> 00:00:55.590
+Let's take a look at two different websites to see how people have rated
+就讓我們看看這部電影在兩個電影網站的大眾評分吧
+
+16
+00:00:55.590 --> 00:00:56.090
+this movie.
+就讓我們看看這部電影在兩個電影網站的大眾評分吧
+
+17
+00:00:57.830 --> 00:01:00.691
+If we go to the Internet Movie Database,
+拿IMDb的資料來看
+
+18
+00:01:00.691 --> 00:01:04.655
+we see that the score is a remarkably low 8.9, okay.
+平均得分是讓我有點心碎的8.9
+
+19
+00:01:04.655 --> 00:01:06.428
+But if you visit Rotten Tomatoes,
+再看爛蕃茄的資料
+
+20
+00:01:06.428 --> 00:01:10.540
+we see that the score that people gave Fight Club is actually 7.3 out of 10.
+網路鄉民給的評價是滿分10分的7.3分
+
+21
+00:01:10.540 --> 00:01:16.510
+This is actually a big difference if you look at it like this but
+兩大網站的評分有很大的差異
+
+22
+00:01:16.510 --> 00:01:19.430
+we need to quantify this difference to be sure.
+因此需要仔細衡量兩者之間的差異
+
+23
+00:01:19.430 --> 00:01:21.510
+Is this really meaningful or not?
+是不是真的反映兩個網站口味不同？
+
+24
+00:01:21.510 --> 00:01:24.709
+So let's calculate the standardized mean difference to find out.
+所以我們要計算兩者的標準化平均值差異
+
+25
+00:01:27.320 --> 00:01:29.615
+Now we have the two mean values.
+現在把兩大網站的平均評分放在一起
+
+26
+00:01:29.615 --> 00:01:34.008
+On the one hand, the Internet Movie
+Database, where the evaluation for
+8.9是IMDb的評分，7.3是爛蕃茄的評分
+
+27
+00:01:34.008 --> 00:01:39.160
+Fight Club is an 8.9, and on Rotten
+Tomatoes the average evaluation is a 7.3.
+8.9是IMDb的評分，7.3是爛蕃茄的評分
+
+28
+00:01:39.160 --> 00:01:44.110
+Now conceptually, the standardized mean difference
+在統計學裡，標準化平均值差異是
+
+29
+00:01:44.110 --> 00:01:48.240
+is the difference in means divided by the standard deviation.
+平均值的差異除以標準差
+
+30
+00:01:48.240 --> 00:01:51.470
+So here we have two means, and we can subtract the one from the other
+所以首先把一個平均值減去另一個平均值
+
+31
+00:01:51.470 --> 00:01:55.290
+to get the mean difference, but we also
+need to know the standard deviation.
+不過我們還需要知道標準差
+
+32
+00:01:56.310 --> 00:01:59.900
+Now luckily, I happen to know that if you look at all movie evaluations that
+還好我得知網站的計算方式和原始資料
+
+33
+00:01:59.900 --> 00:02:05.860
+are being done, the standard deviation is, more or less, 1.4 on these scales.
+所以標準差不多不少是1.4
+
+34
+00:02:05.860 --> 00:02:09.310
+If you have 10 point scale then the standard deviation you can expect if
+也就是以10點量表讓網路鄉民評分
+
+35
+00:02:09.310 --> 00:02:11.690
+people evaluate movies 1.4.
+個別差異大約是1.4
+
+36
+00:02:11.690 --> 00:02:14.360
+So we can have the mean difference and
+有了平均值差異和標準差，就能計算效果量
+
+37
+00:02:14.360 --> 00:02:17.390
+divide it by the standard deviation to calculate the effect size.
+有了平均值差異和標準差，就能計算效果量
+
+38
+00:02:19.020 --> 00:02:20.210
+In this case,
+計算之後
+
+39
+00:02:20.210 --> 00:02:26.660
+the Cohen's d is a 1.14 which as we'll see later is a very big effect.
+得到Cohen's d是1.4
+稍後會告訴你這是相當大的效果量
+
+40
+00:02:26.660 --> 00:02:29.260
+So it really matters which website you go to,
+所以IMDb和爛蕃茄給鬥陣俱樂部的評價是很不一樣的
+
+41
+00:02:29.260 --> 00:02:31.220
+if you want to know whether people like a movie.
+所以IMDb和爛蕃茄給鬥陣俱樂部的評價是很不一樣的
+
+42
+00:02:33.004 --> 00:02:38.900
+A Cohen's d ranges from 0, no effect, to infinity.
+Cohen's d的數值可以是0到無限大
+
+43
+00:02:38.900 --> 00:02:42.210
+When there's no difference between two groups, the mean difference is 0,
+沒有差異的話，不論標準差多少，平均值差異都是0
+
+44
+00:02:42.210 --> 00:02:45.670
+and you can divide it by any
+standard deviation you want.
+沒有差異的話，不論標準差多少，平均值差異都是0
+
+45
+00:02:45.670 --> 00:02:47.020
+The effect size will remain zero.
+效果量也會是0
+
+46
+00:02:48.080 --> 00:02:51.990
+If the difference is really really huge
+then the effect size just goes up and up.
+如果效果確實巨大，效果量的數值隨差異增加
+
+47
+00:02:53.110 --> 00:02:55.520
+Now let's visualize different effect sizes.
+讓我們用視覺化方法了解效果量大小的意義
+
+48
+00:02:56.970 --> 00:03:00.060
+If you don't have any idea of how to interpret an effect size,
+有一套評價標準讓你可以推測效果量是大是小
+
+49
+00:03:00.060 --> 00:03:03.280
+then there are useful benchmarks you can use.
+有一套評價標準讓你可以推測效果量是大是小
+
+50
+00:03:03.280 --> 00:03:08.335
+And in this effect size you can use the benchmarks of 0.2 for small effects.
+0.2是小效果量的下限
+
+51
+00:03:08.335 --> 00:03:13.349
+0.5 for medium effect, and 0.8 for a large effect.
+過了0.5就算中效果量
+超過0.8就是大效果量
+
+52
+00:03:13.349 --> 00:03:18.171
+In this graph, we see the visualization for an effect size of 0.2.
+這張圖展示效果量0.2的分配差異
+
+53
+00:03:18.171 --> 00:03:23.150
+So, clearly there's the difference, people in the one group are slightly more likely
+如果把兩個分配當成兩個網站的評分次數分佈
+
+54
+00:03:23.150 --> 00:03:28.100
+to have a higher score or evaluate a movie a little bit better than the other group
+右邊這一群是比左邊的評分稍高
+
+55
+00:03:28.100 --> 00:03:30.250
+but you can also see that there's quite a lot of overlap.
+不過兩者的重疊比例還是很高
+
+56
+00:03:31.290 --> 00:03:34.050
+One individual from one group is very likely
+比較高分的這一群
+
+57
+00:03:34.050 --> 00:03:37.900
+even though they're from this group that on average has a higher evaluation for
+即使給的分數接近這一群的平均值
+
+58
+00:03:37.900 --> 00:03:41.180
+a movie to like the movie less than someone from the other group.
+也是比另一群多數人的評分稍低
+
+59
+00:03:43.500 --> 00:03:47.320
+If we look at the slightly bigger effects size Cohen's d: 0.5
+如果效果量增加到0.5
+
+60
+00:03:47.320 --> 00:03:49.110
+we can see the difference is bigger.
+兩個分配的差異也變大
+
+61
+00:03:49.110 --> 00:03:51.270
+There still quite some overlap.
+但還是有很高的重疊比例
+
+62
+00:03:51.270 --> 00:03:56.350
+And Cohen's d is 0.8 is considered a large meaningful effect.
+現在增加到剛剛說的大效果量下限0.8
+
+63
+00:03:56.350 --> 00:03:59.800
+This is really a big effect size and not many effects in psychology for
+如此的效果量數值很少出現在心理學文獻之中
+
+64
+00:03:59.800 --> 00:04:02.100
+example are as big as this.
+如此的效果量數值很少出現在心理學文獻之中
+
+65
+00:04:02.100 --> 00:04:04.790
+And even in this situation there's still quite a lot of overlap.
+這張圖裡的兩群重疊比例還是很高
+
+66
+00:04:06.210 --> 00:04:10.720
+Sometimes you might be tempted to think that if there is a significant result,
+概念清楚的研究者會想就算是統計顯著
+
+67
+00:04:10.720 --> 00:04:12.370
+significant effect.
+是否有實質的差異
+
+68
+00:04:12.370 --> 00:04:16.700
+Then everybody in one group should score higher than everybody in the other group.
+右邊這一群所有人的給分應該比左邊所有人高
+
+69
+00:04:16.700 --> 00:04:19.488
+But this distributions clearly show that this is not the case.
+但是從分配來看似乎不是如此
+
+70
+00:04:19.488 --> 00:04:25.770
+Even when we have a big effect, groups overlap quite a bit.
+就算是有大效果量，還是有重疊的部分
+
+71
+00:04:25.770 --> 00:04:30.460
+Now using this benchmarks, 'large',
+'medium', or 'small' to interpret
+剛剛說的小中大效果量判斷標準其實是最後的依據
+
+72
+00:04:30.460 --> 00:04:35.120
+the size of your effect Should be only be used as a last resort.
+剛剛說的小中大效果量判斷標準其實是最後的依據
+
+73
+00:04:35.120 --> 00:04:37.670
+They're useful if you don't have anything else to go on but,
+是你沒有其他可參考的資訊時才要用
+
+74
+00:04:37.670 --> 00:04:41.830
+it's typically already better to compare the effect size that you found to
+一般來說從文獻中找類似研究的效果量更可靠
+
+75
+00:04:41.830 --> 00:04:44.490
+other related effects in the literature.
+一般來說從文獻中找類似研究的效果量更可靠
+
+76
+00:04:44.490 --> 00:04:48.270
+You might be able to make a statement such as well compare to
+由此比較得到的結論會更站得住腳
+
+77
+00:04:48.270 --> 00:04:50.200
+this type of intervention.
+由此比較得到的結論會更站得住腳
+
+78
+00:04:50.200 --> 00:04:53.830
+This intervention has a smaller or bigger effect size.
+文獻比較能顯示效果量的相對大小
+
+79
+00:04:53.830 --> 00:04:57.100
+And this is better than just using these benchmarks.
+比單純的統計學判斷標準更好
+
+80
+00:04:57.100 --> 00:05:00.390
+Sometimes this is not possible and these benchmarks are all you have to go on.
+當然沒有文獻可供比較時，還是只能依賴判斷標準。
+
+81
+00:05:00.390 --> 00:05:04.860
+So interpreting them in the minimum case should require these benchmarks but
+請記得這些判斷標準是不得已時才使用
+
+82
+00:05:04.860 --> 00:05:08.030
+hopefully you can interpret the effect size and
+儘可能透過收集文獻數據推測效果量大小的意義
+
+83
+00:05:08.030 --> 00:05:11.309
+slightly more meaningful way by relating them to effects in the literature.
+儘可能透過收集文獻數據推測效果量大小的意義
+
+84
+00:05:14.110 --> 00:05:18.260 
+So conceptually Cohen's d is the difference divided by the standard
+Cohen's d的計算概念是差異值除以標準差
+
+85
+00:05:18.260 --> 00:05:22.470
+deviation but there are a lot of small variations of Cohen's d
+但是標準差的計算取決於獲得資料的研究設計
+
+86
+00:05:22.470 --> 00:05:26.470
+depending on the design that you use, for example within subject design or
+但是標準差的計算取決於獲得資料的研究設計
+
+87
+00:05:26.470 --> 00:05:28.400
+between subject design.
+像是受試者內或受試者間設計
+
+88
+00:05:28.400 --> 00:05:29.980
+There's the Cohen's d for
+有的計算方式是用於已知母群參數的
+
+89
+00:05:29.980 --> 00:05:34.630
+the population if you would know the true value and there's the Cohen's d for
+有的計算方式是用於已知母群參數的
+
+90
+00:05:34.630 --> 00:05:38.340
+the sample if you calculate the effect size based on the sup group.
+還有計算方式是用於已知樣本估計值的
+
+91
+00:05:39.610 --> 00:05:42.500
+And all these small variations might become a little bit complex but
+這些計算公式的差別有些小複雜
+
+92
+00:05:42.500 --> 00:05:43.580
+they're important to keep in mind.
+但要使用的話必須先分清楚
+
+93
+00:05:45.360 --> 00:05:47.300
+They differ a little bit and
+如果你想仔細了解各種公式的差別
+可以看看我的這篇論文
+
+94
+00:05:47.300 --> 00:05:50.510
+if you want to take a look at this you can look at an article I wrote about this.
+如果你想仔細了解各種公式的差別
+可以看看我的這篇論文
+
+95
+00:05:50.510 --> 00:05:52.310
+I don't want to advertise my own work but
+我不是故意要打廣告
+
+96
+00:05:52.310 --> 00:05:55.800
+people apparently seem to find this specific article useful.
+而是這篇論文剛好解決這方面的需要
+
+97
+00:05:55.800 --> 00:05:58.570
+And in this article, I give you all the different formulas for
+我在這篇論文列出所有版本的公式及適用條件
+
+98
+00:05:58.570 --> 00:06:01.130
+these slightly different versions of effect sizes.
+我在這篇論文列出所有版本的公式及適用條件
+
+99
+00:06:02.610 --> 00:06:06.080
+It's important to keep in mind which effect size you should use,
+切記要了解那個公式符合你的研究需求
+
+100
+00:06:06.080 --> 00:06:09.130
+especially when you perform power calculations.
+特別是計算統計檢定力時
+
+101
+00:06:09.130 --> 00:06:13.450
+So this is a screen shot of g power which you can use to perform a power analysis.
+像是G Power裡的效果量欄位裡要填的數值
+
+102
+00:06:13.450 --> 00:06:17.680
+And in this case, we're performing a power analysis for a dependent test.
+這個例子是相依樣本檢定的檢定力分析
+
+103
+00:06:17.680 --> 00:06:20.350
+There are two groups, but they are dependent.
+兩組平均值出自有關聯性的樣本
+
+104
+00:06:20.350 --> 00:06:25.360
+In this case, G Power asks you to fill in Cohen's dz.
+需要在G Power輸入Cohen's dz
+
+105
+00:06:25.360 --> 00:06:29.315
+So this is one specific way to calculate the standardized mean difference.
+為此需要用特別方法計算標準化平均值差異
+
+106
+00:06:29.315 --> 00:06:33.495
+If you use a different way to calculate the standardized effect size you might get
+如果你不是用正確方法計算標準化效果量
+
+107
+00:06:33.495 --> 00:06:37.165
+an incorrect sample size estimate based on the power analysis.
+檢定力分析可能會得到錯誤的樣本數估計值
+
+108
+00:06:37.165 --> 00:06:37.905
+So keep this in mind.
+切記公式的不同
+
+109
+00:06:40.139 --> 00:06:46.335
+We have a difference between unbiased and biased effect size estimates.
+有時候需要效果量的不偏誤估計值
+
+110
+00:06:46.335 --> 00:06:49.430
+It turns out that if you just calculate Cohen's d.
+這時只算Cohen's d是不夠的
+
+111
+00:06:49.430 --> 00:06:53.190
+It slightly over estimates the true effect size.
+因為Choen's d會高估真實效果
+
+112
+00:06:53.190 --> 00:06:55.720
+Especially when you have small sample sizes,
+尤其是樣本數不大的數據
+
+113
+00:06:55.720 --> 00:06:57.920
+this can be a little bit of a problem.
+可能會造成一些問題
+
+114
+00:06:57.920 --> 00:07:01.410
+Since you're most likely to use computer software to calculate
+即然現在幾乎都是用電腦程式計算效果量
+
+115
+00:07:01.410 --> 00:07:02.960
+the effects size anyway.
+即然現在幾乎都是用電腦程式計算效果量
+
+116
+00:07:02.960 --> 00:07:06.410
+It makes sense to always calculate the unbiased version
+應該儘可能去計算平均值差異的不偏估計值
+
+117
+00:07:06.410 --> 00:07:08.890
+of the d family effect sizes.
+應該儘可能去計算平均值差異的不偏估計值
+
+118
+00:07:08.890 --> 00:07:11.450
+In this case, it's called Hedges' g.
+就像Hedges' g
+
+119
+00:07:11.450 --> 00:07:16.040
+You can see that the g is just Cohen's d multiplied by a small correction.
+從公式可看出g等於Cohen's d乘以校正係數
+
+120
+00:07:16.040 --> 00:07:19.810
+And this correction is only dependent up on the sample size.
+這項校正係數由樣本數決定
+
+121
+00:07:19.810 --> 00:07:23.440
+The larger the sample there's all else no correction.
+樣本數越大，校正幅度越小
+
+122
+00:07:23.440 --> 00:07:27.760
+But if you have a very small sample the difference can be enough to be meaningful.
+若是你的資料是小樣本，這樣的校正就有意義
+
+123
+00:07:30.420 --> 00:07:33.760
+You can also calculate effect sizes from the population literature.
+也可以使用文獻中的數值計算效果量
+
+124
+00:07:34.950 --> 00:07:39.430
+It's not always the case that researchers write down what the effect size is,
+多數論文不見得會在結果的段落中真接呈現效果量
+
+125
+00:07:39.430 --> 00:07:43.410
+that they have calculated this effect size and reported it in the results section.
+多數論文不見得會在結果的段落中真接呈現效果量
+
+126
+00:07:43.410 --> 00:07:45.720
+If this is not the case, that's fine.
+如果沒有也不必抱怨
+
+127
+00:07:45.720 --> 00:07:49.510
+In many cases there's enough information in the results section to
+多數論文已呈現讀者可以自行計算效果量的資訊
+
+128
+00:07:49.510 --> 00:07:52.160
+calculate the effect size yourself.
+多數論文已呈現讀者可以自行計算效果量的資訊
+
+129
+00:07:52.160 --> 00:07:55.350
+For example, Cohen's d can be directly calculated from
+像是Cohen's d能用t值與樣本數計算
+
+130
+00:07:55.350 --> 00:07:58.320
+the t value in the t-test and the sample size.
+像是Cohen's d能用t值與樣本數計算
+
+131
+00:08:01.750 --> 00:08:06.180
+Cohen's d for a within and a between design differ.
+受試者內與受試者間的Cohen's d是不一樣的
+
+132
+00:08:06.180 --> 00:08:08.430
+You might have the same mean difference, but
+即使平均值差異相同
+
+133
+00:08:08.430 --> 00:08:11.670
+observations in a within design are correlated.
+受試者內的組間觀察值是相關的
+
+134
+00:08:11.670 --> 00:08:14.530
+This implies that if the correlation is really high,
+從公式可看出若觀察值關聯性夠強
+
+135
+00:08:14.530 --> 00:08:19.610
+the effect size that's calculated based on the observation can be higher in a within
+受試者內設計的效果量會高於
+受試者間設計的效果量
+
+136
+00:08:19.610 --> 00:08:24.480
+design than in a between design, depending on the strength of the correlation.
+受試者內設計的效果量會高於
+受試者間設計的效果量
+
+137
+00:08:24.480 --> 00:08:26.900
+The difference in the Cohen's d in a within design and
+因為兩者間的差異是由這張投影片結尾的係數
+所決定
+
+138
+00:08:26.900 --> 00:08:32.192
+a between design is the square root of 2(1- r).
+因為兩者間的差異是由這張投影片結尾的係數
+所決定
+
+139
+00:08:32.192 --> 00:08:36.620
+This implies that whenever the correlation between dependent measures is
+相依樣本觀察值的相關係數大於0.5時
+
+140
+00:08:36.620 --> 00:08:41.580
+larger than 0.5, this difference vector is higher than 1,
+差異係數會大於1
+
+141
+00:08:41.580 --> 00:08:45.690
+which means the d in a within design would be higher.
+使得受試者內設計的效果量提高
+
+142
+00:08:45.690 --> 00:08:49.300
+This also means, that the power in such a design is higher.
+也代表受試者內設計有較高的檢定力
+
+143
+00:08:49.300 --> 00:08:53.840
+In many psychological task, correlations between dependent measures are very high.
+許多心理學實驗有很高的相依樣本關聯性
+
+144
+00:08:53.840 --> 00:08:57.640
+So, very strong correlation which means that very often
+相關係數越高表示這種作業採用受試者內設計
+
+145
+00:08:57.640 --> 00:09:00.350
+within designs will be more powerful than between designs.
+會比受試者間設計有更高的檢定力
+
+146
+00:09:02.350 --> 00:09:06.760
+We already mentioned that it's important to report and interpret effect sizes.
+這一講再次說明報告與解讀效果量的重要性
+
+147
+00:09:06.760 --> 00:09:11.700
+You can interpret effect sizes in relation to small, medium, and large benchmarks.
+我們有判斷標準判別小中大效果量
+
+148
+00:09:11.700 --> 00:09:15.810
+But it's always better to try to interpret these effect sizes in relation to effects
+不過根據文獻報告推論效果量之間的差異是最好的
+
+149
+00:09:15.810 --> 00:09:17.190
+in the literature.
+不過根據文獻報告推論效果量之間的差異是最好的
+
+150
+00:09:17.190 --> 00:09:20.258
+Whenever you use these effects or empower analysis for
+不論是不是在檢定力分析使用效果量
+
+151
+00:09:20.258 --> 00:09:24.527
+example when you report them in your results make sure that you realize their
+必須先了解是根據什麼研究設計
+
+152
+00:09:24.527 --> 00:09:29.274
+small differences within the d family, depending on the design that you've used.
+報告與解釋平均值的標準差異
+
+153
+00:09:29.274 --> 00:09:33.529
+[MUSIC]
+影片結束

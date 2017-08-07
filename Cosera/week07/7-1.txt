@@ -1,0 +1,167 @@
+[MUSIC] In this lecture,
+we'll talk about replication studies. Replication studies where
+you repeat an experiment, try to observe the same results are a
+cornerstone of any empirical science. At the same time they're quite
+challenging to perform, and they're not always rewarded
+when people perform them. When we look at the scientific literature, we see that replications are a cornerstone
+of any empirical science. This is nicely illustrated by
+this quote by Karl Popper. Now whenever you sight Popper,
+people have to take you seriously, right? So let's take a look what Popper
+says about replication studies. He says only when certain events
+recur in accordance with rules or regularities, as is the case
+with repeatable experiments, can our observations be tested
+in principle by anyone. We do not take even our own
+observations quite seriously or accept them as scientific observations
+until we have repeated and tested them. Only by such repetitions can we convince
+ourselves that we are dealing with events, which on account of their regularity and reproducibility, are in principle
+inter-subjectively testable. We've been talking a lot about
+calculating statistics and estimating the reliability of findings. But the real test is really
+whether a study replicates. If someone else reproduces your
+study does everything exactly the same as you did it,
+will they observe the same results? Now this became a hot topic after the
+publication by Darrel Bem of the set of studies that examines precognition. So there's a set of studies where people
+are seemingly able to predict the future. And of course here, if this is a real
+effect it's immensely important. If people can really predict the future,
+we want to know. So immediately after this publication
+people set out to try to replicate the studies. This is one example of a study
+that tries to replicate the original observations by Daryl Bem. The title already gives it away. Failing the future,
+Three unsuccessful attempts to replicate Bem's Retroactive Facilitation
+of recall effect. So these researchers
+did everything more or less the same as Daryl Bem
+did in his original studies. But they did not observe
+a precognition effect. I want to point out that this publication
+appeared in the journal PLOS one. PLOS one is a groundbreaking journal
+that publishes any effect or any set of studies as long as
+the studies are well designed. Now you might think,
+what's so special about that? But it means that they also
+publish replication studies. Again you might think,
+what's special about that, shouldn't any scientific journal
+publish replication studies? But this is not the case. It turns out that these
+authors first submitted their replication studies to the same
+journal as the original study appeared in. Elliot Smith, the editor of
+the Journal of Personality and Social Psychology rejected the submission. He said, we don't want to be
+the journal of Bem replications. So he rejected these replication studies, because he didn't want to be a journal
+that publishes replications. The field criticized this decision. The idea is that if replications are so
+important for science, then journals that publish original results
+should also publish well designed and well performed replication studies. In this publication, we see that the norms
+in the field are quickly evolving. This publication, Correcting
+the Past: Failures to Replicate Psi, is a set of studies where researchers
+again tried to replicate the original studies by Daryl Bem, and they failed
+to find any effect for precognition. The only change here is that these
+studies appeared in the same journal where Daryl Bem published his research. We now see that many journals
+explicitly invite replication studies, pre-registered or not. So this is a real improvement
+in the recent years. People are starting to value replication
+studies more than they did in the past. Now if replication studies are so
+important, you might think that we have a very clear set of rules
+of how to perform these studies, but this is not the case. How we should perform replication
+studies is a very active, ongoing debate in
+the literature at this moment. Now you might think,
+if these studies are so very important, why didn't we think
+about how to do this 100 years ago? I don't know. But now, at least, we're addressing the questions of how
+to do an adequate replication study. Now when you try to do a replication, the first thing to realize is that there
+is no such thing as an exact replication. You can never really repeat everything
+in exactly the same manner. You're studying real life people. Times are changing. There's always some minor variation. We can distinguish between
+a direct replication. So even though it's not identical,
+in this case, you're trying to stick as closely
+as possible to the original study. You're keeping everything that
+you think matters the same. You can also perform
+a conceptual replication or as we might call it
+a theoretical reproduction. We already see that you're not doing
+exactly the same in exactly the same way, but here you are testing the theoretical
+idea in a slightly novel way. You are changing things in the study
+design or in the manipulations. But you are trying to test
+the same underlying hypothesis. The goals of doing
+replication studies are many. The first is identifying type 1 errors. Now if you've set your type 1 error
+rate to 5%, you' ll say there is something when there is nothing a maximum
+of 5% of the time, in the long run. So the goal of a replication
+studies to identify these false positives in the literature. And this is of course very important
+because we want to know that the data in the published
+literature is reliable. The second goal is controlling for
+artifacts. Sometimes there might be a lack
+of internal validity in a study. You've used a very specific
+type of stimuli for example. One set of words, and you might want to do a replication with
+a slightly different set of words. Or maybe you even want to use
+pictures instead of words. This shouldn't really matter for
+the basic effects, but it increases the internal
+validity of the study. Third goal is to generalize
+to new populations. One criticism in psychology, for example, is that a lot of the research that's
+being done is performed on students. These are typically highly educated. They come from Western
+democratic universities. So sometimes, searchers might wonder, does this affect generalize to
+completely different populations? And you might want to do almost
+exactly the same study but just on different culture for example. The fourth goal is especially for
+conceptual replications. Here, you're trying to verify
+the underlying hypothesis. If this prediction halts, we should
+also observe a slightly different effect in slightly different study that is
+based on the same theoretical idea. Now it's important to perform
+these replication studies. You might think why bother. Everything that's in the published
+literature should be extremely reliable, right? We only have a 5% type 1 error rate,
+so how much can be wrong? It turns out that it's quite likely
+that studies do not replicate. We don't know exactly how likely but there's some examples that
+are reason enough to worry. For example, in preclinical cancer
+studies, which is a pretty serious topic. So these are studies that are trying to
+address new medicine for cancer research. In this field, there were some
+researchers who tried to replicate a set of 53 very promising,
+but also very novel, studies. Of this only six, 11%,
+could successfully be replicated. Now this is a company trying to build on
+scientific research and you know that if they succeed in replicating these studies,
+they will make a lot of money. But even,
+despite their very high motivation, only six out of 53 studies
+successfully reproduce. So this is a reason to worry. In psychology there was a large
+scale replication project, where 100 studies in the published
+literature from 2008 from three main journals were reproduce by over 260
+different researchers working in teams. They reproduced 100 studies. And when they replicated these studies
+not all of them successfully replicate. It's very difficult to say how many
+depends on the threshold that you want to define for a replication. Is this a significant effect? Is it a similar effect
+of the similar size? Let's take a look at the p-value
+distribution of the effects from the original studies and from
+the effects in the replication studies. On the left here we see the p-value
+distribution and on the vertical axis we have the p-values ranging from
+zero on the bottom to one on the top. Non-surprisingly, given publication bias,
+almost all of the published studies yielded p-values
+that were smaller than 0.05. On the right, we see the p-value
+distribution of replication studies, which are all over the place. Purely based on p-values,
+about 40% of the studies replicate it. Again, this doesn't mean that the theory underlying these original
+studies is not true. A failed replication does not
+falsify an entire theory. There can be many reasons
+why replication fails. Of course, we have to think about
+what these reasons could be. But it's too early to
+dismiss all these studies. Nevertheless a replication
+rate of around 40% is not as high as you would like it to be. So which studies might
+be especially troubling? In a Bayprint 2015,
+Lindley called this the Troubling Trio, three aspects of studies that should
+make you slightly more doubtful. The first is low power small simple sizes. The second is relatively high p-value and
+as we saw in the lecture on p-value distributions and in the lecture
+on p curve analysis this make sense. The last one is a surprising result. And as we saw in the lecture
+on Bayesian statistics, this is also a valid reason to
+doubt the original finding. So whenever there was a small sample size,
+a relatively high p value, and a surprising result,
+we can refer to this as a troubling trio. And we should be slightly more
+skeptical about these studies. And it's definitely worthwhile to try
+to replicate these studies before you try to build on them. Now in recent years, we see an increase in what you would call
+large scale reproducibility projects. Metascience could rescue the replication
+crisis, Jonathan Schooler says here. He's referring to what's known as
+registered replication reports. In these studies, many different
+labs collaborate together, and they replicate one study. So, instead of the replication project
+where 100 studies are replicated one time, in these situations, we see that many
+different labs replicate the same study. So, now we have a huge amount of data. Let's take a look at
+one of these data sets. The many labs project,
+where a set of studies was replicated, and here we see what's known as
+a prospective meta analysis. The researchers decided that they would
+combine all the studies that individual researchers did, and
+calculate a meta analytical effect size. So these are replications of the same
+study by many different labs all over the world. And if a result is statistically
+significance in these studies, we can be fairly confident
+that this is true effect. We have so much data that this kind of
+replication projects really tell us something about the probability
+that the original study is true. Now if you want to build on the published
+literature it's always smart to perform what's known as
+a replication and extension study. You replicate the original result, and you create some sort of addition,
+something new. You add a condition where you change
+something about the stimuli or about about the manipulation. So in this cases, if the replication
+is successful but the extension is not successful, you have good reason to doubt
+the novel thing that you introduced. If you cannot reproduce the original
+result, you might not necessarily doubt your new idea but you should have
+more doubt about the original study. If we really want to know
+whether results are reliable, it's essential that they can
+be replicated by other labs. Replication studies are a cornerstone
+of any empirical science. [MUSIC]

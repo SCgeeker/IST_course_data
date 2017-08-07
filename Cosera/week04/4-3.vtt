@@ -1,0 +1,766 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.743
+[MUSIC]
+效果量：相關係數
+
+2
+00:00:08.743 --> 00:00:12.418
+In this lecture, we'll continue talking about the effect sizes, but
+這一講繼續談效果量
+
+3
+00:00:12.418 --> 00:00:15.870
+now we'll focus on the R family of effect size measures.
+主角是相關係數一類的效果量
+
+4
+00:00:15.870 --> 00:00:19.070
+These include correlations, but also effect size measures for
+除了相關係數，還有變異數分析的效果量
+像是eta平方
+
+5
+00:00:19.070 --> 00:00:21.000
+ANOVA such as eta squared.
+除了相關係數，還有變異數分析的效果量
+像是eta平方
+
+6
+00:00:22.530 --> 00:00:25.500
+Now, if we look into the scientific literature,
+我們從科學文獻裡找到這個例子來做介紹
+
+7
+00:00:25.500 --> 00:00:30.370
+there's an example of an effect that can be describe by a correlation.
+我們從科學文獻裡找到這個例子來做介紹
+
+8
+00:00:30.370 --> 00:00:33.970
+Namely, the Chocolate Consumption in a country is related
+這篇論文談論一國的巧克力消費量與獲得諾貝爾獎的關係
+
+9
+00:00:33.970 --> 00:00:36.840
+to the amount of Nobel Prizes that are won.
+這篇論文談論一國的巧克力消費量與獲得諾貝爾獎的關係
+
+10
+00:00:36.840 --> 00:00:38.230
+Lets take a look at the data,
+看看論文裡的資料
+
+11
+00:00:38.230 --> 00:00:41.960
+we can plot the amount of the Nobel Prize laureates on one axis.
+這張圖的縱軸是諾貝爾獎得主人數
+
+12
+00:00:41.960 --> 00:00:44.965
+The amount of chocolate that's eaten in a country in the other axis and
+橫軸是國內巧克力消費量
+
+13
+00:00:44.965 --> 00:00:47.240
+there we see a strong positive correlation.
+兩者有很強的正相關(0.79)
+
+14
+00:00:48.250 --> 00:00:48.870
+In this case,
+首先聲明
+
+15
+00:00:48.870 --> 00:00:54.470
+I don't want to discuss how correlation does not imply causation, that's obvious.
+我不想用這麼明顯的例子重申相關不等於因果
+
+16
+00:00:54.470 --> 00:00:57.670
+But here I just want to point at the size of the effect.
+只是藉此說明效果量大小的解讀關鍵
+
+17
+00:00:57.670 --> 00:01:01.500
+As I mentioned before, it's very important to always interpret effect size and
+如上一講所提，達0.8的效果量算是很高
+
+18
+00:01:01.500 --> 00:01:05.330
+in this case a correlation of 0.8 is huge.
+必須小心地推測其中意義
+
+19
+00:01:05.330 --> 00:01:09.360
+Such a big effect that that alone should make you wonder whether this is real
+特別是這樣的案例讓人不得不懷疑資料的真偽
+
+20
+00:01:09.360 --> 00:01:09.950
+data or not.
+特別是這樣的案例讓人不得不懷疑資料的真偽
+
+21
+00:01:12.370 --> 00:01:16.200
+Now if you look at correlations, we can again specify benchmarks for
+相關係數類的效果量也有一套小中大判斷標準
+
+22
+00:01:16.200 --> 00:01:19.775
+small, medium and large effect sizes.
+相關係數類的效果量也有一套小中大判斷標準
+
+23
+00:01:19.775 --> 00:01:23.065
+A small correlation of
+0.1 as visualized here,
+最小的效果量0.1，資料散佈如這張圖顯示
+
+24
+00:01:23.065 --> 00:01:27.265
+again we're using the visualizations
+from R Psychologist, great website.
+和上一講相同，都是取自R Psycholgist網站
+
+25
+00:01:27.265 --> 00:01:32.105
+Where you can play around with different visualizations for all sorts of basic
+你可以用網站的視覺化工具了解
+
+26
+00:01:32.105 --> 00:01:36.040
+statistical concept such as
+correlations and other effect sizes.
+相關與各類效果量的統計概念
+
+27
+00:01:36.040 --> 00:01:38.663
+So this is what the correlation of 0.1 looks like.
+相關係數0.1的資料分佈大致像這樣
+
+28
+00:01:38.663 --> 00:01:40.810
+A correlation that's medium.
+這是相關係數的中效果量
+
+29
+00:01:40.810 --> 00:01:45.790
+A medium effect size is a correlation of 0.3, visualized here as well.
+相關係數至少是0.3才算中效果量，
+如這張圖的分佈
+
+30
+00:01:45.790 --> 00:01:49.094
+In a large correlation, a benchmark is set to 0.5.
+相關係數至少是0.5才算大效果量
+
+31
+00:01:51.289 --> 00:01:54.277
+Now correlations range from zero, no effect,
+相關係數的數值範圍包括0
+
+32
+00:01:54.277 --> 00:01:57.540
+there's no relation between two variables.
+代表變項之間沒有關係或無效果
+
+33
+00:01:57.540 --> 00:01:59.330
+To either minus one,
+也包括-1
+
+34
+00:01:59.330 --> 00:02:03.620
+a perfect negative correlation,
+to plus one, perfect positive correlation.
+代表絕對負相關
+或是+1，代表絕對正相關
+
+35
+00:02:05.730 --> 00:02:07.330
+If you want to get a feel for
+想要增加自已對相關性的感受
+視覺化是不錯的方法
+
+36
+00:02:07.330 --> 00:02:10.260
+what's correlations look like if you visualize them.
+想要增加自已對相關性的感受
+視覺化是不錯的方法
+
+37
+00:02:10.260 --> 00:02:14.622
+I can really recommend this website guessthecorrelation.com where they have
+我真摰推薦這個網站guessthecorrelation.com
+
+38
+00:02:14.622 --> 00:02:17.480
+game of fights recognizing effect size measures.
+透過玩遊戲了解相關係數的效果量
+
+39
+00:02:17.480 --> 00:02:18.960
+And if you play around with this website,
+玩過幾輪之後
+
+40
+00:02:18.960 --> 00:02:22.279
+you'll get a better understanding of what different effect sizes look like.
+你會更了解相關係數數值與效果量大小
+
+41
+00:02:24.790 --> 00:02:28.710
+Now previously we talked about the Cohen's D measure of effect size.
+前一講談使用Cohen's d測量效果量
+
+42
+00:02:28.710 --> 00:02:34.290
+Both Cohen's D and correlations can be used to calculate meta analysis.
+而相關係數和Cohen's d一樣都可以做整合分析
+
+43
+00:02:34.290 --> 00:02:38.290
+Therefore, it might not be very surprising that you can calculate the Cohen's D
+所以不必驚訝Cohen's d可以轉換成Cohen's r
+
+44
+00:02:38.290 --> 00:02:39.490
+into a Cohen's R.
+所以不必驚訝Cohen's d可以轉換成Cohen's r
+
+45
+00:02:39.490 --> 00:02:42.140
+You can convert the one into the other,
+運用這個公式
+
+46
+00:02:42.140 --> 00:02:44.450
+this is the formula that you might use for this.
+兩種數值可以相互轉換
+
+47
+00:02:44.450 --> 00:02:47.500
+Again, I'm not going to go into too much detail about this specific formula.
+同樣地，在此我不會仔細解釋公式的細節
+
+48
+00:02:47.500 --> 00:02:50.320
+But I just want to point out that it's possible to convert
+只是指出不同種類的效果量是可以彼此互換的
+
+49
+00:02:50.320 --> 00:02:52.890
+one effect size into the other effect size.
+只是指出不同種類的效果量是可以彼此互換的
+
+50
+00:02:52.890 --> 00:02:59.302
+And there are different spreadsheets online if you want to accomplish this.
+也有讓你做轉換的網路資源可使用
+
+51
+00:02:59.302 --> 00:03:03.067
+Now in ANOVA's or regressions, we don't really use the simple correlation but we
+在變異數分析或迴歸的場合
+通常不會使用相關係數
+
+52
+00:03:03.067 --> 00:03:06.698
+used R squared or for ANOVA, eta squared, omega squared and epsilon squared.
+而是用這張投影片上方四種效果量
+
+53
+00:03:06.698 --> 00:03:11.441
+This effect size measures that express the proportion of
+這些效果量呈現測得的真實效果變異
+
+54
+00:03:11.441 --> 00:03:15.800
+the total variance that's explained by an effect.
+佔總變異的比例
+
+55
+00:03:17.560 --> 00:03:22.170
+R squared and eta squared are slightly biased effect size estimators.
+R平方與eta平方是真實效果量的有偏誤估計值
+
+56
+00:03:22.170 --> 00:03:25.730
+And omega squared and epsilon squared are less biased.
+別外兩種估計值的偏誤較少
+
+57
+00:03:25.730 --> 00:03:29.009
+In this case, they are not perfectly unbiased, but they are pretty close.
+雖然不是完全不偏，但已經相當接近
+
+58
+00:03:30.280 --> 00:03:34.350
+It turns out that epsilon squared is least biased effect size measure.
+其中最不偏的估計值是epsilon平方
+
+59
+00:03:34.350 --> 00:03:39.080
+Although omega squared is more often used and more widely recommended.
+雖然其中最常用的是Omega平方
+
+60
+00:03:39.080 --> 00:03:42.500
+Okada, 2013 suggests that this
+2013年岡田謙介發表的論文指出
+
+61
+00:03:42.500 --> 00:03:47.010
+difference might be due to a faulty random number generator in one of the original
+原始論文的差異若是來自錯誤的隨機數值
+
+62
+00:03:47.010 --> 00:03:49.500
+papers that compared these different effect sizes.
+很可能導致效果量的估計偏誤
+
+63
+00:03:49.500 --> 00:03:53.980
+I thought this was funny to point out that even in this kind of simulation work,
+這篇論文的有趣之處是即使是模擬研究
+
+64
+00:03:53.980 --> 00:03:59.160
+you can have reproducibility problems based on faulty random number generators.
+使用不良的隨機數值生產方法也會導致重製性問題
+
+65
+00:04:00.410 --> 00:04:04.200
+It doesn't matter too much, you can used both omega squared and epsilon squared.
+不關這個問題有多嚴重，
+建議同時呈現omega平方與eplsilon平方
+
+66
+00:04:04.200 --> 00:04:06.690
+The difference between the two is actually quite small.
+在一般情況，兩者的差異並不大
+
+67
+00:04:07.810 --> 00:04:12.100
+Now conceptually, this effect size measures answer a simple question.
+這些效果量的測量都是要回答一個簡單問題
+
+68
+00:04:12.100 --> 00:04:17.030
+How much does the relationship between x and y reduce the error in the data?
+變項x與y的關係要多高，才能減除資料裡的誤差？
+
+69
+00:04:18.520 --> 00:04:20.740
+Let's try to visualize this.
+我們用視覺化說明這個問題
+
+70
+00:04:20.740 --> 00:04:24.350
+On the left you can see a model where there is no relationship
+左圖的線性模型表示兩個變項之間沒有關係
+
+71
+00:04:24.350 --> 00:04:25.710
+between the two variables.
+左圖的線性模型表示兩個變項之間沒有關係
+
+72
+00:04:25.710 --> 00:04:28.740
+There's a horizontal line if there's an increase in one variable,
+因為水平線的變項數值增加
+
+73
+00:04:28.740 --> 00:04:31.580
+there is zero increase in the other variable.
+另一個變項並無增加
+
+74
+00:04:31.580 --> 00:04:34.710
+Now we can calculate the sum of squares in this model where there's
+把圖上每一對相對於變項間無關係的數值
+
+75
+00:04:34.710 --> 00:04:37.150
+no relationship between the two variables.
+計算數值的平方和
+
+76
+00:04:37.150 --> 00:04:40.920
+And the red squares indicates the sum of squares.
+如圖中的紅色方塊區域所示
+
+77
+00:04:40.920 --> 00:04:44.440
+So this is the total sum of squares if there's no relationship
+這塊面積也是兩變項間的總平方和
+
+78
+00:04:44.440 --> 00:04:46.320
+between the two variables.
+這塊面積也是兩變項間的總平方和
+
+79
+00:04:46.320 --> 00:04:48.000
+On the right, we allow for
+在右邊的圖
+
+80
+00:04:48.000 --> 00:04:50.900
+the model to have a relationship between the two variables.
+是兩個變項有關係的線性模型
+
+81
+00:04:50.900 --> 00:04:52.970
+Now if there is an increase in one variable,
+其中一個變項的數值增加
+
+82
+00:04:52.970 --> 00:04:55.720
+we see there is also an increase in the other variable.
+另一個變項的數值也隨之增加
+
+83
+00:04:55.720 --> 00:05:00.740
+We again calculate the sum of squares, now indicated by the blue squares.
+同樣計算平方和，正如藍色方塊面積所示
+
+84
+00:05:00.740 --> 00:05:03.830
+This is the sum of squares of the residuals.
+代表殘差的平方和
+
+85
+00:05:03.830 --> 00:05:08.210
+And R squared is simply the sum of squares of the residuals divided by
+R平方正是殘差的平方和除以總平方和
+
+86
+00:05:08.210 --> 00:05:09.440
+the total sum of squares.
+R平方正是殘差的平方和除以總平方和
+
+87
+00:05:10.920 --> 00:05:14.180
+Now if we use effect sizes for power analysis,
+用這種效果量做檢定力分析
+
+88
+00:05:14.180 --> 00:05:19.420
+you'll see that most statistical software asks for Cohen's f.
+像G Power需要計算Cohen's f的資訊
+
+89
+00:05:19.420 --> 00:05:23.780
+Cohen's f can simply be calculated from eta squared
+Cohens' f可使用eta平方
+
+90
+00:05:23.780 --> 00:05:25.510
+using the formula that's on the screen here.
+代入投影片左側的公式計算得出
+
+91
+00:05:26.580 --> 00:05:32.070
+You can also use statistical software to calculate Cohen's f from eta squared.
+而G Power也有計算Cohen's f的功能
+
+92
+00:05:32.070 --> 00:05:36.190
+A screenshot from G power, free statistical software, is on the right.
+如何在G Power呼叫這個視窗，請參考本週作業
+
+93
+00:05:38.680 --> 00:05:42.800
+Now it's important to recognize that if you want to calculate Cohen's
+這張投影片示範如何使用G Power
+整合效果量和Cohen's f
+
+94
+00:05:42.800 --> 00:05:44.760
+f within subject design and
+這張投影片示範如何使用G Power
+整合效果量和Cohen's f
+
+95
+00:05:44.760 --> 00:05:47.710
+you're using G power, there's something you need to keep in mind.
+計算受試者內設計的樣本數
+
+96
+00:05:49.010 --> 00:05:54.372
+In within subject designs, G power expects a different version of partial
+G Power計算受試者內設計的效果量數值
+是以特別公式計算partial eta平方
+
+97
+00:05:54.372 --> 00:06:00.470
+eta squared than statistical software such as SPSS or R would provide.
+而其他統計軟體像SPSS和R
+是用另一種公式計算
+
+98
+00:06:00.470 --> 00:06:03.995
+Now this is great free software, so I'm not complaining.
+因為G Power很好用，我對此不予置評
+
+99
+00:06:03.995 --> 00:06:07.195
+But for some weird reason, these researchers expect
+只是有研究者會基於各種理由
+
+100
+00:06:07.195 --> 00:06:10.365
+a different default than most other statistical software.
+希望採用某種軟體的計算結果
+
+101
+00:06:10.365 --> 00:06:15.705
+This is only a situation if you use power calculations within designs.
+受試者內設計的考驗力是各軟體計算差異最大的狀況
+
+102
+00:06:15.705 --> 00:06:19.775
+In these situations, if you want to directly input eta squared,
+如果有需要，你可以在G Power直接輸入
+其他軟體計算的partial eta平方
+
+103
+00:06:19.775 --> 00:06:23.998
+you need to click on the option box that's available on the screen.
+在你的G Power視窗中
+點選像這個示範截圖的Options按鈕
+
+104
+00:06:23.998 --> 00:06:28.889
+And if you click in this option box, then you get a specific menu
+接著會跳出這個特別選單
+
+105
+00:06:28.889 --> 00:06:34.730
+where you can say, I want to input partial eta squared as in SPSS.
+你可以在選單上選擇要用SPSS的算法
+
+106
+00:06:34.730 --> 00:06:37.570
+Also if you use different types of software such as R,
+如果你要用R的算法
+
+107
+00:06:37.570 --> 00:06:39.820
+then this is the option that you want to choose.
+也是選同樣的選項
+
+108
+00:06:39.820 --> 00:06:42.370
+If you forget to highlight this option,
+如果你沒有調整選項
+
+109
+00:06:42.370 --> 00:06:45.650
+then the power calculations might be off quite considerably.
+考驗力的計算就照G Power預設執行
+
+110
+00:06:48.900 --> 00:06:51.910
+Now very often in experimental designs,
+在許多實驗設計案例裡
+
+111
+00:06:51.910 --> 00:06:56.200
+you're interested in the partial variance explained by only one factor.
+有興趣的通常只有一個因素能解釋的部份變異
+
+112
+00:06:56.200 --> 00:06:59.040
+For example, a factor that you manipulated.
+例如研究者操作的變項
+
+113
+00:06:59.040 --> 00:07:03.260
+In these situations, you will calculate partial eta squared or again,
+這時候可以計算partial eta平方
+
+114
+00:07:03.260 --> 00:07:07.830
+the less biased partial omega squared or partial epsilon squared.
+或者估計值比較不偏的另外兩種
+
+115
+00:07:10.170 --> 00:07:15.500
+Now in a one-way ANOVA, eta squared is identical to partial eta squared.
+單因子變異數分析的eta平方等於partial eta平方
+
+116
+00:07:15.500 --> 00:07:18.670
+So if you're a little bit lazy, you don't have to report this small p,
+如果想省點編輯工作，可以不必把下標p打出來
+
+117
+00:07:18.670 --> 00:07:20.440
+you don't have to type it in.
+如果想省點編輯工作，可以不必把下標p打出來
+
+118
+00:07:20.440 --> 00:07:23.570
+It's easier just to say eta squared in this situations.
+單因子設計都直接稱呼eta平方
+
+119
+00:07:25.260 --> 00:07:31.950
+Cohen has provided benchmarks to define small, medium and large Cohen's fs.
+Cohen也貼心提供Cohen's f大小判斷標準
+
+120
+00:07:31.950 --> 00:07:38.010
+Cohen's f of 0.1 is small, 0.25 is medium and 0.5 is considered the large effect.
+小效果下限0.1，中效果0.25，大效果0.5
+
+121
+00:07:39.150 --> 00:07:43.110
+Now we can use the formula that we saw earlier to calculate Cohen's f
+還有公式能輕鬆將eta平方等數值轉換成Cohen's f
+
+122
+00:07:43.110 --> 00:07:46.160
+from eta squared or vice-versa.
+還有公式能輕鬆將eta平方等數值轉換成Cohen's f
+
+123
+00:07:46.160 --> 00:07:49.876
+And then we can also create benchmarks for
+所以可知eta平方的判斷標準是
+
+124
+00:07:49.876 --> 00:07:54.760
+eta squared that are small, 0.0099, medium,
+小效果至少0.0099
+
+125
+00:07:54.760 --> 00:07:58.820
+0.0588, and large, 0.1379.
+中效果0.0588，大效果0.1379
+
+126
+00:07:58.820 --> 00:08:02.440
+Now this is a lot of digits and this is precision that's not really warranted.
+雖然小數點後數字很多，但是不必太精確比較
+
+127
+00:08:02.440 --> 00:08:05.430
+But this is a consequence of directly converting 
+這些數字只是從Cohen's f直接轉換過來的結果
+
+128
+00:08:05.430 --> 00:08:08.970
+the effect sizes that Cohen used into eta squared.
+這些數字只是從Cohen's f直接轉換過來的結果
+
+129
+00:08:10.480 --> 00:08:16.520
+Now Cohen talks about eta squared when he defines these benchmarks.
+要注意的是
+Cohen訂出判斷標準時，表面上說是eta平方
+
+130
+00:08:16.520 --> 00:08:20.010
+But he actually means partial eta squared.
+實際是指partial eta平方
+
+131
+00:08:20.010 --> 00:08:23.588
+So you should use these benchmarks for partial eta squared, not for
+所以這項判斷標準要用在partial eta平方
+
+132
+00:08:23.588 --> 00:08:24.910
+eta squared itself.
+而非eta平方
+
+133
+00:08:24.910 --> 00:08:26.230
+Another important thing to keep in mind.
+請務必記住
+
+134
+00:08:28.640 --> 00:08:32.750
+Nowadays we also see more novel versions of eta squared.
+現在還可以使用另一種eta平方
+
+135
+00:08:32.750 --> 00:08:37.310
+And one very useful one, which removes this difference between within and
+並且這一種是受試者間與受試者內設計通用
+
+136
+00:08:37.310 --> 00:08:39.460
+between subject effect sizes.
+並且這一種是受試者間與受試者內設計通用
+
+137
+00:08:39.460 --> 00:08:44.090
+And can generalize between within and between subject designs
+這麼好用的效果量稱為通用化eta平方
+
+138
+00:08:44.090 --> 00:08:48.580
+is generalized eta squared, developed by Olejnik and Algina.
+由Olenjink與Algina提出
+
+
+139
+00:08:49.830 --> 00:08:51.770
+Now I just want to point out that this exists.
+這種效果量我不細談如何計算
+
+140
+00:08:51.770 --> 00:08:55.760
+If you're interested in reporting effect sizes or if you use the statistical
+如果你有興趣使用這種效果量做報告
+
+141
+00:08:55.760 --> 00:09:00.170
+software that automatically provides these generalized eta squared values.
+或者想知道有什麼軟體可以計算
+
+142
+00:09:00.170 --> 00:09:02.720
+They're very useful and might be the best to report.
+可以參考原始論文，並且最好在你的報告裡引用
+
+143
+00:09:05.340 --> 00:09:08.400
+In this lecture, we talked about the R family of effect sizes.
+這一講介紹相關係數一類的效果量
+
+144
+00:09:08.400 --> 00:09:12.920
+Which allow you to quantify the degree of association between two variables.
+可計量變項之間的關聯強度
+
+145
+00:09:12.920 --> 00:09:17.245
+I pointed out some peculiarities when you used eta squared in within
+我特別指出使用G Power計算受試者內設計的eta平方
+
+146
+00:09:17.245 --> 00:09:20.435
+subject designs when you perform power calculations in G power.
+應該留意的設定與研究需要的差別
+
+147
+00:09:20.435 --> 00:09:24.495
+And provided some benchmarks that you can use to interpret these effect sizes if you
+還有提供一些這類效果量的大小判斷標準
+
+148
+00:09:24.495 --> 00:09:26.299
+report them in your result section.
+做為你的報告寫作參考
+
+149
+00:09:26.299 --> 00:09:31.089
+[MUSIC]
+影片結束

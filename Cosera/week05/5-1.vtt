@@ -1,0 +1,947 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.586
+[MUSIC]
+信賴區間
+
+2
+00:00:09.586 --> 00:00:13.834
+In this lecture, we'll talk about how you can quantify the uncertainty surrounding
+這一講談的是如何運用信賴區間量化不確定的估計值
+
+3
+00:00:13.834 --> 00:00:16.680
+estimates with confidence intervals.
+這一講談的是如何運用信賴區間量化不確定的估計值
+
+4
+00:00:16.680 --> 00:00:20.210
+We'll talk about the relationship between confidence intervals and P values,
+以下將談到信賴區間與p值的關係
+
+5
+00:00:20.210 --> 00:00:22.860
+and how to correctly interpret a confidence interval.
+還有如何正確解讀信賴區間
+
+6
+00:00:26.010 --> 00:00:30.630
+Now, if we do research, we very often collect data from a specific sample
+很多研究是依目的收集特定樣本的資料
+
+7
+00:00:30.630 --> 00:00:34.460
+with the goal to generalize to an entire population.
+再根據分析推測母群
+
+8
+00:00:34.460 --> 00:00:38.700
+It's very often not feasible to collect information from the entire population.
+但通常無法收集整個母群的資訊
+
+9
+00:00:38.700 --> 00:00:40.360
+If you examine people,
+就像每一份問卷調查
+
+10
+00:00:40.360 --> 00:00:43.770
+then you cannot ask your questionnaire to everybody who's alive in the world.
+不可能收集到全世界人類的回覆
+
+11
+00:00:45.010 --> 00:00:49.780
+Now, sometimes it might be possible to get measurements from the entire population.
+只有少數狀況才會收集到完整的母群資料
+
+12
+00:00:49.780 --> 00:00:54.400
+Let's say that your population is all human beings who ever walked on the moon.
+就像對象是至今為止曾登陸月球的太空人們
+
+13
+00:00:54.400 --> 00:00:58.790
+Well, there are only 12 people who've done this so far, the 12 people on this slide.
+只有這張投影片列出的十二位
+
+14
+00:00:58.790 --> 00:01:01.660
+So if you want to know something about these 12 people, for example,
+如果你的研究對象是曾經登月的太空人
+
+15
+00:01:01.660 --> 00:01:04.530
+their length, then you can just calculate it.
+全部都在在這裡了
+
+16
+00:01:04.530 --> 00:01:06.130
+You don't need any statistics.
+不需要任何統計
+
+17
+00:01:06.130 --> 00:01:08.890
+You don't need to generalize to a population because you've measured
+也不必做任何推測
+因為這十二位就是整個母群
+
+18
+00:01:08.890 --> 00:01:10.030
+the entire population.
+也不必做任何推測
+因為這十二位就是整個母群
+
+19
+00:01:11.580 --> 00:01:16.440
+Now most research, this is not feasible, so you collect data from a sample and
+大多數研究很難收集完整的母群
+只能從收集一部分樣本資料
+
+20
+00:01:16.440 --> 00:01:20.470
+then you try to generalize from this sample to the population.
+然後以樣本推測母群
+
+21
+00:01:20.470 --> 00:01:23.440
+And whenever you do this, there's always some uncertainty.
+然而推測總會有不確定的部分
+
+22
+00:01:24.850 --> 00:01:29.500
+Now, it's very important to always quantify and report the uncertainty
+報告必須呈現估計不確定性的數量訊息
+就像效果量的測量一樣
+
+23
+00:01:29.500 --> 00:01:34.190
+surrounding point estimates, for example an effect size measure.
+報告必須呈現估計不確定性的數量訊息
+就像效果量的測量一樣
+
+24
+00:01:34.190 --> 00:01:38.300
+Whenever you report a statistic that's very important, such as an effect size,
+要呈現效果量統計結果的報告
+
+25
+00:01:38.300 --> 00:01:42.600
+you have to report a confidence interval around this effect size estimate.
+必須包括估計的信賴區間
+
+26
+00:01:44.540 --> 00:01:46.100
+We can visualize this.
+以這個視覺化範例說明
+
+27
+00:01:46.100 --> 00:01:47.980
+In this case, we have a correlation.
+這個散佈圖已計算出相關係數
+
+28
+00:01:47.980 --> 00:01:50.950
+And we've plotted the correlation between two variables.
+表示兩個變項之間的相關性
+
+29
+00:01:50.950 --> 00:01:55.830
+In this graph, we've visualize the uncertainty around the correlation between
+這圖呈現雙胞胎之間的智商相關程度與不確定性
+
+30
+00:01:55.830 --> 00:02:01.370
+made up data of an IQ of one twin, and the IQ of the other twin.
+這圖呈現雙胞胎之間的智商相關程度與不確定性
+
+31
+00:02:01.370 --> 00:02:04.870
+We can see that this IQ score is related.
+相關係數表示智商有相關性
+
+32
+00:02:04.870 --> 00:02:07.933
+There's a positive correlation of 0.52, but
+兩者間有0.52的正相關
+
+33
+00:02:07.933 --> 00:02:11.810
+of course our correlation is an estimate from a sample.
+只是這結果是從部分樣本估計得出
+
+34
+00:02:11.810 --> 00:02:14.250
+If we want to generalize this to the population,
+如果要類推到母群
+
+35
+00:02:14.250 --> 00:02:15.970
+then there's always some uncertainty and
+必須要考慮估計的不確定性
+
+36
+00:02:15.970 --> 00:02:19.620
+in this case, the uncertainty is illustrated by the blue area.
+也就是圖中藍色區域
+
+37
+00:02:19.620 --> 00:02:23.890
+The blue area illustrates a 95% confidence interval.
+藍色區域表示95%信賴區間
+
+38
+00:02:23.890 --> 00:02:28.500
+But how should you interpret a 95% confidence interval?
+但是要如何去解讀呢？
+
+39
+00:02:28.500 --> 00:02:33.050
+Confidence intervals are a statement about the percentage of future confidence
+信賴區間是一段數值區間
+宣告真實參數值存在於區間之內的百分比
+
+40
+00:02:33.050 --> 00:02:36.200
+intervals that contain the true parameter value.
+信賴區間是一段數值區間
+宣告真實參數值存在於區間之內的百分比
+
+41
+00:02:37.380 --> 00:02:39.570
+Now, this is not very intuitive.
+這種宣告並非臆測
+
+42
+00:02:39.570 --> 00:02:42.730
+You might think that a single confidence interval contains
+設想一段信賴區間有95%的機會包含母群參數
+
+43
+00:02:42.730 --> 00:02:46.282
+the true population parameter, 95% of the time.
+設想一段信賴區間有95%的機會包含母群參數
+
+44
+00:02:46.282 --> 00:02:49.200
+That would make sense and if a non-statistician might come up with
+非統計專業人士以信賴區間呈現報告
+
+45
+00:02:49.200 --> 00:02:52.430
+a confidence interval, the concept of a confidence interval.
+都是想要運用這樣的概念
+
+46
+00:02:52.430 --> 00:02:54.660
+That's probably what we wanted to be.
+表達當下研究結果的確定性
+
+47
+00:02:54.660 --> 00:02:55.640
+But that's not how they work.
+然而實際確非如此
+
+48
+00:02:56.690 --> 00:02:59.880
+The confidence interval is a frequentist concept.
+信賴區間是次數主義的概念
+
+49
+00:02:59.880 --> 00:03:02.520
+It means that they apply to the long run.
+表達一項研究執行重覆執行之後
+
+50
+00:03:02.520 --> 00:03:05.640
+Now in the long run, 95%
+這些結果之中有95%包含真實參數值
+
+51
+00:03:05.640 --> 00:03:09.880
+of future confidence intervals will contain the true parameter value.
+這些結果之中有95%包含真實參數值
+
+52
+00:03:09.880 --> 00:03:13.440
+So the true effect size, for example, in the population.
+就像是母群的真實效果量
+
+53
+00:03:14.930 --> 00:03:17.430
+Because this is counter-intuitive, let's try to visualize it.
+因為很難想像，讓我們看這個視覺化範例
+
+54
+00:03:19.210 --> 00:03:25.325
+In this illustration, which we again take from rpsychologist.com, you can see many,
+這張圖也是取自rpsychologist.com
+
+55
+00:03:25.325 --> 00:03:30.065
+many different confidence intervals for the same simulated study.
+模擬一項研究重覆數次的信賴區間
+
+56
+00:03:30.065 --> 00:03:33.354
+We see blue dots, which are the sample estimates,
+其中的藍點都是樣本估計值
+
+57
+00:03:33.354 --> 00:03:36.734
+the effect sizes from the sample that we collected.
+表示樣本估計的效果果量
+
+58
+00:03:36.734 --> 00:03:41.240
+And the black line is the 95% confidence interval.
+每點黑線都是95%信賴區間
+
+59
+00:03:41.240 --> 00:03:46.420
+Now most of the black lines contain the true sample mean.
+大部分的黑線都包含真實的平均值
+
+60
+00:03:46.420 --> 00:03:49.530
+In this case, the true sample mean is zero.
+這個例子的真實平均值是0
+
+61
+00:03:49.530 --> 00:03:53.560
+And we see that most of the black lines touch upon zero.
+大部分黑線都與標記0的垂直線相交
+
+62
+00:03:53.560 --> 00:03:55.340
+Sometimes they don't.
+只有少數沒有
+
+63
+00:03:55.340 --> 00:03:58.400
+We calculate it at 95% confidence interval.
+之所以稱為95%信賴區間
+
+64
+00:03:58.400 --> 00:04:01.030
+So 5% of the time in the long run, we
+是因為其中5%的模擬結果信賴區間並未
+包合真實參數值
+
+65
+00:04:01.030 --> 00:04:06.410
+will get a confidence interval that does not contain the true population parameter.
+是因為其中5%的模擬結果信賴區間並未
+包合真實參數值
+
+66
+00:04:06.410 --> 00:04:11.370
+These are illustrated by the black arrows and they are visualized by red lines.
+圖中黑色箭頭與紅線就是未包含的模擬結果
+
+67
+00:04:11.370 --> 00:04:14.550
+So the red lines do not contain the true population parameter.
+我們可以計算紅線的數量比例
+
+68
+00:04:14.550 --> 00:04:18.983
+And this will happen in the long run, approximately 5% of the time.
+得知重覆執行之後，有5%的結果不包含真實參數值
+
+69
+00:04:18.983 --> 00:04:23.926
+Now it's also clear that randomly chosen single confidence interval here does
+這也說明為何隨機獲得一種結果
+
+70
+00:04:23.926 --> 00:04:27.847
+not contain the true population parameter 95% of the time.
+並不是指這道信賴區間有95%的機會包含真實參數值
+
+71
+00:04:27.847 --> 00:04:30.663
+And in the assignment, we'll focus a little bit more on this.
+本週作業裡，你將更深入探討其中原理
+
+72
+00:04:32.795 --> 00:04:34.183
+So 95% of future,
+了解為何95%
+
+73
+00:04:34.183 --> 00:04:40.450
+95% confidence intervals will contain the true population parameter in the long run.
+是指所有再現結果中的95%包含真實參數值
+
+74
+00:04:40.450 --> 00:04:42.599
+Never forget that this is a frequentist concept.
+請記住這是次數主義的概念
+
+75
+00:04:43.880 --> 00:04:47.570
+A single confidence interval after you've collected the data,
+一次研究結果的信賴區間
+
+76
+00:04:47.570 --> 00:04:51.210
+either contains the true population parameter or it does not.
+可能會，也可能不會包含真實參數值
+
+77
+00:04:51.210 --> 00:04:55.740
+So in this case, you either have it or you don't, but you never know which it is.
+只看一次結果，永遠不可能知道有沒有包含
+
+78
+00:04:55.740 --> 00:04:57.780
+But in the long run, you can say that 95% of
+只有重覆再現數次
+
+79
+00:04:59.050 --> 00:05:02.339
+confidence intervals will contain the true population parameter.
+才能歸納其中95%包括的數值是真實參數值
+
+80
+00:05:04.670 --> 00:05:08.280
+You can calculate the confidence interval around almost any estimate.
+任何統計估計值都可以計算信賴區間
+
+81
+00:05:08.280 --> 00:05:12.000
+But most commonly, we calculate confidence intervals around means or
+只是比較常見的是平均值、平均值差異
+
+82
+00:05:12.000 --> 00:05:15.110
+mean differences or effect sizes.
+還有效果量的信賴區間
+
+83
+00:05:15.110 --> 00:05:19.350
+And it's very recommended to report them around effect sizes if you report effect
+如果研究報告經常呈現效果量
+
+84
+00:05:19.350 --> 00:05:20.810
+sizes, which you should always do.
+最好一併呈現信賴區間
+
+85
+00:05:22.920 --> 00:05:25.970
+So how do you calculate a 95% confidence interval or
+那要如何計算95%的信賴區間呢？
+
+86
+00:05:25.970 --> 00:05:28.167
+different size confidence interval?
+那要如何計算95%的信賴區間呢？
+
+87
+00:05:28.167 --> 00:05:30.931
+Again, there's nothing magical about 95%.
+方法一樣非常簡單
+
+88
+00:05:30.931 --> 00:05:35.034
+You can calculate a 90% confidence interval or a 99% confidence interval,
+可以的話
+你也能計算90%或99%的信賴區間
+
+89
+00:05:35.034 --> 00:05:35.826
+if you want to.
+可以的話
+你也能計算90%或99%的信賴區間
+
+90
+00:05:35.826 --> 00:05:40.920
+For the 95% confidence interval around the mean,
+以平均值的95%信賴區間來說
+
+91
+00:05:40.920 --> 00:05:43.960
+you calculate it by taking the mean and then adding or
+只要把平均值加上還有減去
+
+92
+00:05:43.960 --> 00:05:49.200
+subtracting the critical Zed value multiplied by the standard error.
+臨界的Z值與標準誤的乘積
+
+93
+00:05:50.460 --> 00:05:54.070
+Now, it's okay if you don't immediately remember what the standard error is.
+沒辦法立刻想起標準誤怎麼算也OK
+
+94
+00:05:54.070 --> 00:05:58.780
+The standard error is the standard deviation divided by the square root of N,
+標準誤就是標準差除以N的開根號
+
+95
+00:05:58.780 --> 00:05:59.970
+and N is the sample size.
+N就是樣本數
+
+96
+00:05:59.970 --> 00:06:03.600
+So you can see that the larger the sample that we get,
+因此樣本數越大
+
+97
+00:06:03.600 --> 00:06:05.820
+the smaller the standard error.
+標準誤就越小
+
+98
+00:06:05.820 --> 00:06:10.752
+And as a consequence, the smaller the confidence interval.
+得到的信賴區間也會越小
+
+99
+00:06:10.752 --> 00:06:15.078
+If you want to calculate a 95% confidence interval around a mean then,
+如果要計算的是平均值的95%信賴區間
+
+100
+00:06:15.078 --> 00:06:20.270
+based on the normal distribution, you would multiply the standard error by 1.96.
+是根據常態分配，只要將標準誤乘以1.96
+
+101
+00:06:20.270 --> 00:06:24.060
+This is a value that you see quite often in calculating confidence intervals.
+1.96在信賴區間的計算非常常見
+
+102
+00:06:24.060 --> 00:06:28.880
+It's good to know that this is just the critical Zed value for a two-sided test.
+因為1.96是雙側檢定的臨界Z值
+
+103
+00:06:28.880 --> 00:06:32.842
+So you're very often see this 1.96 value when people calculate confidence
+所以常用的人對這數值相當熟悉
+
+104
+00:06:32.842 --> 00:06:33.500
+intervals.
+所以常用的人對這數值相當熟悉
+
+105
+00:06:35.980 --> 00:06:40.930
+So as the sample size increases, confidence intervals become more narrow.
+那麼樣本數增加，信賴區間越小是怎麼回事
+
+106
+00:06:40.930 --> 00:06:41.990
+Let's visualize this.
+我們來看這個視覺化範例
+
+107
+00:06:44.740 --> 00:06:50.050
+In this graph, we can see an increasing sample size in the horizontal axis.
+這張圖的橫軸是樣本數，最多是500
+
+108
+00:06:50.050 --> 00:06:57.520
+It goes to 100, 200, 300, 400 participants in a two-sided D test.
+設定進行每個指定人數的t檢定模擬
+
+109
+00:06:57.520 --> 00:07:00.730
+On the vertical axis, we've plotted the effects size, and
+垂直軸是效果量
+
+110
+00:07:00.730 --> 00:07:03.890
+in this simulation there's no true effect.
+模擬沒有真實效果的實驗
+
+111
+00:07:03.890 --> 00:07:07.389
+In other words, the effects size is zero and
+所以效果量為0時
+
+112
+00:07:07.389 --> 00:07:12.978
+we see that the effect size estimate varies around this value of zero.
+實驗結果的估計值在0的上下擺盪
+
+113
+00:07:12.978 --> 00:07:17.556
+The dotted lines are the 95% confidence interval.
+虛線正是95%信賴區間的邊界
+
+114
+00:07:17.556 --> 00:07:20.606
+And we see that as the sample size increases,
+隨著樣本數增加
+
+115
+00:07:20.606 --> 00:07:24.310
+the 95% confidence interval becomes more narrow.
+95%信賴區間逐漸縮短
+
+116
+00:07:25.340 --> 00:07:27.320
+In this simulation,
+在這個模擬範例
+
+117
+00:07:27.320 --> 00:07:32.228
+the effect size actually stays very nicely between the 95% confidence interval.
+模擬出來的效果量都在95%信賴區間之內
+
+118
+00:07:32.228 --> 00:07:37.360
+But sometimes, 5% of the time, the simulation will give you
+然而大約有5%的模擬結果會超過這個範圍
+
+119
+00:07:37.360 --> 00:07:43.150
+an effect size measure that falls just outside of these 95% confidence borders.
+然而大約有5%的模擬結果會超過這個範圍
+
+120
+00:07:43.150 --> 00:07:47.600
+Now it's very important not to incorrectly interpret the confidence interval.
+誤讀信賴區間的意義是很嚴重的
+
+121
+00:07:47.600 --> 00:07:52.490
+And regrettably, the most intuitive interpretation is incorrect.
+可惜的是，許多書藉文章的解讀是錯誤的
+
+122
+00:07:52.490 --> 00:07:57.295
+You might feel that if you have a single 95% confidence interval.
+有人認為根據一次結果95%的信賴區間
+
+123
+00:07:57.295 --> 00:08:02.850
+Then 95% of future estimates will fall within this single confidence interval.
+未來相同的實驗，
+有95%的結果就會是區間之內
+
+124
+00:08:02.850 --> 00:08:07.440
+But a confidence interval is a statement about future confidence intervals.
+然而信賴區間只是宣告未來可能得到的信賴區間
+
+125
+00:08:07.440 --> 00:08:10.590
+It's not a statement about future estimates.
+而非宣告可能得到的估計值
+
+126
+00:08:10.590 --> 00:08:15.130
+It says that 95% of future confidence intervals will contain the true
+它只表示將產出的信賴區間有95%包含母群參數值
+
+127
+00:08:15.130 --> 00:08:16.370
+population parameter.
+它只表示將產出的信賴區間有95%包含母群參數值
+
+128
+00:08:17.680 --> 00:08:21.973
+You can take a look at how often a single 95% confidence
+也可以從另一個角度看單一的95%信賴區間
+
+129
+00:08:21.973 --> 00:08:26.185
+interval will contain the true population parameter.
+會包含真實母群參數的機會
+
+130
+00:08:26.185 --> 00:08:31.547
+Simulation studies have shown that if you perform many, many, many simulations.
+以此設定做了非常非常多次的模擬結果
+
+131
+00:08:31.547 --> 00:08:37.420
+Then, it turns out that about 84.3% of single 95% confidence
+會發現84.3%的模擬結果
+
+132
+00:08:37.420 --> 00:08:42.608
+intervals contain the population parameter in the long run.
+顯示單一95%信賴區間包含母群參數
+
+133
+00:08:42.608 --> 00:08:45.520
+And this is known as a capture percentage.
+84.3%被稱為佔有百分比(capture percentage)
+
+134
+00:08:45.520 --> 00:08:51.700
+So a single 95% confidence interval will capture the true value, 84.3% of the time.
+也就是用單一信賴區間預測未來的再現結果
+有84.3%的正確率
+
+135
+00:08:53.130 --> 00:08:55.471
+Regrettably, this varies quite a lot, it depends,
+很可惜，這個數值是變動的
+
+136
+00:08:55.471 --> 00:08:57.821
+you never really know whether this is the case or not.
+另一個研究的佔有百分比可能不是84.3%
+
+137
+00:08:57.821 --> 00:09:02.546
+So this is not a very usable statistic in itself, but a least it's one way to
+所以信賴區間並非可靠的統計值
+
+138
+00:09:02.546 --> 00:09:07.871
+interpret the single 95% confidence before it gives you some idea about how often
+但至少可以推測有多少實驗結果會包含真實母群參數
+
+139
+00:09:07.871 --> 00:09:13.610
+this single confidence interval will contain the true population parameter.
+但至少可以推測有多少實驗結果會包含真實母群參數
+
+140
+00:09:13.610 --> 00:09:17.050
+About five in six times, it will be the case.
+也許六個裡頭有五個會包含
+
+141
+00:09:17.050 --> 00:09:19.460
+You never really know for a single observation.
+但是只憑一個結果沒人能推測
+
+142
+00:09:21.920 --> 00:09:25.750
+Now confidence intervals and p-values are directly related.
+信賴區間與p值密不可分
+
+143
+00:09:25.750 --> 00:09:30.297
+If a single 95% confidence interval does not contain zero,
+一個95%信賴區間不包含0
+
+144
+00:09:30.297 --> 00:09:35.490
+it automatically implies that the p-value is smaller than 0.05.
+相當於p值小於0.05
+
+145
+00:09:35.490 --> 00:09:40.000
+Let's take a look at a meta analysis where we've plotted effect sizes and
+讓我們看一下這則整合分析的視覺範例
+
+146
+00:09:40.000 --> 00:09:42.819
+confidence intervals, so we can visualize this.
+讓我們看一下這則整合分析的視覺範例
+
+147
+00:09:45.390 --> 00:09:47.827
+In this graph, we see what's know as a four split.
+圖中最上面有四條黑條
+
+148
+00:09:47.827 --> 00:09:51.558
+Every line illustrates a single study.
+分別代表單一研究結果
+
+149
+00:09:51.558 --> 00:09:55.100
+On the horizontal axis, we see the effects size Hedges' G.
+水平線的效果量表示Hedges' g
+
+150
+00:09:56.180 --> 00:10:00.420
+The four studies vary in the effect size, illustrated by the yellow square.
+四個研究的效果量以黃色方塊表示
+
+151
+00:10:01.420 --> 00:10:03.994
+Around an effect size of 0.43.
+整合效果量大約是0.43
+
+152
+00:10:06.280 --> 00:10:10.140
+Each effect size has a 95% confidence interval,
+每個研究結果效果量有95%信賴區間
+
+153
+00:10:10.140 --> 00:10:12.640
+visualized by the black horizontal line.
+正是每條黑色水平線的範圍
+
+154
+00:10:14.410 --> 00:10:19.642
+If we take a look at the third study from the top, we can see that a 95%
+仔細看會發現從最上頭算起第三個研究
+
+155
+00:10:19.642 --> 00:10:25.793
+confidence interval overlaps with the black vertical line at Hedges' G of zero.
+信賴區間包含Hedges' g為0
+
+156
+00:10:25.793 --> 00:10:30.751
+This implies that the third study did not yield the statistically significant
+這表示第三個研究結果是不顯著的
+
+157
+00:10:30.751 --> 00:10:31.359
+effect.
+這表示第三個研究結果是不顯著的
+
+158
+00:10:31.359 --> 00:10:37.240
+Because the 95% confidence interval around the effect size estimates contains zero.
+因為這項效果量的信賴區間包含0
+
+159
+00:10:37.240 --> 00:10:41.730
+Now, we've been talking about confidence intervals from a frequentist perspective.
+至此已說完信賴區間的次數主義觀點
+
+160
+00:10:42.760 --> 00:10:46.530
+And here we have the slightly counter-intuitive interpretation
+解釋為何多次研究的信賴區間
+
+161
+00:10:46.530 --> 00:10:49.050
+of confidence intervals in the long run.
+與一般人的直覺是相反的
+
+162
+00:10:50.110 --> 00:10:55.365
+So 95% confidence intervals will contain the true population parameter,
+次數主義的解讀是所有研究結果信賴區間
+會有95%包含真實母群參數
+
+163
+00:10:55.365 --> 00:10:59.320
+95% of the time in the long run, which is a frequentist interpretation.
+次數主義的解讀是所有研究結果信賴區間
+會有95%包含真實母群參數
+
+164
+00:11:01.000 --> 00:11:04.980
+A more intuitive interpretation is found in Bayesian statistics where people
+符合一般人直覺的是貝氏統計的可信區間
+
+165
+00:11:04.980 --> 00:11:07.130
+calculate credible intervals.
+符合一般人直覺的是貝氏統計的可信區間
+
+166
+00:11:07.130 --> 00:11:12.150
+Or a slightly different version known as in highest density interval, and
+也有人稱呼最大密度區間
+
+167
+00:11:12.150 --> 00:11:15.742
+these can be interpreted in a more strait forward manner.
+可信區間的解讀方式比信賴區間更直接
+
+168
+00:11:15.742 --> 00:11:21.490
+A 95% credible interval contains all of the values that you find most plausible.
+95%可信區間包含的值都有可能是母群參數
+
+169
+00:11:21.490 --> 00:11:24.720
+In this case, you are quantifying your belief.
+95%是宣告者個人信心的量化
+
+170
+00:11:24.720 --> 00:11:29.100
+It doesn't mean that 95% of the true population parameters indeed
+並不是說真實母群參數有95%的機率落在這區間
+
+171
+00:11:29.100 --> 00:11:30.820
+fall within this area.
+並不是說真實母群參數有95%的機率落在這區間
+
+172
+00:11:30.820 --> 00:11:32.570
+It doesn't mean that in the long run,
+也不是指再做幾次相同研究
+
+173
+00:11:32.570 --> 00:11:38.200
+you can expect 95% of credible intervals to contain the true population parameter.
+可能有95%的結果可信區間包含真實母群參數
+
+174
+00:11:38.200 --> 00:11:42.990
+But it quantifies your belief, these are the values that you find most plausible.
+這個區間表示依照研究者的方法，
+最可能找到參數的範圍
+
+175
+00:11:44.640 --> 00:11:48.810
+Remember that earlier, we visualized the distributions of the prior,
+第一週課程曾介紹先驗機率分配
+
+176
+00:11:48.810 --> 00:11:50.860
+in this case, the gray line.
+也就是這張圖的灰色曲線
+
+177
+00:11:50.860 --> 00:11:54.980
+The blue dashed line, illustrating the likelihood function which together,
+藍色虛線是似然性函數的分配
+
+178
+00:11:54.980 --> 00:11:58.159
+create the posterior distribution illustrated by the black line.
+有前兩者才能知道黑色曲線代表的事後機率分配
+
+179
+00:11:59.350 --> 00:12:02.520
+We can calculate the 95% credible interval,
+而95%可信區間就是
+
+180
+00:12:02.520 --> 00:12:05.940
+the values that lie between the two shaded areas in the tails.
+黑色曲線下沒有著色的區域
+
+181
+00:12:07.230 --> 00:12:11.290
+Confidence intervals provide some idea of what will happen in the future.
+信賴區間指引之後研究的可能結果
+
+182
+00:12:11.290 --> 00:12:15.216
+You can use confidence intervals to quantify the uncertainty in your
+可用來表示估計值不確定的部分
+
+183
+00:12:15.216 --> 00:12:15.966
+estimates.
+可用來表示估計值不確定的部分
+
+184
+00:12:15.966 --> 00:12:19.020
+Whenever you report important parameter estimates,
+只要報告重要的參數估計值
+
+185
+00:12:19.020 --> 00:12:23.876
+such as effect sizes, you should always accompany these with confidence intervals.
+像是效果量，務必一起呈現信賴區間
+
+186
+00:12:23.876 --> 00:12:28.589
+[MUSIC]
+影片結束

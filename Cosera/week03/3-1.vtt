@@ -1,0 +1,1523 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.098
+[MUSIC]
+控制型一錯誤率
+
+2
+00:00:09.098 --> 00:00:13.950
+In this lecture we will revisit Type 1 errors and we'll take a closer look
+這一講要回顧型一錯誤率以及仔細檢視
+
+3
+00:00:13.950 --> 00:00:17.407
+at one problematic aspect of Type 1 error control.
+控制型一錯誤率會遇到的問題
+
+4
+00:00:17.407 --> 00:00:20.033
+Where we see that in the scientific literature,
+閱讀科學文獻時
+
+5
+00:00:20.033 --> 00:00:24.645
+people are sometimes inflating their error rates by certain practices that lead them
+有時會發現作者利用一些手段誇大錯誤率
+
+6
+00:00:24.645 --> 00:00:28.359
+to conclude that there is an effect when there is actually no effect,
+以比實際設定的顯著水準更高的百分比
+
+7
+00:00:28.359 --> 00:00:32.550
+at a much higher percentage than the alpha level that they've decided upon.
+做出效果存在的的虛假結論
+
+8
+00:00:32.550 --> 00:00:36.394
+And it's important to not make this mistake yourself.
+所以我要告訴你如何避免犯這樣的錯誤
+
+9
+00:00:36.394 --> 00:00:40.501
+So just to revisit, the Type 1 error is the situation when you say that there is
+復習一下：型一錯誤率是宣稱發現效果，實際沒有的錯誤
+
+10
+00:00:40.501 --> 00:00:43.800
+something when there's actually nothing that's going on.
+復習一下：型一錯誤率是宣稱發現效果，實際沒有的錯誤
+
+11
+00:00:43.800 --> 00:00:46.820
+So you're concluding that there is a true effect when the null
+也就是虛無假設為真，結論卻宣稱有效果存在
+
+12
+00:00:46.820 --> 00:00:48.280
+hypothesis is actually true.
+也就是虛無假設為真，結論卻宣稱有效果存在
+
+13
+00:00:50.170 --> 00:00:55.310
+So typically, we set an alpha level at 0.05%, which means that
+通常會設定顯著水準為0.05%
+
+14
+00:00:55.310 --> 00:01:00.790
+in 5% of the studies we do, in the long run, where the null hypothesis true,
+也就是做過的一系列研究裡有5%顯示虛無假設為真
+
+15
+00:01:00.790 --> 00:01:05.900
+we will say that there is an effect to be observed, but we'll be wrong.
+卻錯誤地做出效果存在的結論
+
+16
+00:01:05.900 --> 00:01:06.860
+So this is a choice.
+結論如何只是一種選擇
+
+17
+00:01:06.860 --> 00:01:10.300
+You can set this alpha level at any level that you want.
+顯著水準可以設定在任何你滿意的水準
+
+18
+00:01:10.300 --> 00:01:14.480
+And in physics it's very typical to use the 5 sigma level, which is this very,
+物理學的慣例是設定在5個標準差
+
+19
+00:01:14.480 --> 00:01:16.730
+very low alpha value that you see below.
+這是目前所知最嚴格的水準
+
+20
+00:01:19.590 --> 00:01:24.320
+Now one problematic aspect that inflates the Type 1 error rate, so
+導致型一錯誤率膨脹的一種問題
+
+21
+00:01:24.320 --> 00:01:27.780
+that increases the number of times that you will say that there is an effect
+是進行多重比較，而導致犯下結論有效果
+
+22
+00:01:27.780 --> 00:01:32.330
+when there's actually nothing going on, is when you make multiple comparisons.
+實際卻沒有效果的次數增加
+
+23
+00:01:32.330 --> 00:01:36.450
+So you collect some data and you do one test and another test and
+這發生在你把收進來的資料做了各種不同的比較
+
+24
+00:01:36.450 --> 00:01:39.690
+another test, so this is a multiple testing situation.
+這發生在你把收進來的資料做了各種不同的比較
+
+25
+00:01:39.690 --> 00:01:43.240
+And if you do this, the probability of saying that something is going on
+多重比較會讓型一錯誤率膨脹超過5%
+
+26
+00:01:43.240 --> 00:01:48.410
+somewhere inflates well beyond the 5% level.
+多重比較會讓型一錯誤率膨脹超過5%
+
+27
+00:01:48.410 --> 00:01:54.191
+Let's look at a situation where we perform an ANOVA and this is a 2x2x2 ANOVA.
+拿這個2乘2乘2的變異數分析舉例
+
+28
+00:01:54.191 --> 00:01:58.575
+So we have two factors times two factors times two factors.
+這裡有三個2階層的因子
+
+29
+00:01:58.575 --> 00:02:02.368
+In this situation, you actually have three main effects that you can test for.
+所以要分析的有三個主要效果
+
+30
+00:02:02.368 --> 00:02:07.585
+Three two-way interactions, and
+one three-way interaction, with totals
+三個二階交互作用，以及一個三階交互作用  
+
+31
+00:02:07.585 --> 00:02:11.695
+to seven tests that you could perform just
+based on this one study that you've done.
+總共七道分析要同時進行  
+
+32
+00:02:12.745 --> 00:02:16.755
+In this case the, Type 1 error rate,
+if you do all of these tests and you say,
+那麼分析結果出來後，實際的型一錯誤率會是怎麼樣呢？
+
+33
+00:02:16.755 --> 00:02:18.635
+Well look, something happened over here,
+那麼分析結果出來後，實際的型一錯誤率會是怎麼樣呢？
+
+34
+00:02:18.635 --> 00:02:22.830
+let's interpret this, is actually much higher than 5%.
+簡單地說，實際是大於5%
+
+35
+00:02:22.830 --> 00:02:26.900
+You can see that the Type 1 error rate of stating that there is something in one of
+因為七道分析的型一錯誤率是乘冪的關係
+
+36
+00:02:26.900 --> 00:02:32.390
+these seven tests is 1-(0.95) to the power of 7.
+以投影片的公式計算會得到真正錯誤率是30%
+
+37
+00:02:32.390 --> 00:02:35.110
+In total this is actually a 30% error rate.
+以投影片的公式計算會得到真正錯誤率是30%
+
+38
+00:02:35.110 --> 00:02:37.445
+So you see this is quite substantial.
+如果不注意事情就大條了
+
+39
+00:02:37.445 --> 00:02:41.105
+The probability of saying there's something when there's nothing is
+因為30%比5%大了五倍
+
+40
+00:02:41.105 --> 00:02:42.540
+much higher than the 5%.
+因為30%比5%大了五倍
+
+41
+00:02:42.540 --> 00:02:45.640
+So this is one situation where you have to think more clearly about
+這個例子是一種分析人員必須仔細考慮的常見情況
+
+42
+00:02:45.640 --> 00:02:47.400
+what you're doing and what you're testing.
+這個例子是一種分析人員必須仔細考慮的常見情況
+
+43
+00:02:47.400 --> 00:02:50.260
+To make sure that you control the Type 1 error rate and
+這時必須確認並控制真正的一錯誤率
+
+44
+00:02:50.260 --> 00:02:51.940
+to prevent it from being inflated.
+避免犯錯的機率過度膨脹
+
+45
+00:02:53.940 --> 00:02:56.649
+Now this is a graph where you can see the probability
+這張圖描繪型一錯誤率與分析次數之間的關係
+
+46
+00:02:56.649 --> 00:02:59.550
+of a Type 1 error given the amount of tests that you do.
+這張圖描繪型一錯誤率與分析次數之間的關係
+
+47
+00:02:59.550 --> 00:03:01.960
+And you can see that there's a steep line here.
+兩者的關係呈現一道陡升的曲線
+
+48
+00:03:01.960 --> 00:03:03.150
+It's really increasing.
+兩者的關係呈現一道陡升的曲線
+
+49
+00:03:03.150 --> 00:03:06.176
+The number of tests that you do, the more often, the higher the probability that
+你要做的分析越多，犯下結論宣稱有效果
+
+50
+00:03:06.176 --> 00:03:08.508
+you'll say that there's something when there's nothing.
+實際沒有效果的錯誤機率越高
+
+51
+00:03:08.508 --> 00:03:12.947
+And with about 60 tests or something you have a really, almost always something
+如果有60道分析且都有顯著結果
+
+52
+00:03:12.947 --> 00:03:17.150
+will turn out to be statistically significant just due to random variation.
+已經可說是隨機變異造成的
+
+53
+00:03:19.000 --> 00:03:21.060
+This is the example that we looked at before.
+之前曾經提過這個例子
+
+54
+00:03:21.060 --> 00:03:26.310
+This is the 2x2x2 ANOVA where we have seven tests and we test everything.
+現在用剛剛提的變異數分析來談分析的狀況
+
+55
+00:03:26.310 --> 00:03:29.420
+Now in this graph, you can see the vertical line,
+圖左邊有一條靠著垂直線的柱子
+
+56
+00:03:29.420 --> 00:03:34.090
+the graph on the side that's saying the Type 1 error rate.
+代表符合預期的型一錯誤率
+
+57
+00:03:34.090 --> 00:03:36.455
+So all the p-values smaller than 0.05.
+也就是說小於0.05的p值有這麼多
+
+58
+00:03:36.455 --> 00:03:39.850
+And you can see that this should be at the level of the horizontal line.
+接著看另一條接近下邊界的水平線
+
+59
+00:03:39.850 --> 00:03:43.100
+So the horizontal line is the Type 1
+代表這個例子裡超過型一錯誤率的p值合理最低數目
+
+60
+00:03:43.100 --> 00:03:45.900
+error rate that you should expect in this situation.
+代表這個例子裡超過型一錯誤率的p值合理最低數目
+
+61
+00:03:45.900 --> 00:03:49.260
+But you see that the actual observed Type 1 error rate is much,
+仔細看就會發現實際超過的數目多於預期
+
+62
+00:03:49.260 --> 00:03:52.369
+much higher because we are doing many, many different tests.
+這是因為多重比較未做控制的緣故
+
+63
+00:03:54.440 --> 00:03:56.428
+You can control this Type 1 error rate.
+實際的型一錯誤率是可以控制的
+
+64
+00:03:56.428 --> 00:03:59.522
+And you can do this if you design your study well and
+只要仔細考慮設計條件
+
+65
+00:03:59.522 --> 00:04:03.140
+you change the alpha level based on some considerations.
+並且慎重改變顯著水準就好
+
+66
+00:04:03.140 --> 00:04:04.130
+So how can you do this?
+要怎麼做呢？
+
+67
+00:04:04.130 --> 00:04:07.230
+How can you control the Type 1 error
+rate to prevent this inflation?
+如何做才能避免實際的型一錯誤率膨脹？
+
+68
+00:04:08.340 --> 00:04:10.250
+The most common way that you can do this,
+最常用的方法是Bonferroni校正程序
+
+69
+00:04:10.250 --> 00:04:13.360
+the easiest way is the Bonferroni correction.
+最常用的方法是Bonferroni校正程序
+
+70
+00:04:13.360 --> 00:04:14.960
+It's called the Bonferroni correction but
+雖然很多書寫這個名字
+
+71
+00:04:14.960 --> 00:04:17.100
+a better name might be the Dunn Correction.
+更好的稱呼應該是Dunn校正程序
+
+72
+00:04:17.100 --> 00:04:19.860
+So, this is Professor Dunn, who actually came up with this idea.
+因為這是由Dunn教授提出的方法
+
+73
+00:04:19.860 --> 00:04:21.740
+And when she did, she said, well,
+她曾謙虛地表示
+
+74
+00:04:21.740 --> 00:04:25.768
+I cannot find anything in the scientific literature that uses this before.
+我在之前的文獻找不到相同的方法
+
+75
+00:04:25.768 --> 00:04:30.040
+And it might be so simple that people just didn't think about it.
+可能只是沒有人想到而已
+
+76
+00:04:30.040 --> 00:04:32.630
+So that's one of the strengths of this Bonferroni correction.
+這話道出Bonferroni校正程序的特色：簡潔
+
+77
+00:04:32.630 --> 00:04:36.720
+It's so remarkably simple to control your error rates, that, well,
+這個方法真的簡潔到Dunn教授發表前沒人注意到
+
+78
+00:04:36.720 --> 00:04:41.020
+until it was discovered by Professor Dunn, nobody had actually come up with it.
+這個方法真的簡潔到Dunn教授發表前沒人注意到
+
+
+79
+00:04:41.020 --> 00:04:42.970
+But, it's very easy to do.
+因為做法真的很簡單
+
+80
+00:04:42.970 --> 00:04:46.810
+In this case, the alpha level that you'll use isn't 0.05,
+需要使用這個方法的場合，顯著水準絕對不是0.05
+
+81
+00:04:46.810 --> 00:04:50.940
+or whatever you set it to, for a single test, it's the alpha level,
+或者說每個分析的顯著水準必須要以分析的數目均分
+
+82
+00:04:50.940 --> 00:04:54.220
+divided by the number of tests that you do.
+或者說每個分析的顯著水準必須要以分析的數目均分
+
+83
+00:04:54.220 --> 00:05:00.735
+So let's say that you do two tests, you'll divide the 0.05, your overall alpha level,
+比方說現在要做兩個分析，每個分析的顯著水準
+
+84
+00:05:00.735 --> 00:05:05.452
+by 2, and have a 0.025 alpha level for each individual test.
+是0.05除以2，也就是0.025
+
+85
+00:05:05.452 --> 00:05:08.963
+In the case of the you will actually divide your alpha level by seven,
+所以變異數分析的例子就要除以7
+
+86
+00:05:08.963 --> 00:05:09.620
+for example.
+所以變異數分析的例子就要除以7
+
+87
+00:05:10.720 --> 00:05:14.046
+Alternatively, you can multiply the p-value by the number of tests.
+也可以把分析得到的p值乘以分析數目
+
+88
+00:05:14.046 --> 00:05:17.999
+And it's exactly the same and
+then you use the 0.05 alpha level for
+看看有沒有那個分析超過了0.05
+
+89
+00:05:17.999 --> 00:05:20.030
+each specific test.
+看看有沒有那個分析超過了0.05
+
+90
+00:05:20.030 --> 00:05:24.570
+If we take this latter approach and we plot the p-value distribution, when we
+使用後一種方法校正p值
+
+91
+00:05:24.570 --> 00:05:28.920
+have applied the Bonferroni correction to the same situation we had before,
+再繪出p值次數分配圖
+
+92
+00:05:28.920 --> 00:05:33.280
+you see this very peculiar distribution of p-values.
+會發現分配與前一張圖完全不同
+
+93
+00:05:33.280 --> 00:05:37.210
+In this case, you see that the alpha
+level is exactly controlled.
+經過精確控制型一錯誤率之後
+
+94
+00:05:37.210 --> 00:05:41.030
+You see in the bottom left there's this Type 1 error rate which is actually
+實際小於0.05的p值數量
+
+95
+00:05:41.030 --> 00:05:44.130
+at 5% of the total number of stimulations in this case.
+是在合理的次數限制之內
+
+96
+00:05:45.720 --> 00:05:49.800
+Due to the multiplication of the p-values,
+we see that there is a bar
+因為校正的關係，也導到許多p值大於1
+
+97
+00:05:49.800 --> 00:05:53.330
+on the right side of this graph that's
+completely going through the roof.
+這讓最右邊的柱子超出圖片邊界
+
+98
+00:05:53.330 --> 00:05:57.280
+Most of the p-values actually here, so we multiplied all these p-values and
+許多分析結果的p值實際大於1
+
+99
+00:05:57.280 --> 00:05:59.730
+a lot of them become really, really high or actually one.
+才會導致往邊界之外集中的現象
+
+100
+00:06:00.730 --> 00:06:03.370
+But at least the number of times that we'll say that there's something when
+不過分析數目只是未知其他條件時
+
+101
+00:06:03.370 --> 00:06:05.700
+there's nothing is nicely controlled in this situation.
+所能採取的控制手段
+
+102
+00:06:07.840 --> 00:06:11.100
+We have to control not just
+the single test that we do but
+如果可知同族錯誤率(family error rate)
+
+103
+00:06:11.100 --> 00:06:13.590
+what is known as
+the familywise error rate.
+就不能把每個分析看成各自獨立的
+
+104
+00:06:13.590 --> 00:06:14.610
+You have to control for
+同族的分析必須整體考慮，才不會犯下型一錯誤
+
+105
+00:06:14.610 --> 00:06:19.130
+all tests that will lead you to say that there is something when there is nothing.
+同族的分析必須整體考慮，才不會犯下型一錯誤
+
+106
+00:06:19.130 --> 00:06:21.730
+In a situation where we
+have seven tests and
+變異數分析的例子有7道分析
+
+107
+00:06:21.730 --> 00:06:25.450
+you will take any test as an indication
+that something is going on, well,
+以同族錯誤率來看，每一個都不能獨立看待
+
+108
+00:06:25.450 --> 00:06:27.890
+the family, in this case, is seven tests.
+以同族錯誤率來看，每一個都不能獨立看待
+
+109
+00:06:27.890 --> 00:06:28.810
+But you could also say,
+另一方面
+
+110
+00:06:28.810 --> 00:06:34.230
+well arguably, I didn't do a 2x2x2 ANOVA
+because I was interested in main effects.
+我可以只對主要效果有興趣
+
+111
+00:06:34.230 --> 00:06:36.520
+You're typically interested
+in an interaction somewhere,
+也可以只對一種二階交互作用
+
+112
+00:06:36.520 --> 00:06:39.580
+maybe a two-way interaction or
+a three-way interaction.
+或三階效互作用的分析有興趣
+
+113
+00:06:39.580 --> 00:06:41.090
+So in this case you would say,
+此時「同族」的概念是其中有興趣的四道分析
+
+114
+00:06:41.090 --> 00:06:44.720
+well, there are actually only four
+tests that I'm really interested in.
+此時「同族」的概念是其中有興趣的四道分析
+
+115
+00:06:44.720 --> 00:06:48.829
+This is my family and therefore I'll
+divide my alpha level by these four tests.
+所以合理的顯著水準應該除以4
+
+116
+00:06:51.110 --> 00:06:53.760
+Now sometimes you have a very
+specific prediction and
+若是你有獨特的預測
+
+117
+00:06:53.760 --> 00:06:56.200
+you don't really need to use
+a Bonferroni correction.
+並不需要使用Bonferroni校正
+
+118
+00:06:56.200 --> 00:06:59.930
+If there's only one thing you're
+interested in, like research Wahlberg
+好比馬克華柏格在「燃燒鬥魂」裡的台詞
+
+119
+00:06:59.930 --> 00:07:03.890
+says here, if you are only interested
+in one girl, there's no comparison.
+”如果你只鐘情一名女子，那沒有什麼好比的“
+
+120
+00:07:03.890 --> 00:07:05.820
+If you're only interested
+in one statistical test,
+如果你只鐘情一道統計分析
+
+121
+00:07:05.820 --> 00:07:08.150
+then you don't need to
+adjust your alpha level.
+那沒有必要調整顯著水準
+
+122
+00:07:08.150 --> 00:07:11.668
+If you're saying, I'm actually only
+interested in the three-way interaction,
+好比說你只有興趣分析三階交互作用
+
+123
+00:07:11.668 --> 00:07:13.311
+then that's the only test you'll do.
+只要做這道分析就好
+
+124
+00:07:13.311 --> 00:07:17.156
+And the only situation where you'll say
+this indeed supports my hypothesis, and
+分析結果若真的符合預期
+
+125
+00:07:17.156 --> 00:07:20.820
+you don't need to control
+your alpha level any further.
+也沒有必要調整顯著水準
+
+126
+00:07:20.820 --> 00:07:25.330
+In this situations, it make sense to
+write down your prediction before you it.
+唯一注意的時你要在做分析前先寫下預測
+
+127
+00:07:25.330 --> 00:07:29.061
+And later on we'll talk about
+preregistration as a way to control error
+之後在談到「預先註冊」時會提到
+
+128
+00:07:29.061 --> 00:07:32.994
+rates and write down what the alpha level
+is and the tests that you want to do.
+分析前註記顯著水準是很重要的
+
+129
+00:07:34.989 --> 00:07:38.990
+It turns out that the Bonferroni correction is slightly conservative.
+Bonferroni校正是稍微保守的方法
+
+130
+00:07:38.990 --> 00:07:40.930
+You can do a little bit better.
+還有其他可行的方法
+
+131
+00:07:40.930 --> 00:07:43.300
+In practice it won't matter so often.
+儘管沒有太多人常用
+
+132
+00:07:43.300 --> 00:07:47.720
+But given that we use computational tools to calculate these corrections most of
+不過別忘這這門課已經介紹很多計算工具
+
+133
+00:07:47.720 --> 00:07:51.460
+the time, why not use the slightly more efficient version?
+為什麼不認識其他方法呢？
+
+134
+00:07:51.460 --> 00:07:53.570
+This is called Holm correction.
+為你介紹Holm校正程序
+
+135
+00:07:53.570 --> 00:07:56.980
+In this case, you order your p-values' rank.
+首先把手上的p值由低至高排序
+
+136
+00:07:56.980 --> 00:08:00.730
+You inverse the rank order and you say which is the lowest p-value and
+接著從最大的p值給予第一位，再給第二位
+
+137
+00:08:00.730 --> 00:08:02.950
+the second lowest, the third lowest.
+第三位直到最小的p值
+
+138
+00:08:02.950 --> 00:08:07.231
+And you multiply the p-value by the inversed rank order to get
+再把每個p值與位階相乘，就會得到校正的p值
+
+139
+00:08:07.231 --> 00:08:08.888
+a corrected p-value.
+再把每個p值與位階相乘，就會得到校正的p值
+
+140
+00:08:08.888 --> 00:08:12.864
+So you see that for the lowest p-value in this situation,
+這個例子的最小p值(0.001)乘於其位階4
+
+141
+00:08:12.864 --> 00:08:17.897
+when we do four tests, we actually multiply this very low p-value by 4,
+得到的校正p值是0.004
+
+142
+00:08:17.897 --> 00:08:21.243
+for the second lowest we multiply it by 3, etc.
+第二小的p值就是乘以3，依此類推
+
+143
+00:08:21.243 --> 00:08:25.530
+The benefit is clear in the last line here, where we have the 0.032,
+好處是最大的p值校正後依然為原始p值相同
+
+144
+00:08:25.530 --> 00:08:27.686
+the p-value that we've observed.
+好處是最大的p值校正後依然為原始p值相同
+
+145
+00:08:27.686 --> 00:08:29.882
+But this is the last that we want to test.
+而這正是最後做判斷用的p值
+
+146
+00:08:29.882 --> 00:08:31.923
+In this case, the inversed rank order is 1,
+因為最大值的位階由1起算
+
+147
+00:08:31.923 --> 00:08:34.660
+so actually we don't have to correct for it anymore.
+等於不必再去校正這個p值
+
+148
+00:08:34.660 --> 00:08:38.471
+So this is the p-value we can interpret at a 0.05 level.
+並且能以顯著水準0.05做判斷
+
+149
+00:08:38.471 --> 00:08:41.704
+In this case, this can be considered statistically significant.
+所以這個值0.032是達到統計顯著
+
+150
+00:08:41.704 --> 00:08:44.150
+Whereas if we would use a Bonferroni correction,
+如果使用Bonferroni校正程序
+
+151
+00:08:44.150 --> 00:08:46.780
+this would no longer be statistically significant.
+這個值就不會顯著(alpha = 0.025)
+
+152
+00:08:48.757 --> 00:08:54.580
+Now this is a graph visualising the Holm's corrected p-value distribution.
+同樣地把Holm校正的p值繪成次數分配圖
+
+153
+00:08:54.580 --> 00:08:58.250
+You can see it's slightly different than the Bonferroni correction.
+會發現與Bonferroni的次數分配不大一樣
+
+154
+00:08:58.250 --> 00:09:03.220
+But again, the p-values are 5% of the time, they fall under the 0.05 level and
+偍是大致上低於顯著水準的p值只有全部的5%
+
+155
+00:09:03.220 --> 00:09:06.138
+the Type 1 error rate is adequately controlled.
+所以型一錯誤率有被合理控制
+
+156
+00:09:09.193 --> 00:09:11.298
+So we talked about multiple testing and
+接著我們換個角度談多重比較如何造成顯著水準的膨脹
+
+157
+00:09:11.298 --> 00:09:14.626
+this is one situation where you can inflate your alpha level.
+接著我們換個角度談多重比較如何造成顯著水準的膨脹
+
+158
+00:09:14.626 --> 00:09:20.600
+Another widely used, problematic research
+practice is known as optional stopping.
+這種有問題的操作被稱為「選擇性停止」
+
+159
+00:09:20.600 --> 00:09:22.820
+In this case you collect some data.
+比方現在收集一批資料
+
+160
+00:09:22.820 --> 00:09:23.980
+You analyze the data.
+做了分析
+
+161
+00:09:23.980 --> 00:09:26.000
+And you do the statistical test.
+而且跑了統計檢定
+
+162
+00:09:26.000 --> 00:09:28.830
+And you see whether the data is statically significance or not.
+檢查這筆資料有沒有達到顯著
+
+163
+00:09:28.830 --> 00:09:33.119
+Let's say you interested whether the p-value is smaller than 0.05.
+看一看關切的效果p值有沒有小於0.05
+
+164
+00:09:34.210 --> 00:09:37.270
+If this is not the case, you collect more people.
+若沒有達成，就再收集更多資料
+
+165
+00:09:37.270 --> 00:09:38.750
+You have additional observations.
+因此最後分析的結果包含額外資料
+
+166
+00:09:40.130 --> 00:09:44.470
+This is quite common practice in many, many research areas.
+許多論文的結果都常見到這個狀況
+
+167
+00:09:44.470 --> 00:09:46.370
+And it sounds like it's a good idea, right?
+這聽起來很平常，但是正確的嗎？
+
+168
+00:09:46.370 --> 00:09:48.160
+It sounds like you should want to do this,
+好像大家都是這樣做的
+
+169
+00:09:48.160 --> 00:09:50.990
+because it's a very efficient way to collect data.
+因為這樣比較能有效控管收集成本
+
+170
+00:09:50.990 --> 00:09:53.680
+If you look at the data and it's already statistically significantly,
+若是收集不到一半的資料就有統計顯著
+
+171
+00:09:53.680 --> 00:09:55.290
+what's the use of continuing on?
+要不要繼續收集資料呢？
+
+172
+00:09:56.340 --> 00:09:59.890
+Regrettably, if you don't control your error rates in this situation,
+很不幸地，如果這個時候沒有仔細控制
+
+173
+00:09:59.890 --> 00:10:02.610
+this actually inflates the Type 1 error rate.
+就會導致型一錯誤率的膨脹
+
+174
+00:10:02.610 --> 00:10:06.380
+So even though this is something that you might want to do, you can do it, but you
+有時基於現實條件，中途停止是無可厚非
+
+175
+00:10:06.380 --> 00:10:10.060
+have to do it the right way by controlling the Type 1 error rates in this situation.
+依然還是要妥善控制型一錯誤率
+
+176
+00:10:10.060 --> 00:10:11.770
+Let's take a look at how you can do this.
+我們來看有什麼做法
+
+177
+00:10:13.540 --> 00:10:17.180
+Now first, let's take a closer look at the problematic aspect of it.
+首先看看問題出在那裡
+
+178
+00:10:17.180 --> 00:10:21.190
+If you do this often enough, then formally,
+如果你有豐富的分析資料經驗
+
+179
+00:10:21.190 --> 00:10:25.850
+using this approach will always lead to a statistically significant result.
+並且經常用這種方法獲得顯著結果
+
+180
+00:10:27.170 --> 00:10:30.840
+Sometimes you have to look at the data 100,000 times, so
+當然如果要分析的資料多達十萬筆
+
+181
+00:10:30.840 --> 00:10:32.640
+it might not be very practical.
+這種方法可能並不實用
+
+182
+00:10:32.640 --> 00:10:35.940
+But formally, as long as you continue looking at your data, and
+不過通常只要你中途分析資料
+
+183
+00:10:35.940 --> 00:10:40.130
+nothing is going on, you will have 100% success rate.
+都可以百分之百獲得顯著結果
+
+184
+00:10:40.130 --> 00:10:43.729
+So in terms of good research practices, I would not recommend it, but
+以良好的研究操作來說，我不會建議你這麼做
+
+185
+00:10:43.729 --> 00:10:47.634
+it is a practice that will give you a guaranteed result 100% of the time.
+但是任何研究用這種方法都可以獲得統計顯著
+
+186
+00:10:47.634 --> 00:10:50.078
+Now, obviously, it will hugely inflate your error rate, so
+從稍早的說明，已知如此會膨脹型一錯誤率
+
+187
+00:10:50.078 --> 00:10:51.480
+that's not what we want to do.
+是學習這門課要避免的狀況
+
+188
+00:10:51.480 --> 00:10:53.750
+Let's take a look at how we can do this the correct way.
+我們來看看要怎麼導正這個問題
+
+189
+00:10:54.850 --> 00:10:59.450
+In this graph we see the distribution of p-values when we're using
+這張圖是模擬中途停止分析得到的p值次數分配
+
+190
+00:10:59.450 --> 00:11:00.780
+optional stopping.
+這張圖是模擬中途停止分析得到的p值次數分配
+
+191
+00:11:00.780 --> 00:11:03.310
+In this simulation we've looked at the data five times.
+模擬條件是中途停止五次
+
+192
+00:11:03.310 --> 00:11:07.530
+There's no true effect, so we should observe the uniform p-value distribution.
+實際沒有存在效果，理應得到均勻的p值分配
+
+193
+00:11:07.530 --> 00:11:11.100
+But you can see there's this very weird peak on the left side of the graph.
+但是圖中左側有個詭異的高峰
+
+194
+00:11:11.100 --> 00:11:14.940
+And there are way more p-values statistically significant
+表示顯著的p值數量比合理情況的多很多
+
+195
+00:11:14.940 --> 00:11:16.530
+than there should be.
+表示顯著的p值數量比合理情況的多很多
+
+196
+00:11:16.530 --> 00:11:19.250
+We have, by looking at the data repeatedly,
+中停分析數次，容易獲得一些接近顯著水準的p值
+
+197
+00:11:19.250 --> 00:11:22.700
+sort of scratched away some of the nearly significant p-values and
+中停分析數次，容易獲得一些接近顯著水準的p值
+
+198
+00:11:22.700 --> 00:11:25.240
+pulled them just below the significance threshold.
+長久以往讓這類p值越聚越多
+
+199
+00:11:27.710 --> 00:11:31.410
+What we can do is use a technique that's called sequential analysis.
+我們能用序列分析修正這個問題
+
+200
+00:11:31.410 --> 00:11:34.792
+In sequential analysis you can look at the data repeatedly,
+序列分析能保持型一錯誤率
+
+201
+00:11:34.792 --> 00:11:37.259
+while controlling your Type 1 error rate.
+又能讓你做中停分析
+
+202
+00:11:37.259 --> 00:11:40.752
+You're using something that's very similar to a Bonferroni correction but
+這種方法像是效率提昇的Bonfrroni校正程序
+
+203
+00:11:40.752 --> 00:11:43.070
+it's actually even more efficient.
+這種方法像是效率提昇的Bonfrroni校正程序
+
+204
+00:11:43.070 --> 00:11:45.776
+In principle, you could just
+use a Bonferroni correction.
+原則上可以只用Bonfrroni校正
+
+205
+00:11:45.776 --> 00:11:48.790
+You can just decide just how often you want to look at the data,
+只要先決定要中途停止幾次
+
+206
+00:11:48.790 --> 00:11:52.460
+let's say four times, and then divide the alpha level by four.
+比方說四次，那就等於有4道分析
+
+207
+00:11:52.460 --> 00:11:54.344
+That would be perfectly fine.
+Bonfrroni校正就派上用場
+
+208
+00:11:54.344 --> 00:11:58.330
+But the sequential analysis approach is slightly more flexible and more efficient.
+只不過序列分析使用更有彈性的方法
+
+209
+00:12:00.730 --> 00:12:02.250
+Now you don't have to read this.
+這張投影片上的文字不必仔細讀
+
+210
+00:12:02.250 --> 00:12:05.870
+The font is too small to be read by you, but I will explain what's going on.
+因為字太小，我解釋給你聽就好
+
+211
+00:12:05.870 --> 00:12:08.580
+This is a quote from a paper by Wald, in 1945,
+這段來自Wald於1945年發表的論文
+
+212
+00:12:08.580 --> 00:12:13.680
+where he introduces the sequential ratio probability test.
+這篇論文介紹序列機率比分析
+
+213
+00:12:13.680 --> 00:12:16.530
+This is a new statistical tool at this moment and
+這段說明當時這是一種新的統計分析技術
+
+214
+00:12:16.530 --> 00:12:19.170
+when he was examining it, was 1943.
+實際上1943年Wald就已經完成
+
+215
+00:12:19.170 --> 00:12:20.920
+This was during the second World War.
+當時二次大戰尚未結束
+
+216
+00:12:22.230 --> 00:12:23.540
+He had done the math and
+Wald整日埋首研究數學
+
+217
+00:12:23.540 --> 00:12:26.730
+said, this is actually a very efficient way to collect data.
+有一天發現一種有效收集資料的方法
+
+218
+00:12:26.730 --> 00:12:32.350
+And they wanted to use this in the war effort to test, for example, ammunition.
+能運用於測試子彈良率的分析
+
+219
+00:12:32.350 --> 00:12:36.610
+Every now and then they had to do a test, is this working correctly or not?
+這種測試經常要做，但能不能知道結果正確嗎？
+
+220
+00:12:36.610 --> 00:12:40.799
+And using this sequential approach made them much more efficient,
+使用序列分析讓測試更有效率
+
+221
+00:12:40.799 --> 00:12:45.061
+which is why the National Defense Committee said we cannot share this
+因為有軍事價值，當時被五角大廈列為機密
+
+222
+00:12:45.061 --> 00:12:46.764
+knowledge at this moment.
+因為有軍事價值，當時被五角大廈列為機密
+
+223
+00:12:46.764 --> 00:12:50.722
+Because if you would publish this in the scientific literature, our enemies,
+如果1943年就被發表出來
+
+224
+00:12:50.722 --> 00:12:54.797
+in this case the Germans and the Japanese, would also discover this technique and
+讓德國或日本軍方發現的話
+
+225
+00:12:54.797 --> 00:12:57.692
+use it and become much more efficient.
+有可能會使用這技術
+
+226
+00:12:57.692 --> 00:13:01.780
+So this is the explanation about Wald saying that he only published it in 1945,
+這是後來Wald解釋為何在1945年發表的說法
+
+227
+00:13:01.780 --> 00:13:05.890
+after the war, because this was deemed such an efficient technique
+因為他很自豪自已的發明
+
+228
+00:13:05.890 --> 00:13:09.569
+that the US government said you cannot share it with the enemy during wartime.
+卻被美國政府以軍事命令限制發表
+
+229
+00:13:10.860 --> 00:13:12.000
+Now this is interesting, right?
+很有趣的傳聞對吧
+
+230
+00:13:12.000 --> 00:13:15.870
+So there is this technique that correctly controls error rates and
+這種方法能控制分析錯誤率
+
+231
+00:13:15.870 --> 00:13:17.770
+that will make you much more efficient.
+又能讓資料收集更有效率
+
+232
+00:13:17.770 --> 00:13:19.990
+But at the same time, we're not using it very often.
+不過現在這種方法還未普遍使用
+
+233
+00:13:21.150 --> 00:13:25.270
+There are many researchers slightly hesitant to use statistical approaches.
+多數研究者有點抗拒參考統計指標做資料收集
+
+234
+00:13:25.270 --> 00:13:28.690
+But my prediction is that his will be used more and more in the future, just because
+不過我預測這種方法未來會有越來越多人使用
+
+235
+00:13:28.690 --> 00:13:32.100
+it's a very efficient way to collect data while controlling error rates.
+這是一套收集資料時能有效控制分析錯誤率的方法
+
+236
+00:13:34.240 --> 00:13:38.960
+If you want to set an alpha level using this sequential approach, you can do so
+序列方法有許多做法幫你設定顯著水準
+
+237
+00:13:38.960 --> 00:13:40.760
+in many different ways.
+序列方法有許多做法幫你設定顯著水準
+
+238
+00:13:40.760 --> 00:13:44.260
+The easiest, that I will give an example for in the slide, is that you
+最簡單的一種就像這張投影片的範例
+
+239
+00:13:44.260 --> 00:13:48.710
+lower your alpha level to the same level for each time that you look at the data.
+只要每次中途停止就降低顯著水準
+
+240
+00:13:48.710 --> 00:13:52.320
+But as I said, there's much more flexibility that's possible here.
+不過還有其他更有彈性的做法
+
+241
+00:13:52.320 --> 00:13:58.060
+You can spend your alpha level over each look at the data in any way you like.
+比方使用你偏好的方式疊加每次分析的顯著水準
+
+242
+00:13:58.060 --> 00:14:02.320
+You can only have a very, very strict alpha level at the beginning.
+只要在一開始設定最嚴格的顯著水準
+
+243
+00:14:02.320 --> 00:14:04.370
+Don't spend too much of your alpha level and
+不必每次重新設定顯著水準
+
+244
+00:14:04.370 --> 00:14:08.880
+then later on use most of it when you have the largest sample size.
+序列演算會指示達到最大樣本數的顯著水準
+
+245
+00:14:08.880 --> 00:14:12.189
+But you can also spread it out evenly over every look depending on what you want.
+另一方面也能演算任何中停時機的顯著水準
+
+246
+00:14:14.160 --> 00:14:17.480
+The easiest way is using a Pocock boundary.
+最簡單的方式是演算Pocock邊際
+
+247
+00:14:17.480 --> 00:14:22.140
+This is very similar to just dividing the number of looks by, or
+這種方法很像拿顯著水準直接除以中停次數
+
+248
+00:14:22.140 --> 00:14:24.260
+the alpha level, by the number of looks.
+這種方法很像拿顯著水準直接除以中停次數
+
+249
+00:14:25.410 --> 00:14:28.780
+It's slightly more efficient, which is why, if you look twice,
+只要注意看就會發現這方法的效率關鍵
+
+250
+00:14:28.780 --> 00:14:32.160
+you have a slightly higher threshold than 0.025,
+像是兩次分析設定的閾限比0.025稍高
+
+251
+00:14:32.160 --> 00:14:35.360
+which you would have with the Bonferroni correction.
+很像Bonferroni校正程序的結果
+
+252
+00:14:35.360 --> 00:14:37.710
+But you can see it's pretty close.
+但是兩者的結果相當接近
+
+253
+00:14:37.710 --> 00:14:42.200
+So these are the thresholds that you would use if you look at the data twice or
+這裡也列出中停三次,四次中的閾值
+
+254
+00:14:42.200 --> 00:14:43.710
+three times or four times.
+這裡也列出中停三次,四次中的閾值
+
+255
+00:14:43.710 --> 00:14:47.340
+Well, something like that is typically sufficient in a study that you do.
+這些數值足以應付多數研究的需要
+
+256
+00:14:49.910 --> 00:14:52.450
+Remember that this was the optional stopping p-value
+這張也是因為中停分析導致錯誤率膨脹
+
+257
+00:14:52.450 --> 00:14:55.180
+distribution where the error rate is inflated.
+而形成的p值次數分配
+
+258
+00:14:55.180 --> 00:14:59.570
+So we see way more p-values just below 0.05 in this case.
+來看看序列分析如何校正小於0.05的p值
+
+259
+00:15:00.830 --> 00:15:05.591
+Now if we use the corrected p-values based on the Pocock stopping rule,
+經過Pocock中停演算校正p值之後
+
+260
+00:15:05.591 --> 00:15:09.113
+the distribution still looks a little bit peculiar.
+次數分配還是有些怪異
+
+261
+00:15:09.113 --> 00:15:14.627
+But in this case the error is rate exactly 0.05.
+但是現在的p值是真正小於0.05
+
+262
+00:15:17.580 --> 00:15:19.657
+So this is one approach to control errors.
+以上是一種中停分析的校正方法
+
+263
+00:15:19.657 --> 00:15:22.796
+We talked about multiple comparisons using Bonferroni approach.
+稍早提到校正多重比較的Bonferroni程序
+
+264
+00:15:22.796 --> 00:15:27.065
+You can use sequential tests and control error rates using, for example,
+當然也可使用如Pocock等序列分析控制顯著水準
+
+265
+00:15:27.065 --> 00:15:29.210
+the Pocockl boundary.
+當然也可使用如Pocock等序列分析控制顯著水準
+
+266
+00:15:29.210 --> 00:15:31.793
+There are many different ways in which you can control error rates.
+還有很多我未介紹的方法
+
+267
+00:15:31.793 --> 00:15:34.679
+And an alternative to this, in recent years,
+近幾年興起另一種取向
+
+268
+00:15:34.679 --> 00:15:40.170
+is not controlling the error rate itself, but the false discovery rate.
+不是控制顯著水準，而是控制分析錯誤率
+
+269
+00:15:40.170 --> 00:15:44.180
+I just want to point out that this is possible if you're interested in this and
+特別提醒這種方法是用在分析的資料
+
+270
+00:15:44.180 --> 00:15:46.360
+you're working in field where you're doing many, many,
+要進行海量的統計比較分析
+
+271
+00:15:46.360 --> 00:15:49.575
+many different tests, huge number of statistical test.
+要進行海量的統計比較分析
+
+
+272
+00:15:49.575 --> 00:15:51.970
+Then this is a very interesting
+approach to consider.
+如果你真的有興趣
+
+273
+00:15:51.970 --> 00:15:56.360
+And this is a paper by Benjamini &
+Hochberg that you might want to read.
+可以找Benjamini與Hochberg的論文來看
+
+274
+00:15:56.360 --> 00:16:00.007
+I'm not going to go into too much detail but it's an interesting perspective to
+我不會說明太多細節，只是告訴你
+
+275
+00:16:00.007 --> 00:16:02.940
+learn about, if it's relevant for your research question.
+這種方法可能適用你的研究
+(Neuro science?)
+
+276
+00:16:05.244 --> 00:16:09.100
+Now remember that there's nothing
+special about this 5% threshold.
+再次提醒5%顯著水準不是鐵則
+
+277
+00:16:09.100 --> 00:16:11.450
+You can increase it, you can decrease it.
+你可以視情況增加或減低
+
+278
+00:16:11.450 --> 00:16:12.730
+As I said before,
+像之前提過
+
+279
+00:16:12.730 --> 00:16:15.380
+it's up to you to determine how this balance should be struck.
+根據研究者要達到什麼樣的平衡決定
+
+280
+00:16:15.380 --> 00:16:19.440
+If you want to use a more strict error control or a more lenient version,
+不管採用較嚴格或較寬鬆的錯誤率控制
+
+281
+00:16:19.440 --> 00:16:20.290
+that's perfectly fine.
+都是合理的
+
+282
+00:16:22.220 --> 00:16:25.060
+In recent years, we've seen a lot of people worried about
+最近幾年，學術圈內興起檢討
+
+283
+00:16:25.060 --> 00:16:27.890
+the way that people control their Type 1 errors.
+多數研究者控制型一錯誤率的方法
+
+284
+00:16:27.890 --> 00:16:32.462
+And there's some idea that the error rate in the scientific literature is inflated.
+一些偵測科學文獻裡錯誤率被低估的方法不斷出現
+
+285
+00:16:32.462 --> 00:16:36.610
+In due, this is because people want to use more flexibility in the way that they
+歸根究底，是許多研究者在分析資料時
+
+286
+00:16:36.610 --> 00:16:38.080
+analyze their data.
+採用太多彈性措施
+
+287
+00:16:38.080 --> 00:16:41.810
+Looking at the sequential approach is one way in which you can actually have this
+使用序列分析方法可以讓你保留彈性
+
+288
+00:16:41.810 --> 00:16:44.650
+flexibility but you can be more efficient in the same time.
+又能有效控制型一錯誤率
+
+289
+00:16:45.680 --> 00:16:46.290
+In other ways,
+另一方面
+
+290
+00:16:46.290 --> 00:16:50.750
+you have to decide very clearly on which specific tests you are interested in.
+你必須決定你真正想檢驗的統計分析
+
+291
+00:16:50.750 --> 00:16:54.150
+And defining these tests before you collect the data will also make
+在收集資料前定義清楚如何使用這些分析
+
+292
+00:16:54.150 --> 00:16:55.820
+it efficient to control the error rate.
+能讓你真正有效控制型一錯誤率
+
+293
+00:16:57.140 --> 00:17:00.910
+In essence, what I'm saying is that whatever you do, if you set an error rate
+這一講所提是最基本的原則，在實作中
+
+294
+00:17:00.910 --> 00:17:04.130
+for yourself, it's very important to make sure that it's not inflated.
+不讓型一錯誤率膨脹是最重要的
+
+295
+00:17:04.130 --> 00:17:05.313
+If you let it inflate,
+如果不小心沒控制好
+
+296
+00:17:05.313 --> 00:17:08.938
+you will fool yourself much more often than you think you're doing.
+你犯下愚弄自已錯誤的機會將比想像的高
+
+297
+00:17:08.938 --> 00:17:13.588
+[MUSIC]
+影片結束

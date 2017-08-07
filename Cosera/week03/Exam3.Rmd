@@ -1,0 +1,34 @@
+---
+title: "Exam 3"
+author: "Sau-Chin Chen"
+date: "2016年10月23日"
+output: html_document
+---
+1. We perform 1000 studies. Omniscient Jones knows that in 400 of these studies we examine a null effect, and in 600 of these studies we examine a true effect. We use an alpha level of 0.05, or 5%. What is our Type 1 error rate over these 1000 studies?
+
+```r 0.05*(400/1000) ```
+
+2. Go to [http://shinyapps.org/apps/PPV/](http://shinyapps.org/apps/PPV/). Imagine a research area where a-priori the % of true hypotheses is at a very low 10%. Assume the alpha level is well controlled and 0.05, and that the power is only 50%. There is no p-hacking. What is the probability that a significant finding is a true effect?
+
+**This is PPV**
+
+3. You plan to do a new study. A-priori you think it is 80% likely that H1 is true. You use an alpha level of 0.05 and plan for (and succeed in achieving) 80% power. What is the probability that you will observe a **true positive**?
+
+4. As you collect data from 100 participants, and analyze the data after 50 and 100 participants, using an alpha level of 0.05 for each analysis, which statement is true?
+
+**about optional stopping**
+
+A) The Type 1 error rate is controlled at 5%.
+
+B) The Type 1 error rate will inflate and there is no way to control the error rate.
+
+**C)** The Type 1 error rate will inflate, but you can use Pocock’s correction to control the error rate.
+
+5. Open the OptionalStoppingSim.R file. Run the simulation. Optional stopping can be observed by looking at the p-value distribution. Which statement is true?
+
+**Check 3.2.Rmd**
+A) With optional stopping, the p-value distribution is uniform.
+
+B) With optional stopping, looking just at p-values below 0.05, there are more small p-values (e.g., 0.01) than large p-values (e.g., 0.04).
+
+**C)** With optional stopping, looking just at p-values below 0.05, there are more high p-values (e.g., 0.04) than small p-values (e.g., 0.01).

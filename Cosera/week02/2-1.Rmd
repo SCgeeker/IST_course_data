@@ -1,0 +1,145 @@
+---
+title: "2-1 Likelihoods"
+author: "Sau-Chin Chen"
+date: "2016年10月13日"
+output: html_document
+---
+*Most information in this exercise comes from Yudi Pawitan’s book ‘In all likelihood: Statistical modelling and inference using likelihood’ and Alex Etz’s blog posts on [likelihoods](http://alexanderetz.com/2015/04/15/understanding-bayes-a-look-at-the-likelihood/).* 
+
+Likelihood approaches to statistical inferences can be seen as a third way to draw inferences from data, separate from Frequentist and Bayesian statistics. At the same time, likelihood functions are an important part of Bayesian statistics, so a better understanding of likelihoods will also make it easier to understand Bayesian statistics later. Where Frequentist and Bayesian statistics only allow probability-based inferences, the likelihood approach suggests that inference is possible directly from the likelihood function. 
+ 
+We can use likelihood functions to say something about unknown quantities. Let’s imagine you flip a coin 10 times, and it turns up heads 8 times. What is the true probability (which we will indicate by the Greek letter theta, θ) of this coin landing on heads? 
+
+The **binomial probability** of observing *x* successes in *n* studies is: 
+$$ P(\theta) = \frac{n!}{x!(n-x)!} * \theta^x * (1 - \theta)^{n - x} $$ 
+where θ is the probability of a success. The first term indicates the number of possible combinations of results (e.g., you could start out with eight successes, end with eight successes, or any of the other possible combinations), which is multiplied by the probability of observing one success in each of the trials, which is then multiplied by the probability of observing no success in the remaining trials. 
+ 
+Q1: Let’s assume you expect this is a fair coin. What is the binomial probability of observing 8 heads out of 10 coin flips, when θ = 0.5? 
+```{r Q1, echo=TRUE, message=FALSE, warning=FALSE}
+flips_n = 10
+flips_heads = 8
+theta = 0.5
+choose(flips_n,flips_heads)*theta^flips_heads*(1 - theta)^(flips_n - flips_heads)
+```
+
+Let’s assume we don’t have any other information about this coin. (You might believe most coins are fair; such priors will be discussed when we talk about Bayesian statistics). Based on the data we have observed, which value for θ has the **maximum likelihood**? Fisher calls this maximum likelihood estimation, and published it when he was 22 as a third year undergraduate (in addition to contributing to a huge number of areas in statistics, he is also one of the greatest biologists since Darwin). Since θ can be any value between 0 and 1, it is common to plot all values in what is known as the *likelihood curve*.
+
+```{r curve, echo=FALSE, message=FALSE, warning=FALSE}
+thetas <- seq(0,1,.01)
+flips_n = 10
+flips_heads = 8
+likelihoods <- choose(flips_n,flips_heads)*thetas^flips_heads*(1 - thetas)^(flips_n - flips_heads)
+plot(likelihoods ~ thetas, type = "l", main = "Likelihood Curve, x = 8", xlab = expression(theta), ylab = "Likelihood")
+```
+
+All possible values for θ from 0 to 1 are on the x-axis, and the likelihood is on the y-axis. It should not be surprising that the best guess we have, or the most likely value for θ, is that the true parameter is 8 out of 10, or θ = 0.8, with a likelihood of 0.30 (the highest point on the y-axis). It is important to know that the value of the likelihood itself has no meaning in isolation. In this sense, it differs from a probability. The likelihood of 0.30 does not mean much in isolation, but we can compare likelihoods of the same curve, and compare different values of θ. You can read off any other value for any other θ, and see that very low values (e.g., 0.2) are not very likely. 
+
+Probabilities and likelihoods are related, but different. *In probability*, you start with a given parameter (e.g., the probability a coin is fair, or the probability of heads being θ = 0.5) and you estimate the probability of a specific sample (e.g., getting 5 heads out of 10 coin tosses. *Likelihoods* start with a specific sample (e.g., observing 5 heads out of 10 coin tosses), and ask the likelihood of different parameters (e.g., the likelihood of θ = 0.5). Likelihoods are a statistical inference: We have observed some data, and we use this data to draw an inference about the likelihood of different parameters. More formally, the likelihood function is the (joint) density function evaluated at the observed data. Likelihood functions can be calculated for many different models (binomial distributions, normal distributions, etc., see Millar, 2011). 
+
+Q2: The likelihood curve rises up and falls down, except at the extremes, when 0 heads or only heads are observed. Open the PlotLikelihood.R script, and plot the likelihood curves for 0 heads by changing the number of successes in line 3 to 0, and running the script. What does the likelihood curve look like? 
+```{r Q2, echo=FALSE, message=FALSE, warning=FALSE}
+#plot likelihood curve----
+n<-10 #set total trials
+x<-0 #set successes
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like <- dbinom(x,n,theta) #create likelihood function
+plot(theta,like,type='l',xlab=expression(theta), ylab='Likelihood', main="Likelihood Curve, x = 0")
+
+#? Daniel Lakens, 2016. 
+# This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. https://creativecommons.org/licenses/by-nc-sa/4.0/
+```
+
+The curve starts at its highest point at θ = 0, and then the likelihood decreases as θ 
+increases. 
+
+Likelihoods can easily be combined. Imagine we have two people flipping the same coin independently. One person observes eight heads out of 10 flips, and the other observes 4 heads out of 10 flips. You might believe that this should give the same likelihood curve as one person flipping a coin 20 times, and observing 12 heads, and indeed, it does. In the plot below, all likelihood curves are standardized by dividing the curve by the maximum of each likelihood curve. This is why all curves now have a maximum of 1, and we can more easily compare different likelihood curves. 
+
+The curve on left is for 4 out of 10 heads, the one on the right is for 8 out of 10 heads. The black dotted curve in the middle is for 12 out of 20 heads. The red curve, exactly underneath the 12 out of 20 heads curve, is calculated by multiplying the likelihood curves: L($\theta_{combined}$) = L($\theta$) = 0.8 * L($\theta$) = 0.4. In the plot below, you can see that multiplying the likelihood curves for 4/10 heads and 8/10 heads (the red line) gives the same likelihood curve as that of 12/20 heads (black dotted line). 
+
+```{r like_combined, echo=FALSE, message=FALSE, warning=FALSE}
+n<-10 #set total trials
+left_x<-4 #set first successes
+right_x<-8 #set second successes
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like_left <- dbinom(left_x,n,theta) #create first likelihood function
+like_right <- dbinom(right_x,n,theta) #create second likelihood function
+like_combined <- dbinom(left_x + right_x,2*n,theta)
+plot(theta,like_right,type='l', lty=2,xlab=expression(theta), ylab='Likelihood', main="Likelihood Curve")
+lines(theta,like_left,type='l',lty=3)
+lines(theta,like_combined,type = 'l',col="red")
+```
+
+**There is the problem to reproduce Likelihoods combined**
+
+In the plot below, 10, 100, and 1000 coin flips are plotted, which yield 5, 50, and 500 heads, respectively. The likelihood curves are again standardized to make them more easily comparable. As the sample size increases, the curves become more narrow (the dashed line is for n = 10, the dotted line is for n = 100, and the solid line is for n = 1000). This means that as the sample size increases, all other values than 0.05 become increasingly less likely. Or, in other words, we have collected increasingly strong evidence for θ = 0.5, compared to most other possible values. With 1000 coin flips, it already very unlikely 
+
+```{r like_samplesize, echo=FALSE, message=FALSE, warning=FALSE}
+n1<-10 #set total trials of first set
+n2<-100 #set total trials of second set
+n3<-1000 #set total trials of third set
+x1<-5 #set first successes
+x2<-50 #set second successes
+x3<-500 #set third successes
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like_1 <- dbinom(x1,n1,theta) #create first likelihood function
+like_2 <- dbinom(x2,n2,theta) #create second likelihood function
+like_3 <- dbinom(x3,n3,theta)
+plot(theta,like_1,type='l',xlab=expression(theta), ylab='Likelihood', main="Likelihood Curve N = 10, 100, 1000", lwd=2)
+lines(theta,like_2,type='l',lty=2, lwd=2)
+lines(theta,like_3,type = 'l',lty=3, lwd=2)
+```
+** Something stranges in plot the likelihoods of **
+
+Q3: Get a coin out of your wallet. Flip it 13 times, and count the number of heads. Open the R file CalculateLikelihoodRatio.R to calculate the likelihood that your coin is fair, compared to the likelihood that the coin is not fair, and will give the % of heads you observed. In line 3, set the number of successes to the number of heads you observed. In line 5, change the 0 in 0/13 to the number of heads you have observed (or leave it to 0 if you didn’t observe any heads at all!). Run the script to calculate the likelihood ratio. What is the maximum likelihood ratio of a fair compared to a non-fair coin, based on the observed data? 
+
+```{r Q3~Q6, echo=FALSE, message=FALSE, warning=FALSE}
+#Calculate the likelihood ratio----
+n<-1000 #set total trials
+x<-500 #set successes
+H0 <- .5 #specify one hypothesis you want to compare with the likihood ratio
+H1 <- 0.4 #specify another hypothesis you want to compare with the likihood ratio (you can use 1/20, or 0.05)
+dbinom(x,n,H0)/dbinom(x,n,H1) #Returns the likelihood ratio of H0 over H1
+dbinom(x,n,H1)/dbinom(x,n,H0) #Returns the likelihood ratio of H1 over H0
+
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like <- dbinom(x,n,theta)
+#png(file="LikRatio.png",width=4000,height=3000, , units = "px", res = 900)
+plot(theta,like,type='l',xlab=expression(theta), ylab='Likelihood', lwd=2)
+points(H0,dbinom(x,n,H0))
+points(H1,dbinom(x,n,H1))
+segments(H0, dbinom(x,n,H0), x/n, dbinom(x,n,H0), lty=2, lwd=2)
+segments(H1, dbinom(x,n,H1), x/n, dbinom(x,n,H1), lty=2, lwd=2)
+segments(x/n, dbinom(x,n,H0), x/n, dbinom(x,n,H1), lwd=2)
+title(paste('Likelihood Ratio H0/H1:',round(dbinom(x,n,H0)/dbinom(x,n,H1),digits=2)," Likelihood Ratio H1/H0:",round(dbinom(x,n,H1)/dbinom(x,n,H0),digits=2)))
+#dev.off()
+
+#? Daniel Lakens, 2016. 
+# This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. https://creativecommons.org/licenses/by-nc-sa/4.0/
+```
+
+
+
+```{r Q7, echo=FALSE, message=FALSE, warning=FALSE}
+#Calculate the likelihood ratio----
+n<-13 #set total trials
+x<-8 #set successes
+H0 <- .5 #specify one hypothesis you want to compare with the likihood ratio
+H1 <- 7/13 #specify another hypothesis you want to compare with the likihood ratio (you can use 1/20, or 0.05)
+dbinom(x,n,H0)/dbinom(x,n,H1) #Returns the likelihood ratio of H0 over H1
+dbinom(x,n,H1)/dbinom(x,n,H0) #Returns the likelihood ratio of H1 over H0
+
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like <- dbinom(x,n,theta)
+#png(file="LikRatio.png",width=4000,height=3000, , units = "px", res = 900)
+plot(theta,like,type='l',xlab=expression(theta), ylab='Likelihood', lwd=2)
+points(H0,dbinom(x,n,H0))
+points(H1,dbinom(x,n,H1))
+segments(H0, dbinom(x,n,H0), x/n, dbinom(x,n,H0), lty=2, lwd=2)
+segments(H1, dbinom(x,n,H1), x/n, dbinom(x,n,H1), lty=2, lwd=2)
+segments(x/n, dbinom(x,n,H0), x/n, dbinom(x,n,H1), lwd=2)
+title(paste('Likelihood Ratio H0/H1:',round(dbinom(x,n,H0)/dbinom(x,n,H1),digits=2)," Likelihood Ratio H1/H0:",round(dbinom(x,n,H1)/dbinom(x,n,H0),digits=2)))
+#dev.off()
+
+#? Daniel Lakens, 2016. 
+# This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. https://creativecommons.org/licenses/by-nc-sa/4.0/
+```

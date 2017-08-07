@@ -1,0 +1,802 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.861
+[MUSIC]
+效果量
+
+2
+00:00:09.861 --> 00:00:13.430
+In this lecture we'll talk about the concept of effect sizes.
+這一講是效果量的概念入門
+
+3
+00:00:13.430 --> 00:00:16.030
+I'll explain what they're good for, how you can use them, and
+我會說明善用效果量的好處，使用的方式
+
+4
+00:00:16.030 --> 00:00:17.740
+why you should report them.
+還有應該報告效果量的理由
+
+5
+00:00:17.740 --> 00:00:21.820
+And in the next lectures, we'll dive into more detail in two families of effect
+後續兩講介紹兩大類效果量
+
+6
+00:00:21.820 --> 00:00:23.480
+sizes, Cohen's d and correlations.
+Cohen's d與相關係數
+
+7
+00:00:23.480 --> 00:00:27.570
+Now there are some people who think that effect sizes are in
+在報告中呈現效果量已經是許多研究者的共識
+
+8
+00:00:27.570 --> 00:00:31.610
+essence the main thing that we're interested in when we perform a study.
+在報告中呈現效果量已經是許多研究者的共識
+
+9
+00:00:31.610 --> 00:00:35.900
+There might be a lot of attention to the specific level of the p value, but
+過去論文的寫作與閱讀特別注意p值的呈現
+
+10
+00:00:35.900 --> 00:00:38.630
+Cohen was one of the first to point out the importance of
+而Cohen為代表的學者首先指出
+
+11
+00:00:38.630 --> 00:00:42.970
+effect sizes in the scientific literature, and he says this is basically the main
+在科學文獻裡呈現效果量的重要性
+
+12
+00:00:42.970 --> 00:00:46.560
+thing that you want to know, the primary product of a researching crew.
+更指出這應該是呈現研究成果的基本形式
+
+13
+00:00:47.820 --> 00:00:51.960
+So it's important to always report these effect sizes, but not just to report them,
+報告效果量不只是論文寫作的必知事項
+
+14
+00:00:51.960 --> 00:00:53.720
+but also to correctly interpret them.
+也要了解正確的解讀方式
+
+15
+00:00:56.450 --> 00:00:59.150
+Effect sizes serve three main goals.
+呈現效果量有三大目標
+
+16
+00:01:00.310 --> 00:01:01.010
+First of all,
+首先
+
+17
+00:01:01.010 --> 00:01:05.240
+they allow you to communicate the practical significance of the results.
+作者可借此傳達研究操作的結果真正顯著之處
+
+18
+00:01:05.240 --> 00:01:07.460
+And effect might be statistically significant, but
+儘管效果是統計顯著的
+
+19
+00:01:07.460 --> 00:01:09.820
+does it actually really matter in practice?
+但真的是研究操作造成的嗎？
+
+20
+00:01:11.520 --> 00:01:15.950
+Second, effect sizes allow you to draw meta-analytic conclusions.
+其二、效果量有助整合分析式結論的佈局
+
+21
+00:01:15.950 --> 00:01:19.560
+If there are a number of studies in the published literature, you can group all
+只要收集同主題的出版文獻，
+任何人都能整合並計算整合分析效果量
+
+22
+00:01:19.560 --> 00:01:22.910
+these studies together, calculate the meta-analytic effect size and
+只要收集同主題的出版文獻，
+任何人都能整合並計算整合分析效果量
+
+23
+00:01:22.910 --> 00:01:26.380
+get the best estimate of the true effect size in the population.
+可估計來源母群的真實效果量
+
+24
+00:01:28.570 --> 00:01:33.170
+If we take a look at simulated studies where we perform independent t-tests and
+拿這個獨立t檢定模擬研究來說
+
+25
+00:01:33.170 --> 00:01:36.720
+each group has 25 participants,
+每一群有25人
+
+26
+00:01:36.720 --> 00:01:40.640
+you can see that there's quite a lot of variation in the effect size estimate.
+這幅森林圖(forest plot)裡每個方塊代表一項研究結果
+
+27
+00:01:40.640 --> 00:01:46.220
+This forest plot illustrates effect sizes by the squares.
+每個結果的平均值變異範圍很大
+
+
+28
+00:01:46.220 --> 00:01:49.630
+And you can see that the squares jump around a little bit on the xs and
+最下面的菱形代表這些研究的整合效果量
+
+29
+00:01:49.630 --> 00:01:52.340
+the xs is the effect size.
+最下面的菱形代表這些研究的整合效果量
+
+30
+00:01:52.340 --> 00:01:55.370
+So in this case there's actually no true effect size,
+因為菱形落在數值0之上
+
+31
+00:01:55.370 --> 00:01:59.210
+there's no true effect in the population, so the true effect size is zero.
+表示並沒有真實效果存在，所以效果量為0
+
+32
+00:02:00.280 --> 00:02:03.050
+But we've drawn random samples from this population and
+圖中的所有研究是取自母群的隨機樣本
+
+33
+00:02:03.050 --> 00:02:07.310
+you can see that the effect size estimate within each individual sample actually
+研究結果平均值有高有低
+
+34
+00:02:07.310 --> 00:02:12.690
+differs from quite reasonably high and quite reasonably low effect size estimate,
+但是都與0相差不遠
+
+35
+00:02:12.690 --> 00:02:14.530
+even though the true estimate should be zero.
+所以估計的效果量為0是合理的
+
+36
+00:02:16.940 --> 00:02:21.323
+Now finally effect sizes allow
+you to perform a power analysis.
+最後，效果量是檢定力分析的素材
+
+37
+00:02:21.323 --> 00:02:23.967
+When we talk about controlling type two errors,
+上週談型二錯誤率控制的課程裡
+
+38
+00:02:23.967 --> 00:02:28.298
+it's important to think about what the true effect might be in the population.
+提到了解真實效果的重要性
+
+39
+00:02:28.298 --> 00:02:32.975
+And an effect size tells you this, and you can use it in a power analysis to
+有了效果量估計值，你可以用檢定力分析
+
+40
+00:02:32.975 --> 00:02:37.809
+determine the amount participants that the study would require to achieve
+決定能成功發現真實效果的所需樣本數
+
+41
+00:02:37.809 --> 00:02:42.356
+a certain probability of finding a true effect if it's really there.
+決定能成功發現真實效果的所需樣本數
+
+42
+00:02:42.356 --> 00:02:46.228
+Now this is an example of G power, which is free software, and
+這是G Power軟體的介面截圖
+
+43
+00:02:46.228 --> 00:02:49.592
+I'm not going to explain exactly how you should use it.
+這段影片我不會詳述使用方法
+
+44
+00:02:49.592 --> 00:02:51.415
+We'll talk about this in an assignment.
+本週作業有詳細的指引
+
+45
+00:02:51.415 --> 00:02:56.066
+I just want to highlight this field where you see that the effect size, Cohen's d,
+只要注意這張圖的Effect size dz欄位
+
+46
+00:02:56.066 --> 00:02:59.867
+needs to be inserted if you want to perform the power calculations.
+輸入數值就可以計算檢定力
+
+47
+00:03:03.371 --> 00:03:06.434
+There are different types of effect sizes.
+效果量有許多種類
+
+48
+00:03:06.434 --> 00:03:08.826
+There are unstandardized effect sizes,
+像是非標準化效果量
+
+49
+00:03:08.826 --> 00:03:13.412
+which are basically the difference that
+you've observed between two groups.
+就只是兩組之間的差異
+
+50
+00:03:13.412 --> 00:03:16.775
+Let's say you measure how quickly I can run down the corridor.
+像是用碼錶測量人類的主觀計時
+
+51
+00:03:16.775 --> 00:03:19.343
+You measure how quickly someone else runs down the corridor.
+就是到了指定秒數時，一個人能多快按錶
+
+52
+00:03:19.343 --> 00:03:25.300
+You do this multiple times and you want to see whether one or the other is fastest.
+找兩個人做這個測試好幾次再來比較誰快
+
+53
+00:03:25.300 --> 00:03:29.910
+Now in this case, there's no need to calculate any weird type of effect size.
+這個狀況不必計算任何奇怪的效果量
+
+54
+00:03:29.910 --> 00:03:34.100
+You can just use the time as an unstandardized effect size.
+兩個人的時間差就是非標準化效果量
+
+55
+00:03:34.100 --> 00:03:37.180
+People all understand how to interpret time.
+結果人人都看得懂
+
+56
+00:03:37.180 --> 00:03:39.360
+So time is a very logical skill to use, and
+時間單位是有邏輯的單位
+
+57
+00:03:39.360 --> 00:03:43.130
+if I'm two seconds faster, you know how you should interpret this.
+我說其中一人快了兩秒，你馬上就懂什麼意思
+
+58
+00:03:44.620 --> 00:03:48.370
+Now not all research allows you to used on standardized effect sizes.
+可惜不是所有研究都適合用非標準化效果量
+
+59
+00:03:49.680 --> 00:03:53.700
+For example think about people in the literature who study happiness.
+例如快樂感研究用的量表
+
+60
+00:03:53.700 --> 00:03:57.400
+They might measure happiness by asking people how happy are you at this moment.
+有測量當下的快樂感的七點量表
+
+61
+00:03:57.400 --> 00:04:01.020
+Ranging from not happy at all at 1, to 7, very happy.
+選項有1代表不快樂，到代表7快樂
+
+62
+00:04:02.140 --> 00:04:06.180
+Other people in the literature might use a five point scale to measure happiness.
+也有研究者用五點量表測量快樂感
+
+63
+00:04:06.180 --> 00:04:09.740
+We can immediately see that the happiness score of 4 does not have any
+所以4在這兩份量表示的意義並不相同
+
+64
+00:04:09.740 --> 00:04:10.660
+fixed meaning.
+所以4在這兩份量表示的意義並不相同
+
+65
+00:04:10.660 --> 00:04:13.560
+It really depends on the scale that was used.
+解讀時要注意是那一版量表
+
+66
+00:04:13.560 --> 00:04:17.830
+So if you want to compare the size of the difference between these studies,
+如果要比較不同研究的效果量差異
+
+67
+00:04:17.830 --> 00:04:20.840
+we need to find a way to standardized these differences.
+就要把差異標準化
+
+68
+00:04:20.840 --> 00:04:23.143
+And that's what standardized effect size can do.
+這就是需要標準化效果量的狀況
+
+69
+00:04:25.712 --> 00:04:29.750
+Now it's very important to interpret the effect size of a study.
+現在談如何正確解讀效果量
+
+70
+00:04:29.750 --> 00:04:34.200
+A statistically significant effect alone might not be real reason to worry.
+統計顯著與否並不是關鍵
+
+71
+00:04:34.200 --> 00:04:36.190
+And this is a good example.
+我用這個例子說明
+
+72
+00:04:36.190 --> 00:04:39.720
+There was a study performed by Facebook which influenced how happy
+這個研究展示什麼因素影響臉書使用者的快樂感受
+
+73
+00:04:39.720 --> 00:04:41.800
+people would feel.
+這個研究展示什麼因素影響臉書使用者的快樂感受
+
+74
+00:04:41.800 --> 00:04:46.360
+The way that they did this was either by removing some very positive posts on
+研究者的方法是移除使用者臉書頁面的
+正面訊息或負面訊息
+
+75
+00:04:46.360 --> 00:04:51.040
+people's timelines or they removed very negative posts on people's timelines.
+研究者的方法是移除使用者臉書頁面的
+正面訊息或負面訊息
+
+76
+00:04:51.040 --> 00:04:54.850
+And then they measured the comments that people typed on Facebook and
+然後測量使用者之後一段時間在臉書的留言正負面傾向
+
+77
+00:04:54.850 --> 00:04:58.650
+how positive or negative were the Facebook posts that people made.
+然後測量使用者之後一段時間在臉書的留言正負面傾向
+
+78
+00:05:00.070 --> 00:05:04.090
+Now it's quite a lot of attention for this study because the result show that when
+這研究的吸睛之處是結果顯示
+
+79
+00:05:04.090 --> 00:05:09.050
+people saw less positive information, people actually were slightly
+使用者看到較少的正面訊息
+
+80
+00:05:09.050 --> 00:05:12.939
+less positive in the Facebook messages that they post themselves.
+個人留言也比較少正面訊息
+
+81
+00:05:14.540 --> 00:05:17.370
+Now if we look really at the data themselves and
+不管報告的統計顯著，深入看資料細節的話
+
+82
+00:05:17.370 --> 00:05:20.530
+especially not on whether they were statistically significant or not, but
+不管報告的統計顯著，深入看資料細節的話
+
+83
+00:05:20.530 --> 00:05:27.683
+at the effect size, we can see that the effect size here was a Cohen's d of 0.001.
+這個研究結果的Cohen's d只有0.001 
+
+84
+00:05:28.840 --> 00:05:31.300
+Now that's a very tiny effect size.
+是個非常微弱的效果量
+
+85
+00:05:31.300 --> 00:05:35.840
+It was statistically significant because Facebook has a huge amount of data.
+結果是統計顯著是因為臉書有海量使用者
+
+86
+00:05:35.840 --> 00:05:38.870
+They have millions and millions of Facebook posts to analyze.
+研究者分析的資料有「成億上兆」的臉書留言
+
+87
+00:05:40.400 --> 00:05:44.570
+But the difference that they observed was so small, that it was for
+但是以實際效益來說，這樣的效果量並無任何意義
+
+88
+00:05:44.570 --> 00:05:47.209
+all practical purposes, almost meaningless.
+但是以實際效益來說，這樣的效果量並無任何意義
+
+89
+00:05:48.800 --> 00:05:53.000
+This implies that the effect that they observed was so
+這份報告呈現的資料集中於極少數的情緒性字詞的觀察
+
+90
+00:05:53.000 --> 00:05:58.590
+small in the emotional connotation of the words that
+這份報告呈現的資料集中於極少數的情緒性字詞的觀察
+
+91
+00:05:58.590 --> 00:06:05.070
+people typed that after 3,570 words, one more negative
+像是使用者留言三千多個中性字詞後
+
+92
+00:06:05.070 --> 00:06:10.000
+word was typed in the condition where people did not see the positive feedback.
+寫出一個負向字詞就歸類為「負面回應」
+
+93
+00:06:10.000 --> 00:06:11.270
+Now unless you type really,
+除非使用者都在臉書寫很長的留言，
+這樣的觀察很難反應個人行為
+
+94
+00:06:11.270 --> 00:06:16.840
+really long Facebook posts, this is not a noticeable effect at an individual level.
+除非使用者都在臉書寫很長的留言，
+這樣的觀察很難反映個別行為
+
+95
+00:06:16.840 --> 00:06:21.000
+This is only statistically significant over a huge number of people.
+這種差異只有放在巨量資料才會呈現統計顯著
+
+96
+00:06:21.000 --> 00:06:23.440
+But people already worried, and there was even one
+但這樣的研究結果會讓人聯想到
+
+97
+00:06:23.440 --> 00:06:27.850
+blog post somewhere where they said we know that mood is correlated with suicide.
+只要有一個部落客散播有關自殺的訊息，
+會不會就有影響
+
+98
+00:06:27.850 --> 00:06:30.120
+So maybe by experimenting on people,
+若是利用臉書進行這種社會實驗
+
+99
+00:06:30.120 --> 00:06:33.710
+Facebook actually caused more people to commit suicide.
+搞不好會引起自殺朝
+
+100
+00:06:33.710 --> 00:06:37.250
+But if you interpret the effect size, you can see that the effect is so, so
+不過理解效果量的意義之後
+
+101
+00:06:37.250 --> 00:06:41.249
+tiny, that this is basically impossible to have real life consequences.
+你會發現這對真實生活的影響非常微小
+
+102
+00:06:43.670 --> 00:06:48.990
+So it's important to think that effects might be statistically significant, but
+研究發現的效果雖然有統計意義的顯著
+
+103
+00:06:48.990 --> 00:06:51.350
+they can be practically insignificant.
+卻沒有現實意義的顯著
+
+104
+00:06:51.350 --> 00:06:54.860
+Just because there is a true effect doesn't mean that we need to care or
+即使效果確實存在也不代表值得擔心
+
+105
+00:06:54.860 --> 00:06:55.650
+worry about it.
+即使效果確實存在也不代表值得擔心
+
+106
+00:06:55.650 --> 00:07:00.350
+On the other hand, it's also important to realize
+另一方面，理解能影響真實世界的微弱效果是很重要的
+
+107
+00:07:00.350 --> 00:07:04.710
+that small effects might have real world consequences.
+另一方面，理解能影響真實世界的微弱效果是很重要的
+
+108
+00:07:04.710 --> 00:07:09.093
+In the meta-analysis in which researchers studied interventions for
+像是有關青少年犯罪處置研究的整合性分析
+
+109
+00:07:09.093 --> 00:07:13.915
+juvenile delinquency, they found that these interventions had reliable but
+顯示各類處置有些微但可信的效用
+
+110
+00:07:13.915 --> 00:07:16.776
+small effects size, Cohen's d of 0.11.
+換算成Cohen's d是0.11
+
+111
+00:07:16.776 --> 00:07:19.759
+Now even though we consider this a small effect,
+即使這些處置的效果微小
+
+112
+00:07:19.759 --> 00:07:25.016
+it has real life consequences that changes people's lives after the intervention.
+依然能真正改變一些人的人生
+
+113
+00:07:25.016 --> 00:07:29.765
+Instead of 50% of the young people leaving jails going on to
+因為這些處置讓青少年犯入監服刑的比例
+
+114
+00:07:29.765 --> 00:07:33.798
+commit more crimes, this reduces to about 45%.
+從50%降到45%
+
+115
+00:07:33.798 --> 00:07:38.052
+So this might be a small difference, but it's a very impactful difference for
+雖然整體數據改變不大，
+卻帶給不少人不可估量的改變
+
+116
+00:07:38.052 --> 00:07:38.898
+these people.
+雖然整體數據改變不大，
+卻帶給不少人不可估量的改變
+
+117
+00:07:41.875 --> 00:07:45.123
+It's also important to interpret effect sizes because they can be
+還需要知道的是效果量有可能是無法解釋的巨大
+
+118
+00:07:45.123 --> 00:07:46.410
+implausibly large.
+還需要知道的是效果量有可能是無法解釋的巨大
+
+119
+00:07:46.410 --> 00:07:51.900
+We talked about small effect sizes maybe being not really practically relevant.
+剛剛提到微小的效果量也許沒有實質意義
+
+120
+00:07:51.900 --> 00:07:55.360
+But big effects can also make you wonder what's really being studied and
+巨大的效果量也會讓研究者懷疑原始問題
+
+121
+00:07:55.360 --> 00:07:58.250
+whether the result really makes sense.
+以及結果是不是真有意義
+
+122
+00:07:58.250 --> 00:07:59.300
+Let's look at one example.
+來看看這個例子
+
+123
+00:08:01.190 --> 00:08:04.620
+In this study, researchers found a correlation
+這個研究報告白人的自殺率
+
+124
+00:08:04.620 --> 00:08:08.710
+between the suicide rate of white individuals and
+這個研究報告白人的自殺率
+
+125
+00:08:08.710 --> 00:08:11.950
+the amount of country music that was played on the radio.
+與電台播放鄉村音樂的相關性
+
+126
+00:08:13.130 --> 00:08:17.840
+Now this study won an award, an Ig Nobel prize, which is a prize for
+作者因此獲得搞笑諾貝爾獎
+
+127
+00:08:17.840 --> 00:08:20.860
+studies that make you laugh and then make you think.
+這個獎表揚讓人會心一笑又值得省思的研究
+
+128
+00:08:22.120 --> 00:08:26.280
+Now, in this case I think this study should make you think effect sizes,
+我認為這個研究提醒研究者發現巨大的效果量時
+
+129
+00:08:26.280 --> 00:08:29.370
+and how implausibly large effect sizes might
+要確定這項發現的可信度，而非僥倖
+
+130
+00:08:29.370 --> 00:08:32.069
+indicate that this is not a reliable effect, but just a fluke.
+要確定這項發現的可信度，而非僥倖
+
+131
+00:08:33.410 --> 00:08:37.791
+Indeed it turns out that follow up research was not able to confirm this
+這種發現可能導致其他研究者難以重現
+
+132
+00:08:37.791 --> 00:08:38.393
+result.
+這種發現可能導致其他研究者難以重現
+
+133
+00:08:38.393 --> 00:08:41.306
+And if you look at the effect size in this case,
+這份報告的的效果量是相關係數
+
+134
+00:08:41.306 --> 00:08:46.414
+we can see that there's a correlation of .54, which is a large correlation.
+作者報告.54，表示變項之間有相當高的相關
+
+135
+00:08:46.414 --> 00:08:49.030
+That's a sizeable, noticeable effect.
+高到很容易讓人聯想
+
+136
+00:08:49.030 --> 00:08:53.693
+And it should make you wonder whether it's likely that listening to country music on
+會好奇聽鄉村音樂真的會提高自殺率
+
+137
+00:08:53.693 --> 00:08:58.093
+the radio really has such a huge effect on the likelihood that people will commit
+會好奇聽鄉村音樂真的會提高自殺率
+
+138
+00:08:58.093 --> 00:08:59.630
+suicide.
+會好奇聽鄉村音樂真的會提高自殺率
+
+139
+00:08:59.630 --> 00:09:02.810
+If you see an effect size this large you should say,
+有概念的研究者會提醒自已
+
+140
+00:09:02.810 --> 00:09:05.310
+I don't think that it's very plausible.
+變項間很難有實質關係
+
+141
+00:09:05.310 --> 00:09:09.698
+And you should make sure that you keep some doubts about the reliability of this
+無論如何都要保持對這種發現的批判立場
+
+142
+00:09:09.698 --> 00:09:10.306
+finding.
+無論如何都要保持對這種發現的批判立場
+
+143
+00:09:13.023 --> 00:09:15.820
+There are two types of families of effect sizes.
+效果量主要有兩大類
+
+144
+00:09:15.820 --> 00:09:19.300
+A differentiation is made between the Cohen's d family,
+Cohen's d一類的效果量主要用來測量差異
+
+145
+00:09:19.300 --> 00:09:22.400
+which are standardized mean differences.
+大多數是標準化平均值差異
+
+146
+00:09:22.400 --> 00:09:24.350
+And the other hand we have the r family,
+另一類是相關係數
+
+147
+00:09:24.350 --> 00:09:29.150
+which are measures of strength of association, things like correlations.
+用來測量變項之間的關聯強度
+
+148
+00:09:29.150 --> 00:09:34.230
+And then the next lectures, we'll go into more detail about both these families.
+之後兩講會深入介紹這兩類效果量
+
+149
+00:09:34.230 --> 00:09:37.080
+Now in this lecture, we talked about the importance of reporting and
+這一講談報告效果量的重要性
+
+150
+00:09:37.080 --> 00:09:38.932
+interpreting effect sizes.
+還要解讀的必知要事
+
+151
+00:09:38.932 --> 00:09:44.180
+Effect sizes might arguably be the most important outcome of a study.
+有人認為效果量是研究報告最重要的成份
+
+152
+00:09:44.180 --> 00:09:47.990
+The p value will tell you something about whether there's a signal or a noise.
+p值指示研究能否真的偵測出效果
+
+153
+00:09:47.990 --> 00:09:51.840
+But even if there is noise, you might want to just accurately estimate that the true
+即使偵測不到
+還是可以用效果量估計真實為0的效果
+
+154
+00:09:51.840 --> 00:09:53.610
+effect is almost completely zero.
+即使偵測不到
+還是可以用效果量估計真實為0的效果
+
+155
+00:09:55.030 --> 00:09:59.037
+So you should always report effect
+sizes in your results sections, and
+任何研究者應在報告中呈現效果量
+
+156
+00:09:59.037 --> 00:10:03.401
+more importantly, you should also always
+interpret the size of the effect.
+更要仔細說明效果量的意義
+
+157
+00:10:03.401 --> 00:10:08.079
+[MUSIC]
+影片結束

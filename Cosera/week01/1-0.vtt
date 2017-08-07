@@ -1,0 +1,818 @@
+WEBVTT
+
+1  
+00:00:00.000 --> 00:00:09.127  
+[MUSIC]  
+[課程介紹]  
+  
+2  
+00:00:09.127 --> 00:00:14.460  
+Hi, welcome to this course where we'll try  
+to improve your statistical inferences.  
+歡迎加入「升級你的統計推論功力」  
+  
+3  
+00:00:14.460 --> 00:00:17.720  
+My name is Daniel Lakens,  
+I'm an experimental psychologist working  
+我是Daniel Lakens，我是一位實驗心理學家  
+現在是埃因霍溫科技大學HTI學群專任教師
+
+  
+4  
+00:00:17.720 --> 00:00:21.160  
+at the Human-Technology Interaction group  
+at Eindhoven University of Technology.  
+我是Daniel Lakens，我是一位實驗心理學家  
+現在是埃因霍溫科技大學HTI學群專任教師
+
+5
+00:00:22.370 --> 00:00:26.550
+Now, some years after I completed my Ph.D,
+I realized that my understanding of
+幾年前我拿到博士學位之後，我發覺
+
+6
+00:00:26.550 --> 00:00:29.980
+statistics was actually not good
+enough to design a proper study.
+我對統計學的認識太少
+不足以設計良好的研究
+
+7
+00:00:30.980 --> 00:00:33.580
+I joined the Reproducibility Project
+我曾參與2015年重製100項心理學實驗
+
+8
+00:00:33.580 --> 00:00:38.040
+which has the goal to reproduce
+100 studies in psychology.
+的跨國合作專案
+(參考https://osf.io/ezcuj/)
+
+9
+00:00:38.040 --> 00:00:41.690
+And when I started to perform
+the replication study that I would do,
+當我開始進行重製研究時
+
+10
+00:00:41.690 --> 00:00:44.940
+I realized that I had to
+calculate an effect size
+我必須先計算效果量(effect size)
+
+11
+00:00:44.940 --> 00:00:48.430
+to perform an a priori power analysis.
+以及進行事前考驗力分析
+
+12
+00:00:48.430 --> 00:00:52.264
+Now, this is a very basic first
+step when you design a new study,
+今天無論進行全新的研究或重製研究
+
+13
+00:00:52.264 --> 00:00:57.238
+whether it's a completely new study or
+a replication study, it doesn't matter.
+都是第一步必做的功課
+
+14
+00:00:57.238 --> 00:00:59.447
+I realized I didn't really
+know how to do this.
+但是以前我並不曉得如何做
+
+15
+00:00:59.447 --> 00:01:02.708
+And then I wondered, well,
+if I don't know to do this very first,
+後來我醒悟，如果不知道如何做這些基本功課
+
+16
+00:01:02.708 --> 00:01:06.180
+basic thing,
+how can I ever collect informative data?
+我要怎麼收集真正有意義的資料？
+
+17
+00:01:06.180 --> 00:01:10.590
+Since then, I've been looking into how to
+improve the way that we design studies and
+從那之後，我深入學習增進設計研究的能力
+
+18
+00:01:10.590 --> 00:01:11.910
+draw inferences from data.
+以及運用資料進行推論的正確方法
+
+19
+00:01:11.910 --> 00:01:15.000
+I published some papers on this, and
+我發表過幾篇研究設計與統計推論的論文
+(請見各週課程概要Overview)
+
+20
+00:01:15.000 --> 00:01:19.430
+I've realized that improving the
+statistical understanding of how you do
+我了解提昇統計推論的能力可以幫助你
+成為做事更有效，更講究品質的研究者
+
+21
+00:01:19.430 --> 00:01:23.070
+research really makes you a more
+efficient and better researcher.
+我了解提昇統計推論的能力可以幫助你
+成為做事更有效，更講究品質的研究者
+
+22
+00:01:23.070 --> 00:01:26.950
+So I'll share some of the insights I had,
+and I'll try to prevent some confusion
+所以我要分享我的收穫，以及幫助你
+減輕使用R語言等統計工具時遇到的困擾
+
+23
+00:01:26.950 --> 00:01:30.040
+that you might have about
+statistical tools that we use.
+所以我要分享我的收穫，以及幫助你
+減輕使用R語言等統計工具時遇到的困擾
+
+24
+00:01:31.800 --> 00:01:36.460
+The goal of this is to try to
+prevent you from fooling yourself.
+這門課的目標是幫助你避免在研究過程中
+愚弄自已
+
+25
+00:01:36.460 --> 00:01:41.130
+As Feynman reminds us, the first principle
+in doing science is that you must not fool
+如同物理學家費曼先生的提醒：
+從事科學的首要原則是避免愚弄自己
+
+26
+00:01:41.130 --> 00:01:44.850
+yourself- and
+you are the easiest person to fool.
+因為自己就是最容易被自己愚弄的人
+
+27
+00:01:44.850 --> 00:01:48.360
+So I see a better understanding
+of statistics as a very good way
+提昇對統計學的認識就是
+避免愚弄自己的可行之道
+
+28
+00:01:48.360 --> 00:01:50.620
+to try to prevent you
+from fooling yourself.
+提昇對統計學的認識就是
+避免愚弄自己的可行之道
+
+29
+00:01:52.640 --> 00:01:57.440
+Now, as an experimental researcher, the
+goal might not be to do statistical tests,
+身為一位實驗科學家，首要目的並不是做統計檢定
+
+30
+00:01:57.440 --> 00:01:58.010
+itself.
+身為一位實驗科學家，首要目的並不是做統計檢定
+
+31
+00:01:58.010 --> 00:02:01.830
+What you always want to do is
+to say something about a theory.
+而是根據某種理論提出解釋
+
+32
+00:02:01.830 --> 00:02:06.190
+So the goal of data collection is to
+first draw statistical inferences and
+收集資料的目標是先進行統計推論
+
+33
+00:02:06.190 --> 00:02:08.400
+then to draw theoretical inferences.
+再進行理論推論
+
+34
+00:02:08.400 --> 00:02:10.220
+That's what you really want to know.
+這類課程一開始都會先這樣的告知
+
+35
+00:02:10.220 --> 00:02:13.690
+But, of course, you need to draw a good
+and valid statistical inferences
+當然，統計推論必須要可信而且有效
+
+36
+00:02:13.690 --> 00:02:16.530
+because otherwise the next
+step doesn't really work.
+否則理論推論無法成立
+
+37
+00:02:16.530 --> 00:02:18.236
+So let's try to improve this step.
+就讓我們由此踏上升級之路吧
+
+38
+00:02:20.028 --> 00:02:23.797
+There's a reason why psychologists,
+maybe scientists more generally,
+今天的心理學家還有更多科學家
+有許多好理由提昇自己的統計推論能力
+
+39
+00:02:23.797 --> 00:02:27.165
+are now really interested in
+improving statistical inferences.
+今天的心理學家還有更多科學家
+有許多好理由提昇自己的統計推論能力
+
+40
+00:02:27.165 --> 00:02:31.813
+And one of the first reasons for
+starting on this improvement cycle was
+其中一個理由是從康乃爾大學資深教深
+
+41
+00:02:31.813 --> 00:02:35.060
+a study published by
+Daryl Bem on precognition.
+Daryl Bem的預知能力研究開始
+
+42
+00:02:36.090 --> 00:02:40.080
+Precognition is the idea that
+we can predict the future.
+預知能力(precognition)就是人類
+具有預測未來的能力
+
+43
+00:02:40.080 --> 00:02:43.080
+Now, you might believed that
+this is possible or not, but
+不論你相信或者不相信
+
+44
+00:02:43.080 --> 00:02:46.190
+as a scientist we should always keep
+an open mind and look at the evidence.
+身為科學家必須對被提出來的證據
+保持開放的心胸
+
+45
+00:02:47.750 --> 00:02:51.710
+In this case, there was a set of nine
+published studies that all showed
+這份研究報告了九項實驗的結果
+
+46
+00:02:51.710 --> 00:02:54.990
+support for the idea that people
+could predict the future.
+而且一致支持人類具有預知能力
+
+47
+00:02:54.990 --> 00:02:59.570
+There were very simple basic tasks that
+were performed that are widely used in
+這些實驗都是實驗心理學常用的簡單作業
+
+48
+00:02:59.570 --> 00:03:04.380
+experimental psychology, but
+the tasks were always reversed.
+不過這份研究裡作業步驟都做了調整
+
+49
+00:03:04.380 --> 00:03:07.680
+So instead of first seeing a picture and
+then pressing a button to
+像是不用看到圖片再辨識
+
+50
+00:03:07.680 --> 00:03:11.740
+categorize the picture, the task was
+presented in the reversed order.
+而是請參與者看到之前就要辨識
+
+51
+00:03:11.740 --> 00:03:15.890
+People first had to press a button, and
+only then the picture would emerge.
+參與者按下按鍵之後，圖片才會浮現
+
+52
+00:03:15.890 --> 00:03:16.430
+So, of course,
+想當然爾
+
+53
+00:03:16.430 --> 00:03:19.678
+you don't really know what to press
+unless you can predict the future.
+你必須有預知能力才曉得該按什麼鍵
+
+54
+00:03:19.678 --> 00:03:21.150
+And in this set of studies,
+在這九項實驗裡
+
+55
+00:03:21.150 --> 00:03:25.490
+people were able to perform above guessing
+average in most of these studies.
+參與者的平均表現都比隨便猜的情況好
+
+56
+00:03:26.670 --> 00:03:30.561
+So after this, maybe some people
+thought precognition must be real.
+實驗結果發表後，有些人開始覺得
+人類真的有預知能力
+
+57
+00:03:30.561 --> 00:03:34.629
+But other people thought, well, if this is
+going to be published in one of the top
+但是有些人在想既然社會心理學的頂尖期刊
+(這篇研究刊登於JPSP)
+
+58
+00:03:34.629 --> 00:03:38.515
+journals in our field then maybe we
+are not drawing the correct statistical
+都接受了，我們卻無法從資料獲得正確的推論
+(這篇研究刊登於JPSP)
+
+59
+00:03:38.515 --> 00:03:42.110
+inferences from data because it
+seemed unlikely that this was true.
+那可能是這些實驗結果並不是真的
+(這篇研究刊登於JPSP)
+
+60
+00:03:43.540 --> 00:03:46.350
+There has been more criticism
+in the scientific literature on
+科學文獻裡已經有越來越多批判
+
+61
+00:03:46.350 --> 00:03:48.140
+how we draw inferences from data.
+研究者普遍錯誤地運用資料做推論
+
+62
+00:03:48.140 --> 00:03:52.090
+Now, there are some people who
+even go as far as to say that most
+像這篇論文直接點出大多數發表的研究論文
+報告的發現是錯誤的(false)
+
+63
+00:03:52.090 --> 00:03:55.110
+published research findings are false.
+有些學者跳出來說大多數發表的研究論文
+報告的發現是錯誤的(false)
+
+64
+00:03:55.110 --> 00:03:55.650
+Is this true?
+真是如此嗎？
+(第三章作業將深入認識這篇論文)
+
+65
+00:03:55.650 --> 00:03:56.720
+What do you think?
+你怎麼看？
+(第三章作業將深入認識這篇論文)
+
+66
+00:03:56.720 --> 00:03:59.460
+Do you think that most of the scientific
+literature is false or not?
+你認不認為大部分科學論文的內容都是錯的？
+(第三章作業將深入認識這篇論文)
+
+67
+00:04:00.670 --> 00:04:02.890
+I think the answer is
+we don't really know.
+我比較接受的答案是「我們不會知道」
+
+68
+00:04:02.890 --> 00:04:06.740
+We can try to estimate it, but
+we don't really have an accurate number.
+我們可以評估出錯的狀況，但是永遠得不到
+精確的數字
+
+69
+00:04:06.740 --> 00:04:11.120
+It's more important, probably, to try to
+improve the way that we do research to
+最重要的是，升級研究的方式可以避免情況惡化
+
+70
+00:04:11.120 --> 00:04:15.580
+prevent this from continuing on, so that
+in the future we know that the data that's
+未來進行的研究也能保障分析資料的品質
+而能得到正確的結論
+
+71
+00:04:15.580 --> 00:04:19.620
+generated and the conclusions that
+are drawn are most likely to be correct.
+未來進行的研究也能保障分析資料的品質
+而能得到正確的結論
+
+72
+00:04:19.620 --> 00:04:23.930
+There are some problems in
+the scientific literature at the moment.
+現在的科學論文充斥一些明顯的瑕疵
+
+73
+00:04:23.930 --> 00:04:27.430
+We know that many of the sample
+sizes we collect are too small, so
+像是許多研究的樣本數太小
+
+74
+00:04:27.430 --> 00:04:29.850
+we have underpowered studies.
+導致統計考驗力過低
+
+75
+00:04:29.850 --> 00:04:33.570
+We know that people are very
+flexible in how they analyze data.
+還有因為研究者在資料分析過程中保留彈性
+
+76
+00:04:33.570 --> 00:04:36.720
+So this leads to a lot of flukes,
+random findings,
+這些彈性造成許多奇異又隨機但是不真實
+的結果，卻被拿來當成真實效果
+
+77
+00:04:36.720 --> 00:04:41.150
+that are actually not true, but
+people interpret as a true effect.
+這些彈性造成許多奇異又隨機但是不真實
+的結果，卻被拿來當成真實效果
+
+78
+00:04:41.150 --> 00:04:44.020
+And we know that there is
+strong publication bias.
+為人所知的問題還有出版偏誤
+(publication bias)
+
+79
+00:04:44.020 --> 00:04:46.510
+People share findings that show an effect,
+but
+有的論文報告了顯示明顯效果的發現
+
+80
+00:04:46.510 --> 00:04:49.640
+they don't share findings
+that do not show an effect.
+卻不報告沒有明顯效果的發現
+
+81
+00:04:49.640 --> 00:04:52.600
+And all these things
+make it very difficult
+這些人為因素都讓評估已發表的研究
+可不可信更為困難
+
+82
+00:04:52.600 --> 00:04:57.020
+to conclude whether published
+findings are reliable or not.
+這些人為因素都讓評估已發表的研究
+可不可信更為困難
+
+83
+00:04:57.020 --> 00:05:02.000
+And the goal in this course is to try to
+give you some tools to try this question
+這門課程的目標就是讓你學會改善這類問題的工具
+
+84
+00:05:02.000 --> 00:05:07.035
+better, given that there's publication
+bias, flexibility in the data analysis and
+特別是由於出版偏誤，資料分析的彈性措施
+以及低考驗力的研究，所造成的問題
+
+85
+00:05:07.035 --> 00:05:08.099
+low-powered studies.
+特別是由於出版偏誤，資料分析的彈性措施
+以及低考驗力的研究，所造成的問題
+
+86
+00:05:10.560 --> 00:05:11.457
+So, first of all,
+從基本做起
+
+87
+00:05:11.457 --> 00:05:15.280
+we'll try to make sure that you can
+draw better statistical inferences.
+接下來的課程先讓你學會比現在更好
+的統計推論方法
+
+88
+00:05:15.280 --> 00:05:19.450
+To achieve this we'll talk about p-values
+and how to interpret them, report and
+首先我們要談p值的意義，如何在報告
+裡運用p值推論(week 1)
+
+89
+00:05:19.450 --> 00:05:23.730
+calculate effect sizes and confidence
+intervals, but also discuss alternative
+以及效果量(week 4)與信賴區間(week 5)的計算
+
+90
+00:05:23.730 --> 00:05:27.660
+ways and frequentist statistics such
+as Bayes Factors or likelihoods.
+也會介紹次數分配統計學之外的貝式因子
+與似然性等等(week 2,6)
+
+91
+00:05:29.110 --> 00:05:34.620
+The second goal is to enable you to
+design more informative experiments.
+其次是了解如何設計能帶來充分訊息的實驗
+
+92
+00:05:34.620 --> 00:05:38.270
+To achieve this, we'll talk about how you
+can control error rates when you design
+為此，你要學會如何控制研究設計的錯誤率
+以及有效執行高考驗力的研究(week 1,3)
+
+93
+00:05:38.270 --> 00:05:42.370
+studies, how you can efficiently
+run high-powered studies.
+為此，你要學會如何控制研究設計的錯誤率
+以及有效執行高考驗力的研究(week 1,3)
+
+94
+00:05:42.370 --> 00:05:45.060
+But we'll also focus a little
+bit on theory construction.
+此外，還要認識一些理論建構的哲學思想
+(week 6)
+
+95
+00:05:47.070 --> 00:05:50.200
+Another goal is to evaluate
+the evidence in the literature,
+這門課程還談到如何評估科學論文裡的證據
+
+96
+00:05:50.200 --> 00:05:52.350
+given that there is publication bias.
+特別是存在出版偏誤的情況
+
+97
+00:05:53.460 --> 00:05:57.510
+We'll talk about p-curve analysis,
+and we'll discuss publication bias and
+這部分會介紹P-curve(week 6)以及
+辨識出版偏誤的一些方法(week 7)
+
+98
+00:05:57.510 --> 00:05:59.750
+some ways to identify this in more detail.
+這部分會介紹P-curve(week 6)以及
+辨識出版偏誤的一些方法(week 7)
+
+99
+00:06:01.210 --> 00:06:05.140
+Finally, an important goal is to
+facilitate cumulative science.
+這門課的終極目的是推動有效積累
+知識的科學
+
+100
+00:06:05.140 --> 00:06:07.350
+Of course,
+we try to improve our knowledge.
+人的一生都在不斷增進知識
+
+101
+00:06:07.350 --> 00:06:09.730
+How can we do this the best way?
+不過我們能不能做得更好
+
+102
+00:06:09.730 --> 00:06:12.300
+We'll talk about how you can
+perform replication studies,
+我們會談到如何進行重製研究(week 7)
+
+103
+00:06:12.300 --> 00:06:16.890
+the importance of pre-registration and the
+benefits of using pre-registration, and
+註冊研究的重要性與好處
+(week 3)
+
+104
+00:06:16.890 --> 00:06:20.839
+the importance of adhering to open
+science principles in your research.
+遵循開放科學原則進行研究的重要性
+(week 7)
+
+105
+00:06:22.730 --> 00:06:25.260
+Accompanying these
+lectures are assignments,
+每一週都有搭配影片講解的練習測驗
+
+106
+00:06:25.260 --> 00:06:28.590
+and these assignments are really
+hands on and in depth knowledge.
+這些練習測驗都要深入認識相關知識
+才能掌握
+
+107
+00:06:28.590 --> 00:06:31.938
+The goal is to learn mainly
+through simulations.
+多數練習是實際進行數據模擬來學習
+
+108
+00:06:31.938 --> 00:06:35.780
+I'm not a big fan of teaching
+through formulas, myself.
+我個人並不喜歡在教學中用公式講解
+(我也是！)
+
+109
+00:06:35.780 --> 00:06:38.940
+If you're interested in that,
+you can easily look up the literature and
+如果你對公式有興趣，可以從各週導讀(overview)
+
+110
+00:06:38.940 --> 00:06:42.255
+I'll provide references where
+these formulas are discussed.
+找我推薦閱讀的論文，看更深入的討論
+
+111
+00:06:42.255 --> 00:06:46.100
+But in these assignments, we'll mainly
+rely on performing simulation studies, and
+因為這些練習測驗大多數是實做數據模擬  
+
+112
+00:06:46.100 --> 00:06:49.460
+just seeing what happens in
+the long run when you would perform
+從模擬中觀察連續地(in the long run)
+做同一種研究成千上百次，會發生什麼事
+
+113
+00:06:49.460 --> 00:06:51.720
+hundreds of thousands of studies.
+從模擬中觀察連續地(in the long run)
+做同一種研究成千上百次，會發生什麼事
+
+114
+00:06:51.720 --> 00:06:54.510
+Personally, I've found
+that really informative
+我的個人經驗是如此學習
+能更深刻認識統計學
+
+115
+00:06:54.510 --> 00:06:56.549
+when I tried to understand
+statistics myself.
+我的個人經驗是如此學習
+能更深刻認識統計學
+
+116
+00:06:58.460 --> 00:07:01.410
+We'll use R, which is free software.
+每項練習測驗都會使用免費的R語言
+
+117
+00:07:01.410 --> 00:07:04.710
+You don't need to have a very good
+understanding of how R works.
+但你不需要非常了解R也能在測驗裡使用
+
+118
+00:07:04.710 --> 00:07:09.610
+We'll typically use very simple examples
+where you can just run the code,
+測驗裡的例子都很簡單，
+只要你能執行我提供的源碼就行
+
+119
+00:07:09.610 --> 00:07:11.803
+maybe change one or two numbers.
+測驗題只需要你更改源碼中的一兩個數字
+(R初學者請從week 1練習作業)
+
+120
+00:07:11.803 --> 00:07:15.303
+That's really all you need
+to know about how R works.
+你只要知道如何執行R的源碼就行
+(下載 Running R Code.pdf 閱讀實做)
+
+121
+00:07:16.870 --> 00:07:21.358
+Now, personally, as I started to get
+a better understanding of statistics,
+經驗分享，當我對統計的了解比較多之後
+
+122
+00:07:21.358 --> 00:07:23.058
+I felt much less uncertain and
+我對數據的不確定感比較少了
+
+123
+00:07:23.058 --> 00:07:27.410
+much more able to draw correct inferences
+from the scientific literature,
+也更能從科學論文裡正確解讀結果
+
+124
+00:07:27.410 --> 00:07:30.956
+and to design studies that would
+yield informative results.
+並且設計能產生有充分訊息的研究
+
+125
+00:07:30.956 --> 00:07:34.739
+I really think that if you want to be a
+good researcher, it's important to invest
+如果你想成為好的研究者，投資一些時間
+學習如何從資料做更好的推論是值得的
+
+126
+00:07:34.739 --> 00:07:38.530
+some time in learning how to draw
+better inferences from your data.
+如果你想成為好的研究者，投資一些時間
+學習如何從資料做更好的推論是值得的
+
+127
+00:07:38.530 --> 00:07:41.420
+And it can be remarkable fun,
+getting this better understanding.
+學而時習之，不亦說乎
+
+128
+00:07:42.920 --> 00:07:44.130
+If you want to reach out to me,
+如果想和我聯絡
+
+129
+00:07:44.130 --> 00:07:48.370
+you can contact me at Twitter with any
+questions or comments you might have.
+可以追蹤我的twitter帳號(影片右上角)
+告訴我你的問題或意見
+
+130
+00:07:48.370 --> 00:07:50.955
+For now, let's get started.
+現在！開始上課吧。
+
+131
+00:07:50.955 --> 00:07:55.639
+[課程結束]

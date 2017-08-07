@@ -1,0 +1,1323 @@
+WEBVTT  
+  
+1  
+00:00:00.000 --> 00:00:08.477  
+[MUSIC]  
+[淺談貝氏統計]  
+  
+2  
+00:00:08.477 --> 00:00:12.890  
+In this lecture we'll talk  
+about Bayesian statistics.  
+這一講來談談貝氏統計    
+  
+3  
+00:00:12.890 --> 00:00:16.190  
+In a previous lecture we talked about  
+likelihoods and expressing relative  
+前一講介紹似然性，以及如何表達證據支持兩種假設的相對程度    
+  
+4  
+00:00:16.190 --> 00:00:19.410  
+evidence for one hypothesis compared  
+to an alternative hypothesis.  
+前一講介紹似然性，以及如何表達證據支持兩種假設的相對程度    
+  
+5  
+00:00:19.410 --> 00:00:24.810  
+And we've used evidence in this sense just  
+based on the data that we have at hand.  
+這讓我們能用手上的資料做為證據    
+  
+6  
+00:00:24.810 --> 00:00:27.960  
+But we'll see that very often you have  
+some prior belief that you might want to  
+貝氏統計能結合證據與根據假設的事前信念(prior)，計算推論的可靠性    
+  
+7  
+00:00:27.960 --> 00:00:31.460  
+incorporate with the evidence and  
+Bayesian statistics allows you to do this.  
+貝氏統計能結合證據與根據假設的事前信念(prior)，計算推論的可靠性    
+  
+8  
+00:00:32.560 --> 00:00:34.490  
+Now let's say that you  
+flip a coin three times.  
+假想一枚硬幣丟了三次    
+  
+9  
+00:00:35.680 --> 00:00:38.860  
+The coin comes up heads every single time.  
+每一次都是正面朝上的結果    
+  
+10  
+00:00:38.860 --> 00:00:41.420  
+Now do you think that this  
+is a fair coin or not?  
+根據這個結果能判斷這是枚公正硬幣嗎？    
+  
+11  
+00:00:42.670 --> 00:00:46.440  
+The data that you have at hand shows that  
+this coin came up heads three times.  
+因為眼前的資料是三次正面朝上    
+   
+12  
+00:00:46.440 --> 00:00:52.380  
+So if you would be a newborn baby  
+then you don't have any prior beliefs and  
+對一位全無任何事前信念的新生兒來說    
+  
+13  
+00:00:52.380 --> 00:00:54.520  
+all you have is the data  
+that you just observed.  
+只有眼前看到的資料    
+  
+14  
+00:00:54.520 --> 00:00:59.810  
+So for a newborn  
+it comes up heads every single time.  
+新生兒會認為這枚硬幣總會擲出正面朝上    
+  
+15  
+00:00:59.810 --> 00:01:02.030  
+This is just what this coin does.  
+正如現在看到的事實    
+  
+16  
+00:01:02.030 --> 00:01:05.100  
+But you have prior beliefs  
+that most coins are fair.  
+對於會看這部影片的大人來說，都有多數硬幣是公正的信念    
+  
+17  
+00:01:05.100 --> 00:01:07.230  
+You might think  
+你也許認為就算現在是這種結果    
+  
+18  
+00:01:07.230 --> 00:01:11.030  
+Three heads in a row  
+that's a perfectly likely observation.  
+也只是剛好看到三枚正面朝上而已    
+  
+19  
+00:01:11.030 --> 00:01:15.250  
+I'm not changing my prior beliefs  
+that this is a fair coin yet.  
+你不會因此改變這是一枚公正硬幣的信念    
+  
+20  
+00:01:15.250 --> 00:01:16.490  
+You would want to see more evidence.  
+你會想要再做更多試驗    
+    
+21  
+00:01:18.670 --> 00:01:24.010  
+Now  
+data is possible in this Bayesian sense.  
+貝氏統計能結合個人信念與事實證據    
+  
+22  
+00:01:24.010 --> 00:01:27.260  
+It's not possible when you  
+just calculate P-values.  
+這是p值做不到的功能    
+  
+23  
+00:01:27.260 --> 00:01:31.136  
+Remember that the P-value expresses  
+the probability of the data or  
+請記住p值表達以虛無假設為真的前提，不論手上資料是否極端，確實存在的程度    
+  
+24  
+00:01:31.136 --> 00:01:34.678  
+more extreme data assuming that  
+the null hypothesis is true.  
+請記住p值表達以虛無假設為真的前提，不論手上資料是否極端，確實存在的程度    
+  
+25  
+00:01:34.678 --> 00:01:38.544  
+And some people say  
+actually not what you want to know.  
+有人認為p值不能代表研究者想要得到的最終解答    
+    
+26  
+00:01:38.544 --> 00:01:42.727  
+What you want to know is the probability  
+that the null hypothesis is true  
+研究者要追求的是根據手上資料，虛無假設確實存在的程度    
+  
+27  
+00:01:42.727 --> 00:01:45.092  
+given some data that you have collected.  
+研究者要追求的是根據手上資料，虛無假設確實存在的程度    
+  
+28  
+00:01:45.092 --> 00:01:47.077  
+And this is a posterior probability.  
+這就是事後機率(posterior probability)  
+  
+29  
+00:01:47.077 --> 00:01:50.699  
+Given that you've collected some data  
+maybe some prior beliefs that you have.  
+根據手上的資料，加上已存在研究者腦中的信念    
+  
+30  
+00:01:50.699 --> 00:01:53.532  
+What is now the probability  
+that the null hypothesis or  
+能不能獲得虛無假設或對立假設為真的機率?  
+  
+31  
+00:01:53.532 --> 00:01:56.240  
+the alternative hypothesis is true?  
+能不能獲得虛無假設或對立假設為真的機率?  
+  
+32  
+00:01:56.240 --> 00:01:59.090  
+So Bayesian statistics allows  
+you to express this probability.  
+貝氏統計正是用來計算事後機率    
+  
+33  
+00:02:01.090 --> 00:02:02.630  
+It works quite straightforward.  
+貝氏統計的原則很簡單    
+  
+34  
+00:02:02.630 --> 00:02:05.890  
+You have some prior belief  
+you have some data.  
+把腦中的事前信念加上手上的資料    
+  
+35  
+00:02:05.890 --> 00:02:08.110  
+You combine these into a posterior belief.  
+就能獲得目前證據的事後機率    
+    
+36  
+00:02:10.530 --> 00:02:14.935  
+We can calculate posterior odds that  
+the alternative hypothesis is true given  
+根據手上資料計算的事後機率比(posterior odds)    
+可以比較對立假設為真與虛無假設為真的程度    
+  
+37  
+00:02:14.935 --> 00:02:15.535  
+the data  
+根據手上資料計算的事後機率比(posterior odds)    
+可以比較對立假設為真與虛無假設為真的程度    
+  
+38  
+00:02:15.535 --> 00:02:19.884  
+compared to the probability that the null  
+hypothesis is true given the data.  
+根據手上資料計算的事後機率比(posterior odds)    
+可以比較對立假設為真與虛無假設為真的程度    
+  
+39  
+00:02:19.884 --> 00:02:25.499  
+This is a very useful way to split apart  
+these different aspects of the formula.  
+對照公式的每個部分與貝氏原則可以看到    
+  
+40  
+00:02:25.499 --> 00:02:31.090  
+So the posterior equals  
+the likelihood ratio times the prior.  
+事後機率就是似然性比與事前信念的乘積    
+  
+41  
+00:02:31.090 --> 00:02:33.224  
+So  
+this likelihood ratio  
+公式裡的似然性比    
+  
+42  
+00:02:33.224 --> 00:02:35.138  
+that we discussed in a previous lecture  
+就是前一講介紹的重點    
+  
+43  
+00:02:35.138 --> 00:02:38.818  
+is an essential part of the probability  
+calculations in Bayesian statistics.  
+可以看到似然性比是計算事後機率的重要成份    
+  
+44  
+00:02:38.818 --> 00:02:42.672  
+But it's also combined with this prior  
+so how can we do this?  
+不過要結合事前機率，那麼要怎麼知道事前機率呢？  
+    
+45  
+00:02:42.672 --> 00:02:47.050  
+We have to come up with  
+a prior distribution.  
+在此介紹一種事前機率分配    
+  
+46  
+00:02:47.050 --> 00:02:51.670  
+In the case of binomial probabilities  
+a beta distribution is used.  
+所謂的beta分配是用在資料有二項性質的狀況    
+  
+47  
+00:02:51.670 --> 00:02:55.450  
+The beta prior is determined by two  
+parameters which are referred to as  
+beta事前分配由alpha與beta兩種參數決定    
+  
+48  
+00:02:55.450 --> 00:02:56.200  
+alpha and beta.  
+beta事前分配由alpha與beta兩種參數決定    
+  
+49  
+00:02:57.380 --> 00:03:01.580  
+Now this can get a little confusing  
+because we already talked about alphas and  
+在這裡你也許會和之前提過代表型一與型二錯誤率的alpha與beta搞混    
+  
+50  
+00:03:01.580 --> 00:03:04.079  
+betas as type one errors and  
+type two errors.  
+在這裡你也許會和之前提過代表型一與型二錯誤率的alpha與beta搞混    
+  
+51  
+00:03:05.700 --> 00:03:09.840  
+Regrettably  
+are not very creative when it comes to  
+這是因為統計學家使用希臘字母做統計符號的創意不夠所致    
+  
+52  
+00:03:09.840 --> 00:03:13.280  
+thinking up greek letters that they  
+want to use for their statistics.  
+這是因為統計學家使用希臘字母做統計符號的創意不夠所致    
+  
+53  
+00:03:13.280 --> 00:03:15.530  
+So there are some double  
+use in the literature  
+有時一種符號在同一篇論文裡有很多意思    
+  
+54  
+00:03:15.530 --> 00:03:17.320  
+this is one of these examples.  
+beta分配就是一個例子    
+  
+55  
+00:03:17.320 --> 00:03:19.820  
+The beta prior is determined by alpha and  
+beta.  
+這裡的alpha與beta只是決定beta分配的性質    
+  
+56  
+00:03:19.820 --> 00:03:23.010  
+These are just two numbers that have  
+nothing to do with error rates whatsoever.  
+與任何形式的錯誤率全無關係    
+    
+57  
+00:03:24.900 --> 00:03:28.670  
+Let's take a look a different  
+versions of prior distributions.  
+來看看幾種不同的beta事前分配    
+  
+58  
+00:03:28.670 --> 00:03:32.761  
+If we set the alpha and  
+the beta in the beta probability to 1  
+這道beta分配的alpha與beta都是1    
+  
+59  
+00:03:32.761 --> 00:03:35.659  
+we see that we got  
+the perfectly flat line.  
+呈現出一條完美的水平線    
+  
+60  
+00:03:35.659 --> 00:03:40.259  
+This means that every value  
+of theta which is plotted on  
+也就是說得到範圍內任一統計值(theta)的機率都是相等的    
+  
+61  
+00:03:40.259 --> 00:03:43.659  
+the horizontal axis is equally likely.  
+也就是說得到範圍內任一統計值(theta)的機率都是相等的    
+  
+62  
+00:03:43.659 --> 00:03:46.100  
+So we don't have any expectations and  
+這種分配符合不預期特定結果的信念    
+  
+63  
+00:03:46.100 --> 00:03:49.160  
+we say anything that  
+might happen is possible.  
+可以說任何結果都有可能發生    
+  
+64  
+00:03:50.580 --> 00:03:52.570  
+Now in the case of a coin flip  
+在投擲硬幣的例子裡    
+  
+65  
+00:03:52.570 --> 00:03:55.920  
+you might not be convinced that  
+this is what's most likely.  
+就是代表不會有經常觀察到某種結果的信念    
+  
+66  
+00:03:55.920 --> 00:04:00.110  
+In the case of flipping a coin  
+you can have a lot of different beliefs.  
+當然對於硬幣是否公正的信念可以因人而異    
+    
+67  
+00:04:01.280 --> 00:04:06.000  
+One of them is the belief that this  
+is a coin that always comes up heads.  
+其中一種信念是想信這枚硬幣永遠擲出正面朝上    
+  
+68  
+00:04:06.000 --> 00:04:09.990  
+If you have a very strong belief that this  
+is the case  
+若你相信如此，這道beta分配完美體現你的想法    
+  
+69  
+00:04:09.990 --> 00:04:12.665  
+You think that it will  
+be heads almost always  
+雖然少數情況會出現不同的結果(theta接近0)，多數情況都會預期正面朝上(theta接近1)    
+  
+70  
+00:04:12.665 --> 00:04:17.341  
+although you are willing to give at least  
+some probability of different values.  
+雖然少數情況會出現不同的結果(theta接近0)，多數情況都會預期正面朝上(theta接近1)    
+  
+71  
+00:04:17.341 --> 00:04:21.183  
+You might also think that this  
+is a perfectly fair coin  
+你也可能根據多數硬幣是公正的，而相信眼前這一枚也是    
+  
+72  
+00:04:21.183 --> 00:04:23.320  
+most coins are fair after all.  
+你也可能根據多數硬幣是公正的，而相信眼前這一枚也是    
+  
+73  
+00:04:23.320 --> 00:04:27.670  
+So you think that this coin should  
+come up heads 50% of the time.  
+你認為每次擲出正面的機率是50%    
+  
+74  
+00:04:27.670 --> 00:04:29.300  
+You have a very strong belief in this.  
+把這樣的信念轉換成beta分配      
+  
+75  
+00:04:30.320 --> 00:04:33.210  
+And it's illustrated in this graph  
+where there's a very high peak  
+分配就是theta等於0.5之處有一個高峰    
+  
+76  
+00:04:33.210 --> 00:04:34.810  
+at 0.5 on the theta.  
+分配就是theta等於0.5之處有一個高峰    
+  
+77  
+00:04:35.940 --> 00:04:39.450  
+But you're also willing to allow for  
+some variation.  
+當然你也可以認為存在其它可能的結果    
+  
+78  
+00:04:39.450 --> 00:04:42.580  
+It might be that the coin  
+is not perfectly fair.  
+因為一些原因，眼前這枚硬幣並不公正    
+  
+79  
+00:04:42.580 --> 00:04:45.080  
+It might have been used and  
+it might be an old coin and  
+也許被反覆使用，也許太舊了    
+  
+80  
+00:04:45.080 --> 00:04:48.249  
+might come up heads a little bit  
+more often or a little less often.  
+使得擲出正面的次數多一些    
+    
+81  
+00:04:51.710 --> 00:04:55.030  
+Now let's combine our prior belief  
+whatever it is  
+來看看怎樣把這些代表事前信念的beta分配    
+  
+82  
+00:04:55.030 --> 00:04:57.230  
+with the data that we've observed.  
+與觀察獲得的資料結合在一起吧    
+  
+83  
+00:04:57.230 --> 00:05:01.810  
+So we have beta prior distribution  
+and we have the likelihood function  
+現在有beta分配代表事前機率  
+手上資料可轉換成似然性函數    
+  
+84  
+00:05:01.810 --> 00:05:06.030  
+and we can quite easily combine  
+these into a posterior distribution.  
+結合兩者就能立刻獲得事後機率分配    
+    
+85  
+00:05:08.240 --> 00:05:12.840  
+The posterior is also a beta distribution  
+with an alpha and a beta value.  
+事後機率分配也是一道有alpha與beta值的beta分配    
+  
+86  
+00:05:12.840 --> 00:05:16.650  
+And the alpha and  
+the beta are determined simply by  
+要計算事後分配的alpha和beta，只要把事前的參數加上似然性函數估計的參數，再減去1就行了    
+  
+87  
+00:05:16.650 --> 00:05:21.640  
+adding the alpha of the prior to the alpha  
+of the likelihood function minus 1.  
+要計算事後分配的alpha和beta，只要把事前的參數加上似然性函數估計的參數，再減去1就行了    
+  
+88  
+00:05:21.640 --> 00:05:23.470  
+The same is true for the beta.  
+要計算事後分配的alpha和beta，只要把事前的參數加上似然性函數估計的參數，再減去1就行了    
+  
+89  
+00:05:23.470 --> 00:05:26.190  
+The beta of the prior  
+distribution added to the beta  
+要計算事後分配的alpha和beta，只要把事前的參數加上似然性函數估計的參數，再減去1就行了    
+  
+90  
+00:05:26.190 --> 00:05:27.964  
+of the likelihood distribution minus 1.  
+要計算事後分配的alpha和beta，只要把事前的參數加上似然性函數估計的參數，再減去1就行了    
+    
+91  
+00:05:29.590 --> 00:05:30.710  
+Let's see how this works.  
+來看實際的例子    
+  
+92  
+00:05:32.110 --> 00:05:36.760  
+In this case we have a prior distribution  
+that's uninformative  
+這道事前分配是無資訊的(uninfomative)，是最容易理解的情況    
+  
+93  
+00:05:37.920 --> 00:05:40.972  
+So this is a prior before  
+we collect some data.  
+代表未收集資料前認定任何結果發生的機率都相等    
+    
+94  
+00:05:40.972 --> 00:05:44.600  
+And now we collect some data and  
+we have a likelihood function.  
+收集資料後有了這道似然性函數(藍色虛線)  
+  
+95  
+00:05:44.600 --> 00:05:47.510  
+In this case we flip the coin ten times.  
+這道函數表示投了硬幣十次    
+  
+96  
+00:05:47.510 --> 00:05:50.810  
+Six out of the ten times  
+we observed heads.  
+其中六次看到正面朝上    
+  
+97  
+00:05:50.810 --> 00:05:53.550  
+So that's expressed by this  
+likelihood function and  
+所以看到高峰出現在theta等於6    
+  
+98  
+00:05:53.550 --> 00:05:57.160  
+now we will combine these two functions  
+into a posterior distribution.  
+接著把兩道分配結合在一起，就會看到事後分配的模樣    
+    
+99  
+00:05:59.590 --> 00:06:04.600  
+You now see a black line that falls  
+exactly on top of the likelihood function.  
+事後分配的黑線與似然性函數的曲線完美疊合    
+  
+100  
+00:06:04.600 --> 00:06:07.730  
+This is what's meant with  
+an uninformative prior.  
+這是因為事前分配是無資訊的      
+  
+101  
+00:06:07.730 --> 00:06:10.423  
+Everything was equally likely beforehand  
+and  
+事前認為任何結果都有可能    
+  
+102  
+00:06:10.423 --> 00:06:13.123  
+it doesn't influence our  
+judgments in any way.  
+這樣的信念不影響對結果的判斷    
+  
+103  
+00:06:13.123 --> 00:06:16.214  
+We just believe whatever we  
+have observed exactly the same.  
+所以事後分配與實際資料一致    
+  
+104  
+00:06:16.214 --> 00:06:19.800  
+So the prior does not influence  
+the posterior distribution in any way.  
+因此這個例子事前信念毫不影響事後分配  
+  
+105  
+00:06:21.180 --> 00:06:23.630  
+Let's take another example  
+where this is the case  
+接著來看另一個事前信念確實影響事後分配的例子    
+  
+106  
+00:06:23.630 --> 00:06:26.680  
+where the prior does influence  
+the posterior distribution.  
+接著來看另一個事前信念確實影響事後分配的例子    
+  
+107  
+00:06:28.620 --> 00:06:32.570  
+Here we have some belief that  
+the coin is probably fair.  
+這道事前分配表示硬幣是公正的    
+  
+108  
+00:06:32.570 --> 00:06:36.680  
+We think that values around 0.5  
+are somewhat more likely but  
+設定統計值在0.5多少表達這樣的信念  
+  
+109  
+00:06:36.680 --> 00:06:39.220  
+we don't have a very strong  
+conviction about this.  
+不過分配的變異表示對此信念不會過度堅持    
+    
+110  
+00:06:40.730 --> 00:06:42.600  
+We again observe the same data.  
+獲得的資料也是10次之中擲出6次正面  
+  
+111  
+00:06:42.600 --> 00:06:47.450  
+We flip the coin ten times  
+six out of ten the coin lands heads.  
+獲得的資料也是10次之中擲出6次正面  
+  
+112  
+00:06:47.450 --> 00:06:50.170  
+So this is exactly the same  
+likelihood function that we had in  
+所以得到與前一個例子同樣的似然性函數    
+  
+113  
+00:06:50.170 --> 00:06:53.770  
+the previous example but  
+we have a slightly different prior.  
+只是擁有不大相同的事前信念      
+  
+114  
+00:06:53.770 --> 00:06:58.030  
+Combining our prior belief with  
+the observed data yields a posterior  
+兩者結合之後就能得到一道新的事後機率分配    
+  
+115  
+00:06:58.030 --> 00:07:02.040  
+distribution that no longer falls exactly  
+on top of the likelihood function.  
+不過這道分配和似然性函數完全不疊合    
+  
+116  
+00:07:03.700 --> 00:07:06.250  
+Indeed we see that the posterior  
+這道事後機率分配稍微偏向事前信念的beta分配    
+  
+117  
+00:07:06.250 --> 00:07:10.720  
+is slightly shrinking towards  
+the prior belief that we held.  
+這道事後機率分配稍微偏向事前信念的beta分配    
+  
+118  
+00:07:15.080 --> 00:07:18.850  
+Now  
+the posterior distribution  
+有了事前機率分配與事後率分配    
+  
+119  
+00:07:18.850 --> 00:07:22.170  
+we can calculate something  
+that's known as a Bayes factor.  
+就能計算貝氏因子(Bayes Factor)  
+  
+120  
+00:07:22.170 --> 00:07:26.590  
+The Bayes factor is the relative evidence  
+for one model compared to another model.  
+貝式因子表示手上證據支持兩種模型的相對程度    
+  
+121  
+00:07:28.170 --> 00:07:30.239  
+Now compare this to likelihood ratios.  
+現在我們用似然性比值計算支持程度    
+  
+122  
+00:07:30.239 --> 00:07:33.345  
+In a likelihood ratio we only  
+have one distribution and  
+透過這道似然性函數，比較兩個統計值的似然性  
+  
+123  
+00:07:33.345 --> 00:07:37.749  
+we're comparing two different values  
+of theta on the likelihood function.  
+透過這道似然性函數，比較兩個統計值的似然性  
+  
+124  
+00:07:37.749 --> 00:07:41.600  
+But here we'll use the likelihood  
+from the prior distribution and  
+現在要用這道函數計算事前分配的似然性  
+  
+125  
+00:07:41.600 --> 00:07:45.900  
+compare it to the likelihood  
+of the posterior distribution.  
+與事後分配的似然性相互比較    
+  
+126  
+00:07:45.900 --> 00:07:46.430  
+Let's take a look.  
+接著看要怎麼做    
+  
+127  
+00:07:48.660 --> 00:07:51.450  
+We have data from 20 coin flips.  
+現在手上有擲20枚硬幣的資料    
+  
+128  
+00:07:51.450 --> 00:07:52.960  
+They came up heads 10 times.  
+其中10次正面朝上    
+  
+129  
+00:07:54.430 --> 00:07:56.670  
+Let's take a look at two different priors.  
+對此有兩種事前信念    
+  
+130  
+00:07:56.670 --> 00:08:01.581  
+Either a Beta prior of (1  
+means it's completely uninformative  
+一種是不知這枚硬幣公正與否的均勻分配beta(1  
+  
+131  
+00:08:01.581 --> 00:08:02.817  
+the uniform prior.  
+一種是不知這枚硬幣公正與否的均勻分配beta(1  
+  
+132  
+00:08:02.817 --> 00:08:05.517  
+But we can also compare  
+it to a Beta of (4  
+另一種是認為這是枚公正硬幣的beta(4  
+  
+133  
+00:08:05.517 --> 00:08:09.343  
+4) where we have some expectation  
+that this is a fair coin.  
+另一種是認為這是枚公正硬幣的beta(4  
+  
+134  
+00:08:09.343 --> 00:08:13.910  
+Now  
+see the prior distribution in  
+這張圖中代表事前分配的灰色線正是均勻分佈    
+  
+135  
+00:08:13.910 --> 00:08:17.810  
+the gray line that's  
+uniformly distributed.  
+這張圖中代表事前分配的灰色線正是均勻分佈    
+  
+136  
+00:08:17.810 --> 00:08:20.480  
+We don't have very strong  
+prior beliefs in this case.  
+這表示沒有對特定結果存在強烈信念    
+  
+137  
+00:08:20.480 --> 00:08:22.510  
+Everything is equally likely.  
+任何結果都可以接受    
+  
+138  
+00:08:22.510 --> 00:08:26.010  
+Then we've collected some data  
+now we have a posterior distribution  
+收集資料後得到的事後分配  
+  
+139  
+00:08:26.010 --> 00:08:28.859  
+which in this case falls exactly  
+on top of the likelihood function.  
+與由此獲得的似然性函數疊合    
+  
+140  
+00:08:29.960 --> 00:08:33.770  
+You can see that there is a relative  
+difference of the likelihood of  
+這裡可以看到兩個分配在任意一點的似然性差異    
+  
+141  
+00:08:33.770 --> 00:08:36.770  
+both of these functions  
+at specific points.  
+這裡可以看到兩個分配在任意一點的似然性差異    
+  
+142  
+00:08:36.770 --> 00:08:39.970  
+Now  
+hypothesis that we're interested in.  
+現在必須要決定真正有興趣的假設是針對那一個值    
+  
+143  
+00:08:39.970 --> 00:08:43.600  
+Let's say that we want to know  
+whether this is a fair coin or not.  
+比方說要知道這枚硬幣是否公正  
+  
+144  
+00:08:43.600 --> 00:08:48.262  
+So in this case  
+the hypothesis that theta is 0.5.  
+要測試這個假設就要看theta為0.5的情況    
+  
+145  
+00:08:48.262 --> 00:08:53.006  
+We can compare the prior distribution with  
+the posterior distribution to see how  
+比較事前與事後分配的差異可以了解收集的資料改變信念的程度    
+  
+146  
+00:08:53.006 --> 00:08:56.156  
+much our belief has changed  
+by collecting some data.  
+比較事前與事後分配的差異可以了解收集的資料改變信念的程度    
+  
+147  
+00:08:56.156 --> 00:09:01.830  
+So the prior at 0.5 was much lower  
+than the posterior is at 0.5.  
+這張圖明顯表示在0.5的事前分配似然性低於事後分配  
+  
+148  
+00:09:01.830 --> 00:09:06.149  
+And the ratio of these two points is 3.7.  
+得到的似然性比值是3.7  
+  
+149  
+00:09:09.470 --> 00:09:13.190  
+This is a slightly different version  
+where we only have a different prior.  
+這張圖的事前分配是beta(4  
+  
+150  
+00:09:13.190 --> 00:09:17.910  
+We've observed exactly the same data but  
+the prior now is slightly more informed.  
+雖然資料也是相同的，但是這個事前分配包含有關這枚硬幣的信念    
+  
+151  
+00:09:17.910 --> 00:09:20.400  
+We already expected that  
+this coin would be fair.  
+這個情況已事先預期這是枚公正硬幣    
+  
+152  
+00:09:20.400 --> 00:09:23.760  
+We collect the same amount of data and  
+we again see that for  
+以同樣的資料計算兩個分配的似然性    
+  
+153  
+00:09:23.760 --> 00:09:28.160  
+the theta of 0.5 the hypothesis  
+that this is a fair coin.  
+並以theta是0.5的似然性比檢測假設    
+  
+154  
+00:09:28.160 --> 00:09:32.860  
+Our belief in the hypothesis that  
+the coin is fair has increased.  
+事後分配表示對於硬幣是公正的信念增加了    
+  
+155  
+00:09:32.860 --> 00:09:35.070  
+But because we already  
+had quite a strong prior  
+不過因為事前先有特定的預期    
+  
+156  
+00:09:35.070 --> 00:09:38.699  
+the data only increases  
+our belief with 1.9.  
+增加的比值只有1.9    
+  
+157  
+00:09:41.430 --> 00:09:43.786  
+So after looking at the data  
+儘管資料呈現的似然性函數是相同的    
+  
+158  
+00:09:43.786 --> 00:09:49.257  
+the hypothesis that the theta  
+is 0.5 has become either 1.91 or  
+theta為0.5的似然性比是1.91還是3.70  
+  
+159  
+00:09:49.257 --> 00:09:54.460  
+3.70 times more likely  
+depending on the prior that we had.  
+完全取決於接受那種事前信念    
+  
+160  
+00:09:55.620 --> 00:10:01.148  
+So we can see how base vectors tell you  
+something about the increased evidence or  
+由此可以了解貝氏因子如何告訴你增加的證據力有多少    
+  
+161  
+00:10:01.148 --> 00:10:06.100  
+the belief that you have about  
+the specific hypothesis compared to your  
+或者根據事前與事後分配，推估證據比較支持那個假設    
+  
+162  
+00:10:06.100 --> 00:10:07.932  
+prior and the posterior.  
+或者根據事前與事後分配，推估證據比較支持那個假設    
+  
+163  
+00:10:07.932 --> 00:10:12.039  
+Now we can also look at Bayesian  
+statistics not from a hypothesis testing  
+除了由假設檢定的角度了解貝氏統計如何根據事前與事後分配測試假設    
+  
+164  
+00:10:12.039 --> 00:10:16.233  
+viewpoint where you test the hypothesis  
+and the prior and the posterior.  
+除了由假設檢定的角度了解貝氏統計如何根據事前與事後分配測試假設    
+  
+165  
+00:10:16.233 --> 00:10:20.990  
+But we just want to estimate which  
+values do we think is most likely.  
+也可以估計想測量的真實數值    
+  
+166  
+00:10:20.990 --> 00:10:24.410  
+So this is not Bayesian hypothesis  
+testing  
+這樣的方法就叫做貝氏估計      
+  
+167  
+00:10:25.700 --> 00:10:28.960  
+We also use the posterior  
+distribution to estimate.  
+估計同樣需要事後分配    
+  
+168  
+00:10:30.370 --> 00:10:33.990  
+So instead of testing two different  
+models  
+不同於用事前與事後分配檢驗兩種模型    
+  
+169  
+00:10:33.990 --> 00:10:38.090  
+we will use the posterior just  
+to estimate plausible values.  
+現在要用事後分配估計最可信的數值    
+  
+170  
+00:10:39.170 --> 00:10:43.850  
+Which values do you believe are most  
+likely based on your prior belief and  
+要怎樣根據事前信念與觀察到的資料估計數值呢?  
+  
+171  
+00:10:43.850 --> 00:10:44.910  
+the data you have observed?  
+要怎樣根據事前信念與觀察到的資料估計數值呢?  
+  
+172  
+00:10:47.410 --> 00:10:53.510  
+In this graph we again see a prior  
+distribution and a posterior distribution.  
+這張圖也有之前看過的事前與事後機率分配    
+  
+173  
+00:10:53.510 --> 00:10:57.320  
+And in this case  
+an uninformative prior  
+因為事前分配是無資訊的  
+  
+174  
+00:10:57.320 --> 00:10:59.770  
+the posterior fall exactly  
+on top of each other.  
+似然性函數與事後分配再一次完美疊合    
+  
+175  
+00:11:01.220 --> 00:11:05.580  
+We can calculate the mean of the posterior  
+distribution and we can calculate what  
+我們可以計算事後分配的平均值    
+  
+176  
+00:11:05.580 --> 00:11:10.400  
+in Bayesian statistics  
+is known as 95% credible interval.  
+以及貝氏統計稱呼的95%可信區間(credible interval)    
+  
+177  
+00:11:10.400 --> 00:11:16.260  
+A credible interval contains 95% of  
+the values that you find most plausible.  
+可信區間涵蓋的數值有95%的可能性是真實的      
+  
+178  
+00:11:17.880 --> 00:11:20.530  
+So this is an expression of your belief.  
+也就是你相信為真的數值範圍      
+  
+179  
+00:11:20.530 --> 00:11:24.620  
+Which values do you believe are most  
+likely given your prior and  
+範圍中那些數值是你最相信的    
+全由事前信念與手上資料決定    
+  
+180  
+00:11:24.620 --> 00:11:25.410  
+the observed data?  
+範圍中那些數值是你最相信的    
+全由事前信念與手上資料決定    
+  
+181  
+00:11:26.800 --> 00:11:30.230  
+Now  
+have used an uninformative prior  
+這個例子裡的事前信念是無資訊的    
+  
+182  
+00:11:30.230 --> 00:11:34.820  
+you can see that the likelihood function  
+is basically everything that matters.  
+所以由手上資料構成的似然性函數    
+  
+183  
+00:11:35.860 --> 00:11:38.810  
+The posterior distribution is  
+completely determined by the data.  
+決定事後分配的模樣    
+  
+184  
+00:11:40.070 --> 00:11:45.860  
+And this is a situation where the 95%  
+credible interval in Bayesian statistics  
+只有這種狀況才會看到貝氏統計的可信區間    
+  
+185  
+00:11:45.860 --> 00:11:51.900  
+exactly matches with the 95% confidence  
+interval in frequentist statistics.  
+與次數主義統計的信賴區間是完全一致的    
+  
+186  
+00:11:51.900 --> 00:11:53.040  
+But that's not always the case.  
+不過除非所有研究的事前信念都是無資訊的    
+  
+187  
+00:11:53.040 --> 00:11:56.890  
+This is only true when we  
+use an uninformative prior.  
+這種狀況一輩子很難碰到幾次    
+  
+188  
+00:11:56.890 --> 00:11:59.960  
+Let's see how this changes when  
+we use a more informative prior.  
+接著來看看有資訊的事前信念會有什麼結果    
+    
+189  
+00:12:02.030 --> 00:12:04.650  
+Now let's take a look at this  
+slightly different situation.  
+這張圖呈現另一種狀況的分析結果    
+  
+190  
+00:12:04.650 --> 00:12:09.530  
+Rather extreme example where we had  
+a very strong prior belief that  
+這個狀況的事前信念是相信這枚硬幣有2/3的機會擲出正面    
+  
+191  
+00:12:09.530 --> 00:12:15.238  
+the coin would come up heads about  
+two thirds of the time  
+這個狀況的事前信念是相信這枚硬幣有2/3的機會擲出正面    
+  
+192  
+00:12:15.238 --> 00:12:18.530  
+You can see the grey distribution  
+peaking at this point  
+所以灰色的事前分配最高峰就在0.666  
+  
+193  
+00:12:18.530 --> 00:12:22.050  
+this was our prior belief  
+before we collected some data.  
+表達收集資料前對硬幣的信念    
+  
+194  
+00:12:22.050 --> 00:12:24.833  
+But then we collect data and we actually  
+find a completely different pattern.  
+但是收集的資料卻呈現與事前信念不同的模樣    
+  
+195  
+00:12:24.833 --> 00:12:28.583  
+We see that the coin came up  
+heads about 40% of the time.  
+投擲硬幣很多次之後    
+  
+196  
+00:12:28.583 --> 00:12:30.748  
+And we collected quite a lot of data  
+得到的似然性函數最高點出現在0.4    
+  
+  
+197  
+00:12:30.748 --> 00:12:33.910  
+the blue likelihood function  
+is completely different.  
+和事前分配完全不一樣    
+  
+198  
+00:12:35.080 --> 00:12:38.640  
+We can also see that the black  
+posterior distribution is now  
+以黑色曲線標示的事後分配則落在兩者之間    
+  
+199  
+00:12:38.640 --> 00:12:40.990  
+a little bit in between of  
+both of these functions.  
+以黑色曲線標示的事後分配則落在兩者之間    
+  
+200  
+00:12:42.710 --> 00:12:47.495  
+So the data and the prior are merged  
+into a posterior distribution.  
+代表事前信念與手上資料融合的結果    
+  
+201  
+00:12:47.495 --> 00:12:52.459  
+And the 95% credible interval  
+now contains values that no  
+95%可信區間與95%信賴區間並無重疊    
+  
+202  
+00:12:52.459 --> 00:12:56.656  
+longer match within 95%  
+confidence interval.  
+95%可信區間與95%信賴區間並無重疊    
+  
+203  
+00:12:56.656 --> 00:13:01.533  
+A very strong prior has made it so  
+that our believe in the most likely most  
+有特定預期的事前信念讓可信區間的範圍明顯縮小    
+  
+204  
+00:13:01.533 --> 00:13:05.700  
+plausible values the values  
+that we feel most confident in.  
+有特定預期的事前信念讓可信區間的範圍明顯縮小    
+  
+205  
+00:13:05.700 --> 00:13:08.749  
+Are no longer exactly matching  
+up with the data  
+也因為事前信念的影響    
+  
+206  
+00:13:08.749 --> 00:13:12.090  
+they're slightly influenced  
+by the prior that we have.  
+讓可信區間的範圍與資料不完全重合    
+  
+207  
+00:13:13.890 --> 00:13:16.790  
+This also shows a strength  
+of Bayesian statistics.  
+這個例子表現了貝氏統計的能耐    
+  
+208  
+00:13:16.790 --> 00:13:20.160  
+We had a prior belief  
+quantified by putting a function on it  
+透過事前信念能預期最合理的統計值    
+  
+209  
+00:13:20.160 --> 00:13:23.090  
+and then we observed some data.  
+再考慮收集的資料    
+  
+210  
+00:13:23.090 --> 00:13:25.260  
+And you can see that our  
+belief can be changed.  
+接著計算事後信念改變的程度    
+  
+211  
+00:13:25.260 --> 00:13:30.422  
+In this case  
+is still sort of halfway in between.  
+這個例子的事後分配恰好落在中間    
+  
+212  
+00:13:30.422 --> 00:13:35.171  
+But if we collect enough data  
+we should see that the posterior belief  
+如果收集足夠的資料，就會看到事後分配相當接近似然性函數    
+  
+213  
+00:13:35.171 --> 00:13:39.750  
+becomes very  
+very close to the likelihood function.  
+如果收集足夠的資料，就會看到事後分配相當接近似然性函數    
+  
+214  
+00:13:39.750 --> 00:13:44.440  
+So this shows that if we collect enough  
+data  
+收集更多資料之後，對於硬幣是否公正的信念會逐漸改變    
+  
+215  
+00:13:44.440 --> 00:13:47.253  
+we can become convinced  
+about something else.  
+逐漸相信真實數值不同於事前信念    
+  
+216  
+00:13:47.253 --> 00:13:49.576  
+This is  
+a very useful way to do science.  
+這種推論方式非常適合科學    
+  
+217  
+00:13:49.576 --> 00:13:53.349  
+And  
+between science and religion.  
+也體現科學與宗教信仰的差異    
+  
+218  
+00:13:53.349 --> 00:13:57.536  
+In religion  
+any option to update your belief.  
+身為教徒者不可改變對教義的信念    
+  
+219  
+00:13:57.536 --> 00:14:01.489  
+But  
+we have a very logical framework  
+貝氏統計卻提供一套有邏輯的架構    
+  
+220  
+00:14:01.489 --> 00:14:06.091  
+where data can change our prior beliefs  
+and lead to new posterior beliefs.  
+能根據資料調整事前信念，邁向合理的事後信念    
+  
+221  
+00:14:08.610 --> 00:14:15.020  
+So this 95% credible interval contains  
+the values that you find most plausible.  
+95%可信區間包括所有你能找到的最可能結果    
+  
+222  
+00:14:15.020 --> 00:14:19.611  
+It's all about expressing and quantifying  
+your belief in specific values.  
+以具體數值表現與計量最為可信的統計值    
+    
+223  
+00:14:19.611 --> 00:14:24.004  
+Now in this lecture we've seen how  
+can you use Bayesian statistics to  
+總結而言貝氏統計能量化你事先認定的合理數值  
+依理論收集資料，再根據資料更新合理數值的信念  
+  
+224  
+00:14:24.004 --> 00:14:27.186  
+quantify your prior beliefs  
+collect data  
+總結而言貝氏統計能量化你事先認定的合理數值  
+依理論收集資料，再根據資料更新合理數值的信念  
+  
+225  
+00:14:27.186 --> 00:14:31.445  
+then update your beliefs based on  
+the data that you've observed.  
+總結而言貝氏統計能量化你事先認定的合理數值  
+依理論收集資料，再根據資料更新合理數值的信念  
+  
+226  
+00:14:31.445 --> 00:14:36.579  
+[MUSIC]  
+[課程結束]  

@@ -1,0 +1,1284 @@
+WEBVTT  
+  
+1  
+00:00:00.000 --> 00:00:09.088  
+[MUSIC]  
+[再現研究]  
+  
+2  
+00:00:09.088 --> 00:00:12.310  
+In this lecture  
+we'll talk about replication studies.  
+這一講要談再現研究  
+  
+3  
+00:00:12.310 --> 00:00:15.310  
+Replication studies where  
+you repeat an experiment  
+重覆一項實驗並嘗試獲得相同結果    
+是所有實證科學的基石    
+  
+4  
+00:00:15.310 --> 00:00:20.250  
+try to observe the same results are a  
+cornerstone of any empirical science.  
+重覆一項實驗並嘗試獲得相同結果    
+是所有實證科學的基石    
+  
+5  
+00:00:20.250 --> 00:00:23.065  
+At the same time they're quite    
+challenging to perform  
+研究者通常很難再現相同結果    
+  
+6  
+00:00:23.065 --> 00:00:25.724  
+they're not always rewarded  
+when people perform them.  
+也很難因為進行再現研究得到獎勵    
+  
+7  
+00:00:28.943 --> 00:00:31.447  
+When we look at the scientific literature  
+閱覽科學文獻會發現再現研究是    
+任何實證科學的基石    
+  
+8  
+00:00:31.447 --> 00:00:36.440  
+we see that replications are a cornerstone  
+of any empirical science.  
+閱覽科學文獻會發現再現研究是    
+任何實證科學的基石    
+  
+9  
+00:00:36.440 --> 00:00:40.290  
+This is nicely illustrated by  
+this quote by Karl Popper.  
+卡爾．波普的這段名言完整體現再現研究的重要性    
+  
+10  
+00:00:40.290 --> 00:00:44.000  
+Now whenever you sight(cite) Popper  
+people have to take you seriously  
+任何有引述波普的文章，論述彷彿有一定份量    
+  
+11  
+00:00:44.000 --> 00:00:46.950  
+So let's take a look what Popper  
+says about replication studies.  
+就來看看波普怎麼談再現研究    
+  
+12  
+00:00:48.060 --> 00:00:51.970  
+He says only when certain events  
+recur in accordance with rules or  
+「只有當一定事件一致於規則或」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+13  
+00:00:51.970 --> 00:00:56.000  
+regularities  
+with repeatable experiments  
+「規律性而重現時，如同可重複的實驗案例」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+14  
+00:00:56.000 --> 00:00:59.360  
+can our observations be tested  
+in principle by anyone.  
+「我們的觀察原則才能被他人檢驗」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+15  
+00:01:00.410 --> 00:01:04.300  
+We do not take even our own  
+observations quite seriously or  
+「除非能被重複檢驗，我們無法嚴肅看待」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+16  
+00:01:04.300 --> 00:01:09.830  
+accept them as scientific observations  
+until we have repeated and tested them.  
+「自己的觀察或者視之為科學事實」-  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+17  
+00:01:09.830 --> 00:01:14.750  
+Only by such repetitions can we convince  
+ourselves that we are dealing with events  
+「如此，我們有足夠理由根據事件之間的」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+18  
+00:01:14.750 --> 00:01:17.380  
+which on account of their regularity and  
+「規律性與可重製性，」  
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+19  
+00:01:17.380 --> 00:01:21.990  
+reproducibility  
+inter-subjectively testable.  
+「處理互為主體可檢驗的事件。」    
+(翻譯參考陳瑞麟「科學哲學：理論與歷史」p.106)  
+  
+20  
+00:01:23.460 --> 00:01:26.370  
+We've been talking a lot about  
+calculating statistics and  
+至此已談過許多估計實驗結果信度的統計技術    
+    
+21  
+00:01:26.370 --> 00:01:29.100  
+estimating the reliability of findings.  
+至此已談過許多估計實驗結果信度的統計技術    
+    
+22  
+00:01:29.100 --> 00:01:32.710    
+But the real test is really    
+whether a study replicates.    
+然而最實際的信度測試是檢驗可否再現實驗結果    
+  
+23  
+00:01:32.710 --> 00:01:37.270    
+If someone else reproduces your    
+study does everything exactly    
+有什麼方式比其它人能重製你的研究過程    
+並得到相同結果更令人可信？    
+  
+24  
+00:01:37.270 --> 00:01:41.581  
+the same as you did it  
+will they observe the same results?  
+有什麼方式比其它人能重製你的研究過程    
+並得到相同結果更令人可信？    
+  
+25  
+00:01:41.581 --> 00:01:46.375  
+Now this became a hot topic after the  
+publication by Darrel Bem of the set of  
+Dareel Bem發表一系列超感知覺實驗之後    
+再現研究如今已是熱門議題    
+  
+26  
+00:01:46.375 --> 00:01:49.680  
+studies that examines precognition.  
+Dareel Bem發表一系列超感知覺實驗之後    
+再現研究如今已是熱門議題    
+  
+27  
+00:01:49.680 --> 00:01:54.860  
+So there's a set of studies where people  
+are seemingly able to predict the future.  
+這一系列研究顯示普通人似乎有能力預測未來    
+  
+28  
+00:01:54.860 --> 00:01:59.410  
+And of course here  
+effect it's immensely important.  
+如果研究發現的確為真，會是很重要的議題  
+  
+29  
+00:01:59.410 --> 00:02:02.650  
+If people can really predict the future  
+we want to know.    
+如果人人都能預測未來，你我都想知道怎麼回事    
+  
+30  
+00:02:02.650 --> 00:02:06.740  
+So immediately after this publication    
+people set out to try to replicate    
+自從Bem的研究發表之後，很多研究者嘗試再現他們的發現    
+  
+31  
+00:02:06.740 --> 00:02:07.320  
+the studies.  
+自從Bem的研究發表之後，很多研究者嘗試再現他們的發現    
+  
+32  
+00:02:08.350 --> 00:02:11.480  
+This is one example of a study  
+that tries to replicate  
+這篇論文是嘗試再現Bem的發現的眾多研究之一      
+    
+33  
+00:02:11.480 --> 00:02:14.320  
+the original observations by Daryl Bem.  
+這篇論文是嘗試再現Bem的發現的眾多研究之一      
+  
+34  
+00:02:14.320 --> 00:02:16.160  
+The title already gives it away.  
+論文標題相當直白    
+  
+35  
+00:02:16.160 --> 00:02:19.750  
+Failing the future  
+Three unsuccessful attempts to replicate  
+看不到未來：無法成功再現Bem的回溯促進記憶效果的三筆實驗    
+  
+36  
+00:02:19.750 --> 00:02:23.520  
+Bem's Retroactive Facilitation  
+of recall effect.  
+看不到未來：無法成功再現Bem的回溯促進記憶效果的三筆實驗    
+  
+37  
+00:02:23.520 --> 00:02:26.200    
+So these researchers    
+did everything more or    
+論文作者們儘可能以Daryl Bem的方法進行實驗      
+  
+38  
+00:02:26.200 --> 00:02:29.490    
+less the same as Daryl Bem    
+did in his original studies.    
+論文作者們儘可能以Daryl Bem的方法進行實驗      
+  
+39  
+00:02:29.490 --> 00:02:31.780    
+But they did not observe    
+a precognition effect.    
+卻沒有發現任何超感知覺效果    
+  
+40  
+00:02:33.400 --> 00:02:36.660  
+I want to point out that this publication  
+appeared in the journal PLOS one.  
+值得注意的是這篇論文發表在PLOS ONE  
+  
+41  
+00:02:37.740 --> 00:02:42.086  
+PLOS one is a groundbreaking journal    
+that publishes any effect or    
+PLOS ONE是以研究的設計完善程度    
+而非實驗效果是否顯著為接受標準的著名期刊      
+  
+42  
+00:02:42.086 --> 00:02:46.044  
+any set of studies as long as  
+the studies are well designed.  
+PLOS ONE是以研究的設計完善程度    
+而非實驗效果是否顯著為接受標準的著名期刊      
+  
+43  
+00:02:46.044 --> 00:02:48.870    
+Now you might think  
+what's so special about that?    
+為何要特別提出來說？    
+    
+44  
+00:02:48.870 --> 00:02:52.880    
+But it means that they also    
+publish replication studies.    
+不就是PLOS ONE也會接受再現研究    
+  
+45  
+00:02:52.880 --> 00:02:55.020    
+Again you might think  
+what's special about that  
+這篇論文為何值得一提？    
+  
+46  
+00:02:55.020 --> 00:02:59.550  
+shouldn't any scientific journal  
+publish replication studies?  
+不是任何科學期刊都會出版再現研究嗎？   
+  
+47  
+00:02:59.550 --> 00:03:00.729    
+But this is not the case.    
+很不幸不是如此    
+  
+48  
+00:03:02.270 --> 00:03:05.240    
+It turns out that these    
+authors first submitted    
+這要從這幾位作者最早投稿的故事講起    
+  
+49  
+00:03:05.240 --> 00:03:09.370    
+their replication studies to the same    
+journal as the original study appeared in.    
+一開始他們投到Daryl Bem發表原始研究的期刊    
+(人格與社會心理學期刊)    
+  
+50  
+00:03:10.640 --> 00:03:13.420    
+Elliot Smith  
+the Journal of Personality and    
+當時的期刊主編Elliot Smith拒絕了這篇論文    
+  
+51  
+00:03:13.420 --> 00:03:17.660    
+Social Psychology rejected the submission.    
+當時的期刊主編Elliot Smith拒絕了這篇論文    
+  
+52  
+00:03:17.660 --> 00:03:21.640    
+He said  
+the journal of Bem replications.    
+他表示這本期刊無必要成為再現Bem的研究專刊    
+  
+53  
+00:03:21.640 --> 00:03:24.650    
+So he rejected these replication studies  
+所以他拒絕了這些再現研究    
+  
+54  
+00:03:24.650 --> 00:03:29.000    
+because he didn't want to be a journal    
+that publishes replications.    
+因為他不希望這本期刊只出版再現研究    
+  
+55  
+00:03:29.000 --> 00:03:31.750    
+The field criticized this decision.    
+他的決定引起社會心理學界的一陣議論    
+  
+56  
+00:03:31.750 --> 00:03:36.030    
+The idea is that if replications are so    
+important for science  
+再現研究對科學進展的重要性若是科學家的普遍信念    
+  
+57  
+00:03:36.030 --> 00:03:40.340  
+journals that publish original results  
+should also publish well designed and    
+出版原始研究的期刊應該也要出版有良好設計與明確結果的再現研究    
+  
+58  
+00:03:40.340 --> 00:03:43.150  
+well performed replication studies.  
+出版原始研究的期刊應該也要出版有良好設計與明確結果的再現研究    
+  
+59  
+00:03:43.150 --> 00:03:46.950  
+In this publication  
+in the field are quickly evolving.  
+至於這篇論文則體現社會心理學界迅速變遷的價值觀    
+  
+60  
+00:03:48.030 --> 00:03:52.130  
+This publication  
+the Past: Failures to Replicate Psi  
+這篇「修正過去–再現超能力實驗的失敗案例」    
+  
+61  
+00:03:52.130 --> 00:03:56.260  
+is a set of studies where researchers  
+again tried to replicate the original  
+是另一系列嘗試再現Daryl Bem原始發現的研究    
+  
+62  
+00:03:56.260 --> 00:04:00.870  
+studies by Daryl Bem  
+to find any effect for precognition.  
+這份研究也無法發現任何相同的超感知覺效應    
+  
+63  
+00:04:02.030 --> 00:04:05.690  
+The only change here is that these  
+studies appeared in the same journal  
+與前一篇再現研究的不同之處是    
+  
+64  
+00:04:05.690 --> 00:04:07.530  
+where Daryl Bem published his research.  
+這篇論文被<人格與社會心理學期刊>接受    
+  
+65  
+00:04:09.490 --> 00:04:13.718  
+We now see that many journals  
+explicitly invite replication studies  
+如今許多期刊以實際行動歡迎任何不管有無註冊的再現研究      
+  
+66  
+00:04:13.718 --> 00:04:15.840  
+pre-registered or not.  
+如今許多期刊以實際行動歡迎任何不管有無註冊的再現研究      
+  
+67  
+00:04:15.840 --> 00:04:18.720  
+So this is a real improvement  
+in the recent years.  
+這些年的確有許多實際的進展    
+  
+68  
+00:04:18.720 --> 00:04:22.850  
+People are starting to value replication  
+studies more than they did in the past.  
+很多學者開始重新評價再現研究的重要性    
+  
+69  
+00:04:25.530 --> 00:04:29.130  
+Now if replication studies are so  
+important  
+談到這裡你也許會想，科學界應該有如何進行再現研究的完整規則  
+  
+70  
+00:04:29.130 --> 00:04:33.560  
+that we have a very clear set of rules  
+of how to perform these studies  
+談到這裡你也許會想，科學界應該有如何進行再現研究的完整規則  
+  
+71  
+00:04:33.560 --> 00:04:35.100  
+this is not the case.  
+然而實情不是如此    
+  
+72  
+00:04:35.100 --> 00:04:38.600  
+How we should perform replication  
+studies is a very active  
+如何進行再現研究是一門正在開始摸索    
+也存在許多爭議的科學議題    
+  
+73  
+00:04:38.600 --> 00:04:41.100  
+ongoing debate in  
+the literature at this moment.  
+如何進行再現研究是一門正在開始摸索    
+也存在許多爭議的科學議題    
+  
+74  
+00:04:42.560 --> 00:04:44.320  
+Now you might think  
+if these studies are so  
+你也許好奇，如果再現研究這麼重要    
+一百年前應該就有科學家開始進行了      
+  
+75  
+00:04:44.320 --> 00:04:48.040  
+very important  
+about how to do this 100 years ago?  
+你也許好奇，如果再現研究這麼重要    
+一百年前應該就有科學家開始進行了      
+  
+76  
+00:04:49.590 --> 00:04:50.360  
+I don't know.  
+老實說我不知道一百年前    
+  
+77  
+00:04:50.360 --> 00:04:51.275  
+But now  
+至少現在，我們正在解決設計良好再現研究的問題     
+  
+78  
+00:04:51.275 --> 00:04:54.490  
+we're addressing the questions of how  
+to do an adequate replication study.  
+至少現在，我們正在解決設計良好再現研究的問題     
+  
+79  
+00:04:57.190 --> 00:04:59.158  
+Now when you try to do a replication  
+若你想進行一項再現研究    
+  
+80  
+00:04:59.158 --> 00:05:03.490  
+the first thing to realize is that there  
+is no such thing as an exact replication.  
+首先要了解世上沒有精準的再現研究(exact replication)    
+  
+81  
+00:05:04.760 --> 00:05:09.010  
+You can never really repeat everything  
+in exactly the same manner.  
+沒有人能百分之百再現原始研究的細節    
+  
+82  
+00:05:09.010 --> 00:05:10.870  
+You're studying real life people.  
+因為行為科學的對象是活生生的人類    
+  
+83  
+00:05:10.870 --> 00:05:12.330  
+Times are changing.  
+人類都會隨時間改變    
+  
+84  
+00:05:12.330 --> 00:05:14.790  
+There's always some minor variation.  
+實驗結果永遠都會有些微的變化     
+  
+85  
+00:05:16.160 --> 00:05:19.630  
+We can distinguish between  
+a direct replication.  
+能做的一種再現研究是「直接再現」    
+  
+86  
+00:05:19.630 --> 00:05:22.950  
+So even though it's not identical  
+in this case  
+直接再現不盡然與原始研究完全相同    
+  
+87  
+00:05:22.950 --> 00:05:26.800  
+you're trying to stick as closely  
+as possible to the original study.  
+而是盡可能接近原始研究    
+  
+88  
+00:05:26.800 --> 00:05:29.640  
+You're keeping everything that  
+you think matters the same.  
+在能力及資源所及範圍之內達到相同的條件    
+  
+89  
+00:05:31.570 --> 00:05:34.690  
+You can also perform  
+a conceptual replication or  
+另一種再現研究是「概念再現」    
+  
+90  
+00:05:34.690 --> 00:05:37.580  
+as we might call it  
+a theoretical reproduction.  
+也有人叫「理論重製」  
+  
+91  
+00:05:38.590 --> 00:05:43.450  
+We already see that you're not doing  
+exactly the same in exactly the same way  
+由於沒人能做到完全精確的再現    
+  
+92  
+00:05:43.450 --> 00:05:48.390  
+but here you are testing the theoretical  
+idea in a slightly novel way.  
+就用稍微不同的方式檢驗理論的真實性    
+  
+93  
+00:05:48.390 --> 00:05:52.750  
+You are changing things in the study  
+design or in the manipulations.  
+研究的設計或變項操作會有些許不同      
+  
+94  
+00:05:52.750 --> 00:05:55.750  
+But you are trying to test  
+the same underlying hypothesis.  
+但是都是要測試同一種理論    
+  
+95  
+00:05:58.290 --> 00:06:01.800  
+The goals of doing  
+replication studies are many.  
+再現研究有許多要完成的目標    
+  
+96  
+00:06:01.800 --> 00:06:04.070  
+The first is identifying type 1 errors.  
+首要是確認研究的型一錯誤率    
+  
+97  
+00:06:06.000 --> 00:06:10.761  
+Now if you've set your type 1 error  
+rate to 5%  
+設定型一錯誤率為5%是指重覆研究多次之後    
+如果實驗效果並不存在卻顯示顯著結果的比率不超過5%    
+  
+98  
+00:06:10.761 --> 00:06:16.130  
+something when there is nothing a maximum  
+of 5% of the time  
+設定型一錯誤率為5%是指重覆一項實驗多次之後    
+如果實驗效果並不存在卻顯示顯著結果的比率不超過5%    
+  
+99  
+00:06:16.130 --> 00:06:19.070  
+So the goal of a replication  
+studies to identify  
+這個目標是評估文獻報告結果的偽陽性    
+  
+100  
+00:06:19.070 --> 00:06:21.280  
+these false positives in the literature.  
+這個目標是評估文獻報告結果的偽陽性    
+  
+101  
+00:06:21.280 --> 00:06:24.230  
+And this is of course very important  
+because we want to know that  
+了解文獻的可信度是設計再現研究的首要動機    
+  
+102  
+00:06:24.230 --> 00:06:26.120  
+the data in the published  
+literature is reliable.  
+了解文獻的可信度是設計再現研究的首要動機    
+  
+103  
+00:06:28.040 --> 00:06:30.670  
+The second goal is controlling for  
+artifacts.  
+其次是控制人為因素    
+  
+104  
+00:06:31.730 --> 00:06:34.860  
+Sometimes there might be a lack  
+of internal validity in a study.  
+這是出於研究可能缺乏內在效度的考量    
+  
+105  
+00:06:34.860 --> 00:06:38.430  
+You've used a very specific  
+type of stimuli for example.  
+也許原始研究一開始使用一群字詞    
+  
+106  
+00:06:38.430 --> 00:06:39.510  
+One set of words  
+也許原始研究一開始使用一群字詞    
+  
+107  
+00:06:39.510 --> 00:06:43.238  
+you might want to do a replication with  
+a slightly different set of words.  
+之後的再現研究使用不同的另一群字詞    
+  
+108  
+00:06:43.238 --> 00:06:47.240  
+Or maybe you even want to use  
+pictures instead of words.  
+甚至用圖片取代字詞    
+  
+109  
+00:06:47.240 --> 00:06:49.510  
+This shouldn't really matter for  
+the basic effects  
+材料的差別對實驗效果的影響無足輕重      
+  
+110  
+00:06:49.510 --> 00:06:52.220  
+it increases the internal  
+validity of the study.  
+確能增加研究的內在效度      
+  
+111  
+00:06:54.200 --> 00:06:56.980  
+Third goal is to generalize  
+to new populations.  
+第三點是測試實驗效果透過不同樣本再現    
+  
+112  
+00:06:58.050 --> 00:07:00.310  
+One criticism in psychology  
+心理學最常遇到的批判是多是研究都是招募在學學生擔任受試者      
+  
+113  
+00:07:00.310 --> 00:07:05.380  
+is that a lot of the research that's  
+being done is performed on students.  
+心理學最常遇到的批判是多是研究都是招募在學學生擔任受試者      
+  
+114  
+00:07:05.380 --> 00:07:08.110  
+These are typically highly educated.  
+通常都是大學生    
+  
+115  
+00:07:08.110 --> 00:07:11.270  
+They come from Western  
+democratic universities.  
+許多研究出自西方民主國家的大學院校    
+  
+116  
+00:07:12.320 --> 00:07:14.340  
+So sometimes  
+有時候研究者會想實驗效果會不會在不同的參與者身上有不同發現？      
+  
+117  
+00:07:14.340 --> 00:07:17.990  
+does this affect generalize to  
+completely different populations?  
+有時候研究者會想實驗效果會不會在不同的受試身上有不同發現？     
+    
+118  
+00:07:17.990 --> 00:07:21.210  
+And you might want to do almost  
+exactly the same study but  
+此時就會想找不同文化背景的受試者做再現研究    
+  
+119  
+00:07:21.210 --> 00:07:23.029  
+just on different culture for example.  
+此時就會想找不同文化背景的受試者做再現研究    
+  
+120  
+00:07:25.060 --> 00:07:29.590  
+The fourth goal is especially for  
+conceptual replications.  
+第四個目標是概念再現特別重視的理由    
+  
+121  
+00:07:29.590 --> 00:07:32.850  
+Here  
+the underlying hypothesis.  
+就是檢驗潛在的假設    
+  
+122  
+00:07:32.850 --> 00:07:37.853  
+If this prediction halts  
+also observe a slightly different effect  
+如果同樣的理論能預測不同情況的結果，    
+應該能在稍微不同的研究條件發現另一種結果      
+  
+123  
+00:07:37.853 --> 00:07:42.500  
+in slightly different study that is  
+based on the same theoretical idea.  
+如果同樣的理論能預測不同情況的結果，    
+應該能在稍微不同的研究條件發現另一種結果      
+  
+124  
+00:07:46.098 --> 00:07:49.480  
+Now it's important to perform  
+these replication studies.  
+了解進行再現研究的重要性之後    
+  
+125  
+00:07:49.480 --> 00:07:51.350  
+You might think why bother.  
+你也許好奇為何要如此大費周章    
+  
+126  
+00:07:51.350 --> 00:07:53.950  
+Everything that's in the published  
+literature should be extremely  
+已經發表的文獻不是已經相當可信了？    
+  
+127  
+00:07:53.950 --> 00:07:54.710  
+reliable  
+已經發表的文獻不是已經相當可信了？    
+  
+128  
+00:07:54.710 --> 00:07:59.350  
+We only have a 5% type 1 error rate  
+so how much can be wrong?  
+只設定5%的型一錯誤率怎麼可能還會出錯？    
+  
+129  
+00:07:59.350 --> 00:08:03.450  
+It turns out that it's quite likely  
+that studies do not replicate.  
+然而這些研究的結論未經再現研究證實之前    
+仍有出錯的可能    
+  
+130  
+00:08:03.450 --> 00:08:05.820  
+We don't know exactly how likely but  
+出錯的可能性有多高無法得知    
+  
+131  
+00:08:05.820 --> 00:08:08.150  
+there's some examples that  
+are reason enough to worry.  
+但是有些案例讓人必須擔心    
+  
+132  
+00:08:09.630 --> 00:08:14.930  
+For example  
+studies  
+像是癌症新藥如此人命關天的研究課題    
+  
+133  
+00:08:14.930 --> 00:08:19.830  
+So these are studies that are trying to  
+address new medicine for cancer research.  
+這類研究要測試新藥的抗癌效果      
+  
+134  
+00:08:21.010 --> 00:08:24.680  
+In this field  
+researchers who tried to replicate  
+曾有研究者嘗試再現53項有可信度，但是相當新穎的研究    
+  
+135  
+00:08:24.680 --> 00:08:28.790  
+a set of 53 very promising  
+but also very novel  
+曾有研究者嘗試再現53項有可信度，但是相當新穎的研究    
+  
+136  
+00:08:29.890 --> 00:08:34.310  
+Of this only six  
+could successfully be replicated.  
+結果只有其中6項，也就是11%的再現率    
+  
+137  
+00:08:35.410 --> 00:08:39.400  
+Now this is a company trying to build on  
+scientific research and you know that if  
+這項研究是一間公司為了投資而進行的再現研究      
+  
+138  
+00:08:39.400 --> 00:08:42.690  
+they succeed in replicating these studies  
+they will make a lot of money.  
+如果成功再現就能獲得巨大報酬    
+  
+139  
+00:08:42.690 --> 00:08:46.144  
+But even  
+despite their very high motivation  
+儘管每項研究的動機都是為了救人，結果卻只有11%的可再現率    
+  
+140  
+00:08:46.144 --> 00:08:50.028  
+only six out of 53 studies  
+successfully reproduce.  
+儘管每項研究的動機都是為了救人，結果卻只有11%的可再現率    
+  
+141  
+00:08:50.028 --> 00:08:51.580  
+So this is a reason to worry.  
+值得省思這類研究的可再現率有多高    
+  
+142  
+00:08:53.110 --> 00:08:57.140  
+In psychology there was a large  
+scale replication project  
+在這項大規模的心理學再現研究專案    
+  
+143  
+00:08:57.140 --> 00:09:02.040  
+where 100 studies in the published  
+literature from 2008 from three main  
+召集世界各地260多位心理學者    
+  
+144  
+00:09:02.040 --> 00:09:07.613  
+journals were reproduce by over 260  
+different researchers working in teams.  
+再現100項在2008年發表於三本重要期刊的研究    
+  
+145  
+00:09:07.613 --> 00:09:10.730  
+They reproduced 100 studies.  
+100項研究的再現結果並非全部都能成功再現    
+  
+146  
+00:09:10.730 --> 00:09:15.050  
+And when they replicated these studies  
+not all of them successfully replicate.  
+100項研究的再現結果並非全部都能成功再現    
+  
+147  
+00:09:16.380 --> 00:09:20.520  
+It's very difficult to say how many  
+depends on the threshold that you want to  
+然而定義再現結果是否成功的標準相當困難  
+  
+148  
+00:09:20.520 --> 00:09:22.080  
+define for a replication.  
+然而定義再現結果是否成功的標準相當困難  
+  
+149  
+00:09:22.080 --> 00:09:24.060  
+Is this a significant effect?  
+怎麼算是一種顯著效果？    
+  
+150  
+00:09:24.060 --> 00:09:27.860  
+Is it a similar effect  
+of the similar size?  
+是以接近的樣本數得到相似的效果嗎？      
+  
+151  
+00:09:27.860 --> 00:09:31.210  
+Let's take a look at the p-value  
+distribution of the effects  
+來看看所有實驗結果的p值分佈    
+  
+152  
+00:09:31.210 --> 00:09:35.600  
+from the original studies and from  
+the effects in the replication studies.  
+左邊來自原始研究，右邊來自再現研究    
+  
+153  
+00:09:35.600 --> 00:09:40.540  
+On the left here we see the p-value  
+distribution and on the vertical axis  
+圖左側的縱軸由下至上標示的p值從0到1    
+  
+154  
+00:09:40.540 --> 00:09:44.095  
+we have the p-values ranging from  
+zero on the bottom to one on the top.  
+圖左側的縱軸由下至上標示的p值從0到1    
+  
+155  
+00:09:44.095 --> 00:09:49.035  
+Non-surprisingly  
+almost all of the published  
+毫無意外地，因為出版偏誤的關係，    
+所有原始研究的p值都小於0.05    
+  
+156  
+00:09:49.035 --> 00:09:53.059  
+studies yielded p-values  
+that were smaller than 0.05.  
+毫無意外地，因為出版偏誤的關係，    
+所有原始研究的p值都小於0.05    
+  
+157  
+00:09:53.059 --> 00:09:56.569  
+On the right  
+distribution of replication studies  
+右邊再現研究的p值分佈從0到1都有  
+  
+158  
+00:09:56.569 --> 00:09:57.990  
+which are all over the place.  
+右邊再現研究的p值分佈從0到1都有  
+  
+159  
+00:09:59.130 --> 00:10:04.270  
+Purely based on p-values  
+about 40% of the studies replicate it.  
+只以p值來看，只有40%的再現研究是成功的      
+  
+160  
+00:10:04.270 --> 00:10:07.020  
+Again  
+再次提醒，這不是說原始研究的理論是錯的    
+(見第一週第二講)    
+  
+161  
+00:10:07.020 --> 00:10:09.210  
+underlying these original  
+studies is not true.  
+再次提醒，這不是說原始研究的理論是錯的    
+(見第一週第二講)    
+  
+162  
+00:10:09.210 --> 00:10:13.310  
+A failed replication does not  
+falsify an entire theory.  
+一次失敗的再現不足以否證整個理論    
+  
+163  
+00:10:13.310 --> 00:10:16.520  
+There can be many reasons  
+why replication fails.  
+有許多能解釋為何再現失敗的原因      
+  
+164  
+00:10:16.520 --> 00:10:19.450  
+Of course  
+what these reasons could be.  
+當然我們必須好好想想到底是什麼原因      
+  
+165  
+00:10:19.450 --> 00:10:22.470  
+But it's too early to  
+dismiss all these studies.  
+不過現在不是無視這些研究的時候      
+  
+166  
+00:10:22.470 --> 00:10:26.110  
+Nevertheless a replication  
+rate of around 40% is  
+雖然只有40%成功再現似乎不令人滿意    
+  
+167  
+00:10:26.110 --> 00:10:28.080  
+not as high as you would like it to be.  
+雖然只有40%成功再現似乎不令人滿意    
+  
+168  
+00:10:30.290 --> 00:10:33.180  
+So which studies might  
+be especially troubling?  
+那麼究竟是那些研究很可能無法再現？      
+  
+169  
+00:10:34.390 --> 00:10:39.150  
+In a Bayprint 2015  
+Lindley called this the Troubling Trio  
+Lindley提出可能無法再現的研究具備的三種特徵    
+  
+170  
+00:10:39.150 --> 00:10:43.850  
+three aspects of studies that should  
+make you slightly more doubtful.  
+只要三者皆具，你應該要質疑這一系列研究結果    
+  
+171  
+00:10:43.850 --> 00:10:47.131  
+The first is low power small simple sizes.  
+第一點是低統計考驗力且效果量微小    
+  
+172  
+00:10:47.131 --> 00:10:51.278  
+The second is relatively high p-value and  
+as we saw in the lecture on  
+第二點是相對高的p值，    
+就像第五週第三講的p curve所述那樣    
+  
+173  
+00:10:51.278 --> 00:10:56.180  
+p-value distributions and in the lecture  
+on p curve analysis this make sense.  
+第二點是相對高的p值，    
+就像第五週第三講的p curve所述那樣    
+  
+174  
+00:10:57.360 --> 00:10:59.610  
+The last one is a surprising result.  
+最後一點是令人驚奇的結果    
+  
+175  
+00:10:59.610 --> 00:11:01.900  
+And as we saw in the lecture  
+on Bayesian statistics  
+就像前幾週談貝式統計提到的    
+  
+176  
+00:11:01.900 --> 00:11:05.320  
+this is also a valid reason to  
+doubt the original finding.  
+是可以合理懷疑原始研究真實性的理由    
+  
+177  
+00:11:05.320 --> 00:11:09.510  
+So whenever there was a small sample size  
+a relatively high p value  
+只要看到一項研究有小樣本，高p值，    
+與令人驚奇的結果    
+  
+178  
+00:11:09.510 --> 00:11:12.940  
+a surprising result  
+we can refer to this as a troubling trio.  
+就可以懷疑這項研究的結果    
+  
+179  
+00:11:12.940 --> 00:11:16.170  
+And we should be slightly more  
+skeptical about these studies.  
+而且應該對一系列的結果保持起碼的懷疑    
+  
+180  
+00:11:16.170 --> 00:11:19.580  
+And it's definitely worthwhile to try  
+to replicate these studies before you  
+在進行再現研究之前，這些是值得檢視的重點    
+  
+181  
+00:11:19.580 --> 00:11:20.259  
+try to build on them.  
+在進行再現研究之前，這些是值得檢視的重點    
+  
+182  
+00:11:23.110 --> 00:11:24.120  
+Now in recent years  
+近幾年出現許多大規模再現研究專案    
+  
+183  
+00:11:24.120 --> 00:11:30.490  
+we see an increase in what you would call  
+large scale reproducibility projects.  
+近幾年出現許多大規模再現研究專案    
+  
+184  
+00:11:30.490 --> 00:11:35.860  
+Metascience could rescue the replication  
+crisis  
+就像Jonathan Schooler指出這類研究能挽救再現危機    
+  
+185  
+00:11:35.860 --> 00:11:40.330  
+He's referring to what's known as  
+registered replication reports.  
+他的說法來自自己的研究被註冊再現研究成功再現    
+(參考https://osf.io/ybeur/)  
+  
+186  
+00:11:40.330 --> 00:11:45.150  
+In these studies  
+labs collaborate together  
+這些註冊再現研究是針對同一項研究的跨實驗室合作  
+(參考http://scchen.com/Text/text_2016004/)  
+  
+187  
+00:11:45.150 --> 00:11:47.660  
+they replicate one study.  
+這些註冊再現研究是針對同一項研究的跨實驗室合作  
+(參考http://scchen.com/Text/text_2016004/)  
+  
+188  
+00:11:47.660 --> 00:11:52.810  
+So  
+where 100 studies are replicated one time  
+不像前述100項研究只由一個實驗室再現一項研究    
+  
+189  
+00:11:52.810 --> 00:11:57.410  
+in these situations  
+different labs replicate the same study.  
+參與專案的所有實驗室同步再現同一項實驗    
+  
+190  
+00:11:57.410 --> 00:11:59.050  
+So  
+因此能累積可觀的資料    
+  
+191  
+00:12:00.140 --> 00:12:02.440  
+Let's take a look at  
+one of these data sets.  
+就拿其中一件專案來看看      
+  
+192  
+00:12:02.440 --> 00:12:07.400  
+The many labs project  
+where a set of studies was replicated  
+2014年發表的多實驗室再現專案，    
+就是各實驗室再現一系列實驗    
+  
+193  
+00:12:07.400 --> 00:12:11.840  
+here we see what's known as  
+a prospective meta analysis.  
+並且以所謂的前瞻性整合分析整理結果    
+  
+194  
+00:12:11.840 --> 00:12:16.320  
+The researchers decided that they would  
+combine all the studies that individual    
+研究者們結算所有單一實驗室的結果    
+再計算出各項研究的整合分析效果量    
+  
+195  
+00:12:16.320 --> 00:12:20.449  
+researchers did  
+calculate a meta analytical effect size.  
+研究者們結算所有單一實驗室的結果    
+再計算出各項研究的整合分析效果量    
+  
+196  
+00:12:21.500 --> 00:12:24.950  
+So these are replications of the same  
+study by many different labs  
+圖中每一條水平線代表一項實驗的所有實驗室結果    
+  
+197  
+00:12:24.950 --> 00:12:26.420  
+all over the world.  
+圖中每一條水平線代表一項實驗的所有實驗室結果    
+  
+198  
+00:12:26.420 --> 00:12:30.092  
+And if a result is statistically  
+significance in these studies  
+如果一項結果是統計顯著的    
+  
+199  
+00:12:30.092 --> 00:12:33.150  
+we can be fairly confident  
+that this is true effect.  
+就會看到水平線顯示該項研究的真實效果    
+  
+200  
+00:12:33.150 --> 00:12:37.290  
+We have so much data that this kind of  
+replication projects really tell us  
+有如此多資料的再現研究有助評估原始研究效果為真的機率    
+  
+201  
+00:12:37.290 --> 00:12:40.559  
+something about the probability  
+that the original study is true.  
+有如此多資料的再現研究有助評估原始研究效果為真的機率    
+  
+202  
+00:12:41.890 --> 00:12:45.170  
+Now if you want to build on the published  
+literature it's always smart  
+如果要根據已知的文獻進行研究    
+  
+203  
+00:12:45.170 --> 00:12:48.600  
+to perform what's known as  
+a replication and extension study.  
+最聰明的辦法是進行再現與擴充研究    
+  
+204  
+00:12:49.720 --> 00:12:52.110  
+You replicate the original result  
+除了再現原始研究結果，也進行新的實驗    
+  
+205  
+00:12:52.110 --> 00:12:54.930  
+you create some sort of addition  
+something new.  
+除了再現原始研究結果，也進行新的實驗    
+  
+206  
+00:12:54.930 --> 00:12:58.660  
+You add a condition where you change  
+something about the stimuli or  
+像是改變刺激或增加實驗操作條件    
+  
+207  
+00:12:58.660 --> 00:13:00.880  
+about about the manipulation.  
+像是改變刺激或增加實驗操作條件    
+  
+208  
+00:13:00.880 --> 00:13:05.440  
+So in this cases  
+is successful but the extension is not  
+這種情況下如果再現成果    
+但是新條件沒有顯著結果    
+  
+209  
+00:13:05.440 --> 00:13:10.640  
+successful  
+the novel thing that you introduced.  
+也有好的理由說明預測的新效果為何不會出現    
+  
+210  
+00:13:10.640 --> 00:13:15.160  
+If you cannot reproduce the original  
+result  
+如果無法再現原始研究的結果，也不必質疑理論是否正確    
+  
+211  
+00:13:15.160 --> 00:13:18.109  
+your new idea but you should have  
+more doubt about the original study.  
+而是要懷疑原始研究有什麼問題    
+  
+212  
+00:13:19.930 --> 00:13:22.390  
+If we really want to know  
+whether results are reliable  
+想知道一種實驗結果是否可信    
+  
+213  
+00:13:22.390 --> 00:13:25.730  
+it's essential that they can  
+be replicated by other labs.  
+必須讓不同實驗室成功再現    
+  
+214  
+00:13:25.730 --> 00:13:29.686  
+Replication studies are a cornerstone  
+of any empirical science.  
+再現研究是任何實證科學的基石    
+  
+215  
+00:13:29.686 --> 00:13:35.089  
+[MUSIC]  
+[課程結束]  

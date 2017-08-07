@@ -1,0 +1,151 @@
+0:00
+[MUSIC] In this lecture we'll talk about Philosophy of Science. I'll give a brief overview of the history of Philosophy of Science. Now this is a topic that you can spend an entire course on. If you are interested, I highly recommend you do this. But you should at least know the basics. Can we ever have something that's objectively true? Do we know whether something is a science or not? These are important questions to consider. 
+
+這一講來談談「科學哲學」。我將簡單介紹科學哲學的歷史。這個主題應該用好幾堂課來談，如果你有興趣建議去選修，這一講只提一些基本課題。像是我們能對事物做出客觀真實的論斷？我們能判別科學與偽科學嗎？都是值得思考的問題。
+
+0:31
+Now if we ask ourselves the question, what makes something scientific? Then we are asking, what is the demarcation criteria? What differentiates between science and pseudoscience? Do you think that astrology is a scientific discipline? Should we use tax money to fund research on astrology? Do you think that precognition, studying whether we can predict the future or not is a science and should we fund it based on tax money? Do you think that my own discipline, experimental psychology is a science and should we fund this? You see that the question whether something is a science or not has real life consequences. If we think about demarcation criteria, then different people have different opinions about whether we can say that there's a difference between science and pseudoscience. 
+
+首先想想這個問題：什麼造就了科學？接著可以問：科學有沒有清楚的界線？科學與偽科學有何差異？你認為占星術是科學的一部分嗎？人民的稅金可以用來補助占星術的研究嗎？可以補助探索人類有沒有預見未來能力的超感知覺研究嗎？或者我安身立命的實驗心理學才是真正的科學，才值得補助？這些問題點出了解一項研究是不是科學，會對現實生活造成影響。然而劃分科學與偽科學的界線，人人心中各有一把尺。
+
+1:17
+Popper says that if a theory is falsifiable, then it's scientific and this is the demarcation criteria according to Popper. But not everybody agrees. For example, Lakatos says that a given fact is explained scientifically only if a new fact is predicted with it. You should not just describe things that you see, but your new descriptions are scientific explanations when they can also predict new things. When they can explain new information. There are also people who give up on trying to differentiate between science and pseudoscience. Well known example is Paul Feyerabend, he says that given any rule, there are always circumstances when it is advisable not only to ignore the rule, but to adopt its opposite. So there's never rule that you can follow that will differentiate between science and pseudoscience, anything goes. 
+
+波普(Popper)的劃分標準是理論能不能被否證。不過並非人人同意他的看法。像是他的學生拉卡托斯(Lakatos)認為除非理論能正確預測新事實，對舊事實的解釋才是科學的。科學研究不能只描述現在看到的事物，也要描述能預測的事物，以及新的事實。也有人主張沒有必要區分科學與偽科學。像是波普的另一位學生費耶阿本德(Feyerabend)認為總會出現反對現存規範的案例，所以不存在能準確劃分科學與偽科學的標準。他的名言是”諸行皆可“(anything goes)。
+
+2:11
+If we draw in inferences from data, then there are logical ways to do this and illogical ways to do this. In propositional logic, one valid rule of inference is known as the Modus Tollens. In other words, denying the consequents. Let's take a look. 
+
+根據資料做推論，有邏輯與非邏輯的方法。能做有效推論的一種邏輯方法是否定後件(Modus Tollens)。簡單說就是否定推論得到的結果。
+
+2:28
+If the Modus Tollens is used we have a line of reasoning that goes as this. If p then q, not q, therefore not p. 
+
+否定後件能寫成這樣的形式。若p則q，非q，所以非p。
+
+2:38
+Let's make it a little bit more concrete. 
+
+來看看這條規則的實際用處。
+
+2:41
+If we have a theory, then we should observe some data. 
+
+根據要驗證的理論，我們收集需要的資料。
+
+2:46
+Then we collect some data but we do not observe the data that we predicted. From this we can deny the consequent, therefore not the theory. A very often illogical way of drawing inferences is known as affirming the consequent. Now this is not a valid rule of inference although it's tempting to use. 
+
+但是收集到的資料不符合理論的預測。根據否定後件的規則，推論理論不成立。另一方面就是採取非邏輯方法，從肯定的角度進行推論。雖然這種方法有時有用，卻非有效的推論規則。
+
+3:07
+It goes like this, if p then q we observe q therefore p.
+
+寫成邏輯形式就是：若p則q，觀察到q，所以p成立。
+
+3:15
+Now this might look like it's logical but it isn't. Let's look at some more detail. 
+
+雖然這像是邏輯規則，其實不是，讓我告訴你為什麼。
+
+3:20
+If we have a theory then we should observe some data,
+
+為了確認手上理論為真，我們必須收集資料
+
+3:24
+we observe the data and then we conclude that therefore the theory is true. 
+
+收集到的資料要用來確認理論為真。
+
+3:30
+Now this might still look like it's valid but it isn't. Let's make it even more concrete. Let's say that I conclude that if I'm a man then I'm also a human. I observe that I am a human and then I conclude that therefore I must be a man, but this last step is not valid. I could also be a woman or anything in between. 
+
+這樣的命題推理似乎有效，其實不然。讓我用更明確的例子。我先說“若我是男人，那我也是人類”。我觀察到我是人類，所以結論我是男人。這樣的結論其實無效，因為我也可以是女人或跨性別者。
+
+
+3:53
+A theory can be either refuted or corroborated but you can never prove a theory. Now this is important. We can never have certain knowledge. We can aim for it but we can never achieve it. It's easier to refute a theory and this is based on Popper's idea of falsification. So you can have a conclusion where you falsify a prediction. 
+
+一個理論可以被證明為錯，或有證據證成。但不能直接推論為真。這個認識很重要。我們不會有肯定的知識。這個目標可以努力但永遠無法達成。波普的否證論概念就是證明理論為錯較容易。只要否證一個預測就會有結論。
+
+4:16
+For example, if we look at the prediction, all swans are white, now, no number of sightings of white swans can ever prove the theory that all swans are white. However, if we only see one black swan, this will disprove our theory that all swans are white. So you see that falsification is a very potent tool to reject theories. Now we can never accept them, we can observe observations that are in line with our theory but we can never prove it. 
+
+例如這一則預測：所有天鵝都是白的，就算不知道白天鵝有多少隻，永遠可以宣稱這個預測為真。但是，只要今天看見一隻黑天鵝，這個預測就會被推翻。由此可見否證論推翻理論的威力。反過來說，即使無法完全證明理論為真，只要獲得的資料與預測一致，理論還是可能為真。
+
+4:47
+However, when we use inferences based on statistics, then falsifications are never really black or white, as the case with black swans. If you see a black swan and you have a clear view, then you can be pretty sure that this is not a white swan. You might even get a feather and try to wash it, see that the black doesn't come off and then you have a solid observation that black swans exist. In statistics we always work with probabilities. We have a certain probability that the data we have observed, is surprising for example. We have a certain probability that there is no true effect. Now this kind of statements are never completely black or white. So it's always more difficult to falsify a prediction. 
+
+然而在統計推論的場域，並不像黑天鵝問題一樣有非黑即白的否證。看見黑天鵝是鐵錚錚的否證證據。如果你很龜毛，可能會洗洗看黑天鵝的羽毛會不會掉色，再決定要不要接受這個證據。統計則是依賴機率。資料的否證程度全賴歸察到的機率。只能斷言沒有真實效果的機率。這樣的結論永遠不會非黑即白。所以任何統計的預測被否證的難度頗高。
+
+5:29
+Furthermore, we wonder whether we actually reject theories after a single falsification. And Lakatos argues that we never do this. People have some sort of feeling for a theory. They like a specific theory and they want it to be true. And this is perfectly fine. You can try to find support for it in different ways. 
+
+更進一步的說，理論很難被一種否證證據推翻。拉卡托斯指出不可能有這樣的否證。想出理論的方式有很多種。有的理論的目標很特定，只要不被特定的證據推翻就好。支持理論的證據也是各式各樣。
+
+5:50
+Now there are good reasons to stick with the theory. When a theory makes a very, very good predictions then a single observation that's not in line with your predictions is no reason to give up the entire theory. 
+
+測試理論會不會被推翻其實很有意義。如果能用理論做個好預測，然後獲得不支持理論預測的證據，就可以毫無懸念的放棄理論。
+
+6:03
+This statement by Stevens is rather nice. It says, the lesson of history is that a bold and plausible theory that fills a scientific need is seldom broken by the impact of contrary facts and arguments. Only with an alternative theory can we hope to displace a defective one. So it's perfectly fine if you sometimes observe a finding that's not in line with theoretical predictions. You don't have to throw your theory out of the window.
+
+Stevens的這段話說得很好。科學史上有許多大膽又合理的理論，被反證的事實與言論擊倒。而且總是有新的理論取代舊理論的位置。如果你能發現和你的理論預測不同的證據其實是好事。你不必直接把理論捨棄。
+
+6:31
+If you have a strong theory that makes good predictions in other fields, there's no reason to give it up until you have a better theory. 
+
+如果原來理論的預測在其他地方經得起考驗，依然可以堅持到有更好的理論出現。
+
+6:40
+So if there's a falsification, if one of these predictions don't hold up then what is exactly falsified? Is it the theory itself or there are auxiliary theories. Assumptions that you make about the data collection process, for example. Now let's say you do an experiment on some people and you have a theoretical prediction. And it's not supported by the data. Now you can either distrust your theory itself or you can say, well maybe something else that I assumed was going on didn't happen as I predicted. For example, maybe your participants were very, very tired. They didn't process all the information you provided. And as a consequence, you didn't observe the effect that you predicted. Now in these situations, you might not throw away your theory. You might say, well some of the assumption that I made about how much attention participants were paying to the experiments, those assumptions are violated. Let's try it again, let's try to boost the attention levels of participants and see if we can find the expected effect. 
+
+如果理論的預測被否證，代表理論本身被否證嗎？被否證的是理論本體還是附屬命題？設想你做了一次資料收集。像是根據一個理論預測，找些人做了實驗。不過結果不符合預測。此時可以捨棄這套理論，也可以認為實驗過程沒有做好。像是找到的參與者精神狀態都很差。無法處理好實驗過程中的訊息。以致於結果不如預期。若是如此，還不必拋棄理論。你可以說是因為實驗操作不符合理論中注意力集中的前提。需要再試一次，看看注意力集中的參與者表現會不會符合預測。
+
+7:41
+According to Lakatos, we have a core theory and around this core theory there's protective belt of auxiliary hypotheses, these are assumptions that you make about the research process and you can give up some of these assumptions or change them. 
+
+拉卡托斯主張理論有不可更改的硬核，以及可調整假設命題的保護帶。研究者可以在過程中修改或放棄保護帶的某些命題。
+
+7:56
+In this sense, you can keep your core theory, even if your prediction doesn't pan out by changing some of the assumptions that you make. Now, of course, when you do this, you enter what's known as a degenerative research line. It's fine to make an ad hoc assumption saying, well, it's true but only if. But if you have to keep doing this and keep doing this, then your theory is not making new predictions. There are no new facts that are predicted with the theory that you make. You're just trying to change the theory every time when a failed prediction emerges. What you ideally want is to turn this into a progressive research line. A first failed test is perfectly fine. You can slightly change your theory or one of the assumptions you're making, but then this should lead to a progressive research line, there should be new facts that you can predict with your improved theory. When this is not the case, it's perfectly fine to keep trying but after a while, you enter a research line that's not giving anything new, which happened with astrology in the past. So according to Lakatos, something like astrology would not be a scientific discipline because it never turned into a progressive research line. They're only ad hoc changes to the theory every time when a failed prediction emerges. 
+
+這樣的主張指出，若是為了做出更好的預測而調整部分假設，還是能保留硬核。但是如此一來就會進入「退化性研究進程」。有時為了提高預測力而提出增加可能條件的後設假設。但長久為之，理論將不再能提出新的預測。因為這樣的理論無法預測並解釋新的事實。持續存活到失敗的預測無法修補為止。理論有生命的狀況應是處於「進化性研究進程」。第一次測試失敗不打緊。只改變少數假設，就能推進到進化性研究進程是最好的。如此的理論能持續預測新事實。就算持續修正還是無法預測新事實的理論，曾在天文學歷史出現過。拉卡托斯認為無法保持進化性研究進程的天文學理論，不能算是科學理論。只是一堆失敗預測堆成的補丁式理論。
+
+9:14
+Now there are some people who doubt whether we can have an objective science altogether. So they say the quest for an objective truth is a nice try, but we'll never really reach it. One of them is Thomas Kuhn in his book The Structure of Scientific Revolutions. He says that observations are always theory laden, not objective. There's no such thing as an objective view at the world. We always look at the world with certain assumptions and these assumptions color the way that we do our research. 
+
+很多唸過科學哲學的人會問有沒有客觀科學存在？有人主張這尋找客觀事實是高尚的目標，但是沒有達成的一日。湯馬斯孔恩是其中一人。他的名著“科學革命的結構”就提到任何觀察都帶有理論的觀點，並非客觀。世上沒有絕對客觀的立場。我們總是帶著某個理論色彩的眼鐘看這個世界，科學研究也不例外。
+
+9:44
+He goes as far as to say, that the proponents of competing paradigms practice their trades in different worlds. What he means is that it's possible for researchers to have different theoretical backgrounds and they will look at the world in completely different ways that you cannot unify. 
+
+孔恩又提到，相互對抗的典範支持者在各自的世界中交流。也就是說理論背景各異的研究者只關注與自己有關的資訊，不會互相往來。
+
+10:01
+He talks about how people practice puzzle-solving science, which is basically normal science as science should progress. And this is followed by a paradigm shift, a revolution in science, and after such a scientific revolution, we look at the world in a completely different way. And after a scientific revolution we cannot interpret the data that we collected before this paradigm shift. Things completely change. So there's no objective knowledge. Things always depend on the specific paradigm that you're in. 
+
+他以應該是科學進展主力的基礎科學為例，說明科學家如何解決難題。隨著典範轉移，開始發生科學革命。在革命之後，世人觀看世界的眼光如何改變。像是難命之後推論資料的方式，與典範轉移之前完全不同。世界會改變，所以沒有客觀的知識。何為真實全看你所憑依的典範。
+
+10:33
+According to Kuhn, science is not cumulative, but it's revolutionary, based on subjective reasons. These can be social norms or idyllic ideas that people have. So it's not that science will always just progress and become better and better, the idea that Lakatos is expressing in his progressive research lines, no instead, there's just a revolution every now and then. And we have a completely different paradigm within which we practice science. Modern few points on philosophy of science acknowledge that scientific knowledge is a social product. For example, Helen Longino talks about how we have no objective knowledge, but there is only intersubjective criticism, what constitutes the objectivity of science. So there's no objectivity outside of the social enterprise that science is. 
+
+孔恩認為科學進展不是累積的，而是基於主觀理由發動的革命。就像是大眾遵守的社會規範或共同理念也會改變。科學進展的方向不一定是越來越好。但不像拉卡托斯的研究進程說法，孔恩認為是週而復始的革命造成，才會產生前後不一樣的科學操作典範。現代科學哲學的論點讓我們了解科學知識也是一種社會產物。像Helen Longino就算沒有客觀知識，互為主體的批判也能構成科學的客觀性。但這種客觀性不能自外於科學所存在的社會體系。
+
+11:26
+What's important, according to Longino, is public avenues for criticism, for example peer review, when you submit your paper for publication. What's important is that there is room for peers to criticize your finding or improve it if possible.
+
+Longino還弘調批判的公眾性，像是投稿期刊的同儕評審。讓同行專家有空間批判或改善彼此的作品。
+
+11:41
+There should be shared standards, we should have some idea of what we're doing. A tool set that we use to evaluate evidence. 
+
+還有共同遵守的標準。科學家有行事的一致信念，還有可共同評估證據的方法。
+
+11:48
+There should be open reevaluation. So if there's criticism and there are new insights, a scientific discipline should change. Again, this is not something that happens in astrology. There's enough criticism on astrology but it never really changed in the last decades. And finally, what's important for this social intersubjective objectivity is that there's equality within peers. If you have an informed researcher that knows what he or she is doing, then these people should have equality in their interaction. It should not be the case that one person can determine, this is how it's going to be because I'm the most powerful individual here. In this lecture we briefly talked about philosophy of science and different perspectives that philosophers have on what makes something scientific. Personally I think, the idea of a progressive and a degenerative research line is quite useful. When you make a prediction that doesn't pan out, you're in trouble, you have to try to turn this into a progressive research line in the future. But overall, there's no clear single answer on whether we can ever have objective knowledge. [MUSIC] 
+
+此外還應該有公開的自省機制。一旦批評帶來新的洞見，科學社群應該改變。就像過去天文學的改變並非一天之內發生。而是經歷幾十年批判的累積。最後，互為主體的社會化客觀性強調同儕之間的平等。如果研究是共同合作，成員之間的互動應該是平等的。不該有一個人決定研究如何進行，只因為其中的一位成員有較大的權勢。
+這一講簡單介紹科學哲學和不同哲學家認為科學是什麼的觀點。我自己從進化及退化的科學進程受益良多。若是結果不符合預測，得費更多力氣將這門研究推向進化性研究進程。總而言之，世上有沒有客觀知識並沒有清楚的答案。

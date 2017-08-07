@@ -1,0 +1,110 @@
+[MUSIC] In this lecture,
+we'll talk about theory construction. In most of the course,
+we talked about statistical inferences, drawing inferences from data. But of course, what we really want to
+know is whether your theory is true or not and can predict something. Generating a good theory is difficult, and it depends a little bit on the specific
+research area are you working. But we can give some
+general recommendations. Now in most of this course we've been
+talking about statistical hypothesis and drawing statistical inferences. But as a researcher of course what you
+want to do is draw theoretical inferences. To do this, you of course first
+have to have a good theory that you can use to create
+a statistical hypothesis. So we see that statistical inferences and theory generation are basically
+two sides of the same coin. A scientific theory is a set of testable
+statements about the relation between observations. And whenever we collect data, we do so with the goal to test some of these
+statements, to try to make an inference about whether the theory has
+good predictive power or not. Now we focus a lot on
+testing these theories but not a lot of theory construction. This is an important topic in itself. Sometimes more difficult to teach. But it's really important to keep in mind
+that theories are really what's driving the goal of doing research. I'll give some suggestions
+on how to come up with good ideas to generate theoretical predictions. Some of these are based on this book,
+Theory Construction and Model-Building Skills, which focuses a lot on how to do
+this within the social sciences. So if you're interested in this topic, I would highly recommend that
+you take a look at this book. So which approaches can we use? One used approach in science is to
+come up with a thought experiment. A very well known thought experiment is
+done by Einstein when he asks himself, what would you see if you could
+travel at the speed of light? So by coming up with this though
+experiment and thinking about what would happen, you can create theoretical
+predictions that are testable. Another approach that we use in
+the social sciences is sometimes to rely on your personal experiences. What happens to you, and can you come
+up with a theoretical prediction based on something that someone tells you? One example is Stanley Milgram's mother. Over dinner, she complained that nobody in
+public transport would give up their seats if she entered the public bus. So Stanley Milgram was interested
+in the social norms in cities and he looked at whether people would actually
+give up their seats depending on how you asked these questions. He found the 56% of the people actually
+would give up their seat if you nicely asked. Another approach is to try to
+empathize with other people. Put yourself in someone else's shoes and think, what drives the behavior
+of this individual? In psychology, a well known
+example of this is the question, how it is possible that people who worked
+in concentration camps did what they did? This inspired a lot of theory
+development on authority, for example. You can also use observations. Let's say you go out and you buy a car and you look at the car salesman,
+what do these people do to sell you a car? What kind of ticks do they use and how
+can this inform you about persuasion and theories about how to make
+more persuasive arguments? Another approach we often
+use is to rely on metaphors. Now a metaphor should never be
+a replacement of an existing theory, but it can be used to inspire
+theoretical reasoning. In memory research, one of the theoretical models is
+the model of memory like a storage bin. Whatever you put in last in a storage
+bin is also most easily retrieved. So one theoretical prediction based on
+this metaphorical line of reasoning could be, is it also the case in human
+memory that whatever we store last is most easily retrieved? What's always a good idea as
+a scientist is to ask why and how like a three year old. Don't take anything for granted. When you read about
+theories in the literature, always ask, why would this be the case? What's going on? What's the underlying mechanism? And this can inspire new
+theoretical questions. Finally, a good idea is to have
+broad interest as a scientist. We see that many of the most
+ground breaking ideas come from introducing ideas in other scientific
+disciplines into your own research line. You don't have to limit yourself
+to other scientific disciplines. You can also be inspired by movies or
+books or whatever you see and hear. Now after you have generated
+some hypothesis and some theory, it's good to try
+to formalize this theory and this theoretical prediction
+as well as possible. One idea is to use multiple
+modalities to do so. So you can use words to describe
+your theory, figures and numbers. For example, let's say we have
+the theoretical hypothesis that students are happier than teachers,
+but especially on hot days. The idea being that on these hot days,
+students are free to go out and enjoy the weather while teachers are, of course, working inside, preparing your
+next lecture or grading your assignments. So we can visualize this in
+the form of a simple graph. We can have a statistical hypothesis
+saying that this is ANOVA and we should find an interaction. Or you can even try to specify the numbers
+that you expect to observe in each of the conditions in this design. When you define your theoretical
+prediction, it's always good to think about the boundary conditions
+of the effect that you predict. It's very rare, at least in psychology, to have a universal theory
+of some sort of effect. There are always boundary conditions. You should not make statement
+that generalizes over everything that's possible. One thing you can try to do is think
+when would actually the opposite while I'm predicting being true? McGuire challenges readers to think about
+the situation that every proposition is occasionally true, at least in certain
+contexts viewed from certain perspectives. He calls this perspectivism. His idea is that it always depends. So whatever theory you have,
+it might be true, but it always depends on certain context. And he even goes as far as
+to say that the opposite of any theoretical prediction is
+also true depending on situations. So try to define these boundary conditions
+in this context as well as possible when you make a theoretical prediction. Fiedler distinguishes between two
+parts in the scientific cycle. A loosening stage,
+where we generate theoretical ideas, and a tightening stage where we select and
+test the best of these ideas. Now when we're in the loosening stage, you have to create as much
+random variation as possible. Anything goes. Whatever helps you to generate
+good theoretical ideas goes. So you can play around with data,
+explore, come up with crazy ideas. And that's all fine. Only later in the tightening stage comes
+the part of the process where we think okay, which of these IDs that
+we generated was actually good? Which should we reject and
+which can we use to keep going? You can think of what
+a theory would really imply, come up with as many as possible ideas of
+what the theoretical prediction actually is when you read about something
+in the literature, for example. You can play around with methods. If you have some sort
+of measurement device, try to use it in all
+sorts of different ways. You can also play around with data. You might even simulate data
+to see what would happen depending on specific assumptions, and
+then subsequently use the ideas that come from these simulations
+to test them on people. Or you can explore existing data sets. Now of course we've talked about how
+exploring data sets can increase the type one error rates. But here,
+we're not talking about the testing stage, not the tightening stage
+of theory testing. We're talking about generating ideas and
+anything goes. So if you look at data sets and
+you can come up with a very good theoretical prediction,
+that's perfectly fine. Of course, after generating this idea, you
+actually want to move on to the tightening stage and
+see whether this idea actually holds. But that's a different function. It comes later in the scientific cycle. Now in this lecture, we've talked
+about generating theoretical ideas. Throughout the course, we mainly focus
+on drawing valid statistical inferences. But you cannot draw good statistical
+inferences without having a good theory. So theory construction and
+generating valid theoretical predictions is just as important as
+statistical inferences, although it might be
+more difficult to teach. It's important to keep in
+mind that a good theory and good statistical inferences
+are two sides of the same coin. [MUSIC]

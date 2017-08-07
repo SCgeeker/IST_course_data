@@ -1,0 +1,840 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.519
+[MUSIC]
+控制型二錯誤率
+
+2
+00:00:09.519 --> 00:00:14.190
+In this lecture, we'll take a closer look
+at controlling your Type 2 error rate.
+這一講來談如何控制型二錯誤率
+
+3
+00:00:14.190 --> 00:00:17.500
+If you design a study and you're going to go through all the effort to collect data,
+設計好一項研究，開始收集資料之前
+
+4
+00:00:17.500 --> 00:00:20.440
+you want to make sure that the probability that you'll find in effect
+要估計能發現效果的機率
+
+5
+00:00:20.440 --> 00:00:24.140
+if it's actually there is high enough to make the data collection worthwhile.
+確認機率高到值得收集資料
+
+6
+00:00:25.930 --> 00:00:30.090
+Now remember that the Type 2 error is a situation where you're saying that there's
+型二錯誤是宣稱沒有效果
+
+7
+00:00:30.090 --> 00:00:32.390
+nothing, when there's actually something to be observed.
+實際上效果存在的錯誤
+
+8
+00:00:32.390 --> 00:00:34.790
+So you're concluding that there's no support for
+如果沒有足夠的檢定力
+
+9
+00:00:34.790 --> 00:00:38.320
+your hypothesis whereas if you would have enough statistical power,
+就有無法下結果支持假設的結論
+
+10
+00:00:38.320 --> 00:00:40.710
+you would have said that there's actually a true effect.
+無法肯定效果確實存在
+
+11
+00:00:42.110 --> 00:00:45.610
+Let's take a look at a classic question that's asked by Tversky and
+就拿Tversky與Kahneman提出的經典問題來說
+
+12
+00:00:45.610 --> 00:00:49.400
+Kahneman where they find that people actually don't really know
+他們發現研究者不會根據機率做出正確決策
+
+13
+00:00:49.400 --> 00:00:53.730
+what the probability is that a study will yield an informative answer.
+他們發現研究者不會根據機率做出正確決策
+
+14
+00:00:53.730 --> 00:00:58.050
+They ask researchers to think about the following situation.
+他們請研究者設想這樣的問題
+
+15
+00:00:58.050 --> 00:01:01.653
+It is "known" that the effect exists in a population.
+假如"已知"母群中存在效果
+
+16
+00:01:01.653 --> 00:01:05.230
+So we're sampling from a situation where there is a true effect to be observed.
+為此抽樣觀察估計是否確實存在
+
+17
+00:01:07.140 --> 00:01:11.050
+Then there's a pilot study where a difference was observed between two
+已有前置研究發現兩筆資料間的差異
+
+18
+00:01:11.050 --> 00:01:12.130
+groups.
+已有前置研究發現兩筆資料間的差異
+
+19
+00:01:12.130 --> 00:01:13.750
+You have some statistics.
+為確定差異做了統計
+
+20
+00:01:13.750 --> 00:01:16.150
+Sample size of 22 for example.
+假如其中一筆有22個樣本
+
+21
+00:01:16.150 --> 00:01:18.410
+A mean and a standard deviation.
+有平均數及標準差
+
+22
+00:01:18.410 --> 00:01:21.630
+And you have a second group with 23 people also a mean,
+另一筆有23個樣本，平均數及標準差
+
+23
+00:01:21.630 --> 00:01:24.492
+that's a little bit higher and another standard deviation.
+第二筆平均數比第一筆平均數高一些
+
+24
+00:01:25.700 --> 00:01:29.520
+Now you've observed the statistically significant effect in this pilot study.
+跑了統計檢定發現前置研究有顯著效果
+
+25
+00:01:29.520 --> 00:01:32.514
+The p value is smaller than 0.05.
+也就是p值小於0.05
+
+26
+00:01:32.514 --> 00:01:36.705
+The question that Tversky and Kahneman ask is let's say that you set out to repeat
+Tversky和Kahneman以此設定提問一模一樣的研究
+
+27
+00:01:36.705 --> 00:01:40.870
+this study in exactly the same way, the same sample size and everything.
+再做一次的話,會不會得到相同的統計值
+
+28
+00:01:40.870 --> 00:01:42.705
+What's now the probability that you'll observe
+發現顯著效果的p值會是多少？
+
+29
+00:01:42.705 --> 00:01:44.150
+a statistically significant effect?
+發現顯著效果的p值會是多少？
+
+30
+00:01:45.440 --> 00:01:47.170
+Take a moment to think about it.
+暫停一下想一想
+
+31
+00:01:47.170 --> 00:01:49.977
+How would you answer this question?
+你的答案是什麼？
+
+32
+00:01:49.977 --> 00:01:51.041
+What Tversky and
+Tversky和Kahneman發現多數人回答有95%
+的機會得到相同結果
+
+33
+00:01:51.041 --> 00:01:56.435
+Kahneman found is that most people say that there's a 95% probability.
+Tversky和Kahneman發現多數人回答有95%
+的機會得到相同結果
+
+34
+00:01:56.435 --> 00:02:01.180
+That a replication study will again give us statistically significant results.
+也認為再做一次同樣有顯著結果
+
+35
+00:02:01.180 --> 00:02:05.010
+There seems to be some confusion in what the p value means.
+這顯示p值似乎被誤解
+
+36
+00:02:05.010 --> 00:02:08.380
+Apparently, people take it as a indicating
+作答者明顯把95%當成成功確認效果存在的機率
+
+37
+00:02:08.380 --> 00:02:12.290
+there's now 95% probable that's there is true effect.
+作答者明顯把95%當成成功確認效果存在的機率
+
+38
+00:02:12.290 --> 00:02:16.050
+And then, the following study will also observe this effect.
+因此認為之後的再現研究能發現一樣的效果
+
+39
+00:02:16.050 --> 00:02:19.810
+But the correct answer is that you have to perform a power analysis.
+正確答案是必須先做檢定力分析
+
+40
+00:02:22.030 --> 00:02:26.990
+In this graph we can see different curves that reflect the probability that we'll
+這張圖的每條曲線代表特定的效果量
+
+41
+00:02:26.990 --> 00:02:30.910
+find a statistically significant effect if there is a true effect.
+發現顯著結果的相對檢定力
+
+42
+00:02:30.910 --> 00:02:34.965
+So in other words, the statistical power
+that we have is a function of the effect
+檢定力是由效果量與樣本數所決定
+
+43
+00:02:34.965 --> 00:02:38.000
+size and the sample size.
+檢定力是由效果量與樣本數所決定
+
+44
+00:02:38.000 --> 00:02:39.290
+The larger the sample size,
+樣本數越大
+
+45
+00:02:39.290 --> 00:02:43.390
+the higher the probability that we'll find us statistically significant effect.
+自然有更高的機會發現統計顯著結果
+
+46
+00:02:43.390 --> 00:02:47.610
+And the higher the effect size the more probable it is that we'll find this effect
+另一方面，實際效果越大，越有可能從小樣本
+
+47
+00:02:47.610 --> 00:02:48.925
+even with smaller sample sizes.
+發現顯著結果
+
+48
+00:02:49.970 --> 00:02:54.330
+So taking a look at these power graphs before you design a study is a useful way
+設計研究前先參考這張圖
+
+49
+00:02:54.330 --> 00:02:57.280
+to think of the number of people that you might need when you
+有助決定收集資料的最佳樣本數
+
+50
+00:02:57.280 --> 00:02:58.540
+perform a data collection.
+有助決定收集資料的最佳樣本數
+
+51
+00:03:00.240 --> 00:03:01.780
+Let's have one specific example.
+來看一下這個例子
+
+52
+00:03:02.780 --> 00:03:06.120
+For example, you think you might examine an effect with a coenz
+假設想證實的效果有0.5的效果量
+
+53
+00:03:06.120 --> 00:03:10.360
+d effect size of 0.5 which is considered a medium effect.
+一般認為這是中等的效果量
+
+54
+00:03:10.360 --> 00:03:14.870
+Actually, in psychology if you throw all psychological resource in one big pile,
+其實你把所有心理學文獻做大數據分析
+
+55
+00:03:14.870 --> 00:03:18.220
+the average effect size is around 0.43.
+會發現平均效果量大約是0.43
+
+56
+00:03:18.220 --> 00:03:22.550
+So this is a slightly optimistic estimate but still possible.
+所以這個研究設計是相當樂觀的
+
+57
+00:03:22.550 --> 00:03:27.086
+Now if you want to achieve 95% power in the study that you want to design,
+如果期望研究設計有95%的檢定力
+
+58
+00:03:27.086 --> 00:03:31.838
+you actually need to collect 100 people in each condition in an independent
+你需要兩組都收集100人
+
+59
+00:03:31.838 --> 00:03:36.530
+T-test to achieve this level of 95% power that you want to get.
+獨立t檢定才符合95%的檢定力
+
+60
+00:03:36.530 --> 00:03:40.965
+So it's quite a substantial number of observations that you need to have a high
+如此高的樣本數能確保存在效果的結論
+有很高的機率可被成功再現
+
+61
+00:03:40.965 --> 00:03:44.459
+probability of concluding that there actually is an effect,
+如此高的樣本數能確保存在效果的結論
+有很高的機率可被成功再現
+
+62
+00:03:44.459 --> 00:03:46.083
+when there is a true effect.
+如此高的樣本數能確保存在效果的結論
+有很高的機率可被成功再現
+
+63
+00:03:46.083 --> 00:03:49.420
+So the Type 2 error rate in this case is only 0.5%.
+這項研究的型二錯誤率因此被控制在5%
+
+64
+00:03:49.420 --> 00:03:53.250
+But getting it this low requires a large number of observations.
+但是相對要付出的是需要大量的樣本
+
+65
+00:03:55.473 --> 00:03:59.191
+If you design under powered studies and you don't think of the number of people
+如果你設計的研究沒有估計檢定力與樣本數
+
+66
+00:03:59.191 --> 00:04:01.950
+you need, for example, to have high statistical power,
+研究結果以高檢定力的標準來看訊資量不多
+
+67
+00:04:01.950 --> 00:04:05.870
+then you're designing studies that have low informational value.
+研究結果以高檢定力的標準來看訊資量不多
+
+68
+00:04:05.870 --> 00:04:08.660
+If you do not find an effect it's very difficult to say
+而且若沒有發現任何顯著結果
+
+69
+00:04:08.660 --> 00:04:11.910
+that you didn't find an effect because there is no true effect.
+很難說是因為效果實際上不存在
+
+70
+00:04:11.910 --> 00:04:15.610
+Or that you didn't find an effect because you didn't have enough observations
+還是因為收集的樣本數不足
+
+71
+00:04:15.610 --> 00:04:18.160
+to have observed a statistically significant finding.
+才沒有統計顯著結果
+
+72
+00:04:20.270 --> 00:04:22.930
+If you design a study with high power, and
+如果想讓研究設計有高檢定力
+
+73
+00:04:22.930 --> 00:04:28.610
+thus with a low Type 2 error rate, you can consider these as severe tests.
+以及低型二錯誤率，可以使用"嚴重度"分析
+
+74
+00:04:28.610 --> 00:04:31.130
+This is a very good test of you hypothesis.
+這是一種良好的假設測試
+
+75
+00:04:31.130 --> 00:04:35.480
+If you really have a very high probability of finding an effect, if it's there.
+如果你認為有很高的機率發現效果
+
+76
+00:04:35.480 --> 00:04:39.670
+So you have a very low Type 2 error, and you don't find an effect.
+也有很低的型二錯誤率，研究結果卻毫無發現
+
+77
+00:04:39.670 --> 00:04:43.350
+Well, that something to make you wonder if there's really an effect or not.
+這時也許會開始懷疑效果是不是真的存在
+
+78
+00:04:43.350 --> 00:04:46.060
+So you see that this is a very informational result.
+這樣的發現提供有用的資訊
+
+79
+00:04:46.060 --> 00:04:48.630
+If you have very low power, you don't learn a lot.
+如果檢定力太低，無法從結果學到新東西
+
+80
+00:04:48.630 --> 00:04:52.300
+So thinking about how to control your Type 2 errors is very important.
+好好思考如何控制型二錯誤率是很重要的
+
+81
+00:04:54.690 --> 00:04:59.210
+In this case we have a P value
+distribution of about 95% power and
+這是設定95%檢定力所模擬的p值次數分配
+
+82
+00:04:59.210 --> 00:05:02.230
+you see that in this case you have a very severe test.
+你可以看道這是極嚴格的測試
+
+83
+00:05:03.370 --> 00:05:05.528
+There is a true effect in our simulation.
+這項模擬設定存在效果
+
+84
+00:05:05.528 --> 00:05:10.334
+We have 95% power so most of the time we will find a statistically significant
+因為高檢定力使得多數p值低於顯著水準
+只有極少的p值高於水準
+
+85
+00:05:10.334 --> 00:05:13.203
+result, it's very rare to find a higher P value
+因為高檢定力使得多數p值低於顯著水準
+只有極少的p值高於水準
+
+86
+00:05:13.203 --> 00:05:17.022
+most of the time if there is something there we will observe it.
+因為高檢定力使得多數p值低於顯著水準
+只有極少的p值高於水準
+
+87
+00:05:17.022 --> 00:05:21.025
+So, this is an example of a severe test situation where if we don't find a result,
+不顯著的p值比例代表未發現效果的嚴重度
+
+88
+00:05:21.025 --> 00:05:24.230
+we should wonder if there's actually something to be observed.
+讓我們能檢討有什麼問題導致無法發現
+
+89
+00:05:26.170 --> 00:05:28.976
+So, how can you increase your power?
+那麼要如何增加檢定力呢？
+
+90
+00:05:28.976 --> 00:05:32.822
+There are several ways and the most attention is being given to increasing
+最常用的辦法當然是直接增加樣本數
+
+91
+00:05:32.822 --> 00:05:36.010
+your sample size, that's of course a lot of work.
+不過相當費工夫
+
+92
+00:05:36.010 --> 00:05:38.311
+It is a very good way to increase power.
+雖然這是個好辦法
+
+93
+00:05:38.311 --> 00:05:39.580
+But that's not the only way.
+卻非唯一的辦法
+
+94
+00:05:39.580 --> 00:05:41.930
+So let's discuss some alternative options.
+來看看還有什麼方案
+
+95
+00:05:41.930 --> 00:05:44.610
+First of all, you can decrease the measurement error.
+首先你可以減低測量誤差
+
+96
+00:05:44.610 --> 00:05:47.290
+This is a very important way of increasing
+這種方法是從降低資料的變異下手
+
+97
+00:05:47.290 --> 00:05:51.960
+the statistical power that you have by reducing the variability in your data.
+這種方法是從降低資料的變異下手
+
+98
+00:05:51.960 --> 00:05:54.060
+You can think about an IQ test.
+拿IQ測驗為例
+
+99
+00:05:54.060 --> 00:05:59.340
+Instead of asking one question and then basing the IQ score on this one item.
+不要用只問一題決定IQ分數的測驗
+
+100
+00:05:59.340 --> 00:06:01.450
+An IQ test has many items.
+是用有很多題目的IQ測驗
+
+101
+00:06:01.450 --> 00:06:04.230
+Using this approach reduces measurement error and
+這種測驗可以有效降低測量誤差
+
+102
+00:06:04.230 --> 00:06:08.370
+makes it easier to find differences between groups if they are really there.
+也讓組間的差異容易被測量出來
+
+103
+00:06:10.520 --> 00:06:14.220
+The second approach that you can consider is using a within subject design.
+第二種方案是採用參與者內設計
+
+104
+00:06:15.470 --> 00:06:20.131
+This increases the statistical power especially when the correlation between
+不同條件的測量分數相關越高
+
+105
+00:06:20.131 --> 00:06:22.993
+the two measurements that you take is very high.
+這種設計的考驗力也越高
+
+106
+00:06:22.993 --> 00:06:25.380
+In psychology this is very often the case.
+心理學研究常使用這種設計
+
+107
+00:06:25.380 --> 00:06:29.320
+Think about a reaction time study where you have people respond to
+尤其是反應時間的研究，像是比較刺激屬性
+與反應屬性一致與否的Stroop效應
+
+108
+00:06:29.320 --> 00:06:33.452
+certain images or certain stimuli, that are either congruent or
+尤其是反應時間的研究，像是比較刺激屬性
+與反應屬性一致與否的Stroop效應
+
+109
+00:06:33.452 --> 00:06:36.590
+in congruent maybe a stroop test.
+尤其是反應時間的研究，像是比較刺激屬性
+與反應屬性一致與否的Stroop效應
+
+110
+00:06:36.590 --> 00:06:41.080
+We know that reaction times within an individual are very strongly correlated.
+因為同一個人的反應時間在不同條件的
+測量結果相關極高
+
+111
+00:06:41.080 --> 00:06:44.860
+So using it within design in this case increases the statistical
+這類研究採參與者內設計會有很高的檢定力
+
+112
+00:06:44.860 --> 00:06:46.150
+power of observing an effect.
+這類研究採參與者內設計會有很高的檢定力
+
+113
+00:06:48.160 --> 00:06:52.659
+A third way that you can try is increasing the variability and the response options.
+第三種方案是增加反應的多樣性或選項
+
+114
+00:06:54.370 --> 00:06:57.745
+This might make it easier to find differences if there's
+反應選項多能增加發現差異的機會
+
+115
+00:06:57.745 --> 00:06:59.725
+enough variability in the data.
+反應選項多能增加發現差異的機會
+
+116
+00:06:59.725 --> 00:07:04.110
+And you can think of the number
+of items in a scale for example.
+拿最常用的李克特量表來說
+
+117
+00:07:04.110 --> 00:07:08.040
+If you have a scale with only three or maybe five items, there's not a lot of
+量表只有三或五個選項的話
+
+118
+00:07:08.040 --> 00:07:12.180
+wiggle room for people to vary on even if there's a real difference.
+即使真有差異，受訪者也很難給出合適答案
+
+119
+00:07:12.180 --> 00:07:15.935
+If you have a large enough skill let's say seven items or nine items,
+條件可行的話，建議用7到9個選項的量表
+
+120
+00:07:15.935 --> 00:07:19.044
+there's more possibility to have varying responses and
+如此若真的有差異，比較容易測量出來
+
+121
+00:07:19.044 --> 00:07:22.365
+it's easier to find differences if there are really there.
+如此若真的有差異，比較容易測量出來
+
+122
+00:07:24.008 --> 00:07:27.580
+Final way to consider is using a one sided test.
+最後方案是採用單側檢定
+
+123
+00:07:27.580 --> 00:07:30.750
+If you have a directional prediction and you are not interested in effects that
+如果假設有明確預期效果的增減方向
+
+124
+00:07:30.750 --> 00:07:33.930
+go in the opposite direction, then this is a good approach to
+那麼這是確保有高考驗力的低成本方案
+
+125
+00:07:33.930 --> 00:07:38.240
+increase the statistical power without any additional costs.
+那麼這是確保有高考驗力的低成本方案
+
+126
+00:07:38.240 --> 00:07:42.240
+People are not using these one sided tests as often as they should, but
+雖然不是很多人常用的辦法
+
+127
+00:07:42.240 --> 00:07:45.820
+they are a very efficient way to collect high powered studies.
+但是能有效保證起碼的統計檢定力
+
+128
+00:07:48.130 --> 00:07:53.251
+This is a graph illustrating the difference between a one sided test and
+這張圖顯示果量是0.5的資料
+單側t檢定與雙側t檢定的考驗力差異
+
+129
+00:07:53.251 --> 00:07:58.728
+a two sided test if we're examining a coenze d of 0.5 in a one sided t test.
+這張圖顯示果量是0.5的資料
+單側t檢定與雙側t檢定的考驗力差異
+
+130
+00:07:58.728 --> 00:08:03.725
+And you can see that with a one sided test you need about 26 people whereas
+可以看到達到80%檢定力，單側t檢定需要26人
+
+131
+00:08:03.725 --> 00:08:07.447
+with a two sided test you would need about 34 people.
+而雙側t檢定需要34人
+
+132
+00:08:07.447 --> 00:08:11.692
+So the difference might be small but if you have smaller effects it can become
+如此條件發現的效果就算很小，也有很高的資訊量
+
+133
+00:08:11.692 --> 00:08:16.072
+quite substantial and it's just free if you have a directional prediction and
+而且如果有效果方向的預測，能節省收集資料的成本
+
+134
+00:08:16.072 --> 00:08:19.082
+you specify this in advance before data collection.
+而且如果有效果方向的預測，能節省收集資料的成本
+
+135
+00:08:21.959 --> 00:08:27.030
+Now there's some discussion in literature about which type of error is more severe.
+型一還是型二錯誤那個比較嚴重有許多文獻探討
+
+136
+00:08:27.030 --> 00:08:29.860
+The Type 1 error where you say that there are something when there's
+是你宣稱有效果，實際沒有的錯誤比較嚴重
+
+137
+00:08:29.860 --> 00:08:30.620
+actually nothing.
+是你宣稱有效果，實際沒有的錯誤比較嚴重
+
+138
+00:08:30.620 --> 00:08:33.490
+Or the Type 2 error when you say that there's nothing
+是你宣稱沒有效果，實際有效果的錯誤比較嚴重
+
+139
+00:08:33.490 --> 00:08:35.200
+when there's actually something.
+是你宣稱沒有效果，實際有效果的錯誤比較嚴重
+
+140
+00:08:35.200 --> 00:08:38.502
+And it depends a little bit on how we organize our science.
+這取決於每個人的科學觀點
+
+141
+00:08:38.502 --> 00:08:43.090
+As long as there are replications of results then Type 1 errors will be
+任何研究的型一錯誤可經由他人的再現研究確認
+
+142
+00:08:43.090 --> 00:08:48.985
+identified if you try to replicate someone else's study and this was a Type 1 error.
+任何研究的型一錯誤可經由他人的再現研究確認
+
+143
+00:08:48.985 --> 00:08:51.730
+It's very unlikely that you will find another Type 1 error.
+如果無法再現就可確認真的是型一錯誤
+
+144
+00:08:51.730 --> 00:08:54.838
+The probability of doing this will substantially decrease,
+因型一錯誤而發表的研究就會減少
+
+145
+00:08:54.838 --> 00:08:55.980
+it's very unlikely.
+因型一錯誤而發表的研究就會減少
+
+146
+00:08:55.980 --> 00:09:00.280
+So as long as we replicate each other’s work enough sufficiently.
+只要能充份再現已發表的研究
+
+147
+00:09:00.280 --> 00:09:02.120
+We will identify these Type 1 errors.
+我們就能辨識因型一錯誤而產生的文獻
+
+148
+00:09:02.120 --> 00:09:06.010
+And you might say, well they don't impact the scientific literature too much.
+也許你會說這類文獻的量並不多
+
+149
+00:09:06.010 --> 00:09:09.690
+In this case a Type 2 error might be much more severe.
+也許有型二錯誤的文獻比較嚴重
+
+150
+00:09:09.690 --> 00:09:11.850
+If somebody tries out a new idea and
+假定有人想出一個新點子
+
+151
+00:09:11.850 --> 00:09:14.670
+there is nothing there, other people might give up on this idea.
+卻一無所獲，其他人就不會想嘗試這點子
+
+152
+00:09:15.770 --> 00:09:20.608
+So a Type 2 error might be more severe depending on whether we do enough control
+型二錯誤的嚴重度取決於研究者的事前控制
+
+153
+00:09:20.608 --> 00:09:25.544
+and enough checking in a scientific literature to identify the Type 2 errors.
+還有充分考察文獻裡的型二錯誤
+
+154
+00:09:25.544 --> 00:09:29.350
+As you see it's very important to control your Type 2 errors as well.
+這一講討論各種控制型二錯誤的重要方法
+
+155
+00:09:29.350 --> 00:09:33.530
+People are very upset about Type 1 errors in the literature nowadays but
+今天令多數研究者不愉快的情況是
+多數文獻充斥型一錯誤
+
+156
+00:09:33.530 --> 00:09:37.980
+you can see that it might be even more severe to miss out on true fact
+因為這類研究並未帶來有意義的知識
+
+157
+00:09:37.980 --> 00:09:41.480
+because your study did not have high enough informational value.
+也許比沒發現真實效果更嚴重
+
+158
+00:09:41.480 --> 00:09:44.730
+You did not connect enough people to conclude that there is
+沒有發現真實效果可能是收集的資料不夠多
+
+159
+00:09:44.730 --> 00:09:47.000
+an effect when there's actually a true effect.
+沒有發現真實效果可能是收集的資料不夠多
+
+160
+00:09:47.000 --> 00:09:49.566
+So be sure that when you're designing your study,
+記得在設計研究的時候
+
+161
+00:09:49.566 --> 00:09:52.977
+you evaluate the severity of the Type 1 error and the Type 2 error.
+仔細衡量犯下型一與型二錯誤的嚴重度
+
+162
+00:09:52.977 --> 00:09:57.371
+And in certain situations it might be that a Type 2 error is much more severe and
+某些時候，你應注意犯型二錯誤所付出的代價
+
+163
+00:09:57.371 --> 00:09:59.047
+it deserves your attention.
+某些時候，你應注意犯型二錯誤所付出的代價
+
+164
+00:09:59.047 --> 00:10:03.699
+[MUSIC]
+影片結束

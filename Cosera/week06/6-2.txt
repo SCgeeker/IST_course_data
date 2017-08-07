@@ -1,0 +1,134 @@
+[MUSIC] In this lecture we'll talk about which
+hypothesis you might want to test. In science, we often rely on null
+hypothesis significance testing, but there are also some people who say
+that testing the null is very boring, because the null is always false. Is this criticism valid, and if so, which
+hypothesis might we want to test instead? Let's take a look. In science, we very often use
+a null-hypothesis significance test. Is the data we have observed surprising,
+assuming that the null-hypothesis is true? This practice is also often criticized. One of the critics of this is Cohen
+who says, the null hypothesis, taken literally,
+is always false in the real world. So if the null is always false,
+what's the big deal about rejecting it? So is this really true? Is the null hypothesis always false? Well, not really,
+sometimes with very large sample sizes, some effects are pretty
+darn close to zero. We can take a look in
+the many labs data set. Many labs project was a big
+replication study where 36 different laboratories all replicated
+the same set of studies. So here every line is a different study. And if we look at the bottom, we see that
+at least two of these studies with more than 5,000 participants yield an effect
+size that is indistinguishable from 0. Now the question is whether if
+we would continue to an infinite number of observations there will be
+a statistically significant effect. We don't really know, but it seems unlikely that this really
+matters in practice most of the time. It's important to distinguish
+between one situation where the null is a very
+reasonable hypothesis and a situation where the null is not
+a very reasonable hypothesis. If we use random assignment to conditions
+and we successfully accomplish this, then there's no reason to assume that
+there is a difference between two groups, unless the manipulation that we use in
+our experiment actually has an effect. And if it's possible that
+the manipulation has no effect and this is a question you're interested in,
+then we can test the null. However, we also sometimes test for
+measured variables. An example of a measured
+variable is gender. People often enter the lab
+with a specific gender. They have the same gender
+throughout their lives, so it's not something that
+you can easily change. If you want to look at differences
+between men and women, for example, then you cannot
+directly manipulate this. You can only measure this variable and
+look at the differences. Now let's see why this matters. We can compare the effect
+of random assignment and measured variables in
+the many labs data set. Let's take a look at one
+manipulated condition. In this case, we look at the anchoring
+condition people are randomly assigned. Now in anchoring, people receive either
+a high or a low number as a manipulation. Then after that, they all mak the same estimate about
+something they're uncertain about. And what the literature shows is that
+this estimate is influenced by the height of the anchor. If they first get a very high number, their judgment under uncertainty
+is increased a little bit. And if they get a very low number,
+then their estimate is slightly lower. Now, we can take a look at whether
+being assigned to the high anchoring condition or
+the low anchoring condition has an effect on any of the other
+tests that participants did. So they did a lot of tests. I'll look at ten different outcomes and
+see whether the random assignment to the anchoring condition has an effect on
+any of these other dependent variables. We can also take a look at
+whether there are gender effects. If we do this, we see that the anchoring
+condition only has an effect on one specific dependent variable, the anchoring
+effect that it's intended to influence. However, if we look at gender
+effects in this dataset, we see that 7 out of the 10 dependent
+variables here all show a gender effect. That's a very high number. So why is this the case? We don't know. There are probably things
+that vary with gender that also influence the other dependent
+variables that we're measuring. Now in all these studies there
+are also manipulations, and these were the main interests in the test. But we see that gender effects are always
+present or very often present. So whenever we have a measured variable, it might be less interesting
+to test the null. Very often the null is not true. It's not a very interesting thing to see. So why is this the case? There is systematic noise in your data. Lykken and
+Meehl call this the crud factor. As long as you measure enough
+observations, these systematic differences that are present in your data will always
+yield a statistically significant result. Now remember that in the many
+labs projects there were more than 5,000 participants. So this is a very large data set. And these tiny, systematic noises will lead to
+differences on your dependent variable. So these things are not
+completely interesting. They might be, but it's very difficult
+to pinpoint the origin of these effects. It might be just some sort of
+noise you're not interested in. So whenever we can manipulate the factor,
+the null might be more interesting, but in these cases of measured variables, there's
+always the crud factor to keep in mind. So we can conclude that in principle,
+all models are wrong, but some models are useful. This is a statement by George Box. What he means is that you can have
+a model that can be a useful test. After randomization it's possible, so
+when you can randomly assign people to conditions, the null can be a useful and a
+true hypothesis that you're interested in. But without randomization,
+the alternative, saying that there is an effect
+is not a very bold prediction. There very often is an effect. If the null is rarely true, then refuting the null says very
+little about the truth of a theory. You have to make a better prediction. You have to do something more than
+just testing the null hypothesis. The null hypothesis itself is what
+we know as a very weak hypothesis. Let's give an example. If I predict that it will
+rain next year in April, then that's not a very strong hypothesis. It's very easy to say that this is true. This is going to happen. And you won't be impressed if I make this
+prediction and it turns out to be true. You can also make a strong prediction,
+have a strong hypothesis. If I say that it will rain 7
+millimeters on April 2nd next year and it turns out that this prediction is true, now that will get me a job
+as a very good weatherman. So null hypothesis significance
+testing rejects the null compared to any alternative,
+any other prediction goals. And that's not very exciting
+in some situations. In these situations, just as with the weather,
+you want to make a point prediction. You want to say, this is what I predict. I just don't predict an effect,
+but I can predict with my theory, which is pretty good,
+an effect of a specific size. And if you can accomplish this,
+that's much more impressive. So confirming strong hypotheses gives
+a theory greater verisimilitude, and that's a very difficult word for
+something that's akin to truth likeness. It gets you money in the bank. This is a finding that will increase
+your confidence in the theory, and that's what you want. Now let's play a small game. I'll ask you what the rule is underlying
+the numbers that are presented on the screen. You see the numbers 2, 4, and 6. You can test the rule by naming any
+other number that you think will follow the rule. Come up with any number you want,
+and I will say, yes, it follows the rule or no,
+it will not the follow the rule. Take a moment to think
+of any number you want. Which number would you like to test? Let's say that you come
+up with the number 8. This makes sense, right? You see 2 and you add 2, you get 4,
+you add 2, you get 6, so maybe this is the rule, just adding 2. So if you would test 8,
+I can say yes, that's a valid number. It follows the rule. You might have a different theory. You might say, well, maybe it's 4
+plus the number that comes before it. So then we have 4 and 2 and 6, and
+then the next number might be 10. So, if you want to test the number 10,
+perfectly fine. Yes, it also follows the same rule. But you have not learned a lot. Is this really the underlying rule? What would happen if you would say 7? Now, that's a very interesting question,
+because in this case, you're not trying to confirm
+the rule that you have in your mind. You're trying to disconfirm,
+falsify your prediction. If I say 7, or if you say 7,
+then I'd say yes, that's also following the same rule because in this case,
+the rule might be increasing numbers. As long as the next number
+is an increasing number, it follows the rule that I have. And you would never discover this if you
+just tried to confirm the idea that you have in your head. So whenever we do a study and
+we try to confirm our predictions, then this confirmation bias can be
+a systematic error in inductive reasoning. You cannot learn whether your
+theory is actually true if you only set out to confirm your predictions. Instead, you should try to have stronger theoretical predictions where one of
+your predictions can be falsified. One way to do this is to set out
+test two competing predictions. Either the one hypothesis is true or
+the other, but they can't both be true. So when I find some data, I can say this
+is at least in line with the one theory but is not in line with the other theory. So this is already a more
+interesting comparison to make. This is known as strong inference, crucial experiments that can
+exclude one alternative hypothesis. And this is a very good way
+to have scientific progress. According to Platt,
+who talks about strong inference, you should always ask yourself
+the question when you design a study. But what experiment could
+disprove your hypothesis? That's the main thing you
+should set out to do. Of course you might not feel like
+disproving all the nice ideas that you have, but for science this is
+a very good thing to set out to do. So we've seen that people sometimes
+criticize null hypothesis significance testing because it's
+a very weak prediction. Anything goes as long as
+the null is not true. And when you don't have random assignment, even this idea of the null being true is
+not a very interesting hypothesis to make. So you should try to set out
+to make strong predictions, test competing hypotheses
+whenever this is possible. [MUSIC]

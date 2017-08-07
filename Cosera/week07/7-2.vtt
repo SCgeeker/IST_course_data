@@ -1,0 +1,1298 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.156
+[MUSIC]
+[出版偏誤]
+
+2
+00:00:09.156 --> 00:00:12.380
+In this lecture we'll talk
+about publication bias.
+這一講來談「出版偏誤」
+
+3
+00:00:12.380 --> 00:00:16.815
+You would hope that researchers publish
+all data that they collect regardless of
+無論研究者收集的資料是否支持假設  
+身為讀者都希望能看到全部的訊息  
+
+4
+00:00:16.815 --> 00:00:19.665
+whether their results
+are statistically significant and
+無論研究者收集的資料是否支持假設  
+身為讀者都希望能看到全部的訊息  
+
+5
+00:00:19.665 --> 00:00:21.375
+supporting their hypothesis or not.
+無論研究者收集的資料是否支持假設  
+身為讀者都希望能看到全部的訊息  
+
+6
+00:00:21.375 --> 00:00:24.835
+It turns out that this is not the case and
+if you do research,
+然而實際情況並不是如此　　
+如果你正在進行某種研究　　
+
+7
+00:00:24.835 --> 00:00:28.045
+it's important to recognize
+publication bias in the literature.
+必須認識存在於浩瀚文獻裡的出版偏誤  
+
+8
+00:00:29.100 --> 00:00:33.410
+Now one of the biggest problems
+of the over reliance on p-values
+造成出版偏誤的最大原因是科學界過度依賴以p值決定論文是否值得刊登　　
+
+9
+00:00:33.410 --> 00:00:38.140
+in the scientific literature,
+is their use as a threshold to publish.
+造成出版偏誤的最大原因是科學界過度依賴以p值決定論文是否值得刊登　　
+
+10
+00:00:38.140 --> 00:00:41.940
+People think that if a p-value
+is smaller than 0.05,
+很多評審覺得只要研究結果的p值小於0.05，那麼這個結果就值得刊登　　
+
+11
+00:00:41.940 --> 00:00:45.280
+the results are worthwhile
+to be published.
+很多評審覺得只要研究結果的p值小於0.05，那麼這個結果就值得刊登　　
+
+12
+00:00:45.280 --> 00:00:48.090
+But if the result is higher than 0.05,
+如果結果是大於0.05，通常都建議不值得刊登  
+
+13
+00:00:48.090 --> 00:00:51.800
+they often do not submit these papers for
+publication.
+如果結果是大於0.05，通常都建議不值得刊登  
+
+14
+00:00:53.610 --> 00:00:54.693
+As a consequence,
+如此長久運作下來
+
+15
+00:00:54.693 --> 00:00:59.435
+if we plot the p-value distribution in
+the scientific literature, we can see that
+把大量文獻的p值集合起來繪圖，就會看到這條之前曾解釋過的奇特曲線  
+
+16
+00:00:59.435 --> 00:01:03.520
+there's sort of a curve going on as
+we explained in previous lectures.
+把大量文獻的p值集合起來繪圖，就會看到這條之前曾解釋過的奇特曲線  
+
+17
+00:01:03.520 --> 00:01:07.505
+You can see it here by the red line,
+the red curve is illustrating this.
+也就是這張圖裡的紅色曲線  
+
+18
+00:01:07.505 --> 00:01:14.825
+And then at the threshold of 0.05, the
+vertical red line, we can see a huge drop.
+從橫軸標示0.05的地方，畫一條垂直線
+會看到一個巨大落差  
+
+19
+00:01:14.825 --> 00:01:18.250
+You might think that this curve should
+continue on, and it should, but
+理論上紅色曲線應該與每一個柱子的頂端相接  
+
+20
+00:01:18.250 --> 00:01:22.960
+what's indicated here is a large missing
+section of the scientific literature.
+這個落差顯示有一大塊應該存在的文獻並未浮出枱面    
+
+21
+00:01:22.960 --> 00:01:25.730
+It's like a big monster came by and
+彷彿有隻怪獸把這些大於0.05的文獻都吃掉了
+
+22
+00:01:25.730 --> 00:01:29.920
+bit part out of all the p-values
+that should be there.
+彷彿有隻怪獸把這些大於0.05的文獻都吃掉了
+
+23
+00:01:29.920 --> 00:01:33.370
+So this missing part is missing
+due to publication bias.
+這缺掉的一大塊就是出版偏誤所造成  
+
+24
+00:01:33.370 --> 00:01:36.040
+There are studies but
+we just don't have access to it.
+而且這些遺缺的研究很難重見天日  
+
+25
+00:01:37.320 --> 00:01:40.780
+In the scientific literature,
+this is known as the file drawer problem.
+這種現象被稱為抽屜問題(file drawer problem)
+
+26
+00:01:41.960 --> 00:01:46.791
+If people perform a study and they observe
+a non-significant result, a p-value
+很多研究者只要發現統計結果得到大於0.05的p值  
+
+27
+00:01:46.791 --> 00:01:52.460
+higher than 0.05, they're less likely
+to submit this result for publication.
+傾向不發表這些結果  
+
+28
+00:01:52.460 --> 00:01:55.670
+Instead, they store the data
+in their file drawer.
+這些結果最後只能在某位研究者的抽屜裡沉眠  
+
+29
+00:01:55.670 --> 00:01:58.547
+Nowadays, this probably would be
+a folder on your computer somewhere.
+資訊發達的今天應該說被隱藏在某份硬碟裡  
+
+30
+00:02:01.240 --> 00:02:04.420
+Now, as a consequence,
+if you look at the published literature,
+這個問題導致看到的文獻幾乎都是支持某種假設  
+
+31
+00:02:04.420 --> 00:02:09.520
+most of the published results
+confirm the hypothesis.
+這個問題導致看到的文獻幾乎都是支持某種假設  
+
+32
+00:02:09.520 --> 00:02:12.461
+So, in psychology, more than 90% of
+以心理學來說，超過90%的論文支持作者想檢驗的假設  
+
+33
+00:02:12.461 --> 00:02:17.398
+published papers support the hypothesis
+that they set out to test.
+以心理學來說，超過90%的論文支持作者想檢驗的假設  
+
+34
+00:02:17.398 --> 00:02:21.539
+Some people have even joked that if we're
+so good at predicting what will happen,
+有人開玩笑說如果每個心理學家都能準確預測結果  
+
+35
+00:02:21.539 --> 00:02:24.370
+why do we bother collecting data anyway?
+幹嘛還要辛苦地收集資料  
+
+36
+00:02:24.370 --> 00:02:28.630
+If 90% of the studies that we
+perform support the hypothesis,
+既然有90%的心理學研究都支持假設  
+
+37
+00:02:28.630 --> 00:02:30.720
+then let's just skip
+the data collection and
+只要有好主意必定有資料支持  
+
+38
+00:02:30.720 --> 00:02:35.620
+assume that whenever we have a good idea
+it actually is supported by the data.
+何必再去設計研究收集資料？  
+
+39
+00:02:35.620 --> 00:02:38.670
+Now, of course, this can't be the truth,
+this is not what's going on.
+當然這是玩笑話，任何人都不可能這麼做  
+
+40
+00:02:38.670 --> 00:02:42.321
+We just don't have access to all
+the non-significant results and
+90%的現象是因為不顯著與不支持假設的結果都被隱藏起來了  
+
+41
+00:02:42.321 --> 00:02:45.202
+all the results that do not
+support the hypothesis.
+90%的現象是因為不顯著與不支持假設的結果都被隱藏起來了  
+
+42
+00:02:47.641 --> 00:02:52.297
+There's some reasons why people are
+hesitant to submit non-significant results
+研究者不想把不顯著的結果發表出來是有理由的  
+
+43
+00:02:52.297 --> 00:02:53.370
+for publication.
+研究者不想把不顯著的結果發表出來是有理由的  
+
+44
+00:02:53.370 --> 00:02:56.403
+Null-results are difficult to interpret.
+主要是無差異的結果很難做推論  
+
+45
+00:02:56.403 --> 00:02:59.090
+It might be that there's just no effect.
+這種結果可能是確實不存在預期的效果  
+
+46
+00:02:59.090 --> 00:03:03.380
+It's also possible that the study you
+designed simply wasn't very good.
+或許是現在的設計還不夠好  
+
+47
+00:03:03.380 --> 00:03:07.240
+Maybe there is a true effect, but
+you need to study it in a better way.
+導致雖然存在真實效果，卻無法偵測出來  
+
+48
+00:03:07.240 --> 00:03:08.820
+You need to change your study design.
+因此必須更改設計  
+
+49
+00:03:09.910 --> 00:03:14.160
+Now, we see that people might try
+again and again, and of course,
+很多研究者會不斷的嘗試  
+
+50
+00:03:14.160 --> 00:03:18.490
+if you take this to the extreme and
+you only submit for publication
+最極端的情況是從20次實驗結果裡拿最顯著的那1次結果去發表
+
+51
+00:03:18.490 --> 00:03:23.450
+the one significant result out of 20
+different tries to observe something.
+最極端的情況是從20次實驗結果裡拿最顯著的那1次結果去發表  
+
+52
+00:03:24.450 --> 00:03:29.801
+In this extreme situation, you're only
+publishing null results, false positives.
+這種情況就造成文獻裡出現了偽陽性的報告    
+
+53
+00:03:32.864 --> 00:03:36.290
+Now there is random variation
+in studies we perform.
+我們都曉得只要是實徵研究必定存在隨機變異  
+
+54
+00:03:36.290 --> 00:03:37.730
+We know this.
+我們都曉得只要是實徵研究必定存在隨機變異  
+
+55
+00:03:37.730 --> 00:03:40.120
+This is a good example
+of what it can lead to.
+這個咖啡究竟會致癌還是防癌的研究是個好例子  
+
+56
+00:03:41.260 --> 00:03:45.360
+If we publish results, then sometimes
+there will be an extreme finding that
+這類研究有顯示支持咖啡能預防癌症的報告
+
+57
+00:03:45.360 --> 00:03:47.600
+shows a very strong positive effect.
+這類研究有顯示支持咖啡能預防癌症的報告
+
+58
+00:03:47.600 --> 00:03:51.810
+Sometimes there will be a finding that
+shows a very strong negative effect.
+也有顯示咖啡會導致癌症的報告
+
+59
+00:03:51.810 --> 00:03:55.940
+As long as we publish all available
+evidence, we can do a meta analysis that
+只要對所有報告做個整合性分析  
+
+60
+00:03:55.940 --> 00:03:58.829
+says, on average there's
+really nothing going on here.
+就會看到平均來說咖啡不防癌也不致癌  
+
+61
+00:03:59.900 --> 00:04:02.780
+But because we only publish
+these extreme findings,
+如果只有其中一方的報告能被刊登  
+
+62
+00:04:02.780 --> 00:04:08.000
+significant results in either direction,
+you end up with a scientific literature
+讀過所有論文後，每個讀者都會認為咖啡致癌或防癌是事實  
+
+63
+00:04:08.000 --> 00:04:13.300
+where everything both causes cancer and
+prevents cancer.
+讀過所有論文後，每個讀者都會認為咖啡致癌或防癌是事實  
+
+64
+00:04:13.300 --> 00:04:17.160
+So, let's say that you study
+the amount of wine that you drink and
+把研究題目換成飲酒導致癌症的風險評估  
+
+65
+00:04:17.160 --> 00:04:19.270
+the likelihood that you will get cancer.
+把研究題目換成飲酒導致癌症的風險評估  
+
+66
+00:04:19.270 --> 00:04:23.330
+There will be a study that says,
+there's a strong positive association.
+肯定有研究表示兩者有強烈的正相關  
+
+67
+00:04:23.330 --> 00:04:26.630
+If you drink more wine you
+are more likely to get cancer.
+也就是喝越多酒越有可能得到癌症  
+
+68
+00:04:26.630 --> 00:04:28.190
+There will also be studies that say,
+也肯定有研究得到另一種結果  
+
+69
+00:04:28.190 --> 00:04:30.950
+if you drink more wine you're
+less likely to get cancer.
+喝多少和致癌的風險無關  
+
+70
+00:04:32.100 --> 00:04:36.160
+All in all, there's just nothing going on,
+but people are just publishing flukes,
+總結來說，即使沒有存在任何可能性，隨機變異會導致偏向某一邊的報告出現  
+
+71
+00:04:36.160 --> 00:04:38.020
+false positives, on either side.
+總結來說，即使沒有存在任何可能性，隨機變異會導致偏向某一邊的報告出現  
+
+72
+00:04:39.130 --> 00:04:42.886
+And if we would have access to the entire
+literature which you could just say this
+遍覽所有相關文獻才能排除隨機變異，確認有沒有真實效果  
+
+73
+00:04:42.886 --> 00:04:46.020
+is just a null effect,
+there's just random variation around zero.
+遍覽所有相關文獻才能排除隨機變異，確認有沒有真實效果  
+
+74
+00:04:47.910 --> 00:04:51.980
+Now, as long as a research area
+doesn't share all results,
+只要某個研究領域不分享所有結果，就無法成為真正的量化實證科學  
+
+75
+00:04:51.980 --> 00:04:53.860
+it's not a quantitative science.
+只要某個研究領域不分享所有結果，就無法成為真正的量化實證科學  
+
+76
+00:04:55.030 --> 00:04:59.440
+This is a strong statement, but really, if
+you want to express the evidence that's in
+這是立場強烈的主張。實際上如果無法讓所有人獲得完整的資料
+
+77
+00:04:59.440 --> 00:05:02.390
+the data,
+you need to have access to all the data.
+很難說服任何人，有充分的證據支持你的假設    
+
+78
+00:05:02.390 --> 00:05:05.840
+If you only have a subset of
+all the available evidence,  
+只呈現一部分的證據  
+
+79
+00:05:05.840 --> 00:05:08.920
+you cannot make a good statement
+about what's going on.
+無法斷言相關研究能否獲得一致結果  
+
+80
+00:05:08.920 --> 00:05:12.550
+So if you want to be a quantitative
+science, you need to publish all data.
+好的實徵科學研究者必須呈現所有可信的資料  
+
+81
+00:05:13.750 --> 00:05:17.960
+There are some recent initiatives where
+people try to convince researchers to
+這些措施能幫助研究者自主呈現不顯著的資料  
+
+82
+00:05:17.960 --> 00:05:20.250
+empty their file drawers.
+這些措施能幫助研究者自主呈現不顯著的資料  
+
+83
+00:05:20.250 --> 00:05:26.460
+These are online databases where people
+can report previously unpublished results,
+像是透過雲端平台公開未發表的不顯著結果  
+
+84
+00:05:26.460 --> 00:05:28.900
+often non-significant findings, so
+像是透過雲端平台公開未發表的不顯著結果  
+
+85
+00:05:28.900 --> 00:05:32.930
+that the scientific community has access
+to all the data that has been collected.
+讓所有研究者都能取得全部的資料  
+
+86
+00:05:34.150 --> 00:05:37.650
+Now it's important to realize that
+there can be over 200 published
+務必切記，即使你發表超過兩百篇有顯著結果的報告  
+
+87
+00:05:37.650 --> 00:05:43.000
+studies with significant p-values
+without there being a true effect.
+這些報告宣誠的效果有可能並不真實  
+
+88
+00:05:43.000 --> 00:05:48.425
+As long as there are thousands of people
+examining the same research question, and
+除非是上百位研究者一起檢視同一個問題  
+
+89
+00:05:48.425 --> 00:05:52.095
+all these researchers perform
+multiple studies a year,
+並且同一年裡進行研究  
+
+90
+00:05:52.095 --> 00:05:55.315
+then after a couple of years we'll
+have ended up with a literature that
+幾內之年就會出現一批文獻讓讀者確認是否存在偽陽性問題  
+
+91
+00:05:55.315 --> 00:05:58.775
+contains exclusively false positives.
+幾內之年就會出現一批文獻讓讀者確認是否存在偽陽性問題  
+
+92
+00:05:58.775 --> 00:06:02.445
+Of course, this is a very extreme
+situation but it might happen.
+當然，這是最理想但是有可能達到的境界  
+
+93
+00:06:04.830 --> 00:06:09.820
+Now publication bias cannot be
+corrected in a meta analysis, but
+整合性分析不可能修正出版偏誤，但是能偵測它  
+
+94
+00:06:09.820 --> 00:06:11.620
+it can be detected.
+整合性分析不可能修正出版偏誤，但是能偵測它  
+
+95
+00:06:11.620 --> 00:06:14.960
+So you can see that it's present and
+as a consequence,
+無論整合性分析顯現相關研究的出版偏誤有多高  
+
+96
+00:06:14.960 --> 00:06:18.780
+whenever publication bias is
+present in a meta analysis,
+只要有呈現，就必須小心地推論整體效果量的意義  
+
+97
+00:06:18.780 --> 00:06:23.080
+be more careful in interpreting
+the meta analytic effect size estimate.
+只要有呈現，就必須小心地推論整體效果量的意義  
+
+98
+00:06:25.770 --> 00:06:28.420
+In this graph,
+we see what's known as a funnel plot.
+這張圖是所謂的漏斗圖(funnel plot)
+
+99
+00:06:29.560 --> 00:06:34.313
+We have simulated a large
+number of studies where the two
+這是模擬一批效果量有0.66的相關研究在漏斗圖的分佈  
+
+100
+00:06:34.313 --> 00:06:37.761
+effect size of a Cohen's d of 0.66.
+這是模擬一批效果量有0.66的相關研究在漏斗圖的分佈  
+
+101
+00:06:37.761 --> 00:06:41.291
+We see a vertical dotted line
+at the true effect size and
+圖中的垂直線就在真實效果0.66的所在  
+
+102
+00:06:41.291 --> 00:06:45.840
+all the individual studies fall more or
+less around this true effect.
+所有相關研究均勻分佈在真實效果的兩側  
+
+103
+00:06:47.560 --> 00:06:50.390
+On the vertical axis,
+we see the standard error.
+左側的縱軸的數值代表標準誤(SE)
+
+104
+00:06:51.510 --> 00:06:54.490
+You can think of this as the sample size.
+可以直接想成是樣本數(SE = SD/sqrt(N))  
+
+105
+00:06:54.490 --> 00:06:58.440
+The further we go up in the graph,
+the bigger the sample size becomes and
+因為標準誤越小，樣本數就越大  
+
+106
+00:06:58.440 --> 00:07:01.535
+at the bottom we have studies
+with very small sample sizes.
+越接近圖底部的資料點樣本數越少  
+
+107
+00:07:03.888 --> 00:07:07.270
+Now, the gray pyramids indicates the area
+灰色三角區域表示出現在這裡的資料點都沒有達到統計顯著水準  
+
+108
+00:07:07.270 --> 00:07:10.600
+within which studies are not
+statistically significant.
+灰色三角區域表示出現在這裡的資料點都沒有達到統計顯著水準  
+
+109
+00:07:11.750 --> 00:07:15.866
+If a dot falls in the white area it
+will be statistically significant,
+落在白色區域的資料點才有達到起碼0.05的統計顯著水準  
+
+110
+00:07:15.866 --> 00:07:17.909
+p-value smaller than 0.05.
+落在白色區域的資料點才有達到起碼0.05的統計顯著水準  
+
+111
+00:07:17.909 --> 00:07:22.270
+But if it falls within the gray pyramid,
+it's not statistically significant.
+但是與灰色重疊的區域不能說達到充分的統計顯著  
+
+112
+00:07:23.460 --> 00:07:27.492
+Now in these simulated studies,
+the pattern is exactly as you would expect
+這張模擬圖顯示一系列有真實效果且無出版偏誤的研究該有的樣子  
+
+113
+00:07:27.492 --> 00:07:30.248
+if there's a true effect and
+no publication bias.
+這張模擬圖顯示一系列有真實效果且無出版偏誤的研究該有的樣子  
+
+114
+00:07:30.248 --> 00:07:35.196
+But let's take a look at the meta analysis
+where the meta analytic effect size was
+但是如果有真實效果卻有出版偏誤的研究會是什麼樣子？
+
+115
+00:07:35.196 --> 00:07:38.714
+exactly the same but
+where publication bias is present.
+但是如果有真實效果卻有出版偏誤的研究會是什麼樣子？  
+
+116
+00:07:40.780 --> 00:07:44.069
+This data comes from a real
+meta analysis by Hagger et al,
+這張圖是2010年Hagger等人分析自我耗損(ego depletion)相關研究的結果  
+
+117
+00:07:44.069 --> 00:07:47.100
+2010, examining ego depletion.
+這張圖是2010年Hagger等人分析自我耗損(ego depletion)相關研究的結果  
+
+118
+00:07:47.100 --> 00:07:50.860
+We see that the dots
+are distributed in a peculiar way.
+資料點呈現一種奇特的分佈  
+
+119
+00:07:50.860 --> 00:07:54.670
+They fall very close on
+the edge of the gray pyramid.
+所有資料沿著灰色區域邊緣分佈    
+
+120
+00:07:55.900 --> 00:08:00.309
+It's almost like people were throwing
+these dots from the side against the gray
+如果這是箭靶，好像有人瞄準灰色旁邊的白色區域射箭一樣  
+
+121
+00:08:00.309 --> 00:08:04.290
+pyramid and
+they stuck exactly on the border.
+如果這是箭靶，好像有人瞄準灰色旁邊的白色區域射箭一樣  
+
+122
+00:08:04.290 --> 00:08:08.880
+Of course, there is still some variation
+around it but there is really a surprising
+雖然有些資料點遠離灰色區域邊緣  
+
+123
+00:08:08.880 --> 00:08:12.760
+number of p-values or
+studies very close to this border.
+集中趨勢依然令人無法忽視  
+
+124
+00:08:15.140 --> 00:08:17.720
+This is an illustration
+of publication bias.
+這也是讓出版偏誤現形的一種方式  
+
+125
+00:08:17.720 --> 00:08:19.470
+There's some selection going on.
+有些人為因素讓這類研究傾向報告顯著結果  
+
+126
+00:08:19.470 --> 00:08:23.660
+We're missing studies that should
+fall within the gray pyramid and
+灰色區域有一部分應該出現的研究並未現世  
+
+127
+00:08:23.660 --> 00:08:27.120
+a lot of these studies are just only
+on the border of the funnel plot.
+讓這塊主題的多數研究結果集中在區域邊緣   
+
+128
+00:08:28.190 --> 00:08:33.950
+Now as I said, we cannot correct for
+bias but we can detect publication bias.
+就像稍早說的，我們只能偵測出版偏誤卻不能修正它  
+
+129
+00:08:33.950 --> 00:08:38.030
+One of the tests that we can do
+is a trim and fill analysis.
+有一種偵測方法是刮補式分析(trim and fill)  
+
+130
+00:08:38.030 --> 00:08:42.080
+The basic idea here is that there
+are certain studies that are missing and
+背後的想法是假設有一些研究確實「被消失」  
+
+131
+00:08:42.080 --> 00:08:46.690
+we can fill in these missing
+studies based on some assumptions.
+根據假設補上可能被消失的資料  
+
+132
+00:08:46.690 --> 00:08:51.120
+So in this case, we see a lot of open
+circles which are studies that are assumed
+圖中的白圏圈就是假設被消失的資料  
+
+133
+00:08:51.120 --> 00:08:55.109
+to exist and are filled in in
+the existing meta analysis.
+補上後再做一次整合性分析  
+
+134
+00:08:56.290 --> 00:09:00.690
+Now trim and fill analysis will
+give you an adjusted effect size.
+這樣就會得到一個校正後的效果量估計  
+
+135
+00:09:00.690 --> 00:09:03.200
+But it's very tricky to interpret this.
+但是根據校正後的效果量推論要小心  
+
+136
+00:09:03.200 --> 00:09:07.050
+It's probably not correct,
+the adjustment might not be enough, so
+校正的假設可能是錯誤的，有可能是白費功夫  
+
+137
+00:09:07.050 --> 00:09:10.290
+you can use the trim and
+fill analysis to say look.
+最多只能說校正結果僅供參考  
+
+138
+00:09:10.290 --> 00:09:13.480
+There is bias in this meta analysis, but
+這樣的整合性分析已存在偏誤  
+
+139
+00:09:13.480 --> 00:09:18.110
+you cannot use the adjusted
+effect size estimate as
+修正的效果量不能當成沒有被出版偏誤影響的真實效果  
+
+140
+00:09:18.110 --> 00:09:22.420
+an indication of what the true effect size
+is if there would not have been biased.
+修正的效果量不能當成沒有被出版偏誤影響的真實效果    
+
+141
+00:09:25.070 --> 00:09:29.730
+Another way to take a look at what the
+true effect size removing any bias might
+還有一種檢測真實效果的方法是只看大樣本的資料  
+
+142
+00:09:29.730 --> 00:09:34.130
+be is by only taking a look
+at the biggest studies.
+還有一種檢測真實效果的方法是只看大樣本的資料  
+
+143
+00:09:34.130 --> 00:09:37.060
+This is called a cumulative meta analysis.
+這種方法稱為累進式整合性分析  
+
+144
+00:09:37.060 --> 00:09:41.398
+You start with the biggest study that you
+have available in your set of studies in
+從手邊有最大樣本的研究開始計算初始效果量  
+
+145
+00:09:41.398 --> 00:09:44.506
+the meta analysis, and
+you calculate the effect size and
+接著加入第二大的研究計算效果量  
+
+146
+00:09:44.506 --> 00:09:47.636
+then you add the second biggest,
+the third biggest etc.
+再依此類推做到最後一項研究  
+
+147
+00:09:47.636 --> 00:09:51.867
+And you only look at the effect size
+estimate after adding a number of really
+以最後得到的效果量對評估真實效果  
+
+148
+00:09:51.867 --> 00:09:52.820
+large studies.
+以最後得到的效果量對評估真實效果  
+
+149
+00:09:54.220 --> 00:09:54.920
+Now, in this plot,
+這張圖從上往下看  
+
+150
+00:09:54.920 --> 00:09:58.670
+you can see that there is a slightly
+changing effect size estimate.
+會發現效果量的估計逐步改變  
+
+151
+00:09:58.670 --> 00:10:03.820
+It becomes bigger, and bigger, and
+bigger, as the studies become smaller.
+隨著樣本數較少的研究加入，效果量越來越大  
+
+152
+00:10:03.820 --> 00:10:04.940
+Now, this is problematic.
+然而這裡有個問題  
+
+153
+00:10:04.940 --> 00:10:08.380
+Ideally, we would see that
+the largest studies all, sort of,
+理論上應論看到樣本數最大的研究  
+(最上面的水平線)  
+
+154
+00:10:08.380 --> 00:10:10.130
+center around the true effect size.
+應該涵蓋真實的效果量
+(最下面的水平線)  
+
+155
+00:10:10.130 --> 00:10:13.610
+But, even in this case,
+in this literature of Eagle depletion,
+在這個同樣是自我耗損的例子裡  
+
+156
+00:10:13.610 --> 00:10:16.320
+the largest studies
+already contain some bias.
+樣本數最大的研究也存在某種偏誤  
+
+157
+00:10:17.850 --> 00:10:22.020
+Another technique you see in
+the published literature to detect bias,
+還有一種偵測出版偏誤的技術叫做「失效安全指數」(Failsafe N)
+
+158
+00:10:22.020 --> 00:10:23.460
+is known as Failsafe N.
+還有一種偵測出版偏誤的技術叫做「失效安全指數」(Failsafe N)
+
+159
+00:10:25.050 --> 00:10:29.633
+It calculates how many studies you need,
+with no true effect,
+這是表示如果真實效果不存在，在整合性分析效果量達到0之前，
+還需要填入多少研究資料  
+
+160
+00:10:29.633 --> 00:10:33.960
+before the meta-analytic effect
+size is reduced to zero.
+這是表示如果真實效果不存在，在整合性分析效果量達到0之前，
+還需要填入多少研究資料  
+
+161
+00:10:34.960 --> 00:10:37.590
+It's a little bit of a peculiar
+measure and even the person
+這個指數的發明者坦承有些尚未克服的計算問題  
+所以不推薦研究者使用它  
+
+162
+00:10:37.590 --> 00:10:41.500
+who originally came up with it,
+no longer recommends people to use it.
+這個指數的發明者坦承有些尚未克服的計算問題  
+所以不推薦研究者使用它  
+
+163
+00:10:41.500 --> 00:10:43.870
+So don't use this in
+your own meta analysis.
+所以請勿在整合性分析使用這個指數  
+
+164
+00:10:45.680 --> 00:10:49.470
+More fruitful approach
+might be meta-regression.
+另一種更具彈性的方式是整合性迴歸分析(meta-regression)  
+
+165
+00:10:49.470 --> 00:10:52.660
+In meta-regression you
+draw a regression line
+這種方法是為納入分析的所有資料繪製迴歸線  
+
+166
+00:10:52.660 --> 00:10:55.279
+through the studies in your meta analysis.
+這種方法是為納入分析的所有資料繪製迴歸線  
+
+167
+00:10:56.390 --> 00:11:01.324
+If you think about the funnel plot we
+saw earlier, it's basically a regression
+稍早提到的漏斗圖就是一種迴歸分析  
+
+168
+00:11:01.324 --> 00:11:04.933
+line where instead of each
+individual being a data point,
+把原本每個代表p值的點  
+
+169
+00:11:04.933 --> 00:11:07.675
+now each study is
+an individual data point.
+換成每個研究的統計值  
+
+170
+00:11:07.675 --> 00:11:12.272
+You can use the end point of the
+regression line where the standard error
+以迴歸線與偏準誤為0交會的統計值，做為真實效果量的估計  
+
+171
+00:11:12.272 --> 00:11:15.820
+is zero to estimate the true effect size.
+以迴歸線與偏準誤為0交會的統計值，做為真實效果量的估計  
+
+172
+00:11:15.820 --> 00:11:17.660
+Even though bias is present.
+儘管還是有偏誤存在  
+
+173
+00:11:19.250 --> 00:11:24.500
+Now, use these techniques with care but
+techniques such as Egger's regression
+謹慎運用這類方法，像是Egger氏迴歸  
+
+174
+00:11:24.500 --> 00:11:32.350
+might give you an indication of the true
+effect size after correcting for bias.
+也許能獲得校正偏誤之後的真實效果量  
+
+175
+00:11:32.350 --> 00:11:35.670
+Of course,
+we already talked about p-curve analysis.
+當然也可以運用第五週提到的p-Curve分析  
+
+176
+00:11:35.670 --> 00:11:40.380
+You can compliment your traditional meta
+analysis and the bias detecting techniques
+結合傳統的整合式分析與偏誤偵測技術  
+
+177
+00:11:40.380 --> 00:11:44.688
+such as meta-regression or trim and
+fill with a p-curve analysis.
+像是前面提到的整合式迴歸與刮補分析於p-Curve
+
+178
+00:11:45.818 --> 00:11:49.550
+If the p-curve analysis says that
+there is evidential failure, and
+如果p-Curve顯示支持有真實效果的研究總體證據力僅勉強達標  
+(圖中的綠色線)
+
+179
+00:11:49.550 --> 00:11:54.030
+the bias correcting techniques all show
+that after correcting for bias there's
+校正偏誤之後顯示可能存在真實效果  
+
+180
+00:11:54.030 --> 00:11:57.750
+reason to assume there's still a true
+effect, then you might conclude that
+校正偏誤之後顯示可能存在真實效果  
+
+181
+00:11:57.750 --> 00:12:01.700
+the available evidence is quite
+reliable and supporting the hypothesis.
+可以推論現有的證據有一定的可信度  
+
+182
+00:12:02.830 --> 00:12:06.220
+Let's assume you perform
+a set of four studies.
+假想現在有四項獨立研究  
+
+183
+00:12:06.220 --> 00:12:11.290
+Each study has 80% power
+which is quite reasonable.
+每個研究都有至少80%的統計考驗力  
+
+184
+00:12:11.290 --> 00:12:16.205
+Then in this case,
+the probability of observing exclusively
+所有研究都會出現顯著結果的機率是0.8的四次方  
+也就是41%  
+
+185
+00:12:16.205 --> 00:12:23.050
+significant results is 0.8 x
+0.8 x 0.8 x 0.8 which is 41%.
+所有研究都會出現顯著結果的機率是0.8的四次方  
+也就是41%  
+
+186
+00:12:23.050 --> 00:12:26.848
+So if you perform four studies
+with 80% power in each study,
+也就是說如果一項實驗在維持80%考驗力的情況下  
+
+187
+00:12:26.848 --> 00:12:31.590
+the probability of finding exclusively
+significant results is only 41%.
+分別進行四次獨立研究，  
+只有41%的可能性獲得全部都是顯著的結果  
+
+188
+00:12:31.590 --> 00:12:36.936
+So most four study papers with 80%
+power should have at least one or
+四次之中至少有一次或二次出現不顯著的結果  
+
+189
+00:12:36.936 --> 00:12:39.720
+two non significant results.
+四次之中至少有一次或二次出現不顯著的結果  
+
+190
+00:12:39.720 --> 00:12:42.990
+So given that non significant
+studies should be expected,
+如果應該有不顯著的結果出現  
+
+191
+00:12:42.990 --> 00:12:45.090
+why don't you just publish
+them when they happen?
+為何不將它放在論文裡發表？    
+
+192
+00:12:46.400 --> 00:12:50.965
+One way to publish results regardless of
+their significance level is of course
+一種不管結果是否顯著都可以發表的方式就是「註冊研究」  
+
+193
+00:12:50.965 --> 00:12:52.230
+if you preregister them.
+一種不管結果是否顯著都可以發表的方式就是「註冊研究」  
+
+194
+00:12:53.250 --> 00:12:58.840
+If you decide that the study is worthwhile
+to do and the reviewers agree, then they
+只要研究計畫有價值且同行審查也同意  
+
+195
+00:12:58.840 --> 00:13:03.209
+will give you an in principle acceptance
+after reviewing your study design.
+未執行的設計就能原則性接受(in principle acceptance)  
+
+196
+00:13:04.220 --> 00:13:08.841
+If you follow up with the plan and
+you perform the study as detailed,
+只要依照被接受的計畫執行研究內容  
+
+197
+00:13:08.841 --> 00:13:13.870
+then you can publish the results
+regardless of the significance level and
+不管結果有沒有顯著都可以正式發表  
+
+198
+00:13:13.870 --> 00:13:15.834
+prevent publication bias.
+全面避免出版偏誤  
+
+199
+00:13:15.834 --> 00:13:20.516
+There are now some journals that
+accept pre-registered reports.
+有的期刊開始接受刊登註冊研究報告  
+
+200
+00:13:20.516 --> 00:13:23.080
+Comprehensive Results in
+Social Psychology is one.
+例如「可理解的社會心理學研究結果」(Comprehensive Results in
+Social Psychology)
+
+201
+00:13:23.080 --> 00:13:26.000
+Cortex is another journal
+that very early started with
+腦皮質(Cortex)是最早開始接受註冊研究報告的期刊  
+
+202
+00:13:26.000 --> 00:13:28.610
+accepting preregistered reports.
+腦皮質(Cortex)是最早開始接受註冊研究報告的期刊  
+
+203
+00:13:28.610 --> 00:13:31.750
+And if you're collecting data
+that's very difficult to collect,
+如果正在進行的研究資料很難收集  
+
+204
+00:13:31.750 --> 00:13:34.490
+it's a lot of hard work, and
+you really want this data to reach
+很難達到統計顯著卻有科學價值  
+
+205
+00:13:34.490 --> 00:13:38.199
+the scientific literature you can
+consider submitting to these journals.
+不妨考慮投稿這類期刊  
+
+206
+00:13:39.240 --> 00:13:41.590
+Now if you perform a set of studies and
+如果手上的研究出現了不顯著的結果
+
+207
+00:13:41.590 --> 00:13:45.190
+you observe some non-significant
+results that you decide are not
+如果手上的研究出現了不顯著的結果
+
+208
+00:13:45.190 --> 00:13:49.220
+worthwhile to really discuss
+in detail in the methods and
+但是不方便在方法或結果的段落裡討論  
+
+209
+00:13:49.220 --> 00:13:54.622
+results section, then at the very least
+discuss these results in the discussion.
+最好在論文最後的討論段落中提及  
+
+210
+00:13:54.622 --> 00:13:58.570
+This is really the place to say, these
+are some other studies that we've tried.
+這個部分最適合說明曾經嘗試的其它研究  
+
+211
+00:13:58.570 --> 00:14:02.420
+We did not observe anything, but we think
+we have very good reasons why we're
+特別是解釋為何不呈現沒有特別發現的資料
+
+212
+00:14:02.420 --> 00:14:05.980
+ignoring this data because
+whatever the reason is.
+特別是解釋為何不呈現沒有特別發現的資料
+
+213
+00:14:05.980 --> 00:14:09.390
+If you've discussed them, share the data,
+make it available online.
+討論並公開分享這些資料  
+
+214
+00:14:09.390 --> 00:14:11.100
+Let people draw their own conclusions.
+讓讀者自行判斷  
+
+215
+00:14:12.370 --> 00:14:16.560
+In this lecture, we've talked about
+publication bias and how to detect it.
+這一講介紹什麼是出版偏誤與偵測的方法  
+
+216
+00:14:16.560 --> 00:14:19.280
+I really think that publication
+bias is one of the biggest
+個人認為出版偏誤是今天所有科學研究者要嚴肅面對的挑戰  
+
+217
+00:14:19.280 --> 00:14:24.230
+challenges that the scientific community
+needs to address in the next few years.
+個人認為出版偏誤是今天所有科學研究者要嚴肅面對的挑戰  
+
+218
+00:14:24.230 --> 00:14:26.797
+As long as there is
+strong publication bias,
+只要有明顯的出版偏誤存在  
+
+219
+00:14:26.797 --> 00:14:29.702
+it's impossible to have
+a quantitative science,
+量化科學研究就不會產生任何價值  
+
+220
+00:14:29.702 --> 00:14:33.499
+so if we decide to fix one thing in
+science it should really be this.
+要修補它就要用科學的態度面對它  
+
+221
+00:14:33.499 --> 00:14:38.089
+[MUSIC]
+[課程結束]

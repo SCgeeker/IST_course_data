@@ -1,0 +1,28 @@
+---
+title: "Week 4 Exam"
+author: "Sau-Chin Chen"
+date: "2016年10月27日"
+output: html_document
+---
+1. Go to http://rpsychologist.com/d3/cohend/. A medium effect size is 0.5. When you talk about psychological findings, people often say “Oh, that can’t be true, I never have this myself”. They seem to think that if there is an effect, every person in the world will show this effect. When an effect has a d = 0.5, and we randomly pick 2 people (one from the control group, and one from the experimental group), what is the probability that a randomly picked person from one group will perform better than the person from the other group?
+*there is a 64 % chance that a person picked at random from the treatment group will have a higher score than a person picked at random from the control group (probability of superiority).*
+
+2. When Cohen’s d is 0.5, Hedges’ g is always:  check https://osf.io/vbdah/
+the same
+**smaller**
+larger
+
+3. As you collect more data, the correlation in your sample:  
+Increases
+Decreases
+*Becomes closer to the true correlation*
+Randomly varies between 0 and 1
+
+4. Imagine you have performed an independent t-test. There are 38 participants in each condition. In the control group, the mean is 285 ms. and the standard deviation is 93. In the experimental group, the mean is 354 ms. and the standard deviation is 89. Use the spreadsheet from https://osf.io/vbdah/ to determine what the effect size Hedges’ g is.
+
+*0.750349625*
+
+5. You read a paper in the literature. All the results that are provided for an ANOVA are the F-value of 5.9, and the degrees of freedom for the effect and error (2, 124). Use the spreadsheet at https://osf.io/vbdah/ to determine the effect size partial eta-squared:
+
+0.086892489
+

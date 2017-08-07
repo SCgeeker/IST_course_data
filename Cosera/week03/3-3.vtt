@@ -1,0 +1,1190 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.285
+[MUSIC]
+預先註冊
+
+2
+00:00:09.285 --> 00:00:10.577
+In the previous lectures,
+前面的課程中
+
+3
+00:00:10.577 --> 00:00:14.124
+we've talked about the importance of controlling your type I error rate.
+談到控制型一錯誤率的重要性
+
+4
+00:00:14.124 --> 00:00:18.674
+An increasingly popular way to make sure that people adequately control their type
+目前能適當控制型一錯誤率的方式是預先註冊
+
+5
+00:00:18.674 --> 00:00:20.755
+I error rates is pre-registration,
+目前能適當控制型一錯誤率的方式是預先註冊
+
+6
+00:00:20.755 --> 00:00:24.601
+where you specify what you're going to do before you perform the study.
+這是由研究者自已開始研究前先備份研究計畫
+
+7
+00:00:24.601 --> 00:00:27.834
+And then after, when you've collected the data, you can just follow this
+遵守計畫要點，處理收集的資料
+
+8
+00:00:27.834 --> 00:00:32.360
+pre-registered plan to make sure that your type I error rate is nicely controlled.
+讓型一錯誤率得到最佳控制
+
+9
+00:00:32.360 --> 00:00:36.350
+Let's talk a little bit about why this is important, and how you can pre-register
+本講介紹預先註冊的重要性
+
+10
+00:00:36.350 --> 00:00:39.910
+and what you need to take care of when you make a pre-registration.
+以及規劃預先註冊的建議
+
+11
+00:00:39.910 --> 00:00:43.030
+Let's first focus on the importance of pre-registration.
+首先談預先註冊的重要性
+
+12
+00:00:43.030 --> 00:00:45.077
+Why do we need to do this?
+為何我們需要這麼做？
+
+13
+00:00:45.077 --> 00:00:49.168
+Now, this is an example where you don't really need to read the fine print here,
+投影片裡的例子你不需要仔細閱讀
+
+14
+00:00:49.168 --> 00:00:50.446
+I'll explain it to you.
+讓我解釋給你聽
+
+15
+00:00:50.446 --> 00:00:55.330
+This is the first study in an article by Daryl Bem about precognition.
+這段文字來自Daryl Bem發表的超感知覺論文
+
+16
+00:00:55.330 --> 00:00:56.500
+And in his experiment,
+這篇論文的第一個研究
+
+17
+00:00:56.500 --> 00:01:01.076
+he had 100 participants who performed a sort of reversed priming task.
+招募100位參與者進行反向促發實驗
+
+18
+00:01:01.076 --> 00:01:06.020
+Normally, people have to categorize stimuli by pressing one of two buttons,
+一般的實驗是讓人在看過刺激之後
+
+19
+00:01:06.020 --> 00:01:09.520
+and this happens, of course, after they have seen the stimulus.
+使用兩個反應按鍵分類刺激
+
+20
+00:01:09.520 --> 00:01:10.910
+But here this was reversed.
+只是這個實驗反過來做
+
+21
+00:01:10.910 --> 00:01:14.370
+So people first made a choice, they pressed one or the other button.
+他請人先按鍵再看刺激
+
+22
+00:01:15.390 --> 00:01:18.460
+And only then did they see the stimulus that they were supposed to respond to.
+刺激出現後才知道有沒有按對
+
+23
+00:01:19.590 --> 00:01:21.220
+So if they could predict the future,
+如果人可以預測未來
+
+24
+00:01:21.220 --> 00:01:24.620
+you would expect that they were right, more than guessing average.
+反應正確率應該比純粹猜測還高
+
+25
+00:01:25.700 --> 00:01:29.560
+And in this case, we see that's there was a situation where a number of different
+這一系列研究操弄了很多種類的刺激
+
+26
+00:01:29.560 --> 00:01:32.130
+types of stimuli were used.
+這一系列研究操弄了很多種類的刺激
+
+27
+00:01:32.130 --> 00:01:36.540
+The reported result here, the main result, is their performance on erotic stimuli.
+投影片這段報告是情色類刺激的實驗結果
+
+28
+00:01:37.715 --> 00:01:38.750
+But there are a lot of other,
+論文中還有其他種類刺激的實驗報告
+不過都沒有發現顯著差異
+
+29
+00:01:38.750 --> 00:01:42.960
+different types of stimuli that were used where no differences were found.
+論文中還有其他種類刺激的實驗報告
+不過都沒有發現顯著差異
+
+30
+00:01:42.960 --> 00:01:47.517
+So for example, although the performance was higher than chance on the erotic
+情色類的反應表現有顯著高於純粹猜測
+
+31
+00:01:47.517 --> 00:01:52.159
+stimuli, there were no differences on negative stimuli or romantic stimuli.
+而負面訊息與浪漫類刺激都沒有發現差異
+
+32
+00:01:52.159 --> 00:01:55.457
+Now if you see this, this sort of makes you wonder,
+講到這裡，你也許會好奇
+
+33
+00:01:55.457 --> 00:02:00.156
+is this really the main prediction that this researcher set out to test?
+這樣的結果真的符合作者的預測嗎？
+
+34
+00:02:00.156 --> 00:02:04.292
+If you look at the p-value, if you do the math and you have a Bonferroni correction,
+看到報告裡的p值，回想前面提到的Bonferroni校正
+
+35
+00:02:04.292 --> 00:02:07.964
+you want to control the type I error rate for all the possible combinations,
+你會想到要控制所有種類的型一錯誤率
+
+36
+00:02:07.964 --> 00:02:10.996
+then this would actually not be statistically significant if
+如果全部種類的結果都考慮進來
+
+37
+00:02:10.996 --> 00:02:15.390
+we would have controlled our error rate for all possible comparisons.
+這段文字裡沒有一個p值低於統計顯著水準
+
+38
+00:02:15.390 --> 00:02:19.035
+So you see that it's very important to specify which test you are really
+由此可知在進行分析前，
+預先說明要做的檢定是很重要的
+
+39
+00:02:19.035 --> 00:02:23.165
+interested in before you do the analysis,
+to make sure that other people who read
+可以讓讀者知道你的處理符合統計原則
+
+40
+00:02:23.165 --> 00:02:27.443
+your article are also convinced that your results and your findings are credible.
+讓報告的結果與發現更加可信
+
+41
+00:02:30.041 --> 00:02:35.357
+Now, here we see that there's a wide range of options of how to analyze your data,
+這張漫畫示意分析資料的操作有兩個極端
+
+42
+00:02:35.357 --> 00:02:39.980
+ranging from very exploratory analysis, you just look at your data and
+一邊是探索性分析，只是概覽資料
+
+43
+00:02:39.980 --> 00:02:44.836
+anything that happens to stand out you consider as an informative result,
+任何分析產物都被當成有意義的結果
+
+44
+00:02:44.836 --> 00:02:48.430
+to a situation where you slightly torture your data.
+這個情況會有拷問資料的情況
+
+45
+00:02:48.430 --> 00:02:52.340
+You don't really look at everything that's possible, but you have one hypothesis,
+如果你有一個假設，就不會看所有分析產物是有意義的
+
+46
+00:02:52.340 --> 00:02:53.890
+but you look at it from this side or
+這就要把目光移向另一端
+
+47
+00:02:53.890 --> 00:02:58.740
+from that side, to a situation where research is purely confirmatory.
+了解驗證性分析的重點是
+
+48
+00:02:58.740 --> 00:03:02.344
+You specify what you want to do, you perform the experiment and
+預先表列待辦事項、照表執行實驗
+
+49
+00:03:02.344 --> 00:03:03.638
+you analyze the data.
+以及分析資料
+
+50
+00:03:03.638 --> 00:03:08.069
+So this is from a research article by Wagenmakers and colleagues where they
+以上所談就是來自這張插圖的原始出處
+
+51
+00:03:08.069 --> 00:03:12.519
+argue for the necessity of having a purely confirmatory research agenda.
+Wagenmakers與同儕發表說明驗證性研究綱領的論文
+
+52
+00:03:15.509 --> 00:03:18.490
+We can see examples in the scientific literature for
+還有個例子來自一篇之後的課程會談
+
+53
+00:03:18.490 --> 00:03:23.098
+where this would make sense, for example, in a paper about p-curve analysis,
+有關p-curve分析的論文
+
+54
+00:03:23.098 --> 00:03:25.830
+a topic we'll come back to later.
+說明註冊研究的重要性
+
+55
+00:03:25.830 --> 00:03:29.160
+Simonsohn and colleagues analyzed
+a set of studies from the Journal
+作者Simonsohn等人分析一系列
+發表於人格與社會心理學論文的數據
+
+56
+00:03:29.160 --> 00:03:31.790
+of Personality and Social Psychology,
+作者Simonsohn等人分析一系列
+發表於人格與社會心理學論文的數據
+
+57
+00:03:31.790 --> 00:03:36.830
+where the researchers reported
+the results only with a covariate.
+這些數據都有報告共變量分析
+
+58
+00:03:36.830 --> 00:03:39.260
+So you can do a covariate analysis, and
+一般來說做共變量分析
+
+59
+00:03:39.260 --> 00:03:42.340
+it might really answer the question that you are asking.
+是為了澄清無法直接從結果回答的一些問題
+
+60
+00:03:42.340 --> 00:03:45.900
+But what we also know is that people are sometimes using a covariate
+但是圈內人都知道有時共變量分析
+
+61
+00:03:45.900 --> 00:03:50.150
+as a flexible way to look at their data from a different perspective
+會被用做降低主要效果p值的手段
+
+62
+00:03:50.150 --> 00:03:53.810
+with the goal to reduce the level of the p-value.
+會被用做降低主要效果p值的手段
+
+63
+00:03:53.810 --> 00:03:57.870
+So their initial analysis might not show a statistically significant effect, but
+這些人做分析後發現主要效果並未統計顯著
+
+64
+00:03:57.870 --> 00:04:01.200
+then they play around with their data just a little bit until
+就拿其他變項進來做共變量分析
+
+65
+00:04:01.200 --> 00:04:04.635
+adding a covariate would make a statistical analysis significant.
+做到其中一個讓主要效果的統計值顯著
+
+66
+00:04:06.160 --> 00:04:10.820
+So when they look at a set of studies that use covariates, they see that the p-curve
+所以Simonsohn挑出有做共變量分析的論文
+
+67
+00:04:10.820 --> 00:04:14.880
+analysis shows that these studies actually lack evidential value.
+p-curve分析發現這些研究結果缺乏證據價值
+
+68
+00:04:14.880 --> 00:04:18.563
+So using this flexibility leads to a a set of studies in the scientific literature
+由此可見研究者的操作彈性已讓部分科學文獻
+
+69
+00:04:18.563 --> 00:04:21.719
+that really don't tell us anything about what's likely to be true.
+充斥不具實質證據的研究結果
+
+70
+00:04:24.307 --> 00:04:28.252
+So recently, people in psychology have been starting to think about how can we
+現在心理學研究者開始思考
+如何改善研究操作彈性帶來的問題
+
+71
+00:04:28.252 --> 00:04:30.070
+change this type of flexibility?
+現在心理學研究者開始思考
+如何改善研究操作彈性帶來的問題
+
+72
+00:04:30.070 --> 00:04:33.590
+How can we make sure that people actually report the analysis that they
+如何確認研究者報告的分析是從一開始就設計好的？
+
+73
+00:04:33.590 --> 00:04:35.970
+set out to do in the beginning?
+如何確認研究者報告的分析是從一開始就設計好的？
+
+74
+00:04:35.970 --> 00:04:39.920
+And an increasingly popular solution is the use of registered reports,
+註冊報告是正在興起的模式
+
+75
+00:04:39.920 --> 00:04:44.690
+where people write down their predictions before they perform the data collection.
+報告作者要在開始收集資料前寫出報告
+
+76
+00:04:44.690 --> 00:04:47.760
+And then they analyze their data just by following these reports.
+接著要按照報告分析資料
+
+77
+00:04:48.852 --> 00:04:52.410
+Now, it's very important that this specifies the plan of the analysis of
+報告的重點是陳列驗證主要假設的
+所有分析計畫細節
+
+78
+00:04:52.410 --> 00:04:54.050
+the main hypothesis.
+報告的重點是陳列驗證主要假設的
+所有分析計畫細節
+
+79
+00:04:54.050 --> 00:04:57.320
+Of course, it doesn't prevent you from exploring your data.
+當然，報告作者還是可做探索性分析
+
+80
+00:04:57.320 --> 00:05:01.431
+This is perfectly fine, but it just differentiates between pre-registered,
+這種模式是介於預先註冊的驗證性研究
+與探索性研究之間
+
+81
+00:05:01.431 --> 00:05:04.360
+confirmatory research and more exploratory research.
+這種模式是介於預先註冊的驗證性研究
+與探索性研究之間
+
+82
+00:05:05.620 --> 00:05:09.150
+So in this way pre-registration formalizes the Type 1 error control.
+預先註冊有型一錯誤的控制標準措施
+
+83
+00:05:10.320 --> 00:05:14.610
+You have a very specific plan that you set out to do, and all the tests that you do
+一開始要設定詳盡的分析計畫
+
+84
+00:05:14.610 --> 00:05:20.290
+that follow your pre-registered hypothesis have a controlled Type 1 error rate.
+並按照預先設定的控制條件進行所有檢定
+
+85
+00:05:20.290 --> 00:05:22.740
+For other analysis, more exploratory analysis,
+至於偏向探索性的分析
+
+86
+00:05:22.740 --> 00:05:25.220
+you can test anything that you'd like.
+研究者可以按需要執行
+
+87
+00:05:25.220 --> 00:05:28.800
+But in this case, your error rate is inflated to an unknown level, so
+但是要自負型一錯誤率膨脹的風險
+
+88
+00:05:28.800 --> 00:05:33.030
+you don't really know the probability that you're making a false positive result.
+沒有人告訴你結果是偽陽性的機率有多高
+
+89
+00:05:35.700 --> 00:05:37.450
+Does this matter?
+這麼做值得嗎？
+
+90
+00:05:37.450 --> 00:05:41.300
+Aren't we making life a lot more complicated by asking researchers to
+有沒有研究者覺得預先註冊會增加工作負擔？
+
+91
+00:05:41.300 --> 00:05:43.780
+pre- register their hypothesis?
+有沒有研究者覺得預先註冊會增加工作負擔？
+
+92
+00:05:43.780 --> 00:05:48.280
+Well, there's some data to show that there is indeed a benefit of pre-registering and
+現在已有資料證實預先註冊的好處
+
+93
+00:05:48.280 --> 00:05:50.530
+preventing this flexibility.
+可以降低操作彈性的問題
+
+94
+00:05:50.530 --> 00:05:55.490
+This is from an analysis of a set of studies that were large,
+這張圖來自醫藥領域的大數據分析
+
+95
+00:05:55.490 --> 00:06:00.480
+randomized, controlled trials in medicine, either before it was
+這個領域有執行隨機化臨床試驗前要在網站預先註冊的政策
+
+96
+00:06:00.480 --> 00:06:04.620
+formally required to pre-register your study, the design and
+圖中左右兩側的點顯示政策上路前與上路後的研究品質
+
+97
+00:06:04.620 --> 00:06:11.000
+the analysis plan in clinical trials.gov, and after this was formally required.
+圖中左右兩側的點顯示政策上路前與上路後的研究品質
+
+98
+00:06:11.000 --> 00:06:14.930
+So on the left, we see that from all the big, randomized control trials,
+圖左側是上路前的臨床試驗結果
+
+99
+00:06:14.930 --> 00:06:18.640
+some don't show any statistically significant result, but many actually do.
+雖然其中有不少並沒有達到統計顯著
+
+100
+00:06:18.640 --> 00:06:24.050
+17 out of 30 studies before 2000 actually show a significant result.
+但是30項裡總共有17項報告統計顯著結果
+
+101
+00:06:25.600 --> 00:06:31.880
+After pre-registration became required, this percentage drops to only 2 out of 25.
+政策上路後25項研究只有2項有統計顯著結果
+
+102
+00:06:31.880 --> 00:06:35.550
+Now, this is an indication that if we
+ask people to specify their hypothesis
+這項資料告訴我們只要研究者預先註冊
+
+103
+00:06:35.550 --> 00:06:40.950
+beforehand, they don't always succeed in confirming their hypothesis,
+並不會總是成功地驗證假設
+
+104
+00:06:40.950 --> 00:06:42.430
+which is totally fine, of course.
+總體而言這是好的發展
+
+105
+00:06:42.430 --> 00:06:46.480
+It's very important to realize that
+your prediction did not hold up.
+了解不是每個預測都能被支持是很重要的
+
+106
+00:06:46.480 --> 00:06:50.973
+There might have been new insights and exploratory analyses in the studies done
+這項資料能讓我們透視西元2000年後的發展
+
+107
+00:06:50.973 --> 00:06:55.008
+after 2000, but these need to confirmed in follow-up research.
+不過更多利弊還需要更進一步的確認
+
+108
+00:06:57.459 --> 00:07:01.694
+So we see that the main goal of pre-registration is distinguishing
+談到現在你已知道預先註冊的重點是
+
+109
+00:07:01.694 --> 00:07:05.800
+confirmatory research from exploratory research.
+區分驗證性研究與探索性研究
+
+110
+00:07:05.800 --> 00:07:11.520
+This is sometimes called HARKing, hypothesizing after the results are known.
+後者有時稱為"事後諸葛"(HARKing)
+
+111
+00:07:11.520 --> 00:07:15.964
+If we think back to the study we described in the beginning about precognition,
+拿一開始提的超感知覺研究來說
+
+112
+00:07:15.964 --> 00:07:20.011
+where a researcher tests all sorts of hypotheses, then after looking at
+研究者測試所有可行的假設
+
+113
+00:07:20.011 --> 00:07:24.917
+the data, a researcher might think, of course, there' s something very special
+看過資料後也許想到能解釋情色類刺激有差異
+
+114
+00:07:24.917 --> 00:07:29.805
+about erotic stimuli that's not present in negative stimuli or in romantic stimuli.
+但負向訊息或浪漫類無差異的絕佳說法
+
+115
+00:07:29.805 --> 00:07:33.429
+And this researcher might come up with a hypothesis of why it's actually very
+論文作者能把這樣的說法寫成能在實驗前做出預測
+
+116
+00:07:33.429 --> 00:07:36.090
+plausible that an effect has occurred.
+論文作者能把這樣的說法寫成能在實驗前做出預測
+
+117
+00:07:36.090 --> 00:07:39.470
+But this is hypothesizing　after the results are known.
+實際是分析結果之後才提出假設
+
+118
+00:07:39.470 --> 00:07:42.740
+This is creating a hypothesis　based on the observed data, and
+這種假設是有了資料才被創造出來
+
+119
+00:07:42.740 --> 00:07:45.320
+that's reversing the empirical cycle.
+與科學研究的流程完全相反
+
+120
+00:07:47.550 --> 00:07:51.520
+When you're exploring data,　you can perform a hypothesis test, but
+探索性研究可以展現可行的假設
+
+121
+00:07:51.520 --> 00:07:53.950
+you can't test a hypothesis.
+但不能測試假設
+
+122
+00:07:53.950 --> 00:07:57.710
+This is a statement by De Groot,　who already pointed this out in the 1950s.
+這是荷蘭心理學家De Groot在1950年代提出的主張
+
+123
+00:07:58.930 --> 00:08:02.190
+The point here is that it's perfectly fine to explore data and
+探索資料中任何可能引出有趣想法的訊息是好的
+
+124
+00:08:02.190 --> 00:08:05.360
+look around, patterns that you might find.
+探索資料中任何可能引出有趣想法的訊息是好的
+
+125
+00:08:05.360 --> 00:08:09.290
+But when you do this, you cannot test whether this hypothesis is actually true
+但是若你在事前還沒想到這樣的假設
+
+126
+00:08:09.290 --> 00:08:12.390
+because what you have done, you have actually
+不能用啟發想法的資料
+
+127
+00:08:12.390 --> 00:08:16.429
+tested a hypothesis on the same data set that was used to generate it.
+測試事後才形成的假設
+
+128
+00:08:17.630 --> 00:08:22.400
+The alpha level in this case is unknown, it has inflated to an unknown extent.
+"事後諸葛"導致型一錯誤膨脹的程度還未可估算
+
+129
+00:08:22.400 --> 00:08:25.229
+So you can never be sure whether this is a type I error or not.
+沒人知道這類文獻的型一錯誤率有多少
+
+130
+00:08:25.229 --> 00:08:29.593
+And you can make no statement about the frequency of Type I errors in the long
+也無法得知這類研究操作的長遠影響
+
+131
+00:08:29.593 --> 00:08:32.720
+run, if you are allowing yourself to be so flexible.
+累積的文獻品質是好是壞
+
+132
+00:08:35.340 --> 00:08:38.670
+So when you pre-register your study, what are things that you need to specify?
+要提出一項預先註冊研究，有什麼要注意的呢？
+
+133
+00:08:39.730 --> 00:08:40.700
+Well, as we've seen,
+前一講已學到
+
+134
+00:08:40.700 --> 00:08:44.990
+optional stopping is one way in which you can inflate your Type I error rate.
+中停分析是最可能膨脹型一錯誤率的因素
+
+135
+00:08:44.990 --> 00:08:48.670
+So one thing that you have to do is justify your sample size.
+針對這點能做的是明確宣告要收集的樣本數
+
+136
+00:08:48.670 --> 00:08:51.280
+Of course, thinking about your sample size before you collect
+當然事前宣告樣本數也能有效控制型二錯誤率
+
+137
+00:08:51.280 --> 00:08:54.840
+data is also very useful in controlling your type II error rate.
+當然事前宣告樣本數也能有效控制型二錯誤率
+
+138
+00:08:54.840 --> 00:08:58.650
+Thinking about how many people you need will control both these error rates, but
+想清楚要招募多少人能控制兩種錯誤
+
+139
+00:08:58.650 --> 00:09:02.980
+it will fix the type I error rate to whatever level you've specified.
+更能將型一錯誤率固定在設定好的水準
+
+140
+00:09:02.980 --> 00:09:05.390
+This is sometimes known as the stopping rule.
+有時也會遇上必須的中停情況
+
+141
+00:09:05.390 --> 00:09:09.960
+It can be anything, you can collect data until it starts to rain outside or
+像是要在下雨天才能收集資料
+
+142
+00:09:09.960 --> 00:09:12.190
+until the week is over, anything that you want.
+要隔一個星期才能找回受試者等等
+
+143
+00:09:13.300 --> 00:09:16.512
+In a later lecture, we'll talk about justifying your sample sizes.
+之後有一講會談界定樣本數的做法
+
+144
+00:09:18.890 --> 00:09:22.611
+Another thing you need to specify is the independent variable and
+第二點是事先明列統計檢定中的獨變項與依變項
+
+145
+00:09:22.611 --> 00:09:26.230
+the dependent variable for each test that you want to do.
+第二點是事先明列統計檢定中的獨變項與依變項
+
+146
+00:09:26.230 --> 00:09:28.880
+What is it that you're actually going to analyze?
+那些變項是要放進分析程序的？
+
+147
+00:09:28.880 --> 00:09:30.780
+What are the conditions in your study?
+那些變項是標記實驗條件？
+
+148
+00:09:30.780 --> 00:09:34.310
+And what are the dependent variables with which you measure whatever type of
+那些依變項的數值是根據預測所做的測量？
+
+149
+00:09:34.310 --> 00:09:36.120
+effect you predict?
+那些依變項的數值是根據預測所做的測量？
+
+150
+00:09:36.120 --> 00:09:39.035
+For the dependent variable, it might be relevant to say,
+依變項的說明清單可以報告
+
+151
+00:09:39.035 --> 00:09:42.617
+I'm using a questionnaire and these are the items that I will average.
+使用的問題選項以及要計算平均的題目
+
+152
+00:09:42.617 --> 00:09:46.168
+And I will perform my analysis on this average score.
+如何處理平均得分的方式等等
+
+153
+00:09:46.168 --> 00:09:50.375
+It matters whether you do this, or maybe use one of all these items.
+這些說明有關要不要做、該不該全做等彈性
+
+154
+00:09:50.375 --> 00:09:54.528
+So this flexibility should be prevented by specifying what the DV is.
+明確說明依變項的處置能避免這類彈性操作
+
+155
+00:09:56.723 --> 00:09:59.030
+Finally, you should describe your analysis plan.
+最後，清楚描述分析計畫
+
+156
+00:10:00.200 --> 00:10:02.308
+How are you going to analyze your data, and
+你要如何分析資料
+
+157
+00:10:02.308 --> 00:10:04.851
+which statistical tests do you plan to perform?
+要使用什麼統計檢定
+
+158
+00:10:04.851 --> 00:10:08.638
+This includes specifying things like the alpha level that you want to use for
+包括顯著水準的設定都要交待
+
+159
+00:10:08.638 --> 00:10:09.248
+each test.
+包括顯著水準的設定都要交待
+
+160
+00:10:09.248 --> 00:10:12.199
+How are you going to correct for multiple comparisons, or
+像是如何校正多重比較
+
+161
+00:10:12.199 --> 00:10:16.300
+do you want to use a 5% error rate or a 1% error rate or a 10% error rate?
+型一錯誤率設定是5%,1%或10%
+
+162
+00:10:16.300 --> 00:10:18.540
+What do you think is sensible?
+解釋為何如此設定是夠靈敏的
+
+163
+00:10:18.540 --> 00:10:21.670
+It also requires you to specify things like data cleaning.
+其他要交待的有如何清理原始資料
+
+164
+00:10:21.670 --> 00:10:23.230
+What is an outlier, and
+如何標記極端值
+
+165
+00:10:23.230 --> 00:10:26.080
+how you're going to remove outliers when they're problematic.
+以及移除極端值是基於什麼品質條件
+
+166
+00:10:28.230 --> 00:10:32.463
+Now, we see that journals are increasingly starting to use these pre-registered
+越來越多期刊開始接受預先註冊
+
+167
+00:10:32.463 --> 00:10:33.015
+studies.
+越來越多期刊開始接受預先註冊
+
+168
+00:10:33.015 --> 00:10:36.869
+In this example, journal Perspectives on Psychological Science is using
+以「心理科學觀點」為例
+
+169
+00:10:36.869 --> 00:10:40.847
+pre-registered protocols to perform large-scale replication studies,
+這本期刊接受大型再現研究的預先註冊
+
+170
+00:10:40.847 --> 00:10:44.639
+where a lot of people team up and perform a pre-registered replication of
+這是號召多人合作，進行主題文獻的註冊再現研究
+
+171
+00:10:44.639 --> 00:10:47.230
+an existing study in the scientific literature.
+這是號召多人合作，進行主題文獻的註冊再現研究
+
+172
+00:10:49.984 --> 00:10:54.735
+There's a clear benefit of pre-registering your studies, especially when the journal
+預先註冊有顯而易見的好處
+
+173
+00:10:54.735 --> 00:10:59.320
+where you're going to submit your research allows for these pre-registered reports.
+特別是有期刊接受你提出預先註冊報告
+
+174
+00:10:59.320 --> 00:11:01.250
+So you can do this for a replication study, but
+不只可以做再現研究
+
+175
+00:11:01.250 --> 00:11:03.770
+you can also do it for very novel research.
+也可以做原創研究
+
+176
+00:11:03.770 --> 00:11:08.150
+This means that based on the plan that you have, you'll get comments from
+這樣的好處是提出計畫之後
+
+177
+00:11:08.150 --> 00:11:13.160
+experts in the field that tell you how to improve your study design before you have
+你能收到同行專家給予改善設計的建議
+
+178
+00:11:13.160 --> 00:11:17.570
+put in all the effort to collect the data, analyze the data, and write the report.
+接著再收集資料，分析結果與撰寫報告
+
+179
+00:11:18.740 --> 00:11:22.130
+Compared to the traditional system, where you only get all this feedback and
+有別於傳統投稿模式，同行回饋是
+
+180
+00:11:22.130 --> 00:11:25.170
+these comments after you already did all the work.
+完成全部工作之後才會收到
+
+181
+00:11:25.170 --> 00:11:29.200
+There's a big benefit because these peer reviews before you collect the data will
+如此的好處是你在收集資料之前
+
+182
+00:11:29.200 --> 00:11:31.050
+allow you to improve your study design.
+就能根據同行建議改善設計
+
+183
+00:11:32.060 --> 00:11:36.590
+So instead of doing all the hard work, and then being told by reviewers that you made
+而非好不容易完成研究之後
+你才收到負評滿滿的同儕評審
+
+184
+00:11:36.590 --> 00:11:41.100
+a mistake or you should have taken into account something that you didn't see,
+而非好不容易完成研究之後
+你才收到負評滿滿的同儕評審
+
+185
+00:11:41.100 --> 00:11:43.920
+you can get this feedback before you collect the data.
+預先註冊讓你收集資料前就知道問題
+
+186
+00:11:43.920 --> 00:11:48.657
+So this is a very efficient way to make sure that you perform a well-designed
+這能有效地研究者獲得同儕審查的認可之後
+
+187
+00:11:48.657 --> 00:11:52.653
+study, where your peer reviewers agree that this is, indeed,
+執行良好設計的研究
+
+188
+00:11:52.653 --> 00:11:55.479
+the best approach to study a specific topic.
+這種模式對特定主題的研究特別有利
+
+189
+00:11:55.479 --> 00:11:57.764
+And that the results will be informative,
+結果不論有沒有統計顯著
+也是有益科學發展的資訊
+
+190
+00:11:57.764 --> 00:12:02.180
+regardless of whether they
+are statistically significant or not.
+結果不論有沒有統計顯著
+也是有益科學發展的資訊
+
+191
+00:12:02.180 --> 00:12:06.560
+And this is another very important benefit of these registered reports.
+這是註冊報告的另一個好處
+
+192
+00:12:06.560 --> 00:12:10.123
+When you've submitted your study design for publication, the peer reviewers
+透過發表研究設計
+
+193
+00:12:10.123 --> 00:12:14.580
+give you some suggestions to improve the way that you want to study this topic.
+同行評審給予改善設計的建議
+
+194
+00:12:14.580 --> 00:12:20.790
+The editor of the journal will say as long as you follow this pre-registered design,
+期刊主編可向投稿註冊報告的作者宣言
+
+195
+00:12:20.790 --> 00:12:24.340
+regardless of the outcome of the study, we will publish it.
+只要如實按表操作，不管結果如何，必定完整發表
+
+196
+00:12:24.340 --> 00:12:28.085
+Now, we know that publication bias is a huge problem in the scientific literature.
+出版偏誤充斥科學文獻是不可忽視的問題
+
+197
+00:12:28.085 --> 00:12:32.696
+There are way more study results that turn out to be statistically significant,
+主觀預期經由很多方式引導發表的研究結果
+
+198
+00:12:32.696 --> 00:12:34.300
+as you would expect.
+主觀預期經由很多方式引導發表的研究結果
+
+199
+00:12:34.300 --> 00:12:38.290
+The reason for this is that people don't publish their non-significant findings or,
+導致出版偏誤的主因是很多人不想發表不顯著的結果
+
+200
+00:12:38.290 --> 00:12:41.500
+when they are submitted for publication, journals don't accept them.
+尤其是很多期刊會拒絕不顯著的結果
+
+201
+00:12:42.710 --> 00:12:47.295
+Now, this problem is prevented by these registered reports because people say if
+註冊報告能避免這樣的問題
+
+202
+00:12:47.295 --> 00:12:51.689
+you follow this plan, we will publish the results no matter what the outcome.
+只要按計畫操作，不管是什麼樣的結果，期刊都會刊出
+
+203
+00:12:51.689 --> 00:12:54.963
+So this is an important benefit, and if you do a challenging study,
+對於挑戰前人的研究，這更是一項優勢
+
+204
+00:12:54.963 --> 00:12:58.764
+it's very worthwhile to consider following these registered report rules.
+值得我們考慮採取註冊研究規範的好處
+
+205
+00:13:01.257 --> 00:13:05.100
+There's some other benefits to pre-registering your studies.
+預先註冊還有一些值得一提的好處
+
+206
+00:13:05.100 --> 00:13:09.430
+For example, you can do less conventional, but more efficient, designs.
+像是有些作法不保守、卻更有效率的研究設計
+
+207
+00:13:10.770 --> 00:13:13.610
+We already discussed how you can improve
+前一講提到採用單側檢定能提高檢定力
+
+208
+00:13:13.610 --> 00:13:18.540
+the statistical power of your test by performing a one-sided test.
+前一講提到採用單側檢定能提高檢定力
+
+209
+00:13:18.540 --> 00:13:20.750
+This also controls the error rate.
+這辦法也能控制型一錯誤率
+
+210
+00:13:20.750 --> 00:13:24.300
+But you're saying that you have a directional prediction.
+不過這辦法用在有方向性預測才好
+
+211
+00:13:24.300 --> 00:13:25.380
+And if this is the case,
+如果條件許可
+
+212
+00:13:25.380 --> 00:13:28.980
+then you can be more efficient in designing a well-powered study.
+就能在有高考驗力的研究裡發揮作用
+
+213
+00:13:30.120 --> 00:13:33.892
+However, people always think that there's something wrong with people who report
+只是許多人仍存有成見，
+覺得這辦法是用來降低p值的技倆
+
+214
+00:13:33.892 --> 00:13:38.149
+one-sided tests because it's very often used as a way to reduce the p-value.
+只是許多人仍存有成見，
+覺得這辦法是用來降低p值的技倆
+
+215
+00:13:39.240 --> 00:13:43.790
+So in this pre-registered report, you can write down that you have a directional
+不過你可以在在註冊報告裡寫清楚方向性假設
+
+216
+00:13:43.790 --> 00:13:45.700
+prediction, you'll do a one-sided test, and
+說明單側檢定的必要性
+
+217
+00:13:45.700 --> 00:13:49.340
+you can reap the benefits of this directional hypothesis.
+就可以用清晰的假設對抗成見
+
+218
+00:13:51.900 --> 00:13:55.310
+Now, there's some places where you can pre-register your study design.
+你可運用現成的網路平台佈置預先註冊
+
+219
+00:13:55.310 --> 00:13:59.560
+You can visit the Open Science Framework, or websites such as AsPredicted.org.
+像是Open Science Framework
+或AsPredicted.org
+
+220
+00:13:59.560 --> 00:14:02.050
+You can see what's required for
+根據你的實際需要
+
+221
+00:14:02.050 --> 00:14:05.440
+you to pre-register your study, which information you need to fill out.
+選擇合適的平台預先註冊你的研究
+
+222
+00:14:06.590 --> 00:14:09.870
+Now, if you do this, you can keep this pre-registration private so
+這些平台可以設定不公開預先註冊內容
+
+223
+00:14:09.870 --> 00:14:14.040
+you don't need to publish it online so that everybody can see what you do.
+有需要的話，不必一開始就在網路上完全公開
+
+224
+00:14:14.040 --> 00:14:17.070
+It is possible, but you can just keep it private until the moment
+你可以設定不公開期限
+
+225
+00:14:17.070 --> 00:14:20.000
+that you're going to submit your results for publication.
+直到正式向期刊投稿為止
+
+226
+00:14:20.000 --> 00:14:23.640
+And you can say, look, these are the results that I'm presenting, and
+你可以昭告天下，剛完成的研究結果
+
+227
+00:14:23.640 --> 00:14:28.220
+you can see that this is exactly what I predicted when I designed the study.
+是完全符合最初設計時的預測
+
+228
+00:14:28.220 --> 00:14:29.328
+So in this lecture,
+簡單總結
+
+229
+00:14:29.328 --> 00:14:32.982
+we've seen that pre-registration is a novel, but very useful,
+預先註冊是一種新穎的研究模式
+
+230
+00:14:32.982 --> 00:14:37.302
+solution to distinguish exploratory research from confirmatory research.
+但是能區分探索性與驗證性的研究操作
+
+231
+00:14:37.302 --> 00:14:38.311
+And in doing so,
+按規範操作的話
+
+232
+00:14:38.311 --> 00:14:41.998
+it allows you to adequately control your type I error rates.
+能控制型一錯誤率在合理範圍之內
+
+233
+00:14:41.998 --> 00:14:42.498
+[MUSIC]
+影片結束

@@ -1,0 +1,21 @@
+Lecture 1.1:
+
+A great accessible overview of different perspectives to draw statistical inferences is provided by Zoltan Dienes (although it has Psychology in the title, it is really relevant for all empirical sciences using statistics):
+
+Dienes, Z. (2008). Understanding psychology as a science: An introduction to scientific and statistical inference. Palgrave Macmillan.
+
+A good overview of Frequentist statistics (with a strong focus on confidence intervals and estimation) that is full of educational information is provided in a book by Cumming:
+
+Cumming, G. (2013). Understanding the new statistics: Effect sizes, confidence intervals, and meta-analysis. Routledge.
+
+Lecture 1.2
+
+The ultimate discussion of p-values and how to interpret them is provided by:
+
+Nickerson, R. S. (2000). Null hypothesis significance testing: a review of an old and continuing controversy. Psychological methods, 5(2), 241-301.
+
+Lecture 1.3
+
+An accessible introduction to hypothesis testing, Type 1 and Type 2 errors, power, and p-values can be found in most textbooks, but a clear open access summary is available in:
+
+Banerjee, A., Chitnis, U. B., Jadhav, S. L., Bhawalkar, J. S., & Chaudhury, S. (2009). Hypothesis testing, type I and type II errors. Industrial Psychiatry Journal, 18(2), 127.

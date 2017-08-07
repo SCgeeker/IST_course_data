@@ -1,0 +1,1102 @@
+WEBVTT  
+  
+1  
+00:00:00.000 --> 00:00:08.827  
+[MUSIC]  
+[貝氏思維]  
+  
+2  
+00:00:08.827 --> 00:00:12.270  
+Now in the previous lecture  
+we talked about Bayesian statistics.  
+前一講談如何正確運用貝氏統計方法　　  
+  
+3  
+00:00:12.270 --> 00:00:15.078  
+Formally quantifying your prior belief  
+計量收集資料前相信的真實數值    
+  
+4  
+00:00:15.078 --> 00:00:18.433  
+updating it based on data  
+into a posterior belief.  
+並根據手上資料調整原先的信念　　  
+  
+5  
+00:00:18.433 --> 00:00:21.733  
+There's some debate in the literature  
+about whether people should always use  
+許多學者為了該不該使用貝氏統計打筆戰    
+  
+6  
+00:00:21.733 --> 00:00:22.990  
+Bayesian statistics or not.  
+許多學者為了該不該使用貝氏統計打筆戰    
+  
+7  
+00:00:22.990 --> 00:00:27.625  
+Depends on how happy you are with  
+incorporating mainly subjective  
+爭論重點是要如何將主觀的事前信念納入統計推論  
+  
+8  
+00:00:27.625 --> 00:00:31.441  
+prior information into your  
+statistical reasoning.  
+爭論重點是要如何將主觀的事前信念納入統計推論  
+  
+9  
+00:00:31.441 --> 00:00:36.346  
+Here I want to talk a little bit about how  
+it's important to at least use Bayesian  
+這一講要分享一個有時候能派上用場的貝氏統計小技巧    
+  
+10  
+00:00:36.346 --> 00:00:38.214  
+statistics some of the time.  
+這一講要分享一個有時候能派上用場的貝氏統計小技巧    
+  
+11  
+00:00:38.214 --> 00:00:42.182  
+Even if you don't want to formally  
+quantify it to think about statistical  
+即使你不會使用正規的貝氏統計推論流程    
+  
+12  
+00:00:42.182 --> 00:00:43.270  
+inferences.  
+即使你不會使用正規的貝氏統計推論流程    
+  
+13  
+00:00:43.270 --> 00:00:47.580  
+So even if you don't want to quantify  
+your inferences using a subjective prior  
+或者不想在推論過程中摻入主觀事前信念    
+  
+14  
+00:00:47.580 --> 00:00:51.940  
+it's going to keep prior information  
+into account in some way.  
+這方法能讓你在結論裡合理地整合事前信念    
+  
+15  
+00:00:51.940 --> 00:00:56.230  
+Now taking prior probabilities into  
+account is very often smart thinking.  
+某些例子中考慮事前機率能讓人豁然開朗    
+  
+16  
+00:00:56.230 --> 00:00:59.210  
+We can look at an example  
+from medical science  
+像以下要談的醫學研究案例    
+  
+17  
+00:00:59.210 --> 00:01:01.640  
+to see the point of thinking about priors.  
+就是運用事前資訊突破盲點     
+  
+18  
+00:01:03.590 --> 00:01:10.060  
+Now  
+of the people in the population are sick.  
+這個案例探討有種疾病在一群人之中的罹病率是3%  
+  
+19  
+00:01:10.060 --> 00:01:13.440  
+We have a test that can identify  
+whether you have this illness or not  
+要開發一種能篩選真正罹患此病的測試    
+  
+20  
+00:01:13.440 --> 00:01:16.610  
+and this is correct 80% of the time.  
+而這個測試的篩選正確率是80%    
+  
+21  
+00:01:16.610 --> 00:01:19.300  
+So this equals a statistical power of 80%.  
+也就是統計考驗力是80%    
+  
+22  
+00:01:19.300 --> 00:01:22.480  
+In 80% of the cases where you are sick  
+實際意義是測試結果為陽性的一群個案    
+  
+23  
+00:01:22.480 --> 00:01:24.510  
+the test will tell you that  
+you are actually sick.  
+其中80%是真的有生病    
+  
+24  
+00:01:25.570 --> 00:01:27.790  
+Of course we also have  
+a type one error rate.  
+當然別忘了型一錯誤率(偽陽率)    
+  
+25  
+00:01:27.790 --> 00:01:29.890  
+And we've seen that in medical science  
+如同上一週談到的醫學研究案例    
+  
+26  
+00:01:29.890 --> 00:01:34.510  
+this is often a little bit higher just  
+to be sure  
+型一錯誤率通常設定較高，避免發生憾事    
+  
+27  
+00:01:34.510 --> 00:01:38.480  
+So in this example  
+there's a 13% false positive rate.  
+這個案例的偽陽率有13%    
+  
+28  
+00:01:38.480 --> 00:01:41.630  
+Or  
+don't have this illness  
+也就是說有13%的陽性反應個案並沒有生病  
+  
+29  
+00:01:41.630 --> 00:01:44.500  
+will be identified by  
+the test as maybe being sick.  
+卻被診斷成可能有生病  
+  
+30  
+00:01:46.740 --> 00:01:49.770  
+If you get the test and  
+there's a positive result  
+就算測試結果是陽性    
+  
+31  
+00:01:49.770 --> 00:01:53.430  
+remember positive result in a test  
+in medicine is not very positive.  
+要記得不一定是真正的陽性    
+  
+32  
+00:01:53.430 --> 00:01:57.070  
+It means that you've been identified  
+as you might have an illness.  
+只是說現在的你有可能患病    
+  
+33  
+00:01:57.070 --> 00:02:01.939  
+Given a positive test result  
+is it that a patient is actually sick?  
+根據實際的陽性結果，有多少被篩選出來的患者是真的生病    
+    
+34  
+00:02:04.500 --> 00:02:08.060  
+Now let's visualize this by looking  
+at a large population of individuals.  
+這個問題能用視覺化的方式來理解    
+  
+35  
+00:02:09.080 --> 00:02:13.270  
+And in this population  
+we see that about 3% of the individuals  
+這一群人之中大約有3%是患病的    
+  
+36  
+00:02:13.270 --> 00:02:16.060  
+the red ones in the corner  
+are actually sick.  
+左上角的紅色小人是真正的患者    
+  
+37  
+00:02:16.060 --> 00:02:18.140  
+They actually have this illness.  
+應該要被診斷出來    
+  
+38  
+00:02:18.140 --> 00:02:21.900  
+And it means that 97% of the people  
+are not sick to begin with.  
+反過來說97%的人並沒有患病  
+  
+39  
+00:02:21.900 --> 00:02:25.620  
+So this is a situation where  
+the prior probability of being sick  
+醫生會認為對診斷出罹患此病的事前機率是非常低的  
+  
+40  
+00:02:25.620 --> 00:02:26.580  
+is actually quite low.  
+醫生會認為對診斷出罹患此病的事前機率是非常低的  
+  
+41  
+00:02:26.580 --> 00:02:31.110  
+And then we collect some data  
+we perform a test.  
+為確定診斷的正確性而收集一些資料  
+  
+42  
+00:02:31.110 --> 00:02:35.811  
+And in this test we see that a number  
+of individuals are identified as  
+收集到的資料顯示這些個案有陽性反應    
+(綠色方框內)  
+  
+43  
+00:02:35.811 --> 00:02:37.881  
+having a specific sickness.  
+收集到的資料顯示這些個案有陽性反應    
+(綠色方框內)  
+  
+44  
+00:02:37.881 --> 00:02:41.366  
+Now  
+actually have this sickness  
+其中四人是真正的患者    
+  
+45  
+00:02:41.366 --> 00:02:46.463  
+we can see that we had an 80% probability  
+of exactly determining that they had this.  
+記得一開始提到這道測試的結果有80%的正確率  
+  
+46  
+00:02:46.463 --> 00:02:50.405  
+So  
+the statistical power was 80%  
+也就是有80%的真陽率或統計考驗力  
+  
+47  
+00:02:50.405 --> 00:02:55.197  
+which means that four out of these five  
+will be correctly identified as being ill.  
+診斷出有陽性反應的五人裡有四人是真正患病    
+  
+48  
+00:02:55.197 --> 00:02:59.543  
+But we also had this large false  
+positive probability of 13%.  
+但是也要注意偽陽率高達13%    
+  
+49  
+00:02:59.543 --> 00:03:04.770  
+So we see that in this cluster of  
+individuals there's actually quite a large  
+因為高偽陽率，被誤診為患者的人數  
+  
+50  
+00:03:04.770 --> 00:03:10.334  
+number of people that are identified as  
+maybe being ill based on a type one error.  
+比真正生病的人更多    
+  
+51  
+00:03:10.334 --> 00:03:12.726  
+So  
+that we have observed  
+那麼根據手上的實際資料  
+  
+52  
+00:03:12.726 --> 00:03:14.968  
+what is now the probability  
+of actually being ill?  
+如何計算確診的機率?  
+  
+53  
+00:03:14.968 --> 00:03:18.527  
+And we can see that this is just  
+the probability of being one of the red  
+這裡可以用真正患者的比例    
+  
+54  
+00:03:18.527 --> 00:03:22.540  
+individuals  
+of one of the black individuals.  
+與未患病者的比例相除得知      
+    
+55  
+00:03:24.490 --> 00:03:26.070  
+We can also formally quantify this.  
+這可以用貝氏定理做詳細計算    
+  
+56  
+00:03:26.070 --> 00:03:27.630  
+So  
+就像前一講所做過的    
+  
+57  
+00:03:27.630 --> 00:03:31.700  
+we have the prior times the likelihood  
+which equals the posterior distribution.  
+把事前機率比乘上似然性比，就能獲得事後機率分配    
+  
+58  
+00:03:33.130 --> 00:03:39.085  
+In this case it means that before we  
+started  
+這個例子裡參與測試的個案共有175人  
+  
+59  
+00:03:39.085 --> 00:03:44.210  
+on this slide  
+ill to begin with  
+其中有5位真正患者，其餘170人健康(事前機率)    
+  
+60  
+00:03:45.590 --> 00:03:50.860  
+Then we have the data  
+correctly identified as being sick and  
+診斷為陽性的個案中有四位來自五位真正的患者  
+(確診的似然值)  
+  
+61  
+00:03:50.860 --> 00:03:54.440  
+22 out of 170 were identified  
+as maybe being sick.  
+其它22位是屬於170位健康人士  
+(誤診的似然值)  
+  
+62  
+00:03:54.440 --> 00:03:55.862  
+But these were all false positives.  
+但是這22位是偽陽性的    
+(誤診的似然值)  
+  
+63  
+00:03:55.862 --> 00:03:59.167  
+And if we combine this  
+then calculate the posterior probability  
+事先機率乘上似然性比，算出確診的事後機率  
+  
+64  
+00:03:59.167 --> 00:04:01.889  
+we actually see that it's based  
+on the outcome of the test.  
+因為這是根據實際資料計算得出    
+  
+65  
+00:04:01.889 --> 00:04:06.083  
+Now only 18% likely that  
+you're actually ill.  
+可知實際的確診率是18%  
+  
+66  
+00:04:06.083 --> 00:04:08.228  
+So this probability is surprisingly low.  
+這比原先預期的80%要低很多  
+  
+67  
+00:04:08.228 --> 00:04:12.870  
+And we see that many medical doctors  
+overestimate the probability that someone  
+一種疾病的確診患者越少，許多醫生傾向高估患病機率  
+  
+68  
+00:04:12.870 --> 00:04:17.520  
+is really sick  
+illness is very low in the population.  
+一種疾病的確診患者越少，許多醫生傾向高估患病機率  
+  
+69  
+00:04:18.590 --> 00:04:22.020  
+So at least some implicit  
+Bayesian statistics is useful.  
+由此可見貝氏統計多少起了作用    
+  
+70  
+00:04:22.020 --> 00:04:26.440  
+Realizing that if something is pretty  
+rare to begin with a positive test result  
+即使得知診斷出陽性結果的比例偏低    
+  
+71  
+00:04:26.440 --> 00:04:30.560  
+might not tell you so much yet and  
+follow up tests are definitely required.  
+也無法得知診斷正確的機率。    
+這時就需要以下介紹的統計方法。    
+    
+72  
+00:04:32.050 --> 00:04:36.170  
+So taking prior information into  
+account can lead to better inferences.  
+納入事前資訊有助統計推論    
+  
+  
+73  
+00:04:37.318 --> 00:04:41.561  
+I'll show you a very intuitive way to  
+do this when you're thinking about P  
+如果你想利用結果的p值更新你對研究問題的信念    
+  
+  
+74  
+00:04:41.561 --> 00:04:45.813  
+values and when you're using P values  
+to more or less update your belief.  
+我要介紹的方法對你會有很大的幫助    
+  
+  
+75  
+00:04:45.813 --> 00:04:47.908  
+Now P values were not meant to do this.  
+雖然p值不是為此目的而設計    
+  
+  
+76  
+00:04:47.908 --> 00:04:53.541  
+But there are some statistics that point  
+out an easy approach to give you the most  
+有些簡易的統計方法能根據手上的p值  
+  
+  
+77  
+00:04:53.541 --> 00:04:59.120  
+likely posterior probability of the  
+hypothesis being true  
+估計假設為真的事後機率  
+  
+  
+78  
+00:04:59.120 --> 00:05:02.153  
+And again  
+Bayesian statistics  
+再次提醒，這不是正統的貝氏統計    
+  
+  
+79  
+00:05:02.153 --> 00:05:06.359  
+it's a very easy way to at least use  
+a little bit of Bayesian thinking.    
+只是一種運用貝氏思維的簡易方法    
+  
+    
+80  
+00:05:08.470 --> 00:05:12.230  
+Now this is known as normal  
+crum this graph that we have.  
+這是Held(2010)提出的列線圖(nomogram)  
+  
+  
+81  
+00:05:12.230 --> 00:05:17.092  
+And there are three vertical lines  
+one in the left  
+圖中由左至右有三個垂直軸    
+  
+82  
+00:05:17.092 --> 00:05:18.276  
+one in the right.  
+圖中由左至右有三個垂直軸    
+  
+83  
+00:05:18.276 --> 00:05:22.808  
+This type of graph is very often  
+used in medical institutions.  
+許多醫護實務常常使用列線圖    
+  
+84  
+00:05:22.808 --> 00:05:24.096  
+Where for example  
+例如專業護理師看到有人咳嗽，需要計算這人是感冒還是感染伊波拉病毒的機率    
+  
+85  
+00:05:24.096 --> 00:05:29.038  
+nurses cannot be expected to perform  
+formal Bayesian statistics on the fly.  
+例如專業護理師看到有人咳嗽，需要計算這人是感冒還是感染伊波拉病毒的機率    
+  
+86  
+00:05:29.038 --> 00:05:33.142  
+When they see someone cough and  
+want to think about the probability  
+例如專業護理師看到有人咳嗽，需要計算這人是感冒還是感染伊波拉病毒的機率    
+  
+87  
+00:05:33.142 --> 00:05:37.108  
+that this person is either just  
+having the flu or having Ebola.  
+但是通常很難做貝氏統計分析    
+  
+88  
+00:05:37.108 --> 00:05:41.327  
+But using a graph like this can very  
+easily give you some indication of  
+只要有事前機率與收集好的資料    
+  
+89  
+00:05:41.327 --> 00:05:44.091  
+the posterior probability of a hypothesis  
+使用列線圖可以很快檢驗假設是否為真的事後機率    
+  
+90  
+00:05:44.091 --> 00:05:47.530  
+given a prior probability and  
+an observed test result.  
+使用列線圖可以很快檢驗假設是否為真的事後機率    
+  
+91  
+00:05:48.720 --> 00:05:50.060  
+Now  
+最左邊的垂直軸列出虛無假設為真的事前機率    
+  
+92  
+00:05:50.060 --> 00:05:53.500  
+we see the prior probability that  
+the null hypothesis is true.  
+最左邊的垂直軸列出虛無假設為真的事前機率    
+  
+93  
+00:05:55.210 --> 00:05:59.590  
+In the middle graph we see the P value  
+that we've observed and on the right  
+中間的垂直軸列出從資料算出的任何p值  
+  
+94  
+00:05:59.590 --> 00:06:03.450  
+we can get the posterior probability  
+that the null hypothesis is true.  
+連接兩軸上的兩個點就能找到虛無假設為真的事後機率    
+  
+95  
+00:06:05.020 --> 00:06:09.660  
+Now let's start by thinking of a situation  
+where before we collect some data  
+假想收集資料前，只能假設患者確實患病的機率是50%    
+  
+96  
+00:06:09.660 --> 00:06:13.250  
+think that anything goes  
+a person might be sick or not  
+假想收集資料前，只能假設患者確實患病的機率是50%    
+  
+97  
+00:06:13.250 --> 00:06:16.190  
+both of these are 50% probable.  
+假想收集資料前，只能假設患者確實患病的機率是50%    
+  
+98  
+00:06:16.190 --> 00:06:18.750  
+So here I've pointed an arrow at the 50%  
+所以在最左方垂直軸的50%做記號    
+(在Excel的B2欄輸入0.5)  
+  
+99  
+00:06:18.750 --> 00:06:21.640  
+prior probability that  
+the null hypothesis is true.  
+代表虛無假設為真的事前機率    
+(在Excel的B2欄輸入0.5)  
+  
+100  
+00:06:23.330 --> 00:06:25.260  
+We collect some data and  
+再配合從資料得到的p值就能升級患病機率的評估    
+  
+101  
+00:06:25.260 --> 00:06:30.383  
+then let's try to quickly use  
+this graph to update our belief.  
+再配合從資料得到的p值就能升級患病機率的評估    
+  
+102  
+00:06:30.383 --> 00:06:35.993  
+In this case we collected some data and  
+we found a P value of 0.05.  
+假如說得到的p值剛好是0.05  
+  
+  
+103  
+00:06:35.993 --> 00:06:39.554  
+So  
+of statistical significance  
+剛好是一般統計顯著水準，這個結果恰好達到顯著      
+  
+  
+104  
+00:06:39.554 --> 00:06:42.934  
+we got lucky it's just exactly  
+statistically significant.  
+剛好是一般統計顯著水準，這個結果恰好達到顯著      
+  
+  
+105  
+00:06:42.934 --> 00:06:46.483  
+But as many people who practice  
+Bayesian statistics will tell you  
+不過任何懂貝氏統計的朋友都會告訴你    
+  
+106  
+00:06:46.483 --> 00:06:48.660  
+such as a high P value  
+如此高的p值就算當做顯著結果  
+  
+107  
+00:06:48.660 --> 00:06:52.911  
+even though it's statistically significant  
+is actually not a lot of evidence.  
+還是不能做為真正的證據    
+  
+108  
+00:06:52.911 --> 00:06:54.969  
+And this graph nicely illustrates this.  
+這是只要在列線圖畫出一條線  
+  
+109  
+00:06:54.969 --> 00:06:59.315  
+If you had a 50% prior belief  
+that the null hypothesis is true  
+這條線連接50%的事先機率    
+  
+110  
+00:06:59.315 --> 00:07:01.061  
+you collected some data.  
+與資料分析得到的p值    
+  
+111  
+00:07:01.061 --> 00:07:07.935  
+Then on the right  
+line hits the vertical axis is actually  
+延伸到最右邊的垂直軸上標示29%的點  
+  
+112  
+00:07:07.935 --> 00:07:14.509  
+at about 29% posterior probability  
+that the null hypothesis is true.  
+而這就是虛無假設為真的事後機率    
+  
+113  
+00:07:14.509 --> 00:07:18.859  
+So we started out with a prior belief  
+that it was 50% likely that the null  
+小結一下：一開始虛無假設為真的事前機率是50%    
+  
+114  
+00:07:18.859 --> 00:07:20.135  
+hypothesis is true.  
+小結一下：一開始虛無假設為真的事前機率是50%    
+  
+115  
+00:07:20.135 --> 00:07:24.605  
+We observe some data and find a barely  
+statistically significant P value.  
+然而收集資料後獲得剛好顯著的p值    
+  
+116  
+00:07:24.605 --> 00:07:28.388  
+And then of course it make sense that our  
+prior belief that the null hypothesis is  
+通常都會得到比事前預估低一些的事後機率    
+  
+117  
+00:07:28.388 --> 00:07:30.180  
+true is a little bit lower.  
+通常都會得到比事前預估低一些的事後機率    
+  
+118  
+00:07:30.180 --> 00:07:32.350  
+But you see that it's not a lot lower.  
+但是這個例子得到的事後機率實在不夠低    
+  
+119  
+00:07:32.350 --> 00:07:36.160  
+It's actually still 29% likely  
+that the null hypothesis is true  
+以分析得到的p值為0.05來看  
+  
+120  
+00:07:36.160 --> 00:07:39.454  
+even though we've observed  
+the P value of 0.05.  
+實際是虛無假設為真的機率還有29%  
+  
+121  
+00:07:39.454 --> 00:07:44.130  
+Now this is one of these ways in  
+which you can use Bayesian thinking  
+這個案例顯示貝氏思維能在p值無法提供充分判斷時  
+  
+122  
+00:07:44.130 --> 00:07:47.290  
+to at least acknowledge that  
+a relatively high P value doesn't  
+這個案例顯示貝氏思維能在p值無法提供充分判斷時  
+  
+  
+123  
+00:07:47.290 --> 00:07:49.929  
+mean that the null hypothesis  
+is now completely unlikely.  
+能提供補充證據或說明    
+    
+124  
+00:07:51.880 --> 00:07:55.140  
+Let's say that you had the same prior  
+belief  
+再來看這個案例，事前機率也是50%  
+  
+125  
+00:07:55.140 --> 00:07:58.814  
+much lower P value of 0.001.  
+不過p值是0.001  
+  
+126  
+00:07:58.814 --> 00:08:02.590  
+In this case we can see that  
+the point where this line  
+這個例子畫出來的線連接到最右邊的2%  
+  
+127  
+00:08:02.590 --> 00:08:05.480  
+hits the right axis is around 2%.  
+這個例子畫出來的線連接到最右邊的2%  
+  
+128  
+00:08:05.480 --> 00:08:08.560  
+So  
+因為這筆資料的證據力較強    
+  
+129  
+00:08:08.560 --> 00:08:11.980  
+we now have a prior belief that  
+the null hypothesis is true of only 2%.  
+可以得知虛無假設確實為真的機率只有2%    
+  
+130  
+00:08:11.980 --> 00:08:13.790  
+So that's a huge drop  
+前後兩個案例的差別如此之大  
+  
+131  
+00:08:13.790 --> 00:08:18.130  
+we started out with the 50% prior belief  
+that the null hypothesis might be true.  
+雖然虛無假設為真的事前機率都是50%  
+  
+132  
+00:08:18.130 --> 00:08:19.091  
+We collect data and  
+收集資料後確知虛無假為真的機率只有2%    
+  
+133  
+00:08:19.091 --> 00:08:22.585  
+now we think it's only 2% likely  
+that the null hypothesis is true.  
+收集資料後確知虛無假為真的機率只有2%    
+  
+134  
+00:08:22.585 --> 00:08:25.160  
+So we've learned quite a lot.  
+至此你應該知道這張圖的用處  
+  
+135  
+00:08:25.160 --> 00:08:29.719  
+Now we can also used this graph in  
+a very interesting way to think okay  
+運用在你自己的研究裡    
+  
+136  
+00:08:29.719 --> 00:08:32.347  
+so what about hypothesis that a priori  
+只要在收集資料前評估假設為真的事前機率    
+  
+137  
+00:08:32.347 --> 00:08:36.540  
+before I collected some data I  
+found really unlikely to be true.  
+只要在收集資料前評估假設為真的事前機率    
+  
+138  
+00:08:37.660 --> 00:08:41.200  
+Now it's always a bit tricky  
+we're talking about subjective belief.  
+不過這需要一些技巧，因為通常只有主觀機率    
+  
+139  
+00:08:41.200 --> 00:08:44.160  
+So what is an unlikely hypothesis?  
+那麼能不能從最不可能為真的假設下手？    
+  
+140  
+00:08:44.160 --> 00:08:46.850  
+At least sometimes people in  
+the literature will identify  
+至少可從文獻中找到最不可能發現的結果    
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+141  
+00:08:46.850 --> 00:08:48.460  
+surprising results themselves.  
+至少可從文獻中找到最不可能發現的結果    
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+142  
+00:08:48.460 --> 00:08:52.480  
+They say we published this result and  
+this is a very surprising finding.  
+如果有研究者成功發表一些震驚全球的發現  
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+143  
+00:08:52.480 --> 00:08:54.770  
+So that means that before they started  
+至少代表在收集資料前  
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+144  
+00:08:54.770 --> 00:08:59.970  
+it was at least less likely to be true  
+than it was likely to be true.  
+假設不為真比假設為真的可能性更低  
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+145  
+00:08:59.970 --> 00:09:00.570  
+We're not at 50  
+所以事機率不會是50%  
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+146  
+00:09:00.570 --> 00:09:04.280  
+but the prior probability that a null  
+hypothesis was true was somewhat higher.  
+因此虛無假設為真的機率也許會比較高    
+(這段談話呼應第三週Dan Simons訪談篇)  
+  
+147  
+00:09:05.810 --> 00:09:10.960  
+Let's put this prior belief at about 75%  
+sounds about fair.  
+現在把事前機率提高到75%  
+  
+148  
+00:09:10.960 --> 00:09:15.250  
+So we have 75% probability that the null  
+hypothesis is true before we start.  
+表示收集資料前相信虛無假設有75%的機率為真    
+  
+149  
+00:09:15.250 --> 00:09:17.810  
+We're slightly skeptical  
+that something is going on.  
+因為我們懷疑能得到預期結果的可能性    
+  
+150  
+00:09:19.210 --> 00:09:23.370  
+We again collect some data and  
+we find a P value of 0.05.  
+分析收集的資料得到的p值也是0.05    
+  
+151  
+00:09:23.370 --> 00:09:27.850  
+Then the line continues on to the axis  
+on the right and again  
+直線連接到最右邊的垂直軸  
+  
+152  
+00:09:27.850 --> 00:09:33.670  
+the minimum posterior probability  
+that the null hypothesis is true.  
+卻發現連接到軸線的上限之外    
+  
+153  
+00:09:33.670 --> 00:09:38.499  
+And you see because we started with 75%  
+prior probability that the null hypothesis  
+這個例子的結論可以說根據虛無假設為真的機率有75%  
+  
+154  
+00:09:38.499 --> 00:09:41.900  
+is true  
+we observe a just significant result.  
+以及剛好達到顯著水準的結果  
+  
+155  
+00:09:41.900 --> 00:09:45.140  
+But after this  
+it's actually still more likely  
+實際上虛無假設為真的機率遠高於對立假設為真的機率  
+  
+156  
+00:09:45.140 --> 00:09:49.270  
+that the null hypothesis is true than  
+the alternative hypothesis is true.  
+實際上虛無假設為真的機率遠高於對立假設為真的機率  
+  
+157  
+00:09:49.270 --> 00:09:51.230  
+So this is an interesting observation.  
+這樣的結論非常具有啟發性  
+  
+158  
+00:09:51.230 --> 00:09:54.360  
+If though we observe  
+a statistically significant result  
+即使獲得統計顯著的結果    
+  
+159  
+00:09:54.360 --> 00:09:58.720  
+because beforehand this result was  
+actually very  
+因為事前已確信極不可能獲得肯定的證據    
+  
+160  
+00:09:58.720 --> 00:10:02.263  
+After collecting the data  
+we are still not convinced.  
+實際的資料也顯示不可確信  
+  
+161  
+00:10:02.263 --> 00:10:07.268  
+So this is an easy way without very formal  
+Bayesian statistics to at least give  
+演繹這種方法讓你知道不需要會做貝氏統計  
+  
+162  
+00:10:07.268 --> 00:10:11.973  
+you a rough estimates of the best case  
+scenario for the null hypothesis.  
+也能大略估計虛無假設為真的真實機率    
+  
+163  
+00:10:11.973 --> 00:10:15.615  
+Which might actually not be very  
+good based on very high P values.  
+特別是無法相信高p值的時候    
+  
+164  
+00:10:17.555 --> 00:10:20.303  
+This is inline with a claim by Laplace  
+這正是數學家拉普拉斯(Laplace)曾說過的  
+  
+165  
+00:10:20.303 --> 00:10:26.140  
+who says that extraordinary claims  
+require extraordinary evidence.  
+驚人的結論需要驚天的證據  
+  
+166  
+00:10:26.140 --> 00:10:29.210  
+So very high P values in a situation where  
+高p值的結果通常有這種特性    
+  
+167  
+00:10:29.210 --> 00:10:32.150  
+we think that the hypothesis  
+is extremely unlikely.  
+結果所支持的假設通常最不可能為真  
+  
+168  
+00:10:32.150 --> 00:10:34.737  
+Think about things like precognition.  
+想想超感知覺的案例    
+  
+169  
+00:10:34.737 --> 00:10:37.040  
+Do you think that precognition is true or not?  
+你認為真的有超感知覺存在嗎?  
+  
+170  
+00:10:37.040 --> 00:10:40.625  
+Well  
+belief that it is possible.  
+也許你或多或少相信真的存在  
+  
+171  
+00:10:40.625 --> 00:10:45.338  
+But you don't think that it's extremely  
+likely to be true otherwise we would have  
+但是多數人還是不相信為真，否則今天我們會看到大量支持原始研究的論文  
+  
+172  
+00:10:45.338 --> 00:10:47.263  
+seen some evidence for it by now.  
+但是多數人還是不相信為真，否則今天我們會看到大量支持原始研究的論文  
+  
+173  
+00:10:47.263 --> 00:10:51.480  
+So your prior belief that  
+precognition is real is pretty low.  
+所以多數人相信超感知覺存在的信念還是很低  
+  
+174  
+00:10:51.480 --> 00:10:56.035  
+Or in other words  
+that the null hypothesis that there is  
+也就是說多數人相信無超感知覺存在的虛無假設之信念非常高    
+  
+175  
+00:10:56.035 --> 00:11:00.246  
+no precognition  
+your belief is very high.  
+也就是說多數人相信無超感知覺存在的虛無假設之信念非常高    
+  
+176  
+00:11:00.246 --> 00:11:04.509  
+So if you want to show that there is  
+indeed something like precognition then  
+你若要改變世人對超感知覺的看法    
+  
+177  
+00:11:04.509 --> 00:11:07.203  
+you need to provide  
+extraordinary evidence.  
+就要提出真正驚天動地的證據    
+  
+178  
+00:11:07.203 --> 00:11:13.805  
+Extremely compelling data that will  
+lead you to slowly update your belief.  
+只是要改變信念必須要不斷收集資料    
+    
+179  
+00:11:13.805 --> 00:11:18.324  
+Now in this lecture I've talked about how  
+you can use Bayesian thinking even when  
+這一講介紹不需要熟悉貝氏統計也能運用貝氏思維在統計推論中的技巧    
+  
+180  
+00:11:18.324 --> 00:11:22.593  
+you don't want to use formal Bayesian  
+statistics when report your results.  
+這一講介紹不需要熟悉貝氏統計也能運用貝氏思維在統計推論中的技巧    
+  
+181  
+00:11:22.593 --> 00:11:26.368  
+Do you prefer to use frequentist  
+statistics for example and  
+即使你是次數主義的鐵粉    
+  
+182  
+00:11:26.368 --> 00:11:29.463  
+you don't want to quantify  
+your prior belief and  
+你不想計量預期結果的事前信念    
+  
+183  
+00:11:29.463 --> 00:11:32.802  
+update it based on the data  
+into a posterior belief.  
+也不想更新事後信念  
+  
+184  
+00:11:32.802 --> 00:11:36.383  
+It still makes sense to use  
+a little bit of Bayesian thinking.  
+貝氏思維技巧是有些用處    
+  
+185  
+00:11:36.383 --> 00:11:42.177  
+To keep in mind how likely the hypothesis  
+was before the data was collected and  
+切記只要了解假設為真的事前機率  
+  
+186  
+00:11:42.177 --> 00:11:47.544  
+weigh the evidence in relation to  
+the extraordinariness of the claim.  
+能評估研究結果是不是驚天證據  
+  
+187  
+00:11:47.544 --> 00:11:52.089  
+[MUSIC]  
+[課程結束]  

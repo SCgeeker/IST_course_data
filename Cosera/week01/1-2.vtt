@@ -1,0 +1,1893 @@
+WEBVTT  
+  
+1  
+00:00:00.000 --> 00:00:09.575  
+[什麼是p值]  
+  
+2  
+00:00:09.575 --> 00:00:12.311  
+If you read articles in  
+the scientific literature,  
+你一定常在閱讀科學文獻時  
+  
+3  
+00:00:12.311 --> 00:00:17.405  
+you'll often see people report P-values  
+when they report statistical tests.  
+發現統計檢定報告裡有很多p值(p-values)  
+  
+4  
+00:00:17.405 --> 00:00:21.660  
+P-values are widely used, and it's  
+important to understand what they mean.  
+p值被廣泛使用，當然要了解其意義  
+  
+5  
+00:00:21.660 --> 00:00:26.290  
+They're also widely criticized, because  
+people often misinterpret p-values.  
+p值也倍受批評，因為常有錯誤的推論  
+  
+6  
+00:00:26.290 --> 00:00:29.430  
+So in this lecture, the goal is  
+to understand what they mean and  
+這節課程要理解p值所指為何  
+  
+7  
+00:00:29.430 --> 00:00:30.830  
+how to correctly interpret them.  
+以及正確運用p值推論  
+  
+8  
+00:00:32.090 --> 00:00:36.120  
+When we talk about p-values, the first  
+question we should ask ourselves is  
+談到p值，首先要問的問題是  
+  
+9  
+00:00:36.120 --> 00:00:39.610  
+why are they so  
+popular in scientific articles?  
+為什麼許多科學文獻都會看到p值？  
+  
+10  
+00:00:40.610 --> 00:00:45.060  
+Well, there's a reason for this, and  
+Benjamini expresses it quite nicely.  
+以色列統計學者Yoav Benjamini有很好的回答  
+  
+11  
+00:00:45.060 --> 00:00:50.000  
+He says in some sense it offers  
+a first line of defense against  
+他說「起碼來說，p值是避免我們被隨機現象  
+  
+12  
+00:00:50.000 --> 00:00:55.030  
+being fooled by randomness,  
+separating the signal from the noise.  
+愚弄的第一道防線，也就是從噪音裡區辨信號」  
+  
+13  
+00:00:55.030 --> 00:00:57.670  
+So, this is what the p-values  
+allow you to do.  
+這是p值的基本功能  
+  
+14  
+00:00:57.670 --> 00:00:59.550  
+When you interpret your data,  
+你對資料進行推論時  
+  
+15  
+00:00:59.550 --> 00:01:05.780  
+you might be very likely to interpret data  
+in favor of the hypothesis that you have,  
+應該很期待資料支持你的假設  
+  
+16  
+00:01:05.780 --> 00:01:09.210  
+even when the effect might be only  
+slightly in the right direction.  
+即使期待的方向只有一點點效果  
+  
+17  
+00:01:09.210 --> 00:01:11.120  
+The risk is that you're fooling yourself.  
+冒下結論的後果可能是愚弄自已  
+  
+18  
+00:01:11.120 --> 00:01:14.830  
+You might be too likely to declare  
+that something is going on,  
+特別是從只存在隨機變異的資料裡  
+  
+19  
+00:01:14.830 --> 00:01:18.080  
+when you're actually looking  
+at random variation in data.  
+宣稱出現有意義的訊息  
+  
+20  
+00:01:18.080 --> 00:01:21.315  
+So, p-values are one way to  
+prevent you from fooling yourself.  
+因此p值是避免自已做傻事的一種設計  
+  
+21  
+00:01:21.315 --> 00:01:29.195  
+P-values tell you how surprising the data  
+is, assuming that there is no effect.  
+p值是在假設不存在效果的前提下，  
+告訴你資料之中有沒有驚喜(存在效果)  
+  
+22  
+00:01:29.195 --> 00:01:32.450  
+And we'll look at all these  
+aspects in more detail.  
+接下來要解釋這句話的意思  
+  
+23  
+00:01:32.450 --> 00:01:36.350  
+What surprising means,  
+why they're statements about the data, and  
+驚喜是指什麼？  
+為什麼p值能代表資料的狀態？  
+  
+24  
+00:01:36.350 --> 00:01:38.719  
+why they're built on the idea  
+that there is no effect.  
+為什麼要先假定不存在任何效果？  
+  
+25  
+00:01:41.060 --> 00:01:43.630  
+Now, some people say  
+that p-values are more  
+有些人會說p值是你了解貝式統計前  
+能正確解釋資料的工具  
+  
+26  
+00:01:43.630 --> 00:01:48.255  
+accurately explained as what you use if  
+you don't know Bayesian statistics yet.  
+有些人會說p值是你了解貝式統計前  
+能正確解釋資料的工具  
+  
+27  
+00:01:48.255 --> 00:01:52.810  
+In Bayesian statistics,  
+people don't use p-values.  
+使用貝式統計的人不使用p值推論  
+  
+28  
+00:01:52.810 --> 00:01:56.670  
+And I still remember when I  
+was doing my own PhD, that I  
+我還記得當我還在唸博士班時  
+  
+29  
+00:01:56.670 --> 00:02:02.010  
+had this confusion about whether I should  
+use p-values, or Bayesian statistics.  
+被到底該用p值還是貝氏統計所困擾  
+  
+30  
+00:02:02.010 --> 00:02:06.070  
+My understanding was, more or less,  
+that I realized there was some problem  
+當時的我或多或少以為，有些問題用p值較好  
+有些用貝氏統計較合適  
+  
+31  
+00:02:06.070 --> 00:02:11.040  
+with using p-values, and Bayesian  
+statistics might be preferable, but  
+當時的我或多或少以為，有些問題用p值較好  
+有些用貝氏統計較合適  
+  
+32  
+00:02:11.040 --> 00:02:13.310  
+most people didn't use  
+Bayesian statistics.  
+但是當時很少人使用貝氏統計  
+  
+33  
+00:02:13.310 --> 00:02:17.430  
+So, it was probably fine to  
+just continue using p-values.  
+所以那時就跟著一起用p值做統計推論  
+  
+34  
+00:02:17.430 --> 00:02:22.150  
+Now, I think it's fine to use p-values,  
+but you should interpret them correctly.  
+現在的我認為只要推論方法正確  
+p值還是很好用的  
+  
+35  
+00:02:22.150 --> 00:02:25.430  
+So, that's the goal in this lecture,  
+to prevent this confusion in you,  
+所以這一講的目標就是掃除你的困擾  
+  
+36  
+00:02:25.430 --> 00:02:29.270  
+and to make sure that you use p-values  
+correctly, if you decide to use them.  
+決定使用p值時，能正確使用p值推論  
+  
+37  
+00:02:31.280 --> 00:02:33.850  
+Let's start with a practical example.  
+用這個實際的例子來說明  
+  
+38  
+00:02:33.850 --> 00:02:38.420  
+Let's say you want to to do a study where  
+you examine the influence of calling  
+比方說你要研究開車時講電話的影響  
+  
+39  
+00:02:38.420 --> 00:02:39.545  
+while you are driving.  
+比方說你要研究開車時講電話的影響  
+  
+40  
+00:02:39.545 --> 00:02:43.620  
+Does being on the phone when you  
+are in your car increase the risk of  
+開車時講電話會增加出車禍的風險嗎？  
+  
+41  
+00:02:43.620 --> 00:02:45.530  
+getting into an accident?  
+開車時講電話會增加出車禍的風險嗎？  
+  
+42  
+00:02:45.530 --> 00:02:50.090  
+You might design a study where half of  
+the participants drive around the city  
+也許你會設計一個研究讓半數參與者在市區開車時  
+講電話，另一半開車時不講電話  
+  
+43  
+00:02:50.090 --> 00:02:54.120  
+while they're on the phone, and the other  
+half of the participants drive around, but  
+也許你會設計一個研究讓半數參與者在市區開車時  
+講電話，另一半開車時不講電話  
+  
+44  
+00:02:54.120 --> 00:02:54.820  
+they're not on the phone.  
+也許你會設計一個研究讓半數參與者在市區開車時  
+講電話，另一半開車時不講電話  
+  
+45  
+00:02:55.910 --> 00:02:57.570  
+You want to see if there's a difference,  
+你會想看到一些組間差異  
+  
+46  
+00:02:57.570 --> 00:03:01.810  
+maybe in the number of people they hit  
+while they're driving through the street.  
+像是一趟下來開車撞人的次數  
+  
+47  
+00:03:03.120 --> 00:03:06.610  
+Or maybe your ethical committee  
+doesn't allow you to do this,  
+不過倫理審查委員會大概不允許這麼做  
+  
+48  
+00:03:06.610 --> 00:03:10.299  
+and you're better off using  
+a driving simulator to study this.  
+所以最好用駕駛模擬器來做研究  
+  
+49  
+00:03:11.440 --> 00:03:15.530  
+Now, if you have collected your data, you  
+counted how many people get hit by a car,  
+假想你已收完資料，要清點每位講電話的駕駛  
+與沒講電話的駕駛撞到的人數  
+  
+50  
+00:03:15.530 --> 00:03:18.250  
+either by people who are on  
+the phone while they're driving or  
+假想你已收完資料，要清點每位講電話的駕駛  
+與沒講電話的駕駛撞到的人數  
+  
+51  
+00:03:18.250 --> 00:03:20.310  
+people who are not on the phone,  
+假想你已收完資料，要清點每位講電話的駕駛  
+與沒講電話的駕駛撞到的人數  
+  
+52  
+00:03:20.310 --> 00:03:23.300  
+then you can look at the difference  
+between these two conditions.  
+然後檢查這兩組駕駛之間的表現差異  
+  
+53  
+00:03:24.440 --> 00:03:27.420  
+Now, this difference  
+is never exactly zero.  
+兩組的表現差異永遠不會剛好等於零  
+  
+54  
+00:03:27.420 --> 00:03:33.140  
+There's always some number follow after  
+the comma that makes a difference.  
+小數點之後總是有除不盡的數字  
+  
+55  
+00:03:33.140 --> 00:03:38.290  
+So, let's say the difference you  
+observe is 0.11, a mean difference.  
+假定你收集到的資料，兩組平均差異是0.11  
+  
+56  
+00:03:38.290 --> 00:03:41.010  
+Now, how should you interpret  
+this mean difference?  
+你要如何解釋這樣的差異  
+  
+57  
+00:03:41.010 --> 00:03:42.980  
+There are two options.  
+你有兩種選擇  
+  
+58  
+00:03:42.980 --> 00:03:46.995  
+A, what you are looking at is  
+probably just random noise.  
+選擇A，這個數值純粹是隨機變異  
+  
+59  
+00:03:46.995 --> 00:03:49.760  
+There's always some random  
+noise in your data.  
+因為研究資料中總是存在隨機變異  
+  
+60  
+00:03:49.760 --> 00:03:53.850  
+Option B, this is probably a real  
+difference, this is something that  
+選擇B，可能真的有差異  
+  
+61  
+00:03:53.850 --> 00:03:59.070  
+you should take seriously, and at least  
+examine further in future studies.  
+不過要小心，並要在之後的研究再做檢驗  
+  
+62  
+00:03:59.070 --> 00:04:01.050  
+So, which of these two is true.  
+到底那個選擇才正確？  
+  
+63  
+00:04:01.050 --> 00:04:04.769  
+Well, we can use the p-value to  
+differentiate between these two options.  
+我們可以用p值評估兩種選擇的差異  
+  
+64  
+00:04:06.730 --> 00:04:11.370  
+From the data that we have, we can  
+calculate means, standard deviations, and  
+我們可以用手上資料計算平均值，標準差  
+還有樣本數  
+  
+65  
+00:04:11.370 --> 00:04:13.740  
+we know the sample size that we have.  
+我們可以用手上資料計算平均值，標準差  
+還有樣本數  
+  
+66  
+00:04:13.740 --> 00:04:18.010  
+We can use these parameters to  
+calculate a test statistic, and  
+我們可以使用這些參數(parameters)計算統計值  
+  
+67  
+00:04:18.010 --> 00:04:21.260  
+compare this test statistic  
+against a distribution.  
+統計值能拿來與機率分配(distribution)做比較  
+  
+68  
+00:04:22.350 --> 00:04:25.350  
+You can use many different  
+types of distributions.  
+能用的機率分配(distribution)相當多種  
+  
+69  
+00:04:25.350 --> 00:04:30.430  
+If you examine precognition, you might  
+want to use a paranormal distribution.  
+像是要檢驗預知能力，也許需要超常分配  
+(請介紹給前台大校長李教授)  
+  
+70  
+00:04:30.430 --> 00:04:34.300  
+But most often,  
+people just use the normal distribution.  
+不過大部分情況，我們只需要常態分配  
+  
+71  
+00:04:34.300 --> 00:04:38.360  
+So, this bell shaped graph is  
+something you might have seen before.  
+你可能曾在其它地方看過這樣的鐘型曲線  
+  
+72  
+00:04:38.360 --> 00:04:41.130  
+And there's something you  
+should note here, and  
+要特別注意的地方是  
+  
+73  
+00:04:41.130 --> 00:04:44.710  
+that's that this distribution  
+is centered on zero.  
+常態分配的中心位於0  
+  
+74  
+00:04:44.710 --> 00:04:49.930  
+And when we talk about the p-value  
+being data that is surprising,  
+我們說如果p值顯示資料之中有驚奇  
+  
+75  
+00:04:49.930 --> 00:04:54.120  
+assuming the null is true, the null  
+hypothesis is true, this is what we mean.  
+是建立虛無假設為真的前提，就是指中心位於0  
+的常態分配  
+  
+76  
+00:04:54.120 --> 00:04:56.150  
+We look at a distribution  
+centered at zero.  
+是建立虛無假設為真的前提，就是指中心位於0  
+的常態分配  
+  
+77  
+00:04:57.270 --> 00:05:01.950  
+Now, you can see that most of  
+the data in this case, let's look  
+如果虛無假設的確為真，就有95%的資料  
+屬於圖中的著色區域  
+  
+78  
+00:05:01.950 --> 00:05:07.220  
+at 95% of the data,  
+will fall between two critical values.  
+也就是剛好落於兩個臨界值之間  
+  
+79  
+00:05:07.220 --> 00:05:13.144  
+And these critical values, you might  
+have seen this number, 1.96 and -1.96.  
+圖中可以看到這兩個臨界值1.96 與 -1.96  
+  
+80  
+00:05:13.144 --> 00:05:17.930  
+These are critical values if you  
+want to use an alpha level of 0.05.  
+若你設定顯著水準為0.05，會得到這兩個臨界值  
+  
+81  
+00:05:17.930 --> 00:05:23.060  
+If data falls between these two values,  
+it's not surprising.  
+如果由資料算出來的統計值落在兩個臨界值之間  
+就沒有驚奇  
+  
+82  
+00:05:23.060 --> 00:05:25.450  
+Assuming that the null hypothesis is true,  
+再講一次，假設虛無假設確實為值  
+  
+83  
+00:05:25.450 --> 00:05:28.829  
+most of the data will fall between  
+these two critical values.  
+多數資料算出來的統計值落在兩個臨界值之間  
+  
+84  
+00:05:29.880 --> 00:05:35.020  
+But sometimes, we might see a data  
+point that's more extreme than this.  
+不過有時資料會落到臨界值之外  
+  
+85  
+00:05:35.020 --> 00:05:37.250  
+And this is a surprising find.  
+這就是出現驚喜的情況  
+  
+86  
+00:05:37.250 --> 00:05:42.080  
+This is surprising data whenever the mean  
+difference, or the test statistic that is  
+從平均值差異計算的統計值，只要落在任何一邊  
+的臨界值之外，就代表資料之中有驚喜  
+  
+87  
+00:05:42.080 --> 00:05:47.420  
+computed from this mean difference, is in  
+one of the two tails of this distribution.  
+從平均值差異計算的統計值，只要落在任何一側  
+的臨界值之外，就代表資料之中有驚喜  
+  
+88  
+00:05:47.420 --> 00:05:51.150  
+So, whenever we find that data that  
+falls in these tails, it's surprising.  
+只要我們發現資料出現在任一側  
+就代表出現驚喜  
+  
+89  
+00:05:51.150 --> 00:05:53.220  
+And we might want to examine it further.  
+再進一步檢查的話，會發現對應的p值小於0.05  
+  
+90  
+00:05:53.220 --> 00:05:56.030  
+It also means that the p-value's  
+smaller than 0.05.  
+再進一步檢查的話，會發現對應的p值小於0.05  
+  
+91  
+00:05:56.030 --> 00:06:03.960  
+The formal definition of a p-value is  
+the probability of getting the observed,  
+p值的正式定義是，在虛無假設為真的前提下  
+觀察值或「極端資料」屬於此分配的機率  
+  
+92  
+00:06:03.960 --> 00:06:07.920  
+or more extreme data,  
+assuming the null hypothesis is true.  
+p值的正式定義是，在虛無假設為真的前提下  
+觀察值或「極端資料」屬於此分配的機率  
+  
+93  
+00:06:09.080 --> 00:06:10.920  
+Now, I highlighted the word data here.  
+我特別把「資料」標示出來  
+  
+94  
+00:06:10.920 --> 00:06:14.560  
+I think it's important to realize that  
+we're talking about the probability of  
+是提醒大家，p值代表觀察到這項資料的「機率」  
+  
+95  
+00:06:14.560 --> 00:06:15.440  
+observing data.  
+是提醒大家，p值代表觀察到這項資料的「機率」  
+  
+96  
+00:06:16.830 --> 00:06:19.670  
+A p-value is the probability  
+that you'll observe some data,  
+p值是你會觀察到這項資料的機率  
+P(Data|Theory)  
+  
+97  
+00:06:19.670 --> 00:06:23.610  
+but not the probability of a theory.  
+不是你的理論為真的機率  
+P(Theory)  
+  
+98  
+00:06:23.610 --> 00:06:26.170  
+This is a very common misunderstanding.  
+後一句話是常見的誤解  
+  
+99  
+00:06:26.170 --> 00:06:28.980  
+People often want to make a statement  
+about the probability that  
+許多人想用理論為真的機率支持自已的主張  
+  
+100  
+00:06:28.980 --> 00:06:30.530  
+the theory is true.  
+許多人想用理論為真的機率支持自已的主張  
+  
+101  
+00:06:30.530 --> 00:06:31.990  
+But when you calculate a p-value,  
+但是你算出p值後，能主張的只是  
+獲得這項資料的機率  
+  
+102  
+00:06:31.990 --> 00:06:35.510  
+all you can do is make a statement  
+about the probability of the data.  
+但是你算出p值後，能主張的只是  
+獲得這項資料的機率  
+  
+103  
+00:06:37.110 --> 00:06:39.640  
+Now, if you make this mistake,  
+you're in good company.  
+如果現在的你也有同樣的誤解  
+那你並不孤單  
+  
+104  
+00:06:39.640 --> 00:06:44.160  
+Let's take a look at this example from  
+quantum physics, where a physicist talks  
+來看看量子力學的實際例子，物理學家想知道  
+觀察到不同地點的粒子同時自旋機率  
+  
+105  
+00:06:44.160 --> 00:06:49.180  
+about the probability of observing  
+a certain spin between quantum particles.  
+來看看量子力學的實際例子，物理學家想知道  
+觀察到不同地點的粒子同時自旋機率  
+  
+106  
+00:06:49.180 --> 00:06:53.320  
+So, this is a study where they  
+measured the spin in a particle levels  
+發表這篇論文的物理學家，有些人在台夫特(Delft)  
+  
+107  
+00:06:53.320 --> 00:06:56.460  
+floating around somewhere in Delft,  
+and another one that was floating  
+測量粒子自旋，同時另一批人在阿姆斯特丹  
+  
+108  
+00:06:56.460 --> 00:06:59.430  
+around somewhere in Amsterdam,  
+in the Netherlands, and  
+對另一顆粒子進行相同的測量  
+  
+109  
+00:06:59.430 --> 00:07:03.780  
+these two particles spin together,  
+they have some sort of relationship.  
+他們想從測量的結果，推論兩顆同時自旋的粒子  
+  
+110  
+00:07:03.780 --> 00:07:05.990  
+And this relationship, based on the data,  
+彼此之間存在什麼關係  
+  
+111  
+00:07:05.990 --> 00:07:10.334  
+was statistically significant  
+with a p-value of 0.04.  
+因為他們得到p值為0.04的統計顯著結果  
+  
+112  
+00:07:11.896 --> 00:07:16.080  
+Now, some physicist is interviewed  
+about this finding, and this physicist  
+其中某位物理學家接受訪問談他們的發現  
+  
+113  
+00:07:16.080 --> 00:07:21.910  
+concludes, in other words, there is  
+a 96% probability they won the race.  
+這位學者以統計結果宣稱有96%的機率，  
+他們的理論正確預測這兩顆粒子的關係  
+  
+114  
+00:07:23.370 --> 00:07:27.700  
+So, this person is making a mistake  
+here because, with won the race,  
+這樣的宣稱其實是錯誤的  
+  
+115  
+00:07:27.700 --> 00:07:32.980  
+this person means there's a 96%  
+probability that this theory is correct.  
+96%的機率在理論上是正確的  
+  
+116  
+00:07:32.980 --> 00:07:34.910  
+But this is a statement about a theory.  
+但是這只是基於理論做出的結論  
+  
+117  
+00:07:34.910 --> 00:07:37.890  
+It's not a statement about  
+the data that you have observed.  
+並不是基於觀察到的資料做出結論  
+  
+118  
+00:07:37.890 --> 00:07:40.812  
+So it's comforting, maybe,  
+that a quantum physicist,  
+聽完這例子你應該感到很欣慰  
+  
+119  
+00:07:40.812 --> 00:07:43.616  
+which sounds like you're  
+supposed to be really smart,  
+量子物理學家應該比一般人聰明  
+  
+120  
+00:07:43.616 --> 00:07:46.737  
+also makes this misinterpretation  
+of what a p-value means.  
+也會搞錯p值的真正意義  
+  
+121  
+00:07:48.258 --> 00:07:53.408  
+After you have observed a p-value  
+that's smaller than 0.05,  
+如果說你分析今天收完的資料確實發現  
+小於0.05的p值  
+  
+122  
+00:07:53.408 --> 00:07:57.669  
+for example,  
+an effect is not 95% likely to be true.  
+也不能說你發現的效果有95%的機率是真的  
+  
+123  
+00:07:57.669 --> 00:08:00.348    
+Think about pre-cognition research.    
+拿超感知覺(pre-cognition)的案例來說    
+(Bem, 2011. JPSP)    
+  
+124  
+00:08:00.348 --> 00:08:03.330    
+Let's say that I present    
+one study to you where you    
+你讀到其中一項實驗報告  
+  
+125  
+00:08:03.330 --> 00:08:07.120  
+find a statistically significant  
+effect of pre-cognition.    
+超常知覺的實驗效果有統計顯著    
+  
+126  
+00:08:07.120 --> 00:08:13.860  
+After this, do you really think it's now  
+95% probable that pre-cognition exists?  
+你能相信有95%的機率超感知覺確實存在？  
+  
+127  
+00:08:13.860 --> 00:08:19.160  
+Probably not,  
+you cannot get the probability  
+你應該不相信  
+你不可能把p值當成根據現在結果  
+  
+128  
+00:08:19.160 --> 00:08:24.512  
+that the null hypothesis is true,  
+given the data from a p-value.  
+支持(虛無)假設為真的真實機率  
+  
+129  
+00:08:24.512 --> 00:08:29.860  
+If you look at the two statements below on  
+the screen, you see that the probability  
+仔細看這張投影片最下面的不等式  
+  
+130  
+00:08:29.860 --> 00:08:35.240  
+of the data, or more extreme data,  
+assuming the null hypothesis is true.  
+左邊是(虛無)假設為真，  
+獲得超出臨界值資料的條件機率  
+  
+131  
+00:08:35.240 --> 00:08:39.090  
+It's not the same as  
+the probability of an hypothesis  
+右邊是現在獲得的資料，  
+能證實假設為真的條件機率  
+  
+132  
+00:08:39.090 --> 00:08:41.680  
+given some data that you have observed.  
+右邊是現在獲得的資料，  
+能證實假設為真的條件機率  
+  
+133  
+00:08:41.680 --> 00:08:43.558  
+This two probabilities can differ widely.  
+兩個條件機率不能彼此互換  
+  
+134  
+00:08:45.790 --> 00:08:49.127  
+If you want to know the probability  
+that the theory is true,  
+想知道理論為真的機率，必須使用貝式統計    
+  
+135  
+00:08:49.127 --> 00:08:51.770  
+you need to use Bayesian statistics.  
+想知道理論為真的機率，必須使用貝式統計    
+  
+136  
+00:08:51.770 --> 00:08:56.144  
+Bayesian statistics is the only  
+approach that will allow you to make  
+貝式統計是唯一能計算理論為真之機率的方法    
+  
+137  
+00:08:56.144 --> 00:08:59.988  
+statements about the probability  
+that the theory is true.  
+貝式統計是唯一能計算理論為真之機率的方法    
+  
+138  
+00:08:59.988 --> 00:09:06.004  
+What happens if you do a study and  
+your p-value is larger than 0.05?  
+當你的研究得到大於0.05的p值該怎麼辦？    
+  
+139  
+00:09:06.004 --> 00:09:10.332  
+Well first of course, you spend a lot of  
+time and effort collecting this data, and  
+也許你首先想到自已花了這麼久時間收集資料    
+  
+140  
+00:09:10.332 --> 00:09:14.070  
+maybe you hope to find  
+the statistically significant effect.  
+滿心期待能獲得顯著的統計效果    
+  
+141  
+00:09:14.070 --> 00:09:17.120  
+So the first thing you do is cry a little,  
+you're a little bit depressed.  
+看到不顯著的結果會想先躲起來哭哭    
+  
+142  
+00:09:17.120 --> 00:09:20.530  
+That's okay, But after this how  
+should you interpret this data?  
+療愈完畢還要面對如何用這份資料做推論？  
+  
+143  
+00:09:21.590 --> 00:09:24.875  
+Well, all that we know when  
+the p-value is larger than  
+再次提醒大於0.05的p值  
+代表的只是這次觀察的結果沒有驚喜  
+  
+144  
+00:09:24.875 --> 00:09:29.500  
+0.05 is that the data we have observed  
+is not surprising, that's all.    
+再次提醒大於0.05的p值    
+代表的只是這次觀察的結果沒有驚喜    
+  
+145  
+00:09:31.620 --> 00:09:34.810    
+It doesn't mean that    
+there is no true effect.    
+不顯著不是不存在真實效果    
+    
+146  
+00:09:34.810 --> 00:09:36.970    
+There might very well be in effect but    
+只是剛好參與你的研究的參與者人數不多  
+所以無法偵測到這個效果    
+   
+147  
+00:09:36.970 --> 00:09:42.080  
+you just didn't have enough participants  
+in your study to detect this effect.  
+只是剛好參與你的研究的參與者人數不多  
+所以無法偵測到這個效果    
+    
+148  
+00:09:42.080 --> 00:09:48.350    
+Remember that you need large samples    
+to statistically detect a small effect.    
+隨時記得小效果需要大樣本才能達到統計顯著    
+  
+149  
+00:09:48.350 --> 00:09:51.440  
+So just because your  
+p-value is larger than 0.05  
+不要因為p值大於0.05就妄下沒有效果的結論    
+(中研院前院長翁啟惠很了解這點)    
+  
+150  
+00:09:51.440 --> 00:09:54.360  
+doesn't allow you to conclude  
+that there is no effect.  
+不要因為p值大於0.05就妄下沒有效果的結論    
+(中研院前院長翁啟惠很了解這點)    
+  
+151  
+00:09:54.360 --> 00:09:57.150  
+There might be very small effect,  
+you don't know.  
+你並不清楚有沒有存在相當微小的效果    
+  
+152  
+00:09:59.340 --> 00:10:04.160  
+Personally, I try to think of  
+a p-value larger than 0.05 as mu,  
+我個人喜歡把大於0.05的p值當成「無」    
+(外國人發音類似mu，希臘字母μ)    
+  
+153  
+00:10:04.160 --> 00:10:06.830  
+which is a concept from Zen Buddhism.  
+這是源自禪宗的概念    
+  
+154  
+00:10:08.420 --> 00:10:12.020  
+In Zen Buddhism, there is a famous  
+saying that goes like this.  
+中國唐代趙州從諗禪師留下這一則公案  
+(狗子佛性)    
+  
+155  
+00:10:12.020 --> 00:10:18.140  
+A monk asked a Chinese Zen master,  
+does a dog have a Buddha-nature or not?  
+有僧人問禪師「狗子有佛性乎？」  
+  
+156  
+00:10:18.140 --> 00:10:19.630  
+So you might expect a yes or  
+由你來答的話，也許會想這是個是非題    
+不是有就是沒有    
+  
+157  
+00:10:19.630 --> 00:10:24.500  
+no answer here because that's also how  
+the question is phrased yes or no.  
+由你來答的話，也許會想這是個是非題    
+不是有就是沒有    
+  
+158  
+00:10:24.500 --> 00:10:29.670  
+But instead the Zen master answered mu,  
+which basically means I'm on  
+不過禪師會根據問者的角度回答    
+  
+159  
+00:10:29.670 --> 00:10:33.940  
+asking the question it's negating  
+the question that's asked.  
+這則公案點出這種問題沒有是非對錯    
+    
+160  
+00:10:33.940 --> 00:10:37.432  
+Whenever you find a p-value  
+that's larger than 0.05,  
+回頭看你發現自已的結果p值大於0.05    
+  
+161  
+00:10:37.432 --> 00:10:41.600  
+you might feel the tendency to say so  
+is there an effect or not?  
+你本來有一股勁要說「真的存在這個效果」    
+  
+162  
+00:10:41.600 --> 00:10:46.490  
+But whenever the p-value is larger than  
+0.05, you can't answer this question.  
+大於0.05的p值卻讓你說不出口    
+  
+163  
+00:10:46.490 --> 00:10:51.230  
+So you should just answer mu.  
+所以最好的答案應該是「無(這種問題)」    
+  
+164  
+00:10:51.230 --> 00:10:53.300    
+So how do you use p-values correctly?    
+那麼要如何正確使用p值推論？  
+  
+165  
+00:10:54.330 --> 00:10:58.060  
+The first thing to understand  
+is that p-values can be use  
+要先了解p值是提供研究者  
+長期行動準則  
+  
+166  
+00:10:58.060 --> 00:11:02.010  
+as a rule to guide  
+behavior in the long run.  
+要先了解p值是提供研究者  
+長期行動準則  
+  
+167  
+00:11:02.010 --> 00:11:07.310  
+You can calculate them for every single  
+study, but they only work in the long run.  
+每次研究都可以得到一個p值  
+但是要長期累積才能顯出意義  
+  
+168  
+00:11:07.310 --> 00:11:09.920  
+Let's take a look how.  
+我們來看怎麼回事  
+  
+169  
+00:11:09.920 --> 00:11:14.960  
+If you use the decision rule whenever the  
+p-value is smaller than the alpha level,  
+只要你採取判斷p值是否小於顯著水準的規則  
+  
+170  
+00:11:14.960 --> 00:11:19.597  
+so this is your type one error rate,  
+which is often set to 0.05,  
+就會得到型一錯誤率，通常我們設定為0.05  
+  
+171  
+00:11:19.597 --> 00:11:24.350  
+you can act as if the data is not noise.  
+這條規則說  
+「如果資料並非雜訊，你就能採取行動」  
+  
+172  
+00:11:24.350 --> 00:11:27.440  
+Now this word act is very important.  
+「採取行動」的真正意義很重要  
+  
+173  
+00:11:27.440 --> 00:11:32.050  
+It's independent of what you believe is  
+true, but all that you know is, if you use  
+這無關你相信什麼是真的，當你使用這規則  
+推論數萬筆沒有訊息的資料，除了其中5%  
+  
+174  
+00:11:32.050 --> 00:11:36.880  
+this decision rule in the long run,  
+you won't say that there is something,  
+這無關你相信什麼是真的，當你使用這規則  
+推論數萬筆沒有訊息的資料，除了其中5%  
+  
+175  
+00:11:36.880 --> 00:11:40.566  
+when there is nothing,  
+more than 5% of the time.  
+你都會宣稱沒有任何訊息  
+  
+176  
+00:11:42.060 --> 00:11:47.420  
+Alternatively, when the p-value is larger  
+than the alpha you can remain uncertain or  
+另一條規則說「得到大於顯著水準的p值，  
+  
+177  
+00:11:47.420 --> 00:11:50.620  
+act as if the data is just noise.  
+你可以保持不確定或視資料是一堆雜訊」  
+  
+178  
+00:11:50.620 --> 00:11:54.050  
+So these are rules that you  
+follow in the long run.  
+以上就是你的長期行動準則  
+  
+179  
+00:11:54.050 --> 00:11:59.360  
+When you act as if there is an effect  
+whenever the p-value is smaller than 0.05,  
+以小於0.05的p值宣稱存在一種效果，  
+你做上萬次資料分析出錯機率不會超過5%  
+  
+180  
+00:11:59.360 --> 00:12:06.910  
+in the long run you won't be  
+wrong more than 5% of the time.  
+以小於0.05的p值宣稱存在一種效果，  
+你做上萬次資料分析出錯機率不會超過5%  
+  
+181  
+00:12:06.910 --> 00:12:12.340  
+Now this is an interpretation of p-values  
+as proposed by name and it's often used.  
+p值的推論模式正如其名，  
+而且用途很廣泛  
+  
+182  
+00:12:12.340 --> 00:12:16.440  
+Let's take the discovery of  
+the Higgs boson as an example.  
+來看看宣稱發現希格斯玻色子的報告  
+  
+183  
+00:12:16.440 --> 00:12:20.522  
+If you're a remember, during the press  
+conference about the Higgs boson,  
+請找一下宣佈這項發現的新聞  
+(CERN, 2012/06/22)  
+  
+184  
+00:12:20.522 --> 00:12:25.170  
+researchers were talking about whether  
+the 5 sigma threshold was passed.  
+研究人員提到實驗結果超過5個標準差  
+  
+185  
+00:12:25.170 --> 00:12:31.320  
+And 5 sigma is used as a threshold to  
+declare something a discovery in physics.  
+物理學裡定義5個標準差  
+是確定事實存在的標準  
+  
+186  
+00:12:31.320 --> 00:12:38.670  
+Now 5 sigma is basically  
+a p-value smaller than 0.0000003.  
+換算成p值是小於0.0000003  
+  
+187  
+00:12:38.670 --> 00:12:44.110  
+So based on this idea,  
+we can act as if the Higgs boson is true.  
+根據規則，我們可以當希格斯玻色子存在  
+而採取行動(CERN發佈新聞)  
+  
+188  
+00:12:45.470 --> 00:12:46.040  
+Every now and  
+即使是如此高的標準，說不定那一天  
+我們會發現這個結論是錯誤的  
+  
+189  
+00:12:46.040 --> 00:12:50.650  
+then of course we'll be wrong with  
+such a high threshold for an error.  
+即使是如此高的標準，說不定那一天  
+我們會發現這個結論是錯誤的  
+  
+190  
+00:12:50.650 --> 00:12:55.310  
+We'll only be wrong in one of many  
+billions of parallel universes.  
+如果有上萬個平行宇宙  
+只有其中一個會確認這發現是錯的  
+  
+191  
+00:12:55.310 --> 00:12:59.050  
+So there's one parallel universe  
+where people spend the time and  
+想像在上萬個平行宇宙裡  
+  
+192  
+00:12:59.050 --> 00:13:03.640  
+effort to build a large Hadron Collider  
+to detect the Higgs boson and  
+都有建造偵測希格斯玻色子的大型強子對撞機  
+  
+  
+193  
+00:13:03.640 --> 00:13:05.970  
+they declared it was  
+a statistically significance.  
+而且都發現統計顯著的結果  
+  
+194  
+00:13:05.970 --> 00:13:09.430  
+So it was they were actually wrong but  
+根據如此高的標準，所有平行宇宙發現都是錯  
+的機率是相當微小  
+  
+195  
+00:13:09.430 --> 00:13:12.490  
+with such a high threshold this  
+of course rarely happens and  
+根據如此高的標準，所有平行宇宙發現都是錯  
+的機率是相當微小  
+  
+196  
+00:13:12.490 --> 00:13:16.240  
+we can be pretty safe that there is a  
+Higgs boson and we didn't make a mistake.  
+所以我們可以確信希格斯玻色子真的存在  
+而且相信不會發現任何反證  
+  
+197  
+00:13:18.560 --> 00:13:23.695  
+When you interpret p-values and  
+you want to write something about what you  
+在報告中如此寫下對p值的推論是錯的：  
+「因為p值小於.05，我們的理論獲得證實」  
+  
+198  
+00:13:23.695 --> 00:13:29.740  
+found you should not write, we found a  
+p-value smaller than 0.05, so our theory.  
+在報告中如此寫下對p值的推論是錯的：  
+「因為p值小於.05，我們的理論獲得證實」  
+  
+199  
+00:13:29.740 --> 00:13:34.559  
+Because if you do this, you're  
+making a statement about this theory  
+這麼做是依據p值做出對理論的陳述  
+稍早(8分24秒)已說明這是錯的  
+  
+200  
+00:13:34.559 --> 00:13:37.891  
+based on a p-value and  
+you shouldn't do this.  
+這麼做是依據p值做出對理論的陳述  
+稍早(8分24秒)已說明這是錯的  
+  
+201  
+00:13:37.891 --> 00:13:42.493  
+The correct way to discuss a p-value  
+smaller than 0.05 is to say we  
+正確的報告應該這樣寫：  
+「因為p值小於.05，我們的資料符合預期」  
+  
+202  
+00:13:42.493 --> 00:13:46.242  
+found the p-value smaller than 0.05,  
+so our data.  
+正確的報告應該這樣寫：  
+「因為p值小於.05，我們的資料符合預期」  
+  
+203  
+00:13:46.242 --> 00:13:50.974  
+You make a statement about the data  
+because that's what the p-value  
+這樣的報告是根據p值陳述資料的狀況  
+  
+204  
+00:13:50.974 --> 00:13:52.310  
+relates to.  
+這樣的報告是根據p值陳述資料的狀況  
+  
+205  
+00:13:52.310 --> 00:13:53.940  
+You might say something like, so  
+接著才能加些說明  
+  
+206  
+00:13:53.940 --> 00:13:58.280  
+our data is in line with some  
+idea that you want to test.  
+像是資料與要測試的理論預測一致  
+  
+207  
+00:14:01.150 --> 00:14:06.840  
+Whenever you found a known significant  
+result, a p-value larger than 0.05.  
+要是你做的研究p值大於0.05，是曾經有人  
+發現顯著統計結果的研究  
+  
+208  
+00:14:06.840 --> 00:14:10.680  
+You enter what's known as  
+a degenerative research line.  
+那你就是遇上了「退化性研究進程」  
+(degenerative research line:參考Imre Laktos)  
+  
+209  
+00:14:10.680 --> 00:14:13.350  
+You made a prediction but  
+it doesn't hold up.  
+事前有預測卻沒有符合的發現  
+  
+210  
+00:14:13.350 --> 00:14:16.020  
+So you have something to explain.  
+必須要花更多功夫解釋  
+  
+211  
+00:14:16.020 --> 00:14:19.045  
+Now one explanation might  
+just be random variation.  
+其中一種解釋是隨機變異  
+  
+212  
+00:14:19.045 --> 00:14:23.810  
+P-values vary and even if you have  
+examined a true effect, every now and  
+即使你檢視的是真實效果，p值變異有可能  
+導致你某次的研究出現不顯著的結果  
+  
+213  
+00:14:23.810 --> 00:14:26.660  
+then you'll observe  
+a non-significant result.  
+即使你檢視的是真實效果，p值變異有可能  
+導致你某次的研究出現不顯著的結果  
+  
+214  
+00:14:26.660 --> 00:14:30.120  
+So you might just say,  
+everything's fine, this happens.  
+第一次你也許會想「沒關係，剛好而己」  
+  
+215  
+00:14:30.120 --> 00:14:34.650  
+If I do another study that's exactly the  
+same, you'll see that it will pan out and  
+若是再作一次還是不顯著，你也許會想  
+「總會做出來的，理論應該沒問題」  
+  
+216  
+00:14:34.650 --> 00:14:36.550  
+my prediction will hold.  
+若是再作一次還是不顯著，你也許會想  
+「總會做出來的，理論應該沒問題」  
+  
+217  
+00:14:36.550 --> 00:14:37.930  
+Other times, you might need to say,  
+但是第三次還是不顯著，也許會開始想  
+  
+218  
+00:14:37.930 --> 00:14:41.950  
+well the effect that I predicted  
+might be smaller than I expected.  
+「實際的效果可能比我預期效果還小」  
+  
+219  
+00:14:41.950 --> 00:14:44.070  
+So you do another study,  
+but it's larger and  
+抱著這樣心態做最後一次，  
+搞不好發現了更大的效果  
+  
+220  
+00:14:44.070 --> 00:14:45.960  
+then you show that  
+the effect is really there.  
+這時總算可以宣佈確實有效果  
+  
+221  
+00:14:47.500 --> 00:14:50.790  
+Nevertheless, whenever you  
+find a non-significant result,  
+無論如何，一旦遇上了不顯著結果  
+  
+222  
+00:14:50.790 --> 00:14:53.010  
+there is something to think about.  
+必有一些事情要好好考慮  
+  
+223  
+00:14:53.010 --> 00:14:54.980  
+You have to explain it in some way.  
+你必須採取某種解釋方法  
+  
+224  
+00:14:54.980 --> 00:14:58.480  
+One way might be, if you do a lot of  
+studies, every now and then you will find  
+一種方法是持續累積大量不顯著的結果  
+但是需要進行相當多次才能支持你的看法  
+  
+225  
+00:14:58.480 --> 00:15:03.130  
+a non significant result, but then you  
+need a lot of studies to support this.  
+一種方法是持續累積大量不顯著的結果  
+但是需要進行相當多次才能支持你的看法  
+  
+226  
+00:15:03.130 --> 00:15:06.950  
+Other times you might say, I have to do  
+the study in a slightly different way, and  
+還有一種方法是改變一下研究設計  
+  
+227  
+00:15:06.950 --> 00:15:11.658  
+you can use this change in the paradigm  
+to develop a progressive research line.  
+因此而讓研究方法更容易偵測效果，就會促成  
+「進步性研究進程」(progressive research line)  
+  
+228  
+00:15:11.658 --> 00:15:14.683  
+Remember that p-values vary so  
+要做到如此，必須記得  
+要以整合分析的角度思考每個p值的意義  
+  
+229  
+00:15:14.683 --> 00:15:19.740  
+always think meta-analytically  
+about p-values.  
+要做到如此，必須記得  
+要以整合分析的角度思考每個p值的意義  
+  
+230  
+00:15:19.740 --> 00:15:23.980  
+This is also recommended by the  
+statisticians who talked about p-values in  
+開發p值運用方法的元祖統計學家也這樣建議  
+  
+231  
+00:15:23.980 --> 00:15:25.280  
+the very beginning.  
+開發p值運用方法的元祖統計學家也這樣建議  
+  
+232  
+00:15:25.280 --> 00:15:29.080  
+For example,  
+this is a quote by Neyman and Pearson.  
+就像這摘自尼曼與皮爾森(1928)論文的一段話  
+  
+233  
+00:15:29.080 --> 00:15:32.850  
+Statistical tests should  
+be used with discretion and  
+「統計檢定必須在有洞見與認識的狀況下使用，  
+而非被當作試誤的工具」  
+  
+234  
+00:15:32.850 --> 00:15:37.780  
+understanding, and not as instruments  
+which themselves give the final verdict.  
+「統計檢定必須在有洞見與認識的狀況下使用，  
+而非被當作試誤的工具」  
+  
+235  
+00:15:38.860 --> 00:15:42.070  
+So if you fail a statistical  
+test that's only one thing  
+如果資料無法通過計檢定  
+  
+236  
+00:15:42.070 --> 00:15:45.412  
+that should go into your reasoning to  
+decide whether this is a true effect.  
+要做的是反省判斷真實效果的推理過程  
+  
+237  
+00:15:45.412 --> 00:15:48.601  
+Always think more about your study.  
+永遠要先考慮自已的研究條件  
+  
+238  
+00:15:48.601 --> 00:15:53.358  
+P-value might be a starting points, but  
+you also want to look at effect sizes and  
+p值不過是分析的開始，也要檢視效果量  
+  
+239  
+00:15:53.358 --> 00:15:55.490  
+other studies that have been done.  
+還要參考曾在相同條件做過的研究  
+  
+240  
+00:15:55.490 --> 00:15:59.677  
+Fisher similarly says  
+that a single p-value was  
+費雪(1937)也有類似的看法  
+  
+241  
+00:15:59.677 --> 00:16:03.259  
+not enough to declare some discovery on.  
+主張一個p值不足以宣稱「真正發現某物」  
+  
+242  
+00:16:03.259 --> 00:16:08.197  
+He says, a phenomenon is experimentally  
+demonstrable when we know how  
+他說「能透過實驗呈現的現象，  
+是因為這項實驗極少出現  
+  
+243  
+00:16:08.197 --> 00:16:11.982  
+to conduct an experiment which  
+will rarely fail to give  
+他說「能透過實驗呈現的現象，  
+是因為這項實驗極少出現  
+  
+244  
+00:16:11.982 --> 00:16:14.881  
+us a statistically significant result.  
+不顯著的統計結果」  
+  
+245  
+00:16:14.881 --> 00:16:18.364  
+So we have to repeat  
+the experiment multiple times.  
+這也是為什麼必須多次重覆相同實驗  
+  
+246  
+00:16:18.364 --> 00:16:23.738  
+He also says, no isolated experiment,  
+however significant in itself,  
+費雪還說「就算單一實驗結果是顯著的，  
+也不能代表這項結果呈現任何自然現象」  
+  
+247  
+00:16:23.738 --> 00:16:29.382  
+can suffice for the experimental  
+demonstration of any natural phenomenon.  
+費雪還說「就算單一實驗結果是顯著的，  
+也不能代表這項結果呈現任何自然現象」  
+  
+248  
+00:16:29.382 --> 00:16:32.874  
+So he's saying that we  
+should see a single p-value,  
+他主張單一p值是提示有更多值得  
+探索的事實  
+  
+249  
+00:16:32.874 --> 00:16:36.756  
+maybe as an invitation to  
+explore this effect further, but  
+他主張單一p值是提示有更多值得  
+探索的事實  
+  
+250  
+00:16:36.756 --> 00:16:40.887  
+it can never be enough to declare  
+something a scientific fact.  
+並不能用來宣稱發現某項科學事實  
+  
+251  
+00:16:40.887 --> 00:16:43.267  
+So we always need to  
+do several studies and  
+我們必須儘可能多做重覆研究  
+  
+252  
+00:16:43.267 --> 00:16:47.424  
+p-values can guide us in the long run  
+in which studies we might want to do.  
+運用p值在過程中改進研究條件  
+  
+253  
+00:16:49.537 --> 00:16:51.445  
+So, at the end of this lecture,  
+終於來到這一講的尾聲  
+  
+254  
+00:16:51.445 --> 00:16:56.340  
+let's take a look at the p-values that you  
+can expect when there is a true effect.  
+假想要從這一堆p值找出預期的真實效果  
+  
+255  
+00:16:56.340 --> 00:17:00.554  
+And the p-values that you might  
+expect when there is no true effect.  
+以及從另一堆p值確定不存在真實效果  
+  
+256  
+00:17:00.554 --> 00:17:05.375  
+Now, I never really realized how  
+p-values are distributed across studies  
+只是沒人知道這些來自不同研究的p值  
+形成什麼的分配？  
+  
+257  
+00:17:05.375 --> 00:17:06.963  
+when you do a lot of them.  
+只是沒人知道這些來自不同研究的p值  
+形成什麼的分配？  
+  
+258  
+00:17:06.963 --> 00:17:09.590  
+And I think it's very important  
+to understand this for  
+如何正確推論p值的意義是這一講的重點  
+  
+259  
+00:17:09.590 --> 00:17:11.712  
+the correct interpretation of a p-value.  
+如何正確推論p值的意義是這一講的重點  
+  
+260  
+00:17:11.712 --> 00:17:13.755  
+So take a moment to think about this.  
+現在請你花點時間想想  
+  
+261  
+00:17:13.755 --> 00:17:17.749  
+What kind of p-values would you  
+expect when there is a true effect?  
+你會期待從什麼樣的p值發現真實效果？  
+  
+262  
+00:17:17.749 --> 00:17:22.637  
+What kind of p-values would you  
+expect when there is no effect?  
+還有從什麼樣的p值發現不存在真實效果？  
+  
+263  
+00:17:22.637 --> 00:17:25.539  
+Let's take a look what really happens.  
+現在來看看正確答案  
+  
+264  
+00:17:25.539 --> 00:17:27.580  
+When there is a true effect,  
+存在真實效果時，p值的分配形態  
+決定於統計考驗力  
+  
+265  
+00:17:27.580 --> 00:17:32.099  
+the p-value distribution depends  
+on the statistical power.  
+存在真實效果時，p值的分配形態  
+決定於統計考驗力  
+  
+266  
+00:17:32.099 --> 00:17:35.129  
+Let's take a look at  
+the visualization of this.  
+來看看模擬結果的視覺化  
+  
+267  
+00:17:35.129 --> 00:17:40.638  
+In this graph, you see the p-values for  
+100,000 studies,  
+這張圖是100,000項研究的p值次數分配  
+  
+268  
+00:17:40.638 --> 00:17:44.707  
+where every study had  
+50% statistical power.  
+而且每項研究統計考驗力都是50%  
+  
+269  
+00:17:44.707 --> 00:17:49.521  
+This means that it's 50% probable  
+that we'll observe a p-value  
+也就是說做一次這項研究有50%的機率  
+獲得小於0.05的p值  
+  
+270  
+00:17:49.521 --> 00:17:51.847  
+that's smaller than 0.05.  
+也就是說做一次這項研究有50%的機率  
+獲得小於0.05的p值  
+  
+271  
+00:17:51.847 --> 00:17:56.649  
+If we look at the p-value distribution,  
+we indeed see that it's much more likely  
+仔細看這張圖會發現  
+獲得微小p值的可能性比大p值高很多  
+  
+272  
+00:17:56.649 --> 00:18:00.625  
+to observe small p-values,  
+than it is to observe high p-values.  
+仔細看這張圖會發現  
+獲得微小p值的可能性比大p值高很多  
+  
+273  
+00:18:00.625 --> 00:18:07.422  
+And if we look at the leftmost bar,  
+we see that indeed 50,000 of the 100,000  
+特別是最左邊的這一條  
+是其中50,000項研究p值累積而成  
+  
+274  
+00:18:07.422 --> 00:18:12.966  
+simulated studies yield a p-value  
+that falls between 0 and 0.05.  
+這些p值都落在0與0.05之間  
+  
+275  
+00:18:12.966 --> 00:18:16.577  
+Now, we might want to increase  
+the statistical power a little bit.  
+接著把統計考驗力提高一些(80%)  
+  
+276  
+00:18:16.577 --> 00:18:21.054  
+You see that with higher power  
+we have basically pushed more of  
+會看到小於0.05的p值會增加  
+推高分配左側的高度  
+  
+277  
+00:18:21.054 --> 00:18:25.632  
+the p-values below the significance  
+threshold of 0.05.  
+會看到小於0.05的p值會增加  
+推高分配左側的高度  
+  
+278  
+00:18:25.632 --> 00:18:28.926  
+Here we have 80,000 of the 100,000  
+有顯著結果的模擬研究次數來到80,000次  
+  
+279  
+00:18:28.926 --> 00:18:32.552  
+simulated studies that  
+yield a significant effect.  
+有顯著結果的模擬研究次數來到80,000次  
+  
+280  
+00:18:32.552 --> 00:18:35.677  
+If we increase the statistical  
+power even more, to 95%,  
+若是再把統計考驗力增加到95%  
+  
+281  
+00:18:35.677 --> 00:18:38.681  
+we now see that most of  
+the p-values that we'll observe,  
+因為確實存在真實效果  
+  
+282  
+00:18:38.681 --> 00:18:42.629  
+given that there is a true effect,  
+will fall below the significance level.  
+幾乎所有研究的p值都在顯著水準之下  
+  
+283  
+00:18:44.661 --> 00:18:49.723  
+So which p-values can you  
+expect when there is no effect?  
+那麼如果沒有真實效果的p值分配是什麼樣子？  
+  
+284  
+00:18:49.723 --> 00:18:52.301  
+I really never knew this myself.  
+以前我從未仔細想過  
+  
+285  
+00:18:52.301 --> 00:18:55.285  
+I thought that p-values might  
+be distributed in a way that,  
+我以為這種情況大於顯著水準的p值  
+會比較多，次數分配右側會比較高  
+  
+286  
+00:18:55.285 --> 00:18:58.454  
+if there's no effect,  
+we'll see a lot of very high p-values.  
+我以為這種情況大於顯著水準的p值  
+會比較多，次數分配右側會比較高  
+  
+287  
+00:18:58.454 --> 00:19:01.939  
+Or I thought that it's possible  
+that maybe they're distributed  
+或者是變成中間較高的常態分配  
+  
+288  
+00:19:01.939 --> 00:19:05.167  
+as sort of a normal distribution,  
+but instead it turns out,  
+或者是變成中間較高的常態分配  
+  
+289  
+00:19:05.167 --> 00:19:08.926  
+that when there is no effect,  
+p-values are uniformly distributed.  
+結果出乎我的意料，  
+實際是形成均勻分配  
+  
+290  
+00:19:08.926 --> 00:19:11.608  
+Every p-value is equally likely.  
+也就是獲得任何p值的可能性是相同的  
+  
+291  
+00:19:11.608 --> 00:19:15.428  
+And it also makes a lot of  
+sense if you understand it.  
+數據模擬也能讓我們了解這是怎麼回事  
+  
+292  
+00:19:15.428 --> 00:19:20.466  
+In this case, we have simulated 100,000  
+studies where there is no true effect.  
+這是100,000項沒有真實效果的研究模擬結果  
+  
+293  
+00:19:20.466 --> 00:19:24.380  
+And you see that, no matter where  
+you look in the distribution,  
+如圖所示橫軸上的任何一個p值  
+  
+294  
+00:19:24.380 --> 00:19:28.384  
+low p-values or high p-values,  
+they're all equally likely.  
+從高到低出現的可能性都是相等的  
+  
+295  
+00:19:28.384 --> 00:19:31.175  
+Now this makes sense because in this way,  
+這樣的結果是很合理的  
+  
+296  
+00:19:31.175 --> 00:19:36.281  
+when there is a uniform distribution  
+it means that 5% of the p-values that  
+沒有真實效果的研究考驗力接近顯著水準  
+  
+297  
+00:19:36.281 --> 00:19:41.179  
+we observe when there is no effect,  
+fall below the 0.05 threshold.  
+造成僅有其中5%的p值出現在顯著水準之下  
+  
+298  
+00:19:41.179 --> 00:19:45.735  
+So when there's no effect, we have a 5%  
+probability of making a type one error of  
+沒有真實效果的研究會有5%的型一錯誤率  
+  
+299  
+00:19:45.735 --> 00:19:50.176  
+saying there is a significant effect  
+when there's actually nothing going on.  
+也就是沒有效果卻出現顯著結果的情況  
+  
+300  
+00:19:50.176 --> 00:19:55.134  
+So here you can see this small type  
+one error rate highlighted in red.  
+把最左邊的這一條挑出來仔細看  
+  
+301  
+00:19:55.134 --> 00:19:58.419  
+So this is what it means  
+to make a type one error.  
+高度恰好等於型一錯誤率  
+  
+302  
+00:19:58.419 --> 00:20:02.796  
+The reason that it's 5% is because  
+there's a uniform p-value distribution.  
+為何顯著水準約定俗成0.05，  
+正是因為這樣的均勻分配  
+  
+303  
+00:20:02.796 --> 00:20:07.406  
+If you would increase your  
+alpha level to 0.10 there's  
+就算把顯著水準提高到0.10  
+  
+304  
+00:20:07.406 --> 00:20:11.840  
+still 10% of the p-values  
+that fall below 0.10.  
+數據模擬告訴我們只有10%的p值落於0.10之下  
+  
+305  
+00:20:11.840 --> 00:20:16.624  
+To conclude, it's important to understand  
+how to correctly interpret the p-value.  
+總歸一句，正確推論p值的意義是很重要的  
+  
+306  
+00:20:16.624 --> 00:20:21.790  
+Its use is often criticized because people  
+incorrectly interpret what p-values mean.  
+p值的用途常被人詬病  
+是因為多數人錯誤推論p值的意義  
+  
+307  
+00:20:21.790 --> 00:20:25.889  
+And I hope that after this lecture,  
+you won't be one of them.  
+希望上完這一講的你不再犯和多數人一樣的錯誤  
+  
+308  
+00:20:25.889 --> 00:20:30.100  
+[課程結束]  

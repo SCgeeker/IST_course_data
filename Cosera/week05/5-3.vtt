@@ -1,0 +1,739 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:09.029
+[MUSIC]
+P-Curve
+
+2
+00:00:09.029 --> 00:00:11.763
+In this lecture we'll talk about P-curve Analysis.
+這一講介紹P-Curve分析
+
+3
+00:00:11.763 --> 00:00:17.112
+A recently developed math analytical tool that allows you to judge
+這是最近發展出來，
+用來評估一系列文獻證據力的工具
+
+4
+00:00:17.112 --> 00:00:22.568
+the evidential value is sets of study in the published literature.
+這是最近發展出來，
+用來評估一系列文獻證據力的工具
+
+5
+00:00:22.568 --> 00:00:27.550
+What do p-values look like from 100 studies where there is no true effect?
+第三週曾預告一百項沒有真實效果的研究結果
+用P-Curve分析的模樣
+
+6
+00:00:29.180 --> 00:00:31.820
+We've discussed this in an earlier lecture.
+第三週曾預告一百項沒有真實效果的研究結果
+用P-Curve分析的模樣
+
+7
+00:00:31.820 --> 00:00:32.875
+If you remember correctly,
+你還記得的話
+
+8
+00:00:32.875 --> 00:00:37.040
+p-values are uniformly distributed if there's no true effect.
+那些研究的p值是均勻分佈
+
+9
+00:00:38.070 --> 00:00:40.070
+Now if you've watched enough medical series,
+如果你看過大量醫學文獻
+
+10
+00:00:40.070 --> 00:00:43.430
+you know that the flat line is no good news, right?
+就會知道平坦的曲線不是好事
+
+11
+00:00:43.430 --> 00:00:46.140
+So in this case, if we see a p-value distribution,
+一系列文獻的p值分佈呈現均勻分配的話
+表示沒什麼值得探討的東西
+
+12
+00:00:46.140 --> 00:00:48.638
+that's uniformly distributed then nothing is going on.
+一系列文獻的p值分佈呈現均勻分配的話
+表示沒什麼值得探討的東西
+
+13
+00:00:48.638 --> 00:00:53.140
+What do p-values look like from 100 studies where there is a true effect?
+那麼100項沒有真實效果的研究結果p值分佈是什麼樣子？
+
+14
+00:00:54.450 --> 00:00:58.170
+Well in this case we know that the p-value distribution depends on the statistical
+我們已經知道p值分佈與統計檢定力有關
+
+15
+00:00:58.170 --> 00:00:59.100
+power of the test.
+我們已經知道p值分佈與統計檢定力有關
+
+16
+00:01:00.350 --> 00:01:05.197
+In general we can expect more low p-values around 0.01 for
+一般而言，文獻中最常看到的p值是.01到.05之間
+
+17
+00:01:05.197 --> 00:01:08.863
+example then high p-values around 0.05.
+一般而言，文獻中最常看到的p值是.01到.05之間
+
+18
+00:01:08.863 --> 00:01:13.398
+Even though all these p-values are statistically significant, they're all
+即使所有p值都指出統計顯著的結果
+
+19
+00:01:13.398 --> 00:01:18.470
+smaller than 0.05 they're not all equally likely if there is a true effect.
+小於.05也不能保證確實有效果存在
+
+20
+00:01:18.470 --> 00:01:23.383
+We should find low p-values more
+often than relatively high p-values.
+除非偏低的p值數量多於偏高的p值
+
+21
+00:01:23.383 --> 00:01:27.191
+P-curve analysis allows you to test whether a set of p-values has
+P-Curve分析能檢驗一系列p值的證據力
+
+22
+00:01:27.191 --> 00:01:29.270
+evidential value.
+P-Curve分析能檢驗一系列p值的證據力
+
+23
+00:01:29.270 --> 00:01:33.978
+In this case evidential value is defined as does the p-value distribution
+那麼證據力應該是指沒有真實效果時，
+p值分佈近似均勻分配
+
+24
+00:01:33.978 --> 00:01:38.684
+look more like a uniform distribution, where there's no true effect, or
+那麼證據力應該是指沒有真實效果時，
+p值分佈近似均勻分配？
+
+25
+00:01:38.684 --> 00:01:42.737
+more like a p-value distribution where these is a true effect?
+還是有真實效果時，p值分佈近似均勻分配？
+
+26
+00:01:42.737 --> 00:01:48.820
+An important benefit of P-curve analysis is that it's a key to the file-drawer.
+P-curve最吸引人的特點是能評估抽屜效應
+
+27
+00:01:48.820 --> 00:01:53.920
+The test is only performed on p values smaller than 0.05.
+就算分析內容只有小於0.05的p值
+
+28
+00:01:53.920 --> 00:01:56.170
+Given publication bias,
+因為出版偏誤的緣故
+
+29
+00:01:56.170 --> 00:02:00.120
+where we know studies are much more likely to be published when they
+統計顯著的研究比統計不顯著的研究更容易被發表
+
+30
+00:02:00.120 --> 00:02:04.620
+are statistically significant, than when they are not statistically significant.
+統計顯著的研究比統計不顯著的研究更容易被發表
+
+31
+00:02:04.620 --> 00:02:08.380
+An important benefit of P-Curve analysis is that you only need
+P-Curve分析的優點是就算資料都是統計顯著的
+
+32
+00:02:08.380 --> 00:02:13.280
+the statistically significant study results to perform the test.
+P-Curve分析的優點是就算資料都是統計顯著的
+
+33
+00:02:13.280 --> 00:02:16.800
+So you can perform it even though there is publication bias and
+也能讓文獻的出版偏誤現形
+
+34
+00:02:16.800 --> 00:02:18.180
+that's a huge important benefit.
+這是P-Curve引起注意的一大亮點
+
+35
+00:02:20.560 --> 00:02:23.250
+Another useful thing about P-curve analysis is that you can
+P-Curve分析的另一個好處是不需要安裝統計軟體
+
+36
+00:02:23.250 --> 00:02:27.900
+perform the test online, you don't need any statistical software.
+到官網輸入資料就能完成
+
+37
+00:02:27.900 --> 00:02:31.710
+Go to the online test, enter test statistics and
+在網頁中輸入要分析的檢定方法
+
+38
+00:02:31.710 --> 00:02:33.790
+perform all the required calculations.
+還有必要的統計數值就好
+
+39
+00:02:35.010 --> 00:02:38.420
+The question we're trying to address with a p-curve analysis is
+P-Curve分析回答的首要問題是
+
+40
+00:02:38.420 --> 00:02:42.900
+does the p-value distribution look like one with, or one without a true effect.
+有真實效果和沒有真實效果的p值分佈
+看起來會不會一樣？
+
+41
+00:02:43.980 --> 00:02:47.620
+A good moment to perform a p-curve analysis is before you set out
+最好的檢驗方法是拿設計研究的參考文獻試試看
+
+42
+00:02:47.620 --> 00:02:50.650
+to build on studies in the published literature.
+最好的檢驗方法是拿設計研究的參考文獻試試看
+
+43
+00:02:50.650 --> 00:02:53.800
+You might want to know whether this studies in the public
+可以先了解這些文獻能被發表出來
+
+44
+00:02:53.800 --> 00:02:56.980
+literature are just there due to publication bias, and
+是因為出版偏誤
+
+45
+00:02:56.980 --> 00:03:00.720
+they are all basically type one errors, there's no true effect.
+還是被型一錯誤膨脹出來的虛假效應
+
+46
+00:03:00.720 --> 00:03:03.730
+Or whether the results look robust enough to build on.
+也可以檢討這些研究結果夠不夠穩定
+
+47
+00:03:06.090 --> 00:03:10.870
+So we're trying to differentiate between these two possible p-value distributions,
+了解P-Curve分析結果的首要功課是區辨兩種p值分佈
+
+48
+00:03:10.870 --> 00:03:13.860
+uniform or what's known as ride scheme.
+均勻分佈和正偏態分佈
+
+49
+00:03:13.860 --> 00:03:17.530
+The green line in this case illustrates a true effect.
+綠線是有真實效果的P-Curve
+
+50
+00:03:17.530 --> 00:03:18.920
+Now let's take a look at an example.
+我們用這個實例進一步說明
+
+51
+00:03:20.340 --> 00:03:24.700
+I perform the p-curve analyze of two related lines of research.
+下一張展示兩個項研究的P-Curve
+
+52
+00:03:24.700 --> 00:03:26.880
+On the one hand elderly priming studies and
+一項是"老年印象"促發
+
+53
+00:03:26.880 --> 00:03:28.870
+on the other hand professor priming studies.
+另一項是“教授印象”促發
+
+54
+00:03:29.940 --> 00:03:32.930
+Now the evidence in these studies was debated
+這兩項研究過去一直存在難以再現的爭議
+
+55
+00:03:32.930 --> 00:03:36.690
+by the publication of field replication studies.
+這兩項研究過去一直存在難以再現的爭議
+
+56
+00:03:36.690 --> 00:03:40.170
+Some people responded to these field replications by indicating that there
+原研究者對再現不易的回應是
+
+57
+00:03:40.170 --> 00:03:43.969
+are many, many different studies in the literature that show related effects.
+已經存在許多類似效果且正面支持的文獻
+
+58
+00:03:45.240 --> 00:03:49.220
+Now this is a valid reply, except that if you want to say that there's evidence
+雖然這樣的回應有理，但是要檢視相關文獻證據力
+
+59
+00:03:49.220 --> 00:03:52.290
+in the published literature, then you need to quantify this.
+最好能呈現數據說明
+
+60
+00:03:52.290 --> 00:03:56.260
+You can do this either by performing traditional data analysis or
+可以用傳統的資料分析方法
+
+61
+00:03:56.260 --> 00:03:59.880
+you can perform a p-curve analysis and that's what I did in this case.
+或者用這一講介紹的P-Curve
+
+62
+00:04:01.820 --> 00:04:06.215
+Now this is the P-Curve analysis for
+Elderly Priming Studies.
+黑色實線是"老年印象"促發的P-Curve
+
+63
+00:04:06.215 --> 00:04:10.470
+ElderyPpriming examines the idea that if you expose most people to elderly related
+"老年印象"促發是讓參與者持續看有關老年的字詞
+
+64
+00:04:10.470 --> 00:04:16.270
+words, such as engl, grey or Florida, this will influence their behavior.
+像是"灰頭髮"和“佛羅里達州”
+行為就會被影響
+
+65
+00:04:16.270 --> 00:04:19.270
+More specifically, it will influence their walking speed.
+特別之處是參與者的走路速度會變慢
+
+66
+00:04:19.270 --> 00:04:22.750
+The idea being that elderly people walk more slowly.
+符合老年人走路慢的想法
+
+67
+00:04:22.750 --> 00:04:26.320
+So, people who were primed with elderly related words
+這系列的原始研究發現讀老年相關字詞的參與者
+
+68
+00:04:26.320 --> 00:04:30.200
+would walk more slowly to an elevator than people in the control condition.
+走向出口電梯的速度比控制組慢
+
+69
+00:04:31.870 --> 00:04:35.040
+If we take a look at the p-value distribution of the studies in
+現在來看這一系列研究結果的p值分佈
+
+70
+00:04:35.040 --> 00:04:39.838
+the literature, we see that the p-value distribution is not uniformly distributed,
+這條分佈既不是均勻分配
+
+71
+00:04:39.838 --> 00:04:41.870
+it's not right-skewed.
+也不是正偏態分配
+
+72
+00:04:41.870 --> 00:04:46.060
+Now, actually, we see that a lot of these P-values are only barely significant.
+多數研究結果的p值只是剛好顯著
+
+73
+00:04:47.390 --> 00:04:51.240
+This is not an indication that the studies published in the literature provide
+這一系列研究的結果實際上無法充分支持假設
+
+74
+00:04:51.240 --> 00:04:53.530
+support for the hypothesis.
+這一系列研究的結果實際上無法充分支持假設
+
+75
+00:04:53.530 --> 00:04:57.470
+The hypothesis might still be true, but the data that we have available
+假設或許是對的，但是文獻資料無法說服所有讀者
+效應確實存在
+
+76
+00:04:57.470 --> 00:05:01.030
+does not give us any reason to believe that this is a true effect.
+假設或許是對的，但是文獻資料無法說服所有讀者
+效應確實存在
+
+77
+00:05:02.400 --> 00:05:05.390
+Now let's take at look professor priming studies.
+接著來看“教授印象”促發的研究
+
+78
+00:05:05.390 --> 00:05:10.160
+In this line of research, people are asked to think about a professor, or
+這一系列研究的實驗組參與者要想像自己是一位教授
+
+79
+00:05:10.160 --> 00:05:14.860
+in the control condition, they're asked to think about a group that's stereotypically
+對比控制組的參與者
+想像自己是比較不常動腦的樣板人物
+
+80
+00:05:14.860 --> 00:05:18.020
+seen as less intelligent such as soccer hooligans.
+像是啦啦隊員
+
+81
+00:05:19.410 --> 00:05:23.650
+The idea in this study is that participants who thought about a professor
+原始想法是想像自己是教授的參與者
+
+82
+00:05:23.650 --> 00:05:27.510
+are more likely to perform better on a general knowledge test,
+做常識測驗的表現會比
+
+83
+00:05:27.510 --> 00:05:30.830
+such as trivial pursuit, than people in the control condition.
+控制組的參與者更好
+
+84
+00:05:32.350 --> 00:05:36.580
+If we look at the P-value distribution, in this case, the distribution is very
+這系列研究的p值分佈
+
+85
+00:05:36.580 --> 00:05:40.110
+similar to that that we would expect when there is a true effect.
+非常接近存在真實效應的分配
+
+86
+00:05:41.310 --> 00:05:45.160
+Now this illustrates how useful it is to perform a p-curve analysis
+這兩個例子示範P-Curve如何幫助我們
+
+87
+00:05:45.160 --> 00:05:48.450
+before you want to build on studies in the published literature.
+選擇真正有參考價值的文獻
+
+88
+00:05:48.450 --> 00:05:52.356
+Let's say that you're interested in priming effects, would you build on
+如果你想設計類似的促發效應研究
+
+89
+00:05:52.356 --> 00:05:56.516
+elderly priming research, or would you build on professor priming research?
+應該參考"老年印象"，還是“教授印象”？
+
+90
+00:05:56.516 --> 00:06:01.825
+Now, these p-curve analyses do not prove that professor priming is a real effect,
+雖然P-Curve不能直接指出“教授印象”有真實效果
+
+91
+00:06:01.825 --> 00:06:04.464
+and elderly priming is not a real effect.
+"老年印象"沒有真實效果
+
+92
+00:06:04.464 --> 00:06:08.343
+But if you're thinking about doing research on priming, and
+如果你想設計促發實驗
+
+93
+00:06:08.343 --> 00:06:13.191
+you have to decide between these two research areas, then it's a much better
+有必要從兩種研究模式選擇一種
+而P-Curve可以告訴你
+
+94
+00:06:13.191 --> 00:06:18.360
+bet to build on professor priming related studies than elderly priming studies.
+選"教授印象"的勝算較大
+
+95
+00:06:19.480 --> 00:06:23.600
+You can also use p-curve analysis for small sets of p-values.
+少量的p值也可以用P-Curve分析
+
+96
+00:06:23.600 --> 00:06:28.500
+You have to take a little care, when you have a small number of observations,
+只是要稍微注意一下
+資料不多的時候
+
+97
+00:06:28.500 --> 00:06:33.470
+you have low statistical power for any test, also for a p-curve analysis.
+統計檢定力必定偏低
+P-Curve分析也會受限
+
+98
+00:06:33.470 --> 00:06:38.810
+But sometimes, the data is so clear that even with a small set of studies,
+不過有時候少量研究的資料非常清楚
+
+99
+00:06:38.810 --> 00:06:42.246
+you can prevent yourself from following up on reliable research.
+可以確保分析的可信度
+
+100
+00:06:42.246 --> 00:06:43.982
+Let's take an example.
+來看看這個實例
+
+101
+00:06:43.982 --> 00:06:49.350
+In this publication, researchers look at the effect of reading literary fiction.
+這篇論文研究閱讀小說的效用
+
+102
+00:06:49.350 --> 00:06:54.155
+On Theory of Mind, how much do you, for example, empathize with other people?
+根據心智理論，研究者想問小說讀者會不會更有同理心
+
+103
+00:06:54.155 --> 00:06:57.151
+The researchers performed five studies, and
+論文作者執行了五項研究
+
+104
+00:06:57.151 --> 00:07:02.320
+they provided table with a critical test results for each study.
+所有結果的分析總結在一張表格裡
+
+105
+00:07:02.320 --> 00:07:04.960
+We're always interested in the main effect of condition and
+因為要探討的是組間的主要效果
+
+106
+00:07:04.960 --> 00:07:06.810
+I've highlighted the test results here.
+我把檢定結果標示出來
+
+107
+00:07:07.920 --> 00:07:12.232
+We can see that for the first study they observed a p-value of 0.01.
+由上面開始看到第一個研究的p值是0.01
+
+108
+00:07:12.232 --> 00:07:16.381
+For the second they have observed the p-value of 0.08.
+第二個研究的p值是0.08
+
+109
+00:07:16.381 --> 00:07:21.205
+This test result will be ignored by
+the p-curve analysis because it only
+由於不小於0.05
+這項p值在P-Curve分析裡會被忽略
+
+110
+00:07:21.205 --> 00:07:24.299
+focuses on p-values smaller than 0.05.
+由於不小於0.05
+這項p值在P-Curve分析裡會被忽略
+
+111
+00:07:24.299 --> 00:07:27.460
+Now for the remaining three studies,
+其他三個研究的p值
+
+112
+00:07:27.460 --> 00:07:32.118
+we see p values of 0.04, 0.04, and 0.04.
+分別都是0.04
+
+113
+00:07:32.118 --> 00:07:36.680
+Let's perform a p-curve analysis on this data set.
+來看看P-Curve分析的結果
+
+114
+00:07:36.680 --> 00:07:39.250
+We can see that the p-value distribution is not
+這條P-Curve表示並沒有真實效果存在
+
+115
+00:07:39.250 --> 00:07:41.270
+as you would expect if there is a true effect.
+這條P-Curve表示並沒有真實效果存在
+
+116
+00:07:42.850 --> 00:07:46.790
+And indeed the statistical test tells us that the evidential
+統計檢定的結果其實指出這些研究的證據力並不充分
+
+117
+00:07:46.790 --> 00:07:50.560
+value of the set up studies, if any, is inadequate.
+統計檢定的結果其實指出這些研究的證據力並不充分
+
+118
+00:07:51.600 --> 00:07:55.170
+This does not mean that the theory is false and could still be true but
+這不是說理論是錯的，而且以後有可能翻盤
+
+119
+00:07:55.170 --> 00:07:58.200
+the data we have available in this publication
+但是這些已發表的資料無法支持研究者的假設
+
+120
+00:07:58.200 --> 00:08:01.750
+does not allow us to conclude that the hypothesis is supported.
+但是這些已發表的資料無法支持研究者的假設
+
+121
+00:08:03.150 --> 00:08:05.990
+The reason that I'm giving this example is not that I want to point
+我拿這篇論文說明，並不是指出
+
+122
+00:08:05.990 --> 00:08:10.780
+out that some people publish set of studies that are not reliable, it happens.
+這篇論文的作者研究品質信度不高
+
+123
+00:08:10.780 --> 00:08:13.850
+This is very important for you to know that you can use p-curve
+重點是讓你知道P-Curve可以評估一系列研究結果
+的可信程度
+
+124
+00:08:13.850 --> 00:08:18.029
+analysis to identify sets of studies that are less reliable than others.
+重點是讓你知道P-Curve可以評估一系列研究結果
+的可信程度
+
+125
+00:08:19.430 --> 00:08:23.080
+When I was presenting about p-curve analysis in workshop I taught,
+在我曾親自主持的工作坊教授P-Curve分析時
+
+126
+00:08:23.080 --> 00:08:25.460
+one of the PhD students in the room
+當時有位博士生立刻用這篇論文做P-Curve分析
+
+127
+00:08:25.460 --> 00:08:29.810
+was performing a p-curve analysis on exactly this set of studies.
+當時有位博士生立刻用這篇論文做P-Curve分析
+
+128
+00:08:29.810 --> 00:08:33.650
+This PhD student was trying to replicate these studies for over a year but
+這位博士生一直嘗試再現研究結果
+
+129
+00:08:33.650 --> 00:08:35.850
+had been unsuccessful.
+但始終不能成功
+
+130
+00:08:35.850 --> 00:08:39.430
+So I think it's very important to perform a p-curve of analysis before you try to
+所以P-Curve分析也許是做文獻回顧的好幫手
+
+131
+00:08:39.430 --> 00:08:41.430
+build on studies in the literature.
+所以P-Curve分析也許是做文獻回顧的好幫手
+
+132
+00:08:41.430 --> 00:08:45.510
+Because otherwise you might waste a year trying to build on research that is not as
+也許能幫你省下投入低信度研究的時間
+
+133
+00:08:45.510 --> 00:08:46.550
+reliable as you think.
+也許能幫你省下投入低信度研究的時間
+
+134
+00:08:48.005 --> 00:08:51.820
+Now remember when a p-curve analysis says that
+請記得即使P-Curve分析指出一系列研究
+
+135
+00:08:51.820 --> 00:08:56.140
+a set of study lacks evidential value, the theory might still be true.
+缺乏證據力，研究背後的理論還有可能是真的
+
+136
+00:08:56.140 --> 00:08:59.279
+The data just don't provide evidence for the theory.
+資料無法做理論的直接證據
+
+137
+00:09:00.905 --> 00:09:04.700
+P-curve analysis allows you to test whether a set of studies in the published
+P-Curve分析可以檢測一系列文獻的p值
+
+138
+00:09:04.700 --> 00:09:08.660
+literature yields a p-value distribution that looks more like the one you
+到底接近存在真實效果，還是沒有真實效果
+
+139
+00:09:08.660 --> 00:09:12.020
+would expect when there is a true effect, than when there is no true effect.
+到底接近存在真實效果，還是沒有真實效果
+
+140
+00:09:13.162 --> 00:09:17.518
+Using p-curve analysis before you decide to build on studies on the published
+閱讀設計研究有關的文獻時
+
+141
+00:09:17.518 --> 00:09:21.157
+literature might allow you to see how robust these findings are.
+P-Curve分析可以評估結果的穩定度
+
+142
+00:09:21.157 --> 00:09:24.658
+And prevents you from building an unreliable results.
+避免製造低信度的結果
+
+143
+00:09:24.658 --> 00:09:29.069
+[MUSIC]
+影片結束

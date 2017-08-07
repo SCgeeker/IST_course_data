@@ -1,0 +1,1318 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.225
+[MUSIC]　　　　　　　　　　　　　　　　
+[似然值]
+
+2
+00:00:10.225 --> 00:00:12.830
+In this lecture we will
+talk about likelihoods.   
+這段影片介紹的是似然值
+
+3
+00:00:12.830 --> 00:00:15.700
+Likelihoods are a way to express
+the relative evidence for  
+似然值是兩個假說間的相對證據
+
+4
+00:00:15.700 --> 00:00:18.770
+one hypothesis over another hypothesis.   
+似然值是兩個假說間的相對證據
+
+5
+00:00:18.770 --> 00:00:21.210
+They can be very useful in themselves.   
+似然值很有用
+
+6
+00:00:21.210 --> 00:00:23.890
+But they are also underlying
+a lot of Bayesian statistics,   
+至於藏身其中的貝氏統計學
+
+7
+00:00:23.890 --> 00:00:25.100
+as we'll see in later lectures.   
+我們下次再談
+
+8
+00:00:27.340 --> 00:00:30.018
+A likelihood gives you the function
+of a parameter given the data.      
+似然值是資料參數的函數「L(θ)」
+
+
+9
+00:00:30.018 --> 00:00:33.900
+So when you've observed some data, you
+can pull up the accompanying likelihood   
+從觀察資料中得出似然值函數
+
+10
+00:00:33.900 --> 00:00:37.660
+function and you can check how likely
+each hypothesis that you might have is.   
+以評估不同假說的可能性
+
+11
+00:00:39.250 --> 00:00:42.480
+In this example, we mainly focus on
+the binomial likelihood function.   
+以最簡化的情形，二項似然函數為例
+
+12
+00:00:42.480 --> 00:00:44.920
+This is the easiest situation.   
+以最簡化的情形，二項似然函數為例
+
+
+13
+00:00:44.920 --> 00:00:46.159
+It's like flipping a coin and   
+假設你擲硬幣數次
+
+14
+00:00:46.159 --> 00:00:49.500
+then counting the number of
+heads that you have observed.   
+記下正面出現的次數
+
+15
+00:00:49.500 --> 00:00:51.460
+This is the binomial likelihood function.   
+這就是二項似然函數了
+
+16
+00:00:51.460 --> 00:00:53.220
+I won't explain it in detail here, but   
+在此我不說明細節   
+而是當成作業
+
+17
+00:00:53.220 --> 00:00:56.650
+there's an accompanying assignment in
+which we dive into the function and      
+會請你以不同觀測值，計算出對應的似然值
+
+
+18
+00:00:56.650 --> 00:01:00.620
+calculate some likelihoods for different
+of observations of number of heads.   
+會請你以不同觀測值，計算出對應的似然值
+
+19
+00:01:01.630 --> 00:01:05.100
+For now, let's take a look at the
+situation where we flip a coin ten times.   
+讓我們瞧瞧擲硬幣10次的情形
+
+20
+00:01:06.480 --> 00:01:10.720
+Eight of these ten times we find
+that the coin comes up heads.   
+其中有8枚硬幣正面朝上
+
+21
+00:01:10.720 --> 00:01:12.900
+We can calculate the likelihood of theta,   
+基於這些數據   
+我們已經可以計算θ的似然值了
+
+22
+00:01:12.900 --> 00:01:18.000
+and theta in this case is a Greek letter
+that explains the true hypotheses.   
+但首先這裡的θ是什麼呢？   
+(1)是個代表真實假說的希臘字母(讀音theta)
+
+23
+00:01:18.000 --> 00:01:22.450
+And in this case we might assume that the
+true underlying number of heads that we   
+(2)只要你擲夠多次硬幣，   
+觀察到的正面硬幣枚數比值
+
+
+24
+00:01:22.450 --> 00:01:26.820
+will observe if we do this
+in the long run is 0.8.   
+(2)只要你擲夠多次硬幣，   
+觀察到的正面硬幣枚數比值
+
+25
+00:01:26.820 --> 00:01:32.233
+So for the theta of 0.8, we can
+calculate that the likelihood is 0.30.   
+從θ=0.8得出   
+似然值=0.30
+
+26
+00:01:32.233 --> 00:01:36.260
+But we can also calculate the likelihoods
+for all sorts of different hypotheses.    
+除了θ=0.8的情形，還可以假設更多情形
+
+
+
+27
+00:01:37.270 --> 00:01:41.400
+Let's say that you have the idea that
+the true value of the number of coin flips   
+如果你認為只要你擲夠多次硬幣    
+觀察到的正面硬幣枚數的機率為70%
+
+
+28
+00:01:41.400 --> 00:01:45.490
+in the long run is 70% or a theta of 0.7.      
+或是稱作θ=0.8。你該怎麼計算它的似然值？
+
+29
+00:01:45.490 --> 00:01:49.760
+The likelihood for this being true,
+based on the data that we have observed,   
+切記似然值基於我們的觀測數據
+
+
+30
+00:01:49.760 --> 00:01:53.880
+eight out of ten coin
+flips turned up heads.   
+就是「擲10次硬幣出現8枚正面朝上」的情形
+
+
+31
+00:01:53.880 --> 00:01:59.504
+The likelihood of the true
+population effect being 0.7 is 0.23.   
+據此，θ=0.7時   
+或然率=0.23
+
+
+32
+00:01:59.504 --> 00:02:02.200
+The likelihood of a theta of 0.6 is 0.12.
+θ=0.6時   
+或然率=0.12
+
+33
+00:02:02.200 --> 00:02:05.000
+So you can see it becomes less and   
+它離你的觀察值(θ=0.8)越遠
+
+34
+00:02:05.000 --> 00:02:07.810
+less likely the farther away
+you go from the observed data.   
+它的或然值也變得越小
+
+35
+00:02:08.830 --> 00:02:10.380
+Now these numbers are not very clear, so   
+到此我們已稍微有了數感
+
+36
+00:02:10.380 --> 00:02:12.060
+let's take a look at
+the likelihood function.   
+接著來談談或然函數(likelihood function)吧
+
+37
+00:02:14.270 --> 00:02:16.960
+In this graph, you can see
+the likelihood function plotted.   
+這場圖所描繪的是或然函數
+
+38
+00:02:18.490 --> 00:02:21.920
+On the vertical dimension of this graph,
+we have plotted the likelihood.   
+縱軸，代表似然值   
+橫軸，代表θ
+
+39
+00:02:21.920 --> 00:02:24.840
+And on the horizontal dimension,
+we have plotted theta.   
+縱軸，代表似然值   
+橫軸，代表θ
+
+40
+00:02:24.840 --> 00:02:27.494
+All different versions
+ranging from 0 to 1.
+數值介於0到1之間   
+
+41
+00:02:28.620 --> 00:02:33.880
+So the range of 0 to 1 means that we
+will either always observe heads or　　　　　　　　　　　　　　　　　　　
+不會出現「全是正面」或「毫無正面」的情形
+
+42
+00:02:33.880 --> 00:02:36.330
+we'll never observe heads.　　　　　　
+不會出現「全是正面」或「毫無正面」的情形
+
+43
+00:02:36.330 --> 00:02:39.100
+Now based on the data we have collected,
+we already know that　　　　　　　　　　　　　　　　　　　　
+依據資料已知
+
+44
+00:02:39.100 --> 00:02:44.350
+it's not possible that we'll never observe
+heads or we'll never observe tails.　　　　　　　　　　　　　　　　　　
+不可能從不出現正面或或反面
+
+
+45
+00:02:44.350 --> 00:02:47.360
+Because eight out of ten
+turned out to be heads.
+所以正面或反面必定出現
+
+
+46
+00:02:47.360 --> 00:02:48.740
+So we've observed both values.　　　　
+沒有極值(全正面或全反面)的情形
+
+47
+00:02:48.740 --> 00:02:52.740
+So the extremes are not possible, and
+you can see that the likelihood here is 0,　　　　　　　　　　　　　　　
+所以極值的似然值等於0
+
+48
+00:02:52.740 --> 00:02:53.310
+it's very low.　　　　　　　　　　　　　
+所以極值的似然值等於0
+
+49
+00:02:54.730 --> 00:02:59.240
+The most likely true population parameter
+of the number of coin flips based on　　　　　　　　　　　　
+擲銅板的真母體參數值(θ)取決於數據
+
+50
+00:02:59.240 --> 00:03:04.010
+the data that we have is 0.8, because
+this is exactly what we have observed.　　　　　　　　　　　　　　　　　　
+觀察數據得出θ=0.8
+
+51
+00:03:04.010 --> 00:03:05.980
+So this is the maximum likelihood.　　　
+最大似然值便在θ=0.8時出現
+(如圖)
+
+52
+00:03:05.980 --> 00:03:08.270
+Based on the data that
+we have in our hands,　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+已知0.8是最可能的真母體參數值
+
+53
+00:03:08.270 --> 00:03:13.430
+we can see that 0.8 is the most
+likely true population parameter.　　　　　　　　　　　　　　　　　　　　　　　
+由我們手邊的資料得知0.8是最可能的真母體參數值
+
+54
+00:03:13.430 --> 00:03:17.218
+But some of the values just around
+it are also still quite plausible.　　　　　　　　　　　　　　　　　　　　　　　
+落在0.8附近的值也說得通
+
+55
+00:03:17.218 --> 00:03:21.570
+So a value of 0.6 is still quite
+probable in this case as well.　　　　　　　　　　　　　　　　　　　　　　　　　　
+例如θ=0.6也是蠻有可能的值
+
+56
+00:03:24.045 --> 00:03:27.355
+These types of likelihood curves
+were invented by Ronald Fisher,　　　　　　　　　　　　　　　　　　　　　　
+費雪（Ronald Fisher)發明了這種似然曲線(likelihood curves)
+
+57
+00:03:27.355 --> 00:03:30.365
+I already said he was a really,
+really smart guy.　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+他真的是個天才
+
+58
+00:03:30.365 --> 00:03:34.525
+And he invented these likelihoods when he
+was only 22 years old and actually a 3rd　　　　　　　　　　　　　　
+年僅22歲的大三生就發明了似然值
+
+59
+00:03:34.525 --> 00:03:40.005
+year undergraduate student, so this sort
+of testifies to his genius, I would say.　　　　　　　　　　　　　　　　　
+我認為這真的該歸為他的天分
+
+60
+00:03:40.005 --> 00:03:43.165
+Sometimes I wonder what have I been doing
+the last couple of years, definitely   
+有時我捫心自問  
+我在大學畢業前能發明統計學的基石嗎？
+
+61
+00:03:43.165 --> 00:03:46.970
+not inventing something like this that's
+a fundament of modern statistics.      
+絕不可能
+
+62
+00:03:48.770 --> 00:03:52.080
+Now we can use the likelihood
+under the null hypothesis and   
+現在，我們可以用虛無假設的似然值
+
+63
+00:03:52.080 --> 00:03:55.200
+the likelihood under
+the alternative hypothesis   
+以及對立假設的似然值
+
+64
+00:03:55.200 --> 00:03:58.530
+to calculate something that's
+known as the likelihood ratio.   
+來計算似然值的比值(likelihood ratio)
+
+65
+00:03:58.530 --> 00:04:01.810
+So in the case of likelihood ratio,
+we're taking the relative evidence for
+
+
+66
+00:04:01.810 --> 00:04:05.510
+the one hypothesis, the null,
+and the other hypothesis,
+
+
+67
+00:04:05.510 --> 00:04:09.620
+the alternative, and we can calculate
+the odds of one over the other.
+
+68
+00:04:11.410 --> 00:04:15.990
+Let's look at our example,
+where we had eight out of ten coin flips.
+
+69
+00:04:15.990 --> 00:04:17.850
+Now we need to compare two hypotheses, and
+
+70
+00:04:17.850 --> 00:04:21.620
+you're free to choose any two
+values of data that you want.
+
+71
+00:04:21.620 --> 00:04:25.593
+But one very logical value would be 50%,
+0.5,
+
+72
+00:04:25.593 --> 00:04:30.373
+the hypothesis that this is
+a perfectly balanced and fair coin.
+
+73
+00:04:30.373 --> 00:04:35.890
+So this is the value that's plotted
+at 0.5 on the horizontal axis.
+
+74
+00:04:35.890 --> 00:04:39.610
+And you can compare this with any
+hypothesis you had in advance.
+
+75
+00:04:39.610 --> 00:04:43.280
+The alternative hypothesis I've
+chosen here is the value 0.8.
+
+76
+00:04:43.280 --> 00:04:46.730
+This happens to be exactly the value
+that we've observed in the data.
+
+77
+00:04:46.730 --> 00:04:49.010
+Eight out of ten coin flips.
+
+78
+00:04:49.010 --> 00:04:52.863
+Now we're comparing this alternative
+hypothesis that a true population
+
+79
+00:04:52.863 --> 00:04:54.050
+parameter is 0.8.
+
+80
+00:04:54.050 --> 00:04:57.097
+So 80% of the time this coin
+will come up heads, and
+
+81
+00:04:57.097 --> 00:05:00.756
+we'll compare it to the null hypothesis,
+the value of 0.5,
+
+82
+00:05:00.756 --> 00:05:03.970
+the idea that this is
+a perfectly balanced, fair coin.
+
+83
+00:05:05.010 --> 00:05:08.190
+Now we can already see in the graph
+that the likelihood is much
+
+84
+00:05:08.190 --> 00:05:11.170
+higher at 0.8 than it is at 0.5.
+
+85
+00:05:11.170 --> 00:05:13.030
+But what we want to know is,
+how much more likely?
+
+86
+00:05:13.030 --> 00:05:16.300
+And the likelihood ratio
+gives us an idea of this.
+
+87
+00:05:16.300 --> 00:05:20.769
+It's basically dividing the likelihood
+at 0.8 by the likelihood at 0.5.
+
+88
+00:05:20.769 --> 00:05:23.270
+And in this case, this ratio is 6.87.
+
+89
+00:05:23.270 --> 00:05:28.173
+So it's quite more likely that
+the true population barometer is
+
+90
+00:05:28.173 --> 00:05:33.269
+0.8 compared to the ID that
+the population parameters 0.5.
+
+91
+00:05:35.021 --> 00:05:38.390
+Now we can test any values that we want.
+
+92
+00:05:38.390 --> 00:05:41.910
+Let say that in advance we still had
+the same alternative hypothesis,
+
+93
+00:05:41.910 --> 00:05:44.980
+that this was a coin that would
+come up heads 80% of the time.
+
+94
+00:05:46.040 --> 00:05:49.850
+We still compare it to the probability
+that this is a fair coin.
+
+95
+00:05:49.850 --> 00:05:54.000
+So these two hypotheses are being
+compared, but now we have observed data
+
+96
+00:05:54.000 --> 00:05:57.700
+where the coin comes up heads
+four times out of ten flips.
+
+97
+00:05:58.740 --> 00:06:02.263
+So we can see the shape of the likelihood
+function is very different, and
+
+98
+00:06:02.263 --> 00:06:04.803
+in this case of course,
+based on the observed data,
+
+99
+00:06:04.803 --> 00:06:06.857
+the likelihood of 0.4 is most likely.
+
+100
+00:06:06.857 --> 00:06:12.002
+We can still compare the ratio of
+the likelihoods at 0.5 and 0.8,
+
+101
+00:06:12.002 --> 00:06:17.960
+and now we see that the value of 0.5 is
+much more likely than the value at 0.8.
+
+102
+00:06:17.960 --> 00:06:21.930
+So the hypothesis that this is a fair
+coin is now much more likely than
+
+103
+00:06:21.930 --> 00:06:25.220
+the hypothesis that this
+is an unfair coin, and
+
+104
+00:06:25.220 --> 00:06:28.039
+that the true population parameter is 0.8.
+
+105
+00:06:30.830 --> 00:06:35.800
+Now when you calculate likelihood ratios,
+there are two cutoffs of 8 and
+
+106
+00:06:35.800 --> 00:06:39.540
+32 of these likelihood ratios which
+are considered either moderately strong
+
+107
+00:06:39.540 --> 00:06:41.150
+evidence or strong evidence.
+
+108
+00:06:42.250 --> 00:06:46.450
+So in the previous examples, we could see
+that in the first case, we had not yet
+
+109
+00:06:46.450 --> 00:06:50.190
+moderately strong evidence for
+the difference in the hypotheses.
+
+110
+00:06:50.190 --> 00:06:54.760
+In the latter case, when we observed four
+out of ten flips coming up heads, we can
+
+111
+00:06:54.760 --> 00:06:59.840
+see that this was very strong evidence for
+the fair coin hypothesis compared to
+
+112
+00:06:59.840 --> 00:07:05.250
+the alternative, that this was a coin
+with 0.8 coin flips coming up heads.
+
+113
+00:07:08.080 --> 00:07:12.000
+So you see that likelihoods
+are relative evidence for
+
+114
+00:07:12.000 --> 00:07:15.790
+the alternative hypothesis
+compared to the null hypothesis.
+
+115
+00:07:15.790 --> 00:07:20.660
+It's important to realize that both of
+these hypotheses might be quite unlikely.
+
+116
+00:07:20.660 --> 00:07:21.649
+Let's look at an example.
+
+117
+00:07:23.340 --> 00:07:25.220
+Now here we flip the coin 100 times, and
+
+118
+00:07:25.220 --> 00:07:30.210
+50 out of the 100 times,
+the coin came up heads.
+
+119
+00:07:30.210 --> 00:07:35.460
+Now, we are comparing two hypotheses here,
+the one being that the true population
+
+120
+00:07:35.460 --> 00:07:41.520
+barometer is 30% heads in the long run,
+so a theta of 0.3.
+
+121
+00:07:41.520 --> 00:07:45.890
+The alternative hypothesis is that
+the true population barometer is at
+
+122
+00:07:45.890 --> 00:07:49.620
+theta of 0.8, so
+we'll see 80% heads in the long run.
+
+123
+00:07:50.710 --> 00:07:54.593
+When we compare these two
+hypotheses against each other,
+
+124
+00:07:54.593 --> 00:08:00.222
+we can see that the hypothesis that true
+population parameter is 0.3 is massively
+
+125
+00:08:00.222 --> 00:08:05.547
+more likely than the likelihood that
+the true population parameter is 0.8.
+
+126
+00:08:05.547 --> 00:08:09.330
+And we find a ridiculously
+high likelihood ratio.
+
+127
+00:08:09.330 --> 00:08:11.974
+However, we can also see that
+both these hypotheses are wrong.
+
+128
+00:08:12.975 --> 00:08:17.487
+So even though the relative evidence for
+the one hypothesis compare to the other
+
+129
+00:08:17.487 --> 00:08:22.471
+hypothesis is extremely convincing, we
+didn't find the true population parameter,
+
+130
+00:08:22.471 --> 00:08:24.981
+which is actually just 0.5 in this case.
+
+131
+00:08:24.981 --> 00:08:28.485
+So it's important to keep in mind that
+likelihood ratios are relative evidence.
+
+132
+00:08:31.490 --> 00:08:36.340
+Now we can compare the likelihood under
+the null hypothesis of a theta of 0.05 and
+
+133
+00:08:37.670 --> 00:08:42.237
+an alternative hypothesis of 0.8.
+
+134
+00:08:42.237 --> 00:08:45.070
+Now one way in which you can think about
+
+135
+00:08:45.070 --> 00:08:50.030
+applying these likelihood ratios is when
+you think about the outcomes of studies.
+
+136
+00:08:50.030 --> 00:08:53.030
+Now, if you perform a study,
+it's sort of like a coin flip.
+
+137
+00:08:53.030 --> 00:08:56.600
+You can either find a statistically
+significant result, or not.
+
+138
+00:08:56.600 --> 00:09:00.600
+So this is one of two options,
+and it's a binomial probability.
+
+139
+00:09:00.600 --> 00:09:03.210
+So how often will you find
+a significant result, and
+
+140
+00:09:03.210 --> 00:09:05.530
+how often will you find
+a non-significant result?
+
+141
+00:09:05.530 --> 00:09:08.330
+Well it depends on whether
+the null hypothesis is true or
+
+142
+00:09:08.330 --> 00:09:10.970
+the alternative hypothesis is true.
+
+143
+00:09:10.970 --> 00:09:14.182
+When the null hypothesis is true,
+we know that you'll find
+
+144
+00:09:14.182 --> 00:09:18.825
+a significant result that equals your
+alpha level, which is typically 0.05%.
+
+145
+00:09:18.825 --> 00:09:22.700
+So this is a very good null hypothesis
+in these likelihood ratios.
+
+146
+00:09:23.790 --> 00:09:27.780
+We can compare this with the probability
+of finding significant results when
+
+147
+00:09:27.780 --> 00:09:28.760
+there is a true effect.
+
+148
+00:09:28.760 --> 00:09:31.640
+And in this case, this probability
+depends on the statistical
+
+149
+00:09:31.640 --> 00:09:33.900
+power that you have in your test.
+
+150
+00:09:33.900 --> 00:09:35.183
+Let's for now put it at 0.8, so
+
+151
+00:09:35.183 --> 00:09:40.330
+80% of the time you'll find a significant
+result because you had 80% power.
+
+152
+00:09:42.180 --> 00:09:45.400
+Now we can use the likelihood function
+to compare the probability that we have
+
+153
+00:09:45.400 --> 00:09:48.870
+observed a significant result
+under the null hypothesis, and
+
+154
+00:09:48.870 --> 00:09:51.580
+compare it with
+the alternative hypothesis.
+
+155
+00:09:54.080 --> 00:09:56.998
+Let's say that we perform
+three studies in a row.
+
+156
+00:09:56.998 --> 00:09:59.980
+Now there are a number of outcomes
+that could happen, of course.
+
+157
+00:09:59.980 --> 00:10:02.530
+None of these studies
+could come up significant.
+
+158
+00:10:02.530 --> 00:10:05.630
+You could find only one
+significant effect, or two.
+
+159
+00:10:05.630 --> 00:10:09.300
+Or, if you're really lucky, three
+significant results out of three studies.
+
+160
+00:10:11.480 --> 00:10:14.760
+Now let's calculate
+the likelihood of finding two
+
+161
+00:10:14.760 --> 00:10:17.350
+out of three significant results.
+
+162
+00:10:17.350 --> 00:10:20.900
+When the null hypothesis is true,
+this is pretty straightforward.
+
+163
+00:10:20.900 --> 00:10:25.440
+The probability of finding a significant
+effect when there's no true effect
+
+164
+00:10:25.440 --> 00:10:30.200
+is the alpha level, so
+this is 0.05% of the time.
+
+165
+00:10:30.200 --> 00:10:33.530
+We multiply it by two significant studies.
+
+166
+00:10:33.530 --> 00:10:35.652
+So 5% times 5%.
+
+167
+00:10:35.652 --> 00:10:40.270
+And then we multiply it by the probability
+of finding no significant effect.
+
+168
+00:10:40.270 --> 00:10:43.500
+Well, if we have a 5% alpha level,
+then the probability of finding
+
+169
+00:10:43.500 --> 00:10:47.010
+no significant effect, if there's
+no true effect, is actually 95%.
+
+170
+00:10:47.010 --> 00:10:50.934
+So if you multiply these probabilities,
+
+171
+00:10:50.934 --> 00:10:57.108
+5% times 5% times 95%,
+we get the value of 0.0024.
+
+172
+00:10:57.108 --> 00:11:01.339
+All right, so what happens if there
+is a true effect to be observed, and
+
+173
+00:11:01.339 --> 00:11:04.174
+we find two out of three
+significant findings?
+
+174
+00:11:04.174 --> 00:11:07.150
+Now let's assume that we have 80% power.
+
+175
+00:11:07.150 --> 00:11:08.430
+You never really know, but
+
+176
+00:11:08.430 --> 00:11:13.450
+you can check different levels of power in
+the likelihood function when it's plotted.
+
+177
+00:11:13.450 --> 00:11:15.200
+But for now, let's take a look at 80%.
+
+178
+00:11:15.200 --> 00:11:19.860
+So we find two significant results and
+one nonsignificant result.
+
+179
+00:11:19.860 --> 00:11:24.506
+If the alternative hypothesis is true,
+this equals an 80% probability of finding
+
+180
+00:11:24.506 --> 00:11:27.474
+a significant result,
+times an 80% probability of
+
+181
+00:11:27.474 --> 00:11:32.200
+finding a significant result, times a 20%
+probability of making a type two error.
+
+182
+00:11:33.780 --> 00:11:38.558
+And if we now multiply these
+probabilities, we get 0.128.
+
+183
+00:11:38.558 --> 00:11:42.745
+So we can calculate the relative
+likelihood of observing this data,
+
+184
+00:11:42.745 --> 00:11:47.654
+two out of three significant results,
+when either the null hypothesis is true,
+
+185
+00:11:47.654 --> 00:11:50.130
+or the alternative hypothesis is true.
+
+186
+00:11:51.550 --> 00:11:54.540
+Now based on these numbers, you can
+already see that this outcome is much
+
+187
+00:11:54.540 --> 00:11:57.660
+more likely when there is a true effect
+than when there is no true effect.
+
+188
+00:11:59.320 --> 00:12:01.600
+So, if we calculate likelihood ratio,
+
+189
+00:12:01.600 --> 00:12:06.070
+we see that it's actually
+54 times more likely that
+
+190
+00:12:06.070 --> 00:12:10.330
+the alternative hypothesis is true than
+that the null hypothesis this is true.
+
+191
+00:12:10.330 --> 00:12:14.100
+It's possible to find this pattern of
+results when there is no true effect.
+
+192
+00:12:14.100 --> 00:12:17.430
+But it's massively more probable that
+you'll find this pattern of results
+
+193
+00:12:17.430 --> 00:12:18.490
+when there is a true effect.
+
+194
+00:12:20.770 --> 00:12:22.900
+We can plot this likelihood function,
+
+195
+00:12:22.900 --> 00:12:27.439
+because you might not be convinced that
+80% power is very likely in this case.
+
+196
+00:12:28.490 --> 00:12:32.358
+Now if you look at this graph, we can
+again see the likelihood function which is
+
+197
+00:12:32.358 --> 00:12:34.890
+plotted for
+two out of three significant results.
+
+198
+00:12:35.990 --> 00:12:41.750
+I've indicated two points,
+the 0.05 theta on the left,
+
+199
+00:12:41.750 --> 00:12:44.974
+and the 0.8 theta on the right.
+
+200
+00:12:44.974 --> 00:12:50.580
+Now the 0.05 is the type one error rate,
+or your alpha, so that's pretty fixed.
+
+201
+00:12:50.580 --> 00:12:53.900
+But maybe you feel like you might
+have had lower power in your study.
+
+202
+00:12:53.900 --> 00:12:56.960
+And you can look at
+the relative likelihood of
+
+203
+00:12:56.960 --> 00:13:01.620
+the outcome of two out of three studies
+for any value of theta that you like.
+
+204
+00:13:02.720 --> 00:13:07.170
+The most probable situation, of course, is
+that for exactly the result that we have
+
+205
+00:13:07.170 --> 00:13:11.539
+observed, two out of three
+significant results, meaning 0.666.
+
+206
+00:13:13.520 --> 00:13:18.330
+For any of these values, you can see that
+as long as you assume a decent level of
+
+207
+00:13:18.330 --> 00:13:20.846
+power, something higher than 0.5,
+
+208
+00:13:20.846 --> 00:13:26.026
+it's much more likely that there is a true
+effect than that there is no true effect,
+
+209
+00:13:26.026 --> 00:13:31.211
+even though we only observed two out of
+three statistically significant results.
+
+210
+00:13:31.211 --> 00:13:34.991
+Now this is an important realization that
+you can get by looking at these likelihood
+
+211
+00:13:34.991 --> 00:13:35.590
+functions.
+
+212
+00:13:36.640 --> 00:13:42.160
+Multiple studies should give mixed results
+when the alternative hypothesis is true.
+
+213
+00:13:42.160 --> 00:13:45.910
+And even when you have a decent level
+of power, this will happen quite often.
+
+214
+00:13:47.290 --> 00:13:50.760
+What's the likelihood of finding
+three significant results in a row
+
+215
+00:13:50.760 --> 00:13:52.840
+when you only have 80% power?
+
+216
+00:13:52.840 --> 00:13:53.710
+I'm saying only, but
+
+217
+00:13:53.710 --> 00:13:57.660
+that's actually a pretty decent and
+recommended level of power, right?
+
+218
+00:13:57.660 --> 00:14:02.014
+So we can do the math, it's quite easy,
+
+219
+00:14:02.014 --> 00:14:06.546
+0.8 x 0.8 x 0.8 gives you
+a likelihood of 0.51.
+
+220
+00:14:06.546 --> 00:14:10.500
+So about 50% of the time,
+when you have 80% power and
+
+221
+00:14:10.500 --> 00:14:15.150
+the alternative hypothesis is true, you'll
+find three significant results in a row.
+
+222
+00:14:15.150 --> 00:14:19.600
+It means that almost 50% of the time, you
+will get some version of mixed results.
+
+223
+00:14:19.600 --> 00:14:21.780
+Either two out of three,
+one out of three, or
+
+224
+00:14:21.780 --> 00:14:24.010
+if you're unlucky, even zero out of three.
+
+225
+00:14:24.010 --> 00:14:26.080
+Even though there might be a true effect.
+
+226
+00:14:26.080 --> 00:14:29.099
+Now this won't happen so often, but
+all these outcomes are probable.
+
+227
+00:14:29.099 --> 00:14:33.590
+And the probability of mixed
+result is almost 50% of the time.
+
+228
+00:14:33.590 --> 00:14:36.810
+So this is important to realize,
+when you're doing lines of research,
+
+229
+00:14:36.810 --> 00:14:40.890
+you will not find consistently significant
+results in all of your studies, and
+
+230
+00:14:40.890 --> 00:14:42.190
+this is perfectly fine.
+
+231
+00:14:42.190 --> 00:14:44.251
+This is exactly what you should expect.
+
+232
+00:14:46.454 --> 00:14:50.642
+Now in this graph I've plotted a lot
+of lines that are relevant for
+
+233
+00:14:50.642 --> 00:14:53.470
+a situation where we perform four studies.
+
+234
+00:14:54.660 --> 00:14:58.760
+When we perform four studies, we can
+either observe zero significant results,
+
+235
+00:14:58.760 --> 00:15:00.830
+or one, or two, or three, or four.
+
+236
+00:15:01.880 --> 00:15:05.980
+So each of these curves plots one
+of these likelihood functions,
+
+237
+00:15:05.980 --> 00:15:07.469
+given the data that we've observed.
+
+238
+00:15:09.410 --> 00:15:11.080
+Now what I want to point out here is,
+
+239
+00:15:11.080 --> 00:15:14.800
+again, the massive probability
+of finding mixed results.
+
+240
+00:15:14.800 --> 00:15:19.100
+And we can see this for
+all the curves for one, two, three, or
+
+241
+00:15:19.100 --> 00:15:24.220
+four out of four results, where the
+likelihood is highest for mixed results.
+
+242
+00:15:24.220 --> 00:15:26.496
+And that's actually this area.
+
+243
+00:15:26.496 --> 00:15:32.441
+So when we perform four studies, and the
+theta, which means the power that we have,
+
+244
+00:15:32.441 --> 00:15:38.418
+is somewhere between 0.2 and 0.8,
+so between 20% power and 80% power.
+
+245
+00:15:38.418 --> 00:15:42.912
+Then finding mixed results is actually the
+most probable outcome of a line of four
+
+246
+00:15:42.912 --> 00:15:43.519
+studies.
+
+247
+00:15:44.890 --> 00:15:48.430
+Now we've seen that likelihood ratios
+allow you to express the relative
+
+248
+00:15:48.430 --> 00:15:52.710
+evidence for the null hypothesis
+compared to the alternative hypothesis.
+
+249
+00:15:52.710 --> 00:15:55.040
+And this can be very useful in itself.
+
+250
+00:15:55.040 --> 00:15:59.105
+For example, we applied this to
+the probability of finding significant or
+
+251
+00:15:59.105 --> 00:16:01.540
+non-significant results
+in a set of studies.
+
+252
+00:16:01.540 --> 00:16:04.060
+And we've seen that it's
+actually quite likely
+
+253
+00:16:04.060 --> 00:16:06.065
+that you'll observe
+a mix of significant and
+
+254
+00:16:06.065 --> 00:16:09.380
+non-significant results, even when
+the alternative hypothesis is true.
+
+255
+00:16:10.760 --> 00:16:13.790
+Likelihoods also underlie
+Bayesian statistics.
+
+256
+00:16:13.790 --> 00:16:16.973
+So knowing likelihoods is also
+a good stepping stone to move on
+
+257
+00:16:16.973 --> 00:16:20.233
+to Bayesian statistics,
+which we'll do in future lectures.
+
+258
+00:16:20.233 --> 00:16:25.109
+[MUSIC]

@@ -1,0 +1,217 @@
+---
+title: "Final Exam"
+author: "Sau-Chin Chen"
+date: "2016年11月7日"
+output: html_document
+---
+correct rate: 15/21 
+
+1. How are the three paths to statistical inference (frequentist, likelihood, bayesian) related to each other?
+
+They are entirely different paradigms and are generally mutually exclusive
+
+They give different answers to different questions
+
+**They give different answers to the same question**
+
+It doesn't matter as they generally give the same answer to the same questions
+\\
+2. Two researchers are investigating if people can see in the future. Person A believes there is no effect, which would mean that p-values are distributed as a _____. B finds a test statistic in the very far end of the distribution, which means that ______.
+
+Normal distribution with a peak at 0; the null hypothesis is false.
+
+Uniform; the alternative hypothesis is most likely true.
+
+Uniform; the data are surprising if there would be no effect
+
+**Distribution peaking around 0 with higher values being less likely; the data is surprising assuming H0 is true**
+\\
+3. The probability of finding a significant result when there is no true effect is called ______. The probability of finding a significant result when there is a true effect, is called _____.
+
+A type 1 error; A type 2 error
+
+A type 2 error; power
+
+A type 2 error; a true positive
+
+**A type 1 error; power**
+\\
+4. The likelihood ratio of two hypotheses gives information about \______, but not about \_____.
+
+The absolute evidence for each individual hypothesis; the likelihood of either being true
+
+The absolute evidence for each individual hypothesis; the long-run probability of making an error
+
+The relative likelihood of one hypothesis, versus the other; if one hypothesis is more likely given the data
+
+**How much more likely one hypothesis is compared to the other; the likelihood of either being true**
+\\
+5. You used a Bayesian method to estimate a population mean of 10 with a 95% credible interval from 8 to 12, which means \______. This interval depends on \_______.
+
+Only that in the long run, the credible interval will contain the population mean 95% of the time; the standard error and variance
+
+**95% of the values you find most plausible are between 8 and 12; the likelihood and the prior**
+
+The posterior probability of the mean is favored by the data by a ratio between 8 to 1 and 12 to 1; the likelihood and prior
+
+There is a 95% probability that the population mean is 10; the posterior probability of the data
+\\
+6. Person A has a low prior belief in homeopathy. Person B has a high prior belief in homeopathy. They both read a study about homeopathy, which reports a positive effect and p < 0.05. Person A would be more likely than person B to conclude that \____, Person B would be more likely than Person A to think that \_____.
+
+**The probability of homeopathy being true is still low; the study provides evidence for the hypothesis that homeopathy has a true effect**
+
+The study might be a type 1 error; the hypothesis that homeopathy is not true was correctly rejected
+
+The study must be faked because H0 is true; the null hypothesis that homeopathy is not true was correctly rejected
+
+The study is likely a type 1 error; the study is likely a type 2 error
+\\
+7. You perform five tests without correcting for multiple comparisons. The error rate for each individual test is _____. After using the Bonferonni correction, the individual error rate for each individual test is _____.  
+equal to the alpha; equal to the alpha
+
+equal to the alpha divided by 5; equal to the alpha
+
+equal to the alpha divided by 5; equal to the alpha divided by 5
+
+**equal to the alpha; equal to the alpha divided by 5**
+\\
+8. You perform two studies to test a potentially life-saving drug. Both studies have 80% power. What is the chance of two type 2 errors (of false negatives) in a row? 
+
+80% * 80%
+
+**20% \* 20%**
+
+80%
+
+20%
+\\
+9. Study A and B are completely identical, except that study A was entirely pre-registered at a journal. Both contain analyses with covariates. Based on research on flexibility in the data analysis, we can expect that on average study A will have ______; the covariate analyses are _____.  
+
+An inflated Type 1 error rate due to multiple comparisons; problematic for both studies as covariates always inflate the Type 1 error rate
+
+An inflated Type 1 error rate due to multiple comparisons; problematic for the not pre-registered study, because they always inflate the Type 1 error rate unless pre-registered.
+
+The same type 1 error rate; problematic for both studies
+
+**A fixed Type 1 error rate; not problematic for the pre-registered study, and perhaps (but not necessarily) inflating the Type 1 error rate in the not pre-registered study.**
+\\
+10. An example of an unstandardized effect size is ______; unstandardized effect sizes _____.
+
+Cohen's d; can be used for power analyses, and meta analyses
+
+Hedges' g; can be used in power analyses.
+
+**Hours; are easy to interpret**
+
+School grades; can be used for power analyses and meta analyses
+\\
+11. When the difference between means is 5, and the standard deviation is 4, Cohen's d is _____ which is _____ according to the benchmarks proposed by Cohen.  
+
+4/5; medium
+
+4/5; large
+
+**5/4; large**
+
+5/4; medium
+\\
+12. The difference between eta-squared and partial eta-squared is _____, the difference between eta-squared and omega-squared is ______.
+
+**Eta-squared is the amount of uniquely explained variance; omega-squared is less biased**
+
+Eta-squared is the amount of explained variance; omega-squared is for within-subject designs
+
+There is no difference; omega-squared is the amount of uniquely explained variance
+
+Partial eta-squared is the amount of uniquely explained variance; omega-squared is less biased
+\\
+13. 
+You replicate an older study, which reported both credible intervals and confidence intervals. You also calculate both. Which statement is correct?
+
+The confidence intervals have a 95% probability of including the mean of the other study; both credible intervals give the 95% values you believe are most likely based on each data set
+
+The confidence intervals have a 95% probability of overlapping with the confidence interval from the other study; the credible intervals have a 95% probability of containing the true value
+
+The confidence intervals have a 95% probability of capturing the true population parameter; both credible intervals give the 95% values you believe are most likely based on each data set
+
+**The confidence intervals have a 95% probability of capturing the true population parameter; the credible intervals have a 95% probability of containing the true value**
+\\
+14.  In studies with less participants, parameters like effect sizes vary ______, the power to detect a true effect size depends, among other things, on _____.
+
+More than in studies with more participants; the confidence level
+
+Less than in studies with more participants; the confidence level
+
+**More than in studies with more participants; the sample size**
+
+Less than in studies with more participants; the sample size  
+\\
+15. You performed a p-curve analysis and found a skewed distribution of p-values which peaks around p = 0.045, what does this mean?  
+
+**This distribution is typical for when the H0 is true and there is no true effect, and it looks like researchers engaged in practices such as optional stopping.**
+
+This distribution is typical for when the H0 is false and there is a true effect, and it looks like researchers engaged in practices such as optional stopping.
+
+This distribution is typical for when the H0 is true and there is no true effect, it provides suggestive evidence that there was no p-hacking
+
+This distribution is typical for when the H0 is false and there is a true effect, it provides suggestive evidence that there was no p-hacking
+\\
+16. You predict that your intervention will increase all participants' performance on a test, this is an example of ______. After the study you conclude that the intervention only works for women but not men, this is an example of _____.  
+
+Modus Tollens (also called denying the consequent); a degenerative research line
+
+**A testable prediction; a degenerative research line**  
+
+A progressive research line; Modus Tollens (also called denying the consequent)
+
+A testable prediction; a progressive research line
+\\ 
+17. Predicting that a measured variable differs in two groups, without random assignment to conditions, is often_____.
+
+**Not a bold or interesting prediction due to the crud factor**  
+
+Not a falsifiable prediction
+
+A prediction that allows for strong inferences
+
+Not a theoretical prediction
+\\
+18. Going through a dataset and looking at which effects are present **can be problematic** when _______. It is **not problematic** when you ______.
+
+you control your Type 1 error rate for all possible analyses you can do; use it to generate new ideas to test in the future
+
+It is exploratory research; interpret it as confirmatory analysis and interpret p-values
+
+**You want to test a hypotheses generated based on the data in the current dataset; interpret the analyses as an exploratory analysis and don't interpret p-values**
+
+You are exploring the data to generate new ideas; interpret the effect sizes in addition to the p-values
+\\
+19. The main goal of a direct replication is to _______; replications are important according to Popper because ______.
+
+**Test the reliability of the original finding; they show that an effect can be independently observed by other people**
+
+Test the reliability of the original finding; when more data is collected, effect size estimations are more precise
+
+Test the reliability of the theory; by replicating a study, it becomes less likely that we have made a type 1 error
+
+Test the reliability of the theory; they show that an effect can be independently observed by other people
+\\
+20. It is important to have access to all (and not just statistically significant) research findings to be able to _____. A consequence of publication bias is that _____.
+
+Generate theories; you can't reliably quantify the size of an effect
+
+Reliably estimate effect sizes; the type 1 error rate is inflated
+
+**Reliably estimate effect sizes; you can't reliably quantify the size of an effect**
+
+Estimate the overall error rates in the literature; you can't reliably generate theories
+\\
+21. What is an important reason to make sure the data and analysis scripts related to your research are well-organized?
+
+You and other researchers might want to check the data and analyses in the future
+
+To reduce the chance of Type I or Type II errors
+
+So that other researchers can include your effect size estimate in a meta-analysis
+
+**All of the above**

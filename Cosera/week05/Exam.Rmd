@@ -1,0 +1,53 @@
+---
+title: "Exam"
+author: "Sau-Chin Chen"
+date: "2016年10月30日"
+output: html_document
+---
+1. In the picture below, we see the 95% CI around two means from independent groups, and the 95% mean around the mean difference between the two groups. What can we conclude based on the CI?  
+
+A) The groups do not differ significantly, because the 95% CI around the mean of one group overlaps with the 95% CI around the mean.
+
+**B)** The groups differ significantly, because the 95% CI around the mean difference does not contain 0.
+
+C) The groups differ significantly, because the 95% CI around the mean of one group overlaps with the 95% CI around the mean of the other group.
+
+2. A prediction interval is always _______ than a confidence interval. A prediction interval predicts where the next ________ will fall, while a confidence interval predicts where the next ________ will fall.
+
+A) wider; mean; observation
+
+**B)** wider; observation; mean
+
+C) narrower; mean; observation
+
+D) narrower; observation; mean
+
+3. One-sided tests are more efficient than two-sided tests. Open G*power. When you plan to do an independent samples t-test to compare two means, and perform an a-priori power analysis based on an expected effect size of d = 0.35, using an alpha of 0.05, planning for a desired power of 0.9, and planning to allocate the same number of participants in each group, what is the difference in the total sample size required when using a one-sided test compared to a two-sided test?
+
+one-sided:141
+two-sided:173
+```r 346 - 282```
+
+A) 32
+
+**B)** 64
+
+C) 72
+
+4. You perform a power analysis for an independent t-test, where you want 80% power, using an alpha of 0.05 for a two-sided test, and equal allocation of participants across both conditions. For an effect observed in the literature, Cohen’s d = 0.42, and Hedges’ g is 0.39. What is best estimate of the total sample size you need?
+
+A) 164
+
+B) 180
+
+**C)** 210
+
+D) 344
+
+5. Power analysis is a good starting point to determine the sample size for a replication study, but it should not be the endpoint. Why can you not just assume that you have a well-powered study when you perform an a-priori power analysis based on the effect size reported in a published study  
+
+**A)** Publication bias inflates effect size estimates  
+
+B) Flexibility in the data analysis increases the Type 1 error rate  
+
+C) Small sample sizes lead to lower effect size estimates  
