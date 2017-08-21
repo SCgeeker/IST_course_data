@@ -1,4 +1,4 @@
-﻿WEBVTT
+WEBVTT
 
 1
 00:00:00.000 --> 00:00:10.225
@@ -9,40 +9,40 @@
 00:00:10.225 --> 00:00:12.830
 In this lecture we will
 talk about likelihoods.   
-這段影片介紹的是似然值
+這一講介紹的是似然值
 
 3
 00:00:12.830 --> 00:00:15.700
 Likelihoods are a way to express
 the relative evidence for  
-似然值是兩個假說間的相對證據
+似然值呈現兩個假說間的相對證據力
 
 4
 00:00:15.700 --> 00:00:18.770
 one hypothesis over another hypothesis.   
-似然值是兩個假說間的相對證據
+似然值呈現兩個假說間的相對證據力
 
 5
 00:00:18.770 --> 00:00:21.210
 They can be very useful in themselves.   
-似然值很有用
+似然值的用處很多
 
 6
 00:00:21.210 --> 00:00:23.890
 But they are also underlying
 a lot of Bayesian statistics,   
-至於藏身其中的貝氏統計學
+至於似然值在貝氏統計學的用處
 
 7
 00:00:23.890 --> 00:00:25.100
 as we'll see in later lectures.   
-我們下次再談
+是下一講的主題
 
 8
 00:00:27.340 --> 00:00:30.018
 A likelihood gives you the function
 of a parameter given the data.      
-似然值是資料參數的函數「L(θ)」
+似然值是資料函數的參數「L(θ)」
 
 
 9
@@ -55,19 +55,18 @@ can pull up the accompanying likelihood
 00:00:33.900 --> 00:00:37.660
 function and you can check how likely
 each hypothesis that you might have is.   
-以評估不同假說的可能性
+來評估不同假說得到支持的可能性
 
 11
 00:00:39.250 --> 00:00:42.480
 In this example, we mainly focus on
 the binomial likelihood function.   
-以最簡化的情形，二項似然函數為例
+以最簡單的二項似然函數為例
 
 12
 00:00:42.480 --> 00:00:44.920
 This is the easiest situation.   
-以最簡化的情形，二項似然函數為例
-
+以最簡單的二項似然函數為例
 
 13
 00:00:44.920 --> 00:00:46.159
@@ -83,7 +82,7 @@ heads that you have observed.
 15
 00:00:49.500 --> 00:00:51.460
 This is the binomial likelihood function.   
-這就是二項似然函數了
+就會得到一條二項似然函數
 
 16
 00:00:51.460 --> 00:00:53.220
@@ -95,14 +94,13 @@ I won't explain it in detail here, but
 00:00:53.220 --> 00:00:56.650
 there's an accompanying assignment in
 which we dive into the function and      
-會請你以不同觀測值，計算出對應的似然值
-
+請你以不同觀測值，計算出對應的似然值
 
 18
 00:00:56.650 --> 00:01:00.620
 calculate some likelihoods for different
 of observations of number of heads.   
-會請你以不同觀測值，計算出對應的似然值
+請你以不同觀測值，計算出對應的似然值
 
 19
 00:01:01.630 --> 00:01:05.100
@@ -114,63 +112,59 @@ situation where we flip a coin ten times.
 00:01:06.480 --> 00:01:10.720
 Eight of these ten times we find
 that the coin comes up heads.   
-其中有8枚硬幣正面朝上
+其中有8次硬幣正面朝上
 
 21
 00:01:10.720 --> 00:01:12.900
 We can calculate the likelihood of theta,   
 基於這些數據   
-我們已經可以計算θ的似然值了
+我們已經可以計算似然值θ了
 
 22
 00:01:12.900 --> 00:01:18.000
 and theta in this case is a Greek letter
 that explains the true hypotheses.   
-但首先這裡的θ是什麼呢？   
-(1)是個代表真實假說的希臘字母(讀音theta)
+但是θ是指什麼呢？   
+首先是代表真實假說的希臘字母(讀音theta)
 
 23
 00:01:18.000 --> 00:01:22.450
 And in this case we might assume that the
 true underlying number of heads that we   
-(2)只要你擲夠多次硬幣，   
-觀察到的正面硬幣枚數比值
+其次是指只要你擲夠多次硬幣，   
+觀察到正面硬幣的次數比值
 
 
 24
 00:01:22.450 --> 00:01:26.820
 will observe if we do this
 in the long run is 0.8.   
-(2)只要你擲夠多次硬幣，   
-觀察到的正面硬幣枚數比值
+其次是指只要你擲夠多次硬幣，   
+觀察到正面硬幣的次數比值
 
 25
 00:01:26.820 --> 00:01:32.233
 So for the theta of 0.8, we can
 calculate that the likelihood is 0.30.   
-從θ=0.8得出   
-似然值=0.30
+所以代入函數，θ等於0.8會得到似然值等於0.30
 
 26
 00:01:32.233 --> 00:01:36.260
 But we can also calculate the likelihoods
 for all sorts of different hypotheses.    
-除了θ=0.8的情形，還可以假設更多情形
-
-
+除了θ等於0.8的似然值，還可以計算其他假設的似然值
 
 27
 00:01:37.270 --> 00:01:41.400
 Let's say that you have the idea that
 the true value of the number of coin flips   
-如果你認為只要你擲夠多次硬幣    
-觀察到的正面硬幣枚數的機率為70%
+如果你認為觀察到的正面硬幣枚數的機率為70%
 
 
 28
 00:01:41.400 --> 00:01:45.490
 in the long run is 70% or a theta of 0.7.      
-或是稱作θ=0.8。你該怎麼計算它的似然值？
+或是θ等於0.7。你該怎麼計算它的似然值？
 
 29
 00:01:45.490 --> 00:01:49.760
@@ -178,188 +172,186 @@ The likelihood for this being true,
 based on the data that we have observed,   
 切記似然值基於我們的觀測數據
 
-
 30
 00:01:49.760 --> 00:01:53.880
 eight out of ten coin
 flips turned up heads.   
-就是「擲10次硬幣出現8枚正面朝上」的情形
-
+要用「擲10次硬幣出現8枚正面朝上」的函數計算
 
 31
 00:01:53.880 --> 00:01:59.504
 The likelihood of the true
 population effect being 0.7 is 0.23.   
-據此，θ=0.7時   
-或然率=0.23
+代入函數就會知道，θ等於0.7時   
+似然值等於0.23
 
 
 32
 00:01:59.504 --> 00:02:02.200
 The likelihood of a theta of 0.6 is 0.12.
-θ=0.6時   
-或然率=0.12
+θ等於0.6時   
+似然值等於0.12
 
 33
 00:02:02.200 --> 00:02:05.000
 So you can see it becomes less and   
-它離你的觀察值(θ=0.8)越遠
+它離你的觀察值(θ等於0.8)越遠
 
 34
 00:02:05.000 --> 00:02:07.810
 less likely the farther away
 you go from the observed data.   
-它的或然值也變得越小
+它的似然值也變得越小
 
 35
 00:02:08.830 --> 00:02:10.380
 Now these numbers are not very clear, so   
-到此我們已稍微有了數感
+至此我們有了比較清楚的圖像
 
 36
 00:02:10.380 --> 00:02:12.060
 let's take a look at
 the likelihood function.   
-接著來談談或然函數(likelihood function)吧
+可以來談談似然函數(likelihood function)
 
 37
 00:02:14.270 --> 00:02:16.960
 In this graph, you can see
 the likelihood function plotted.   
-這場圖所描繪的是或然函數
+這張圖描繪參數與似然值的函數關係
 
 38
 00:02:18.490 --> 00:02:21.920
 On the vertical dimension of this graph,
 we have plotted the likelihood.   
 縱軸，代表似然值   
-橫軸，代表θ
+橫軸，代表歡察次數比率θ
 
 39
 00:02:21.920 --> 00:02:24.840
 And on the horizontal dimension,
 we have plotted theta.   
 縱軸，代表似然值   
-橫軸，代表θ
+橫軸，代表歡察次數比率θ
 
 40
 00:02:24.840 --> 00:02:27.494
 All different versions
 ranging from 0 to 1.
-數值介於0到1之間   
+比率數值介於0到1之間   
 
 41
 00:02:28.620 --> 00:02:33.880
 So the range of 0 to 1 means that we
-will either always observe heads or　　　　　　　　　　　　　　　　　　　
-不會出現「全是正面」或「毫無正面」的情形
+will either always observe heads or　　　　　　
+幾乎沒有「全是正面」或「毫無正面」的觀察結果
 
 42
 00:02:33.880 --> 00:02:36.330
 we'll never observe heads.　　　　　　
-不會出現「全是正面」或「毫無正面」的情形
+幾乎沒有「全是正面」或「毫無正面」的觀察結果
 
 43
 00:02:36.330 --> 00:02:39.100
 Now based on the data we have collected,
-we already know that　　　　　　　　　　　　　　　　　　　　
-依據資料已知
+we already know that　　　　　
+依據收集到的資料可知
 
 44
 00:02:39.100 --> 00:02:44.350
 it's not possible that we'll never observe
-heads or we'll never observe tails.　　　　　　　　　　　　　　　　　　
-不可能從不出現正面或或反面
-
+heads or we'll never observe tails.
+從未觀察到全是正面或全是反面的結果
 
 45
 00:02:44.350 --> 00:02:47.360
 Because eight out of ten
 turned out to be heads.
-所以正面或反面必定出現
+由於十次之中最可能看到八次正面
 
 
 46
 00:02:47.360 --> 00:02:48.740
-So we've observed both values.　　　　
-沒有極值(全正面或全反面)的情形
+So we've observed both values.
+觀察結果應該有正有反
 
 47
 00:02:48.740 --> 00:02:52.740
 So the extremes are not possible, and
-you can see that the likelihood here is 0,　　　　　　　　　　　　　　　
-所以極值的似然值等於0
+you can see that the likelihood here is 0,
+所以最不可能觀察到的結果似然值等於0
 
 48
 00:02:52.740 --> 00:02:53.310
 it's very low.　　　　　　　　　　　　　
-所以極值的似然值等於0
+代表不可能發生
 
 49
 00:02:54.730 --> 00:02:59.240
 The most likely true population parameter
-of the number of coin flips based on　　　　　　　　　　　　
-擲銅板的真母體參數值(θ)取決於數據
+of the number of coin flips based on
+因為觀察得知θ等於0.8
+我們就設定這個參數值最接近真正的母數
 
 50
 00:02:59.240 --> 00:03:04.010
 the data that we have is 0.8, because
-this is exactly what we have observed.　　　　　　　　　　　　　　　　　　
-觀察數據得出θ=0.8
+this is exactly what we have observed.　　　　　　
+因為觀察得知θ等於0.8
+我們就設定這個參數值最接近真正的母數
 
 51
 00:03:04.010 --> 00:03:05.980
 So this is the maximum likelihood.　　　
-最大似然值便在θ=0.8時出現
-(如圖)
+所以θ等於0.8有最大似然值
 
 52
 00:03:05.980 --> 00:03:08.270
 Based on the data that
-we have in our hands,　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-已知0.8是最可能的真母體參數值
+we have in our hands,
+因為根據手邊的資料
 
 53
 00:03:08.270 --> 00:03:13.430
 we can see that 0.8 is the most
-likely true population parameter.　　　　　　　　　　　　　　　　　　　　　　　
-由我們手邊的資料得知0.8是最可能的真母體參數值
+likely true population parameter.
+0.8最有可能是真實母數
 
 54
 00:03:13.430 --> 00:03:17.218
 But some of the values just around
-it are also still quite plausible.　　　　　　　　　　　　　　　　　　　　　　　
-落在0.8附近的值也說得通
+it are also still quite plausible.
+0.8附近的θ值也能描述硬幣的性質
 
 55
 00:03:17.218 --> 00:03:21.570
 So a value of 0.6 is still quite
-probable in this case as well.　　　　　　　　　　　　　　　　　　　　　　　　　　
-例如θ=0.6也是蠻有可能的值
+probable in this case as well.　
+例如θ等於0.6也是蠻有可能的
 
 56
 00:03:24.045 --> 00:03:27.355
 These types of likelihood curves
-were invented by Ronald Fisher,　　　　　　　　　　　　　　　　　　　　　　
-費雪（Ronald Fisher)發明了這種似然曲線(likelihood curves)
+were invented by Ronald Fisher,
+上週介紹的費雪是第一個提出似然曲線(likelihood curves)的學者
 
 57
 00:03:27.355 --> 00:03:30.365
 I already said he was a really,
-really smart guy.　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-他真的是個天才
+really smart guy.
+我必須說他真的是個天才
 
 58
 00:03:30.365 --> 00:03:34.525
 And he invented these likelihoods when he
-was only 22 years old and actually a 3rd　　　　　　　　　　　　　　
-年僅22歲的大三生就發明了似然值
+was only 22 years old and actually a 3rd
+22歲時還是大三的他就提出似然曲線
 
 59
 00:03:34.525 --> 00:03:40.005
 year undergraduate student, so this sort
-of testifies to his genius, I would say.　　　　　　　　　　　　　　　　　
-我認為這真的該歸為他的天分
+of testifies to his genius, I would say.
+我認為這真的該歸於他的天份
 
 60
 00:03:40.005 --> 00:03:43.165
@@ -372,7 +364,8 @@ the last couple of years, definitely
 00:03:43.165 --> 00:03:46.970
 not inventing something like this that's
 a fundament of modern statistics.      
-絕不可能
+有時我捫心自問  
+我在大學畢業前能發明統計學的基石嗎？
 
 62
 00:03:48.770 --> 00:03:52.080
@@ -390,67 +383,70 @@ the alternative hypothesis
 00:03:55.200 --> 00:03:58.530
 to calculate something that's
 known as the likelihood ratio.   
-來計算似然值的比值(likelihood ratio)
+來計算似然比(likelihood ratio)
 
 65
 00:03:58.530 --> 00:04:01.810
 So in the case of likelihood ratio,
 we're taking the relative evidence for
-所以當我們計算似然值的比值, 我們會採取
+似然比是虛無假設成立對比
+對立假設成立的賠率(odds)
 
 66
 00:04:01.810 --> 00:04:05.510
 the one hypothesis, the null,
 and the other hypothesis,
-虛無假設和
-
+似然比是虛無假設成立對比
+對立假設成立的賠率(odds)
 
 67
 00:04:05.510 --> 00:04:09.620
 the alternative, and we can calculate
 the odds of one over the other.
-對立假設的相對證據來計算他們個子的幾率比較
+顯示手上證據支持兩者的相對程度
 
 68
 00:04:11.410 --> 00:04:15.990
 Let's look at our example,
 where we had eight out of ten coin flips.
-那我們來看我們的例子,我們翻轉了硬幣十分之八次
+拿一開始的例子來說,投了硬幣十次有八次正面
 
 69
 00:04:15.990 --> 00:04:17.850
 Now we need to compare two hypotheses, and
-我們現在要比較兩個假設,和
+我們可以拿函數裡的任兩個θ
+代表要比較的兩個假設
 
 70
 00:04:17.850 --> 00:04:21.620
 you're free to choose any two
 values of theta that you want.
-你可以選擇任何兩個 theta θ 的數值
+我們可以拿函數裡的任兩個θ
+代表要比較的兩個假設
 
 71
 00:04:21.620 --> 00:04:25.593
 But one very logical value would be 50%,
 0.5,
-但是比較合理的數值是 50%, 0.5
+不過比較合理的一個數值是50%
 	
 72
 00:04:25.593 --> 00:04:30.373
 the hypothesis that this is
 a perfectly balanced and fair coin.
-我們假設這個硬幣是平衡和公平的
+表示我們假設這個硬幣是絕對公平的
 
 73
 00:04:30.373 --> 00:04:35.890
 So this is the value that's plotted
 at 0.5 on the horizontal axis.
-所以這個數值落在X軸的0.5上
+所以代表這這個假設的數值是0.5
 
 74
 00:04:35.890 --> 00:04:39.610
 And you can compare this with any
 hypothesis you had in advance.
-並且你可以用這個來比較之前有的假設
+你可以用這個值與你有興趣的所有假設比較
 
 75
 00:04:39.610 --> 00:04:43.280
@@ -462,52 +458,56 @@ chosen here is the value 0.8.
 00:04:43.280 --> 00:04:46.730
 This happens to be exactly the value
 that we've observed in the data.
-這個數值正是我們在數據中觀察到的
+這個數值正是我們實際觀察到的
 
 77
 00:04:46.730 --> 00:04:49.010
 Eight out of ten coin flips.
-十分之八次的硬幣翻轉
+十次之中有八次正面朝上
 
 78
 00:04:49.010 --> 00:04:52.863
 Now we're comparing this alternative
 hypothesis that a true population
-現在我們要比較這個對立假設,假設一個真正的母群體
+現在我們要比較的這個對立假設
+設定真正的母數是0.8
 
 79
 00:04:52.863 --> 00:04:54.050
 parameter is 0.8.
-參數是0.8
+現在我們要比較的這個對立假設
+設定真正的母數是0.8
 
 80
 00:04:54.050 --> 00:04:57.097
 So 80% of the time this coin
 will come up heads, and
-所以十分之八次這個硬幣將會翻到頭
+表示投擲十次會有八次是正面
 
 81
 00:04:57.097 --> 00:05:00.756
 we'll compare it to the null hypothesis,
 the value of 0.5,
-我們將這個對立假設跟虛無假設比較,用的數值是0.5
+而虛無假設的數值0.5
 
 82
 00:05:00.756 --> 00:05:03.970
 the idea that this is
 a perfectly balanced, fair coin.
-我們的概念是這個硬幣是平衡和公平
+代表這個硬幣絕對公平的主張
 
 83
 00:05:05.010 --> 00:05:08.190
 Now we can already see in the graph
 that the likelihood is much
-現在我們可以看到似然值在圖表
+從圖中可看到0.8的似然值
+比0.5的似然值還高
 
 84
 00:05:08.190 --> 00:05:11.170
 higher at 0.8 than it is at 0.5.
-在0.8比在0.5還高
+從圖中可看到0.8的似然值
+比0.5的似然值還高
 
 85
 00:05:11.170 --> 00:05:13.030
@@ -519,7 +519,7 @@ how much more likely?
 00:05:13.030 --> 00:05:16.300
 And the likelihood ratio
 gives us an idea of this.
-似然值能給我們這個答案.
+似然比能給我們這個答案
 
 87
 00:05:16.300 --> 00:05:20.769
@@ -530,117 +530,115 @@ at 0.8 by the likelihood at 0.5.
 88
 00:05:20.769 --> 00:05:23.270
 And in this case, this ratio is 6.87.
-得到的比率是 6.87.
+得到的似然比是6.87
 
 89
 00:05:23.270 --> 00:05:28.173
 So it's quite more likely that
 the true population parameter is
-所以很有可能真正的母群體參數
+所以母數是0.8的可能性是0.5的六倍多
 
 90
 00:05:28.173 --> 00:05:33.269
 0.8 compared to the ID that
 the population parameters 0.5.
-是0.8相對於ID的母群體參數0.5
+所以母數是0.8的可能性是0.5的六倍多
  
 91
 00:05:35.021 --> 00:05:38.390
 Now we can test any values that we want.
-現在我們可以測試任何我們想要的數值
+現在我們可以檢驗任何我們想比較的數值
 
 92
 00:05:38.390 --> 00:05:41.910
 Let say that in advance we still had
 the same alternative hypothesis,
-讓我們提前說，我們還是有相同的對立假設
+這個例子也是測試相同的對立假設
 
 93
 00:05:41.910 --> 00:05:44.980
 that this was a coin that would
 come up heads 80% of the time.
-這個硬幣十分之八次會翻到頭
+就是這枚硬幣投擲十次會有八次正面
 
 94
 00:05:46.040 --> 00:05:49.850
 We still compare it to the probability
 that this is a fair coin.
-我們仍然將其與概率進行比較這是一個公平的硬幣
+另一方面我們也認為這是一枚公正的硬幣
 
 95
 00:05:49.850 --> 00:05:54.000
 So these two hypotheses are being
 compared, but now we have observed data
-所以這兩個假設是在比較了，但現在我們觀察了數據
+為了比較這兩個假設，我們重新收集資料
 
 96
 00:05:54.000 --> 00:05:57.700
 where the coin comes up heads
 four times out of ten flips.
-硬幣十分之四次會翻到頭
+卻發現投這枚硬幣十次有四次正面
 
 97
 00:05:58.740 --> 00:06:02.263
 So we can see the shape of the likelihood
 function is very different, and
-所以我們可以看到似然值的函數形狀
-是非常不同的，而且
-	
+所以似然函數的曲線改變了
+
 98
 00:06:02.263 --> 00:06:04.803
 in this case of course,
 based on the observed data,
-從觀察的數據
+而且根據觀察的數據
+似然值0.4的可能性最高
 
 99
 00:06:04.803 --> 00:06:06.857
 the likelihood of 0.4 is most likely.
-0.4的可能性最高
+而且根據觀察的數據
+似然值0.4的可能性最高
 
 100
 00:06:06.857 --> 00:06:12.002
 We can still compare the ratio of
 the likelihoods at 0.5 and 0.8,
-我們仍然可以比較0.5和0.8的可能性比率
+以此計算0.5和0.8的似然比
 
 101
 00:06:12.002 --> 00:06:17.960
 and now we see that the value of 0.5 is
 much more likely than the value at 0.8.
-現在我們看到0.5的數值是
-比0.8的數值更有可能
+發現母數是0.5的可能性比0.8還高
 
 102
 00:06:17.960 --> 00:06:21.930
 So the hypothesis that this is a fair
 coin is now much more likely than
-所以我們的假設這是一個公平的硬幣
+所以這是一枚公正硬幣的假設
 
 103
 00:06:21.930 --> 00:06:25.220
 the hypothesis that this
 is an unfair coin, and
-會比這是一個不公平的
-硬幣的假設和
-
+比這是一枚不公正硬幣的假設更合理
 
 104
 00:06:25.220 --> 00:06:28.039
 that the true population parameter is 0.8.
-真正的母群體參數是0.8更有可能
+真正的母數應該是0.5
+(Daniel可能說錯)
 
 105
 00:06:30.830 --> 00:06:35.800
 Now when you calculate likelihood ratios,
 there are two cutoffs of 8 and
-當你計算似然值的比值，
-有兩個截止值為8和32
+似然比有兩個截止值為8和32
 
 106
 00:06:35.800 --> 00:06:39.540
 32 of these likelihood ratios which
 are considered either moderately strong
-被認為是中等強度證據
+之間的數值被認為顯示中等強度證據
 
 107
 00:06:39.540 --> 00:06:41.150
@@ -651,913 +649,910 @@ evidence or strong evidence.
 00:06:42.250 --> 00:06:46.450
 So in the previous examples, we could see
 that in the first case, we had not yet
-所以在前面的例子中，我們可以看到
-在第一種情況下，我們還沒有
+在擲硬幣例子裡，
+第一種結果的證據強度(6.87)並未達到中等水準
 
 109
 00:06:46.450 --> 00:06:50.190
 moderately strong evidence for
 the difference in the hypotheses.
-中等強度證據給假設的差異
+在擲硬幣例子裡，
+第一種結果的證據強度(6.87)並未達到中等水準
 
 110
 00:06:50.190 --> 00:06:54.760
 In the latter case, when we observed four
 out of ten flips coming up heads, we can
-在後一種情況下，當我們觀察到硬幣十分之四次會翻到頭
+第二種觀察到投擲硬幣十次有四次正面
 
 111
 00:06:54.760 --> 00:06:59.840
 see that this was very strong evidence for
 the fair coin hypothesis compared to
-我們可以看到，這是非常有力的證據給
-公平的硬幣假設,相比
+表示這是枚公正硬幣的證據強度(37.25)超過水準
 
 112
 00:06:59.840 --> 00:07:05.250
 the alternative, that this was a coin
 with 0.8 coin flips coming up heads.
-對立假設這是一個硬幣有0.8個硬幣翻轉頭
+遠高於這枚硬幣有0.8機率擲出正面的對立假設
 
 113
 00:07:08.080 --> 00:07:12.000
 So you see that likelihoods
 are relative evidence for
-所以你看到似然值
-是相對證據給
+所以似然值是對立假設與虛無假設
+的相對證據強度
 
 114
 00:07:12.000 --> 00:07:15.790
 the alternative hypothesis
 compared to the null hypothesis.
-對立假設相比於虛無假設
+所以似然值是對立假設與虛無假設
+的相對證據強度
 
 115
 00:07:15.790 --> 00:07:20.660
 It's important to realize that both of
 these hypotheses might be quite unlikely.
-重要的是要意識到這些假設都不太可能
+但是你要了解兩者可能都是很難得到證據支持的假設
 
 116
 00:07:20.660 --> 00:07:21.649
 Let's look at an example.
-我們來看一個例子
+我們來看這一個例子
 
 117
 00:07:23.340 --> 00:07:25.220
 Now here we flip the coin 100 times, and
-現在這裡我們翻轉硬幣100次，和
+現在投擲一枚硬幣100次
 
 118
 00:07:25.220 --> 00:07:30.210
 50 out of the 100 times,
 the coin came up heads.
-100次中有50次，
-硬幣翻到頭
+其中有50次正面朝上
 
 119
 00:07:30.210 --> 00:07:35.460
 Now, we are comparing two hypotheses here,
 the one being that the true population
-現在我們在這裡比較兩個假設，
-一個是真正的母群體
+我們要比較的兩個假設，
+其中一個設定母數θ是0.3
 
 120
 00:07:35.460 --> 00:07:41.520
 parameter is 30% heads in the long run,
 so a theta of 0.3.
-參數長遠來說是30％頭, 所以θ為0.3
+也就是持續投擲硬幣有30%正面朝上
 
 121
 00:07:41.520 --> 00:07:45.890
 The alternative hypothesis is that
 the true population parameter is at
-對立假設是真正的母群體參數是在
+對立假設主張母數是0.8
 
 122
 00:07:45.890 --> 00:07:49.620
 theta of 0.8, so
 we'll see 80% heads in the long run.
-θ為0.8, 所以從長遠來看，我們會看到80％是頭
+也就是持續投擲硬幣有80%正面朝上
 
 123
 00:07:50.710 --> 00:07:54.593
 When we compare these two
 hypotheses against each other,
-當我們比較這兩個假設
+用這道函數比較這兩個假設
 
 124
 00:07:54.593 --> 00:08:00.222
 we can see that the hypothesis that true
 population parameter is 0.3 is massively
-我們可以看出假設真正的母群體參數是0.3是
+可以看出假設母數是0.3比母數是0.8更有可能
 
 125
 00:08:00.222 --> 00:08:05.547
 more likely than the likelihood that
 the true population parameter is 0.8.
-比真正的母群體參數是0.8更有可能
+可以看出假設母數是0.3比母數是0.8更有可能
 
 126
 00:08:05.547 --> 00:08:09.330
 And we find a ridiculously
 high likelihood ratio.
-和我們發現一個很高的似然值比值
+這是因為得到一個很高的似然比
 
 127
 00:08:09.330 --> 00:08:11.974
 However, we can also see that
 both these hypotheses are wrong.
-不過，我們也可以看到
-這兩個假設都是錯誤的
+但是也可以看到這兩個假設都是錯誤的
 
 128
 00:08:12.975 --> 00:08:17.487
 So even though the relative evidence for
 the one hypothesis compare to the other
-所以即使相對證據對於一個假設與另一個相比
+所以即使是一個假設比另一個假設的相對證據
 
 129
 00:08:17.487 --> 00:08:22.471
 hypothesis is extremely convincing, we
 didn't find the true population parameter,
-非常有說服力, 我們沒有找到真正的母群體參數
+更有說服力, 觀察結果都沒有呈現真正的母數
 
 130
 00:08:22.471 --> 00:08:24.981
 which is actually just 0.5 in this case.
-在這種情況下其實只有0.5
+也就是投出正面的比率是0.5
 
 131
 00:08:24.981 --> 00:08:28.485
 So it's important to keep in mind that
 likelihood ratios are relative evidence.
-所以重要的是要記住
-似然值比值是相對證據
+所以務必記住似然比是相對的證據強度
 
 132
 00:08:31.490 --> 00:08:36.340
 Now we can compare the likelihood under
 the null hypothesis of a theta of 0.05 and
-現在我們可以比較虛無假設
-的似然值, θ的零假設為0.05和
+這個例子比較的虛無假設參數是0.05
+對立假設參數是0.8
 
 133
 00:08:37.670 --> 00:08:42.237
 an alternative hypothesis of 0.8.
-0.8的對立假設
+這個例子比較的虛無假設參數是0.05
+對立假設參數是0.8
 
 134
 00:08:42.237 --> 00:08:45.070
 Now one way in which you can think about
-現在你可以考慮一個方法
+你可以考慮應用這樣的似然比在你自己的資料分析
 
 135
 00:08:45.070 --> 00:08:50.030
 applying these likelihood ratios is when
 you think about the outcomes of studies.
-來應用這些似然值比值當你考慮研究的結果
+你可以考慮應用這樣的似然比在你自己的資料分析
 
 136
 00:08:50.030 --> 00:08:53.030
 Now, if you perform a study,
 it's sort of like a coin flip.
-現在，如果你進行一項研究，
-它有點像一個硬幣翻轉
+如果你的研究很像觀察投擲硬幣的結果
 
 137
 00:08:53.030 --> 00:08:56.600
 You can either find a statistically
 significant result, or not.
-你可以或不可以找到統計
-重要的結果
+結果有可能是統計顯著，或者不顯著
 
 138
 00:08:56.600 --> 00:09:00.600
 So this is one of two options,
 and it's a binomial probability.
-所以這是兩個選擇之一，
-這是二項概率
+兩種結果發生的機率都能用二項機率表示
 
 139
 00:09:00.600 --> 00:09:03.210
 So how often will you find
 a significant result, and
-所以你多常會找到一個重要的結果和
+表示有多少次實驗能觀察到顯著結果？
 
 140
 00:09:03.210 --> 00:09:05.530
 how often will you find
 a non-significant result?
-多常會找到一個不重要的結果？
+以及有多少次實驗能觀察到不顯著結果？
 
 141
 00:09:05.530 --> 00:09:08.330
 Well it depends on whether
 the null hypothesis is true or
-那取決於是否
-虛無假設是真的或
+這與虛無假設主張為真或
 
 142
 00:09:08.330 --> 00:09:10.970
 the alternative hypothesis is true.
-對立假設是真的
+對立假設主張為真有關
 
 143
 00:09:10.970 --> 00:09:14.182
 When the null hypothesis is true,
 we know that you'll find
-當虛無假設為真時，
-我們知道你會發現
+虛無假設主張為真時，
+似然值告訴你發現顯著結果的機率
 
 144
 00:09:14.182 --> 00:09:18.825
 a significant result that equals your
 alpha level, which is typically 0.05%.
-一個重要的結果等於你的
-α程度，通常為0.05％
+相當於一般設定的顯著水準，也就是0.05%
 
 145 
 00:09:18.825 --> 00:09:22.700
 So this is a very good null hypothesis
 in these likelihood ratios.
-所以這是一個非常好的虛無假設
-在這些似然值比值
+以似然比來看，這樣的虛無假設設定非常不錯
 
 146
 00:09:23.790 --> 00:09:27.780
 We can compare this with the probability
 of finding significant results when
-我們可以將其與概率進行比較
-找到重要的結果
+與真正有效果且發現顯著結果的機率比較
+能顯出邏輯與證據的意義
 
 147
 00:09:27.780 --> 00:09:28.760
 there is a true effect.
-當有真正的效果
+與真正有效果且發現顯著結果的機率比較
+能顯出邏輯與證據的意義
 
 148
 00:09:28.760 --> 00:09:31.640
 And in this case, this probability
 depends on the statistical
-在這種情況下，這種概率
-取決於統計
+所以用的統計檢定法的考驗力(power)也很重要
+
+
 149
 00:09:31.640 --> 00:09:33.900
 power that you have in your test.
-力量在你的測試中
+所以用的統計檢定法的考驗力(power)也很重要
 
 150
 00:09:33.900 --> 00:09:35.183
 Let's for now put it at 0.8, so
-讓我們現在把它放在0.8，所以
+也就是這張投影片提到的0.8
 
 151
 00:09:35.183 --> 00:09:40.330
 80% of the time you'll find a significant
 result because you had 80% power.
-80％的時間你會發現一個重要的結果
-因為你有80％的功率
+代表檢定有80%的考驗力，能發現顯著結果的機率
 
 152
 00:09:42.180 --> 00:09:45.400
 Now we can use the likelihood function
 to compare the probability that we have
-現在我們可以使用似然值函數來
-比較我們的概率
+現在透過似然函數比較
+虛無假設主張為真並有顯著結果的機率
 
 153
 00:09:45.400 --> 00:09:48.870
 observed a significant result
 under the null hypothesis, and
-觀察到顯著的結果
-在虛無假設下，和
+現在透過似然函數比較
+虛無假設主張為真並有顯著結果的機率
 
 154
 00:09:48.870 --> 00:09:51.580
 compare it with
 the alternative hypothesis.
-與之比較對立假設
+與對立假設主張為真並有顯著結果的機率
 
 155
 00:09:54.080 --> 00:09:56.998
 Let's say that we perform
 three studies in a row.
-讓我們說我們連續做了三次研究。
+假想一項研究連續做了三次
 
 156
 00:09:56.998 --> 00:09:59.980
 Now there are a number of outcomes
 that could happen, of course.
-當然,現在有一些結果可能會發生。
+投影片上的結果都有可能會發生
 
 157
 00:09:59.980 --> 00:10:02.530
 None of these studies
 could come up significant.
-這些研究都沒有可能會出現重要的
+有可能沒有一次研究出現顯著結果
 
 158
 00:10:02.530 --> 00:10:05.630
 You could find only one
 significant effect, or two.
-你只能找到一個重要的效果，或兩個
+也有可能出現一次或兩次顯著結果
 
 159
 00:10:05.630 --> 00:10:09.300
 Or, if you're really lucky, three
 significant results out of three studies.
-或者，如果你真的很幸運，三個研究結果都是重要的
+也許你家裡祖上有德，三次都是顯著結果
 
 160
 00:10:11.480 --> 00:10:14.760
 Now let's calculate
 the likelihood of finding two
-現在我們來計算找到三分之二
+現在拿三次有二次顯著結果的似然值來做些計算
 
 161
 00:10:14.760 --> 00:10:17.350
 out of three significant results.
-重要結果的似然值
+現在拿三次有二次顯著結果的似然值來做些計算
 
 162
 00:10:17.350 --> 00:10:20.900
 When the null hypothesis is true,
 this is pretty straightforward.
-當虛無假設為真時，這很直白
+如果虛無假設主張為真，似然值的計算很簡單
 
 163
 00:10:20.900 --> 00:10:25.440
 The probability of finding a significant
 effect when there's no true effect
-找到重要效果的概率當沒有真正的效果
+代表沒有真正效果卻發現顯著結果的機率
 
 164
 00:10:25.440 --> 00:10:30.200
 is the alpha level, so
 this is 0.05% of the time.
-是alpha水準，所以這是0.05％的時間。
+相當於顯著水準
+也就是只有0.05%的實驗結果是顯著的
 
 165
 00:10:30.200 --> 00:10:33.530
 We multiply it by two significant studies.
-我們乘以兩個重要的研究
+似然值就是兩次顯著結果的相乘
 
 166
 00:10:33.530 --> 00:10:35.652
 So 5% times 5%.
-所以5％乘5％
+就是5%乘以5%
 
 167
 00:10:35.652 --> 00:10:40.270
 And then we multiply it by the probability
 of finding no significant effect.
-然後我們乘以找到無明顯影響的概率
+再乘以其餘一次沒有顯著結果的機率
 
 168
 00:10:40.270 --> 00:10:43.500
 Well, if we have a 5% alpha level,
 then the probability of finding
-那麼，如果我們有5％的alpha水準，
-那麼找到
+即然沒有效果卻發現顯著結果的機率是5%
+相對沒有發現顯著結果的機率就是95%
 
 169
 00:10:43.500 --> 00:10:47.010
 no significant effect, if there's
 no true effect, is actually 95%.
-無明顯影響的概率,如果有沒有真正的效果,
-其實是95％
+即然沒有效果卻發現顯著結果的機率是5%
+相對沒有發現顯著結果的機率就是95%
 
 170
 00:10:47.010 --> 00:10:50.934
 So if you multiply these probabilities,
-所以如果你乘以這些概率，
+把這些機率相乘
 
 171
 00:10:50.934 --> 00:10:57.108
 5% times 5% times 95%,
 we get the value of 0.0024.
-5％乘5％乘95％
-我們得到的值為0.0024。
+也就是5%乘以5%乘以95%
+得到的值為0.0024。
 
 172
 00:10:57.108 --> 00:11:01.339
 All right, so what happens if there
 is a true effect to be observed, and
-好的，所以如果有一個要觀察的真正效果
-的話會發生什麼事，和
+那麼如果真的有效果，
+三次研究有兩次顯著結果的似然值該怎麼算？
 
 173
 00:11:01.339 --> 00:11:04.174
 we find two out of three
 significant findings?
-我們發現三分之二的
-重要發現？
+那麼如果真的有效果，
+三次研究有兩次顯著結果的似然值該怎麼算？
 
 174
 00:11:04.174 --> 00:11:07.150
 Now let's assume that we have 80% power.
-現在我們假設我們有80％的power
+一開始已經設定考驗力是80％
 
 175
 00:11:07.150 --> 00:11:08.430
 You never really know, but
-你真的不知道，但是
+實際上很難得知真正的考驗力
+(第三週課程說明)
 
 176
 00:11:08.430 --> 00:11:13.450
 you can check different levels of power in
 the likelihood function when it's plotted.
-您可以檢查不同級別的power在
-繪製的似然函數
+但是似然函數能描繪各種程度的考驗力對應的似然值
 
 177
 00:11:13.450 --> 00:11:15.200
 But for now, let's take a look at 80%.
-但是現在讓我們來看看80％。
+現在來看看考驗力80%的計算結果
 
 178
 00:11:15.200 --> 00:11:19.860
 So we find two significant results and
 one nonsignificant result.
-所以我們找到兩個重要的結果
-一個不重要的結果
+因為有兩次顯著結果與一次不顯著結果
 
 179
 00:11:19.860 --> 00:11:24.506
 If the alternative hypothesis is true,
 this equals an 80% probability of finding
-如果對立假設是真的，
-這等於80％的概率發現
+如果對立假設主張為真，
+相當於有80％的機率能出現顯著結果
 
 180
 00:11:24.506 --> 00:11:27.474
 a significant result,
 times an 80% probability of
-一個重要的結果,乘以80％的概率
+如果對立假設主張為真，
+相當於有80％的機率能出現顯著結果
 
 181
 00:11:27.474 --> 00:11:32.200
 finding a significant result, times a 20%
 probability of making a type two error.
-找到一個重要的結果, 乘以20％的概率造成類型二錯誤
+兩個80%相乘，再乘以20%的型二錯誤率
 
 182
 00:11:33.780 --> 00:11:38.558
 And if we now multiply these
 probabilities, we get 0.128.
-如果我們現在乘與這些
-概率，我們得到0.128
+就會得到似然值是0.128
 
 183
 00:11:38.558 --> 00:11:42.745
 So we can calculate the relative
 likelihood of observing this data,
-所以我們可以計算出觀察這些數據的相對似然值
+所以接著能計算三次研究結果有兩次是統計顯著
 
 184
 00:11:42.745 --> 00:11:47.654
 two out of three significant results,
 when either the null hypothesis is true,
-三分之二的重要成果，
-當虛無假設為真時，
+虛無假設主張與真對比對立假設主張為真的似然比
 
 185
 00:11:47.654 --> 00:11:50.130
 or the alternative hypothesis is true.
-或對立假設是真實的
+虛無假設主張與真對比對立假設主張為真的似然比
 
 186
 00:11:51.550 --> 00:11:54.540
 Now based on these numbers, you can
 already see that this outcome is much
-現在基於這些數字, 你可以看到這個結果
+根據計算結果(0.128/0.0024)
+可以得知有真正效果的可能性
 
 187
 00:11:54.540 --> 00:11:57.660
 more likely when there is a true effect
 than when there is no true effect.
-有真正的效果比沒有真正的效果更有可能
+高於沒有真正的效果的可能性
 
 188
 00:11:59.320 --> 00:12:01.600
 So, if we calculate likelihood ratio,
-所以，如果我們計算似然值比值
+似然比是54
 
 189
 00:12:01.600 --> 00:12:06.070
 we see that it's actually
 54 times more likely that
-我們看到它實際上是
-54倍更有可能
+表示對立假設為真的可能性
+是虛無假設為真的54倍
 
 190
 00:12:06.070 --> 00:12:10.330
 the alternative hypothesis is true than
 that the null hypothesis this is true.
-對立假設比虛無假設是真的
+表示對立假設為真的可能性
+是虛無假設為真的54倍
 
 191
 00:12:10.330 --> 00:12:14.100
 It's possible to find this pattern of
 results when there is no true effect.
-有可能找到這種模式的結果當沒有真正的效果
+雖然現在的分析結果是沒有真正效果的發現
 
 192
 00:12:14.100 --> 00:12:17.430
 But it's massively more probable that
 you'll find this pattern of results
-但是，這很可能是更可能的
-你會發現這種模式的結果
+但是更有可能是有真正效果的發現
 
 193
 00:12:17.430 --> 00:12:18.490
 when there is a true effect.
-當有真正的效果
+但是更有可能是有真正效果的發現
 
 194
 00:12:20.770 --> 00:12:22.900
 We can plot this likelihood function,
-我們可以繪製這個似然函數
+把這個例子繪製成似然函數
 
 195
 00:12:22.900 --> 00:12:27.439
 because you might not be convinced that
 80% power is very likely in this case.
-因為你可能不會相信
-在這種情況下，80％的power很有可能
+更能說服你，
+有80%檢定力的分析的可信度有多高
 
 196
 00:12:28.490 --> 00:12:32.358
 Now if you look at this graph, we can
 again see the likelihood function which is
-現在，如果你看這張圖，我們可以
-再次看到似然函數是
+圖中標示三次研究有兩次顯著結果的似然比是怎麼回事
 
 197
 00:12:32.358 --> 00:12:34.890
 plotted for
 two out of three significant results.
-繪製為三分之二的重要成果
+圖中標示三次研究有兩次顯著結果的似然比是怎麼回事
 
 198
 00:12:35.990 --> 00:12:41.750
 I've indicated two points,
 the 0.05 theta on the left,
-我已經指出了兩點，
-左側的0.05 theta，
+請注意橫軸左側的0.05和右側的0.8
 
 199
 00:12:41.750 --> 00:12:44.974
 and the 0.8 theta on the right.
-右側為0.8度
+請注意橫軸左側的0.05和右側的0.8
 
 200
 00:12:44.974 --> 00:12:50.580
 Now the 0.05 is the type one error rate,
 or your alpha, so that's pretty fixed.
-現在0.05是第一種錯誤率，
-或者你的alpha，所以這是非常固定的
+0.05表示型一錯誤率，或者顯著水準
+是許多研究的通用設定
 
 201
 00:12:50.580 --> 00:12:53.900
 But maybe you feel like you might
 have had lower power in your study.
-但也許你覺得你可能會
-在你的研究中有較低的power
+不過你也許認為自己的研究沒那麼高的檢定力
 
 202
 00:12:53.900 --> 00:12:56.960
 And you can look at
 the relative likelihood of
-你可以看相對的似然值
+要檢查不同程度的檢定力
 
 203
 00:12:56.960 --> 00:13:01.620
 the outcome of two out of three studies
 for any value of theta that you like.
-三項研究中的兩項成果
-對於任何你喜歡的theta值
+發現三次研究有兩次顯著的似然比
 
 204
 00:13:02.720 --> 00:13:07.170
 The most probable situation, of course, is
 that for exactly the result that we have
-最可能的情況當然是
-這正是我們擁有的結果
+最可能的檢定力就是實際的狀況
 
 205
 00:13:07.170 --> 00:13:11.539
 observed, two out of three
 significant results, meaning 0.666.
-觀察到，三分之二
-重要結果，意義為0.666
+也就是三次之中有兩次顯著結果，正是0.666
 
 206
 00:13:13.520 --> 00:13:18.330
 For any of these values, you can see that
 as long as you assume a decent level of
-對於任何這些值，你可以看到
-只要你假設一個體面水平
+不論抓那個數值，只要考檢定力高於一定程度，
+像是0.5
 
 207
 00:13:18.330 --> 00:13:20.846
 power, something higher than 0.5,
-的power, 高於0.5
+不論抓那個數值，只要考檢定力高於一定程度，
+像是0.5
 
 208
 00:13:20.846 --> 00:13:26.026
 it's much more likely that there is a true
 effect than that there is no true effect,
-這更有可能是真的效果比沒有真正的效果，
+有真的效果的可能性
+比沒有真正的效果的可能性高
 
 209
 00:13:26.026 --> 00:13:31.211
 even though we only observed two out of
 three statistically significant results.
-即使我們只觀察到了三分之二的統計顯著的結果
+即使三次研究只有二次統計顯著結果
 
 210
 00:13:31.211 --> 00:13:34.991
 Now this is an important realization that
 you can get by looking at these likelihood
-現在這是一個重要的覺悟那你可以看看這些似然值
+由此我們學到重要的一課
+似然函數能如何幫我們評估多次研究的結果
 
 211
 00:13:34.991 --> 00:13:35.590
 functions.
-函數
+由此我們學到重要的一課
+似然函數能如何幫我們評估多次研究的結果
 
 212
 00:13:36.640 --> 00:13:42.160
 Multiple studies should give mixed results
 when the alternative hypothesis is true.
-多項研究應該給出不同的結果
-當對立假設是真實的。
+當對立假設主張為真
+多次研究應該呈現顯著與不顯著的結果
 
 213
 00:13:42.160 --> 00:13:45.910
 And even when you have a decent level
 of power, this will happen quite often.
-即使你有一個體面的水平
-的power，這將經常發生。
+即使檢定力沒有達到前例的水準
+也應該有相似的發現
 
 214
 00:13:47.290 --> 00:13:50.760
 What's the likelihood of finding
 three significant results in a row
-找連續三個重要成果的似然值
+如果檢定力有80%
+三次研究都是顯著結果的似然值有多少？
 
 215
 00:13:50.760 --> 00:13:52.840
 when you only have 80% power?
-當你只有80％的power？
+如果檢定力有80%
+三次研究都是顯著結果的似然值有多少？
 
 216
 00:13:52.840 --> 00:13:53.710
 I'm saying only, but
-我只是說，但是
+我再提醒一下
 
 217
 00:13:53.710 --> 00:13:57.660
 that's actually a pretty decent and
 recommended level of power, right?
-這實際上是一個相當體面的
-推薦水平的power，對吧？
+80%是有起碼品質的研究建議應維持的檢定力水準
+(見1-3講)
 
 218
 00:13:57.660 --> 00:14:02.014
 So we can do the math, it's quite easy,
-所以我們可以做數學，這很容易，
+我們做點算術就能明白這項建議的道理
 
 219
 00:14:02.014 --> 00:14:06.546
 0.8 x 0.8 x 0.8 gives you
 a likelihood of 0.51.
-0.51的似然值
+0.8相乘3次，得到0.51的似然值
 
 220
 00:14:06.546 --> 00:14:10.500
 So about 50% of the time,
 when you have 80% power and
-所以約50％的時間，當你有80％的power和
+這表示只要對立假設主張為真，檢定力維持在80%
 
 221
 00:14:10.500 --> 00:14:15.150
 the alternative hypothesis is true, you'll
 find three significant results in a row.
-對立假設是真的，你會連續找到三個重要結果
+同樣的研究重覆數次，有50%的機率你會發現三次顯著結果
 
 222
 00:14:15.150 --> 00:14:19.600
 It means that almost 50% of the time, you
 will get some version of mixed results.
-這意味著近50％的時間，你會得到一些版本的混合結果
+另外50%的結果會是只有二次、一次、甚至沒有統計顯著
 
 223
 00:14:19.600 --> 00:14:21.780
 Either two out of three,
 one out of three, or
-三分之二，三分之一，或
+另外50%的結果會是只有二次、一次、甚至沒有統計顯著
 
 224
 00:14:21.780 --> 00:14:24.010
 if you're unlucky, even zero out of three.
-如果你不幸，甚至是三分之零。
+另外50%的結果會是只有二次、一次、甚至沒有統計顯著
 
 225
 00:14:24.010 --> 00:14:26.080
 Even though there might be a true effect.
-即使可能會有真正的效果。
+即使分析背後確實有真正的效果
 
 226
 00:14:26.080 --> 00:14:29.099
 Now this won't happen so often, but
 all these outcomes are probable.
-現在這不會經常發生，但是所有這些結果都是可能的
+雖然不顯著不會經常發生，
+但是任何分析結果都是有可能的
 
 227
 00:14:29.099 --> 00:14:33.590
 And the probability of mixed
 result is almost 50% of the time.
-和混合的概率結果是近50％的時間。
+多次研究存在至少一次不顯著結果的機率是50％
 
 228
 00:14:33.590 --> 00:14:36.810
 So this is important to realize,
 when you're doing lines of research,
-所以這是重要的，當你在做研究行時，
+當你分析的研究資料是多次實驗資料
+請謹記在心
 
 229
 00:14:36.810 --> 00:14:40.890
 you will not find consistently significant
 results in all of your studies, and
-你不會總是發現重要結果在你的研究，和
+所有研究結果至少有一次不顯著是很正常的
 
 230
 00:14:40.890 --> 00:14:42.190
 this is perfectly fine.
-這是可以接受的
+所有研究結果至少有一次不顯著是很正常的
 
 231
 00:14:42.190 --> 00:14:44.251
 This is exactly what you should expect.
-這正是你應該期待的
+不該期待所有結果都是統計顯著
 
 232
 00:14:46.454 --> 00:14:50.642
 Now in this graph I've plotted a lot
 of lines that are relevant for
-現在在這張圖中我畫了很多
-的相關線給
+這張圖描繪有四項研究的資料
+分析結果顯著與否的排列組合及似然值
 
 233
 00:14:50.642 --> 00:14:53.470
 a situation where we perform four studies.
-我們進行四項研究的情況。
+這張圖描繪有四項研究的資料
+分析結果顯著與否的排列組合及似然值
 
 234
 00:14:54.660 --> 00:14:58.760
 When we perform four studies, we can
 either observe zero significant results,
-當我們進行四項研究，我們可以
-觀察到零重要結果
+分析結果會是都沒有顯著結果
 
 235
 00:14:58.760 --> 00:15:00.830
 or one, or two, or three, or four.
-或一個，二個，三個，四個。
+或者有一次，二次，三次，或四次顯著結果。
 
 236
 00:15:01.880 --> 00:15:05.980
 So each of these curves plots one
 of these likelihood functions,
-所以這些曲線每一個繪製一個
-的這些似然函數
+每一條曲線代表一種分析結果的似然函數
 
 237
 00:15:05.980 --> 00:15:07.469
 given the data that we've observed.
-從我們觀察到的數據
+每一條曲線代表一種分析結果的似然函數
 
 238
 00:15:09.410 --> 00:15:11.080
 Now what I want to point out here is,
-現在我想在這裡指出的是
+這些曲線顯示發現至少一個不顯著結果的機率有多高
 
 239
 00:15:11.080 --> 00:15:14.800
 again, the massive probability
 of finding mixed results.
-再次，找到混合的結果的巨大概率
+這些曲線顯示發現至少一個不顯著結果的機率有多高
 
 240
 00:15:14.800 --> 00:15:19.100
 And we can see this for
 all the curves for one, two, three, or
-我們可以看到這一點所有曲線為一，二，三，或
+把每條曲線對應至少一個不顯著結果的似然值標出來
 
 241
 00:15:19.100 --> 00:15:24.220
 four out of four results, where the
 likelihood is highest for mixed results.
-四分之四的結果，哪裡混合結果的可能性最大
+把每條曲線對應至少一個不顯著結果的似然值標出來
 
 242
 00:15:24.220 --> 00:15:26.496
 And that's actually this area.
-這實際上是這個領域
+可以標出這塊區域
 
 243
 00:15:26.496 --> 00:15:32.441
 So when we perform four studies, and the
 theta, which means the power that we have,
-所以當我們進行四個研究，和
-theta，這意味著我們擁有的power
+這塊區域表示四次研究要找的母數
+運用的分析方法檢定力
 
 244
 00:15:32.441 --> 00:15:38.418
 is somewhere between 0.2 and 0.8,
 so between 20% power and 80% power.
-在0.2到0.8之間，
-所以在20％的power和80％的power之間
+在20%到80%之間的似然值
 
 245
 00:15:38.418 --> 00:15:42.912
 Then finding mixed results is actually the
 most probable outcome of a line of four
-然後找到混合的結果實際上是最可能的結果是一行四項
+不論四次之中顯著結果有多少，
+各種結果出現的機會是差不多的
 
 246
 00:15:42.912 --> 00:15:43.519
 studies.
-研究
+不論四次之中顯著結果有多少，
+各種結果出現的機會是差不多的
 
 247
 00:15:44.890 --> 00:15:48.430
 Now we've seen that likelihood ratios
 allow you to express the relative
-現在我們已經看到了似然比值
-讓你表達相關證據
+這一講學到似然比如何表示
+虛無假設與對立假設的相對證據強度
 
 248
 00:15:48.430 --> 00:15:52.710
 evidence for the null hypothesis
 compared to the alternative hypothesis.
-對於虛無假設與對立假設相比
+這一講學到似然比如何表示
+虛無假設與對立假設的相對證據強度
 
 249
 00:15:52.710 --> 00:15:55.040
 And this can be very useful in itself.
-這本身就非常有用
+是相當有用的分析工具
 
 250
 00:15:55.040 --> 00:15:59.105
 For example, we applied this to
 the probability of finding significant or
-例如，我們將其應用於找到重要或
+像是評估一組研究發現顯著或不顯著結果的機率
 
 251
 00:15:59.105 --> 00:16:01.540
 non-significant results
 in a set of studies.
-不重要結果的幾率在一組研究中
+像是評估一組研究發現顯著或不顯著結果的機率
 
 252
 00:16:01.540 --> 00:16:04.060
 And we've seen that it's
 actually quite likely
-我們已經看到了其實很可能
+由最後一個例子學到
 
 253
 00:16:04.060 --> 00:16:06.065
 that you'll observe
 a mix of significant and
-你會觀察到的重要和
+即使對立假設主張為真
 
 254
 00:16:06.065 --> 00:16:09.380
 non-significant results, even when
 the alternative hypothesis is true.
-不重要混合的結果即使對立假設是真實的
+分析結果有顯著與不顯著是很正常的
 
 255
 00:16:10.760 --> 00:16:13.790
 Likelihoods also underlie
 Bayesian statistics.
-似然值也是包括貝葉斯統計
+似然值也是貝氏統計的基礎
 
 256
 00:16:13.790 --> 00:16:16.973
 So knowing likelihoods is also
 a good stepping stone to move on
-所以知道似然值也是一個很好的踏板
+了解似然值也是學習貝氏統計的入門磚
 
 257
 00:16:16.973 --> 00:16:20.233
 to Bayesian statistics,
 which we'll do in future lectures.
-去學習貝葉斯統計, 我們將在未來的講座中做
+欲知詳情，請見下一講
 
 258
 00:16:20.233 --> 00:16:25.109
